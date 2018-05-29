@@ -1,8 +1,8 @@
 <template>
   <div class="signin-wrapper border border-light">
+    <div class="alert alert-danger" v-if="error">{{ error }}</div>
     <form class="form-signin" @submit.prevent="signin">
       <h2 class="form-signin-heading">Please sign in</h2>
-       <div class="alert alert-danger" v-if="error">{{ error }}</div>
       <label for="inputEmail" class="sr-only">Email address</label>
       <input v-model="email" type="email" id="inputEmail" class="form-control"
         placeholder="Email address" required autofocus>
