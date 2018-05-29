@@ -1,5 +1,5 @@
 <template>
-  <div class="login-wrapper border border-light">
+  <div class="signin-wrapper border border-light">
     <form class="form-signin" @submit.prevent="signin">
       <h2 class="form-signin-heading">Please sign in</h2>
       <label for="inputEmail" class="sr-only">Email address</label>
@@ -14,8 +14,13 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'Signin',
+  computed: {
+    ...mapGetters({ currentUser: 'currentUser' })
+  },
   data: function () {
     return {
       token: '',
@@ -32,9 +37,8 @@ export default {
   },
   methods: {
     checkAuthentication () {
-      if (localStorage.token) {
+      if (this.currentUser) {
         this.$router.replace(this.$route.query.redirect || '/games')
-        this.$router.replace('/games')
       }
     },
     signin () {
@@ -51,11 +55,13 @@ export default {
         return
       }
       localStorage.token = request.data.auth_token
+      this.$store.dispatch('signin') // <=
       this.error = false
       this.$router.replace(this.$route.query.redirect || '/games')
     },
     signinFailed () {
       this.error = 'Signin failed!'
+      this.$store.dispatch('signout') // <=
       delete localStorage.token
     }
   }
