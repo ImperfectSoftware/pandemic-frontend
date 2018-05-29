@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-dark bg-bookstore">
+  <nav class="navbar navbar-dark bg-pandemic">
     <a class="navbar-brand" href="/">Pandemic</a>
 
     <span class="navbar-text">
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.bg-bookstore {
+.bg-pandemic {
   background: #605B56 !important;
 }
 
