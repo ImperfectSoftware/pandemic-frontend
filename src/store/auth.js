@@ -13,7 +13,6 @@ const mutations = {
   },
   [MutationTypes.SIGNOUT] (state) {
     state.user = null
-    delete localStorage.token
   }
 }
 
