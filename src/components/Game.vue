@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="form-signin-heading">Games</h2>
+    <h2>Games</h2>
     <div class="alert alert-danger" v-if="error">{{ error }}</div>
   </div>
 </template>

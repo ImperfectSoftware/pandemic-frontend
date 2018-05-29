@@ -1,14 +1,12 @@
 <template>
   <nav class="navbar navbar-dark bg-pandemic">
     <a class="navbar-brand" href="/">Pandemic</a>
-
     <span class="navbar-text">
       {{ currentUser.email }}
       <router-link to="/signout" class="btn btn-signout btn-sm">
         Signout
       </router-link>
     </span>
-
   </nav>
 </template>
 
@@ -26,6 +24,7 @@ export default {
 <style lang="scss" scoped>
 .bg-pandemic {
   background: #605B56 !important;
+  margin-bottom: 60px;
 }
 
 .btn-signout {
