@@ -10,8 +10,9 @@
     <div class="invitees-list">
       <InviteLineItem :username="currentUser.username" :status="'Ready'"/>
       <InviteLineItem v-for="player in players" :key="player.invitationId"
-        :username="player.username" :status="'Pending'"/>
-      <form id="start-game-id" @submit.prevent="startGame">
+        :username="player.username" :status="player.status"/>
+      <form id="start-game-id" :class="gameReadyToStart"
+        @submit.prevent="startGame">
         <button class="mx-auto size-big btn btn-secondary" type="submit">
           Start Game
         </button>
@@ -22,12 +23,17 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import Player from '@/models/Player'
 import InviteLineItem from '@/components/InviteLineItem'
 
 export default {
   name: 'Invite',
   computed: {
-    ...mapGetters({ currentUser: 'currentUser' })
+    ...mapGetters({ currentUser: 'currentUser' }),
+    gameReadyToStart: function () {
+      let playersReadyToStart = this.players.filter(player => player.isReady)
+      return { 'd-none': playersReadyToStart.length < 2 }
+    }
   },
   components: {
     InviteLineItem
@@ -58,13 +64,24 @@ export default {
         )
       } else {
         this.$parent.$emit('alert', { message: false })
-        this.players.push({
-          username: data.user.username,
-          invitationId: data.id
-        })
+        this.players.push(Player.from(data))
+        // this.players.push({
+        //   username: data.user.username,
+        //   invitationId: data.id
+        // })
       }
     },
     createInviteFailed () {
+    },
+    startGame () {
+      this.$http.put(`/games/${this.gameId}`)
+        .then(request => this.startedGame(request.data))
+        .catch((e) => this.startingGameFailed(e))
+    },
+    startedGame () {
+      // TODO: add logic to redirect and start game
+    },
+    startingGameFailed (e) {
     }
   }
 }
