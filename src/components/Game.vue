@@ -7,7 +7,6 @@
         Create a new Game
       </button>
     </form>
-    <hr>
     <template>
       <Invite v-if="gameId" :gameId="gameId"></Invite>
     </template>

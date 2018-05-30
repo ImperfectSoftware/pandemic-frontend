@@ -5,10 +5,10 @@
     </template>
     <div class="container-fluid">
       <router-view/>
-      <template v-if="currentUser">
-        <Foot></Foot>
-      </template>
     </div>
+    <template v-if="currentUser">
+      <Foot></Foot>
+    </template>
   </div>
 </template>
 
