@@ -1,17 +1,22 @@
 <template>
   <div>
-    <form id="invites" class="form-inline mx-auto"
+    <form id="invites" class="form-inline mx-auto size-big"
       @submit.prevent="createInvite">
       <input v-model="username" type="text" id="inputUsername"
         class="form-control" placeholder="Username" required autofocus>
       <button class="btn btn-secondary" type="submit">Send Invite</button>
     </form>
     <br/>
-    <ul class="invitees-list list-unstyled">
+    <div class="invitees-list">
       <InviteLineItem :username="currentUser.username" :status="'Ready'"/>
       <InviteLineItem v-for="player in players" :key="player.invitationId"
         :username="player.username" :status="'Pending'"/>
-    </ul>
+      <form id="start-game-id" @submit.prevent="startGame">
+        <button class="mx-auto size-big btn btn-secondary" type="submit">
+          Start Game
+        </button>
+      </form>
+    </div>
   </div>
 </template>
 
@@ -47,7 +52,6 @@ export default {
     },
     createInviteSuccess (data) {
       if (data.error) {
-        console.log('emitting error...')
         this.$parent.$emit(
           'alert',
           { message: data.error, alertClass: 'alert-warning' }
@@ -67,7 +71,7 @@ export default {
 </script>
 
 <style>
-  form#invites {
+  .size-big {
     width: 300px;
   }
 </style>

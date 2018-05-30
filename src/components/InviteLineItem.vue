@@ -1,12 +1,10 @@
 <template>
-  <li>
-    <div class="card invite-card mx-auto">
-      <div class="card-body">
-        <span class='pull-left username'>{{ username }}</span>
-        <span class='pull-right' :class="statusType">{{ status }}</span>
-      </div>
+  <div class="card invite-card mx-auto">
+    <div class="card-body">
+      <span class='pull-left username'>{{ username }}</span>
+      <span class='pull-right' :class="statusType">{{ status }}</span>
     </div>
-  </li>
+  </div>
 </template>
 
 <script>
