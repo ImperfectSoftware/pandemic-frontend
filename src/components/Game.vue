@@ -1,15 +1,27 @@
 <template>
   <div>
     <div class="alert" :class="alertClass" v-if="error">{{ error }}</div>
-    <h2>Games</h2>
-    <form v-if="!gameId" id="newGame" class="form-inline" @submit.prevent="createGame">
-      <button class="mx-auto newGame btn btn-secondary" type="submit">
-        Create a new Game
-      </button>
-    </form>
-    <template>
-      <Invite v-if="gameId" :gameId="gameId"></Invite>
-    </template>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>Friends List</h3>
+        </div>
+        <div class="col">
+          <form v-if="!gameId" class="size-big form-inline"
+            @submit.prevent="createGame">
+            <button class="mx-auto size-big btn btn-secondary" type="submit">
+              Create a new Game
+            </button>
+          </form>
+          <template>
+            <Invite v-if="gameId" :gameId="gameId"></Invite>
+          </template>
+        </div>
+        <div class="col">
+          <h3>Game History</h3>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -50,9 +62,8 @@ export default {
   }
 }
 </script>
-
+<style lang="sass">
+    @import '../assets/scss/App.scss';
+</style>
 <style>
-form#newGame .newGame {
-  width: 300px;
-}
 </style>

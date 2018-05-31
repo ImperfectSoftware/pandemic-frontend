@@ -7,7 +7,7 @@
       <button class="btn btn-secondary" type="submit">Send Invite</button>
     </form>
     <br/>
-    <div class="invitees-list">
+    <ul class="invitees-list list-group">
       <InviteLineItem :username="currentUser.username" :status="'Ready'"/>
       <InviteLineItem v-for="player in players" :key="player.invitationId"
         :username="player.username" :status="player.status"/>
@@ -17,7 +17,7 @@
           Start Game
         </button>
       </form>
-    </div>
+    </ul>
   </div>
 </template>
 
@@ -65,10 +65,6 @@ export default {
       } else {
         this.$parent.$emit('alert', { message: false })
         this.players.push(Player.from(data))
-        // this.players.push({
-        //   username: data.user.username,
-        //   invitationId: data.id
-        // })
       }
     },
     createInviteFailed () {
@@ -87,8 +83,8 @@ export default {
 }
 </script>
 
+<style lang="sass">
+    @import '../assets/scss/App.scss';
+</style>
 <style>
-  .size-big {
-    width: 300px;
-  }
 </style>

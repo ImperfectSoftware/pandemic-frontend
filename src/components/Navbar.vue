@@ -21,6 +21,9 @@ export default {
 }
 </script>
 
+<style lang="sass">
+    @import '../assets/scss/App.scss';
+</style>
 <style lang="scss" scoped>
 .bg-pandemic {
   background: #605B56 !important;
