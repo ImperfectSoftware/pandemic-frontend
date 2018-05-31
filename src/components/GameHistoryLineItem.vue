@@ -1,6 +1,6 @@
 <template>
   <li v-on:click="updateGameSelection" class="list-group-item mx-auto w-lg">
-    <span>{{ id }}</span>
+    <span>#{{ game.id }} </span>-<span> {{ game.createdDate }}</span>
   </li>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
   name: 'Invite',
   props: [
-    'id'
+    'game'
   ],
   data: function () {
     return {
@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     updateGameSelection () {
-      this.$parent.$emit('changeSelectedGame', { id: this.id })
+      this.$parent.$emit('changeSelectedGame', { game: this.game })
     }
   }
 }

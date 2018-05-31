@@ -9,6 +9,7 @@ export default class Game {
     this.id = game.id
     this.started = game.started
     this.owner_id = game.owner_id // eslint-disable-line camelcase
+    this.createdDate = game.created_date // eslint-disable-line camelcase
     this.players = []
     game.participants.forEach((participant) => {
       this.players.push(Player.from({

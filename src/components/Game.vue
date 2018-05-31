@@ -21,7 +21,7 @@
         <div class="col">
           <h3>Game History</h3>
           <ul class="invitees-list list-group">
-            <GameHistoryLineItem v-for="game in games" :id="game.id"
+            <GameHistoryLineItem v-for="game in games" :game="game"
               :key="game.id"/>
           </ul>
         </div>
@@ -49,11 +49,7 @@ export default {
       this.error = data.message
       this.alertClass = data.alertClass
     })
-    this.$on('changeSelectedGame', function (data) {
-      this.game = this.games.find((game) => {
-        return game.id === data.id
-      })
-    })
+    this.$on('changeSelectedGame', (data) => { this.game = data.game })
   },
   data: function () {
     return {
@@ -72,7 +68,7 @@ export default {
     createGameSuccess (data) {
       this.error = false
       this.game = GameModel.from(data.game)
-      this.games.push(this.game)
+      this.games.unshift(this.game)
     },
     createGameFailed (e) {
       this.error = "We're sorry, something went wrong. Please try again later."
