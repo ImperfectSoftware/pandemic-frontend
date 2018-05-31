@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="alert w-lg margin-auto" :class="alertClass" v-if="error">{{ error }}</div>
+    <div class="alert w-lg" :class="alertClass" v-if="error">{{ error }}</div>
     <div class="container">
       <div class="row">
         <div class="col">
