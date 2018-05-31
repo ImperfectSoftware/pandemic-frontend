@@ -12,8 +12,9 @@ $color: (
 );
 
 $width: (
-  md: 42.5%,
-  sm: 22.5%
+  md: 68.0%,
+  sm: 32.0%,
+  lg: 100.0%
 );
 
 .mid-background {
@@ -31,6 +32,10 @@ $width: (
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.w-lg {
+  width: map-get($width, lg);
 }
 
 .w-md {

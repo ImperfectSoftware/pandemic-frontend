@@ -1,19 +1,18 @@
 <template>
   <div>
-    <form id="invites" class="form-inline mx-auto w-sm"
+    <form id="invites" class="form-inline mx-auto w-lg"
       @submit.prevent="createInvite">
       <input v-model="username" type="text" id="inputUsername"
-        class="form-control" placeholder="Username" required autofocus>
-      <button class="btn btn-secondary" type="submit">Send Invite</button>
+        class="form-control w-md" placeholder="Username" required autofocus>
+      <button class="btn btn-secondary w-sm" type="submit">Send Invite</button>
     </form>
     <br/>
     <ul class="invitees-list list-group">
-      <InviteLineItem :username="currentUser.username" :status="'Ready'"/>
       <InviteLineItem v-for="player in game.players" :key="player.invitationId"
         :username="player.username" :status="player.status"/>
       <form id="start-game-id" :class="gameReadyToStart"
         @submit.prevent="startGame">
-        <button class="mx-auto w-sm btn btn-secondary" type="submit">
+        <button class="mx-auto w-lg btn btn-secondary" type="submit">
           Start Game
         </button>
       </form>
@@ -31,8 +30,7 @@ export default {
   computed: {
     ...mapGetters({ currentUser: 'currentUser' }),
     gameReadyToStart: function () {
-      let playersReadyToStart = this.players.filter(player => player.isReady)
-      return { 'd-none': playersReadyToStart.length < 2 }
+      return { 'd-none': !this.game.isReadyToStart }
     }
   },
   components: {

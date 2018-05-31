@@ -1,5 +1,5 @@
 <template>
-  <li class="list-group-item mx-auto w-sm "
+  <li class="list-group-item mx-auto w-lg "
     :class="statusType">
     <span class='username'>{{ username }}</span>
   </li>

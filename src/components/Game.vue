@@ -1,16 +1,16 @@
 <template>
   <div>
-    <div class="alert w-md margin-auto" :class="alertClass" v-if="error">{{ error }}</div>
+    <div class="alert w-lg margin-auto" :class="alertClass" v-if="error">{{ error }}</div>
     <div class="container">
       <div class="row">
         <div class="col">
           <h3>Friends List</h3>
         </div>
-        <div class="col">
+        <div class="col w-lg">
           <h3>Game Setup</h3>
-          <form v-if="!game" class="w-sm form-inline"
+          <form v-if="!game" class="form-inline"
             @submit.prevent="createGame">
-            <button class="mx-auto w-sm btn btn-secondary" type="submit">
+            <button class="mx-auto btn btn-secondary" type="submit">
               Create a new Game
             </button>
           </form>
@@ -71,12 +71,7 @@ export default {
     },
     createGameSuccess (data) {
       this.error = false
-      this.game = GameModel.from({
-        id: data.id,
-        started: false,
-        owner_id: data.owner_id,
-        invites: []
-      })
+      this.game = GameModel.from(data.game)
       this.games.push(this.game)
     },
     createGameFailed (e) {

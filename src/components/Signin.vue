@@ -70,6 +70,3 @@ export default {
   }
 }
 </script>
-<style lang="sass">
-    @import '../assets/scss/App.scss';
-</style>

@@ -1,5 +1,5 @@
 <template>
-  <li v-on:click="updateGameSelection" class="list-group-item mx-auto w-sm">
+  <li v-on:click="updateGameSelection" class="list-group-item mx-auto w-lg">
     <span>{{ id }}</span>
   </li>
 </template>
