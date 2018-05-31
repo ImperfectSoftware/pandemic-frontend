@@ -1,5 +1,5 @@
 <template>
-  <li class="list-group-item mx-auto size-big"
+  <li class="list-group-item mx-auto w-sm "
     :class="statusType">
     <span class='username'>{{ username }}</span>
   </li>
@@ -26,7 +26,3 @@ export default {
   }
 }
 </script>
-
-<style lang="sass">
-    @import '../assets/scss/App.scss';
-</style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="alert" :class="alertClass" v-if="error">{{ error }}</div>
+    <div class="alert w-md margin-auto" :class="alertClass" v-if="error">{{ error }}</div>
     <div class="container">
       <div class="row">
         <div class="col">
@@ -8,9 +8,9 @@
         </div>
         <div class="col">
           <h3>Game Setup</h3>
-          <form v-if="!game" class="size-big form-inline"
+          <form v-if="!game" class="w-sm form-inline"
             @submit.prevent="createGame">
-            <button class="mx-auto size-big btn btn-secondary" type="submit">
+            <button class="mx-auto w-sm btn btn-secondary" type="submit">
               Create a new Game
             </button>
           </form>
@@ -92,8 +92,3 @@ export default {
   }
 }
 </script>
-<style lang="sass">
-    @import '../assets/scss/App.scss';
-</style>
-<style>
-</style>
