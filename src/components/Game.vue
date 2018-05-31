@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="alert" :class="alertClass" v-if="error">{{ error }}</div>
+    <div class="alert w-md margin-auto" :class="alertClass" v-if="error">{{ error }}</div>
     <h2>Games</h2>
     <form v-if="!gameId" id="newGame" class="form-inline" @submit.prevent="createGame">
-      <button class="mx-auto newGame btn btn-secondary" type="submit">
+      <button class="mx-auto w-sm btn btn-secondary" type="submit">
         Create a new Game
       </button>
     </form>
@@ -50,9 +50,3 @@ export default {
   }
 }
 </script>
-
-<style>
-form#newGame .newGame {
-  width: 300px;
-}
-</style>

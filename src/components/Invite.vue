@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form id="invites" class="form-inline mx-auto size-big"
+    <form id="invites" class="form-inline mx-auto w-sm"
       @submit.prevent="createInvite">
       <input v-model="username" type="text" id="inputUsername"
         class="form-control" placeholder="Username" required autofocus>
@@ -13,7 +13,7 @@
         :username="player.username" :status="player.status"/>
       <form id="start-game-id" :class="gameReadyToStart"
         @submit.prevent="startGame">
-        <button class="mx-auto size-big btn btn-secondary" type="submit">
+        <button class="mx-auto w-sm btn btn-secondary" type="submit">
           Start Game
         </button>
       </form>
@@ -86,9 +86,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  .size-big {
-    width: 300px;
-  }
-</style>

@@ -1,0 +1,78 @@
+$color: (
+  body: #302e21,
+  background: #605B56,
+  backgroundLight: #837A75,
+  knockout: #fff
+);
+
+$width: (
+  md: 42.5%,
+  sm: 22.5%
+);
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+.position-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.w-md {
+  width: map-get($width, md);
+}
+
+.w-sm {
+  width: map-get($width, sm);
+}
+
+.username {
+  display: inline-block;
+  width: 160px;
+  text-align: center;
+  background-color: pink;
+}
+
+.ready {
+  background-color: green;
+}
+
+.pending {
+  background-color: red;
+}
+
+.ready .pending {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+}
+
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-bottom2 {
+  margin-bottom: 2em;
+}
+
+.bg-pandemic {
+  background: map-get($color, background);
+}
+
+.btn-signout {
+  background-color: map-get($color, backgroundLight);
+  border-color: map-get($color, backgroundLight);
+  color: map-get($color, knockout);
+
+  &:hover {
+    background-color: darken(map-get($color, backgroundLight), 20%);
+    border-color: darken(map-get($color, backgroundLight), 20%);
+    color: map-get($color, knockout);
+  }
+}

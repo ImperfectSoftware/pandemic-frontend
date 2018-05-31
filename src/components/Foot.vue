@@ -12,11 +12,3 @@ export default {
   name: 'Foot'
 }
 </script>
-
-<style>
-  .position-bottom {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-</style>

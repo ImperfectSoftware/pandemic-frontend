@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-dark bg-pandemic">
+  <nav class="navbar navbar-dark bg-pandemic margin-bottom2">
     <a class="navbar-brand" href="/">Pandemic</a>
     <span class="navbar-text">
       {{ currentUser.email }}
@@ -20,22 +20,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.bg-pandemic {
-  background: #605B56 !important;
-  margin-bottom: 60px;
-}
-
-.btn-signout {
-  background-color: #837A75;
-  border-color: #837A75;
-  color: #fff;
-}
-
-.btn-signout:hover {
-  background-color: darken(#837A75, 20%);
-  border-color: darken(#837A75, 20%);
-  color: #fff;
-}
-</style>

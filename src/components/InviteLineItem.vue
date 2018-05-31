@@ -1,5 +1,5 @@
 <template>
-  <div class="card invite-card mx-auto">
+  <div class="card w-sm mx-auto">
     <div class="card-body">
       <span class='pull-left username'>{{ username }}</span>
       <span class='pull-right' :class="statusType">{{ status }}</span>
@@ -28,26 +28,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.username {
-  display: inline-block;
-  width: 160px;
-  text-align: center;
-  background-color: pink;
-}
-.ready {
-  background-color: green;
-}
-.pending {
-  background-color: red;
-}
-.ready .pending {
-  display: inline-block;
-  width: 80px;
-  text-align: center;
-}
-.invite-card {
-  width: 300px;
-}
-</style>
