@@ -9,7 +9,7 @@
     <br/>
     <ul class="invitees-list list-group">
       <InviteLineItem :username="currentUser.username" :status="'Ready'"/>
-      <InviteLineItem v-for="player in players" :key="player.invitationId"
+      <InviteLineItem v-for="player in game.players" :key="player.invitationId"
         :username="player.username" :status="player.status"/>
       <form id="start-game-id" :class="gameReadyToStart"
         @submit.prevent="startGame">
@@ -39,8 +39,13 @@ export default {
     InviteLineItem
   },
   props: [
-    'gameId'
+    'game'
   ],
+  watch: {
+    game: function (previousGame, currentGame) {
+      console.log(`Props changed from ${previousGame.id} to ${currentGame.id}`)
+    }
+  },
   data: function () {
     return {
       username: '',
@@ -50,7 +55,7 @@ export default {
   methods: {
     createInvite () {
       this.$http.post(
-        `/games/${this.gameId}/invitations.json`,
+        `/games/${this.game.id}/invitations.json`,
         { username: this.username }
       )
         .then(request => this.createInviteSuccess(request.data))
@@ -64,13 +69,18 @@ export default {
         )
       } else {
         this.$parent.$emit('alert', { message: false })
-        this.players.push(Player.from(data))
+        this.game.players.push(Player.from({
+          accepted: data.accepted,
+          invitation_id: data.id,
+          user_id: data.user.id,
+          username: data.user.username
+        }))
       }
     },
     createInviteFailed () {
     },
     startGame () {
-      this.$http.put(`/games/${this.gameId}`)
+      this.$http.put(`/games/${this.game.id}`)
         .then(request => this.startedGame(request.data))
         .catch((e) => this.startingGameFailed(e))
     },
@@ -85,6 +95,4 @@ export default {
 
 <style lang="sass">
     @import '../assets/scss/App.scss';
-</style>
-<style>
 </style>

@@ -1,13 +1,20 @@
+/* eslint camelcase: 0 */
+
 export default class Player {
   static from (data) {
     return new Player(data)
   }
 
-  constructor (data) {
-    this.invitationId = data.id
-    this.id = data.user.id
-    this.username = data.user.username
-    this.status = 'Pending'
+  constructor ({ user_id, username, invitation_id, accepted, id }) {
+    this.id = id || ''
+    this.invitationId = invitation_id
+    this.userId = user_id
+    this.username = username
+    if (accepted) {
+      this.status = 'Ready'
+    } else {
+      this.status = 'Pending'
+    }
   }
 
   get isPending () {
