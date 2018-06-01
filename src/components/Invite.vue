@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h3>Game Setup - {{ game.id }}</h3>
     <form id="invites" class="form-inline mx-auto w-lg"
       @submit.prevent="createInvite">
       <input v-model="username" type="text" id="inputUsername"

@@ -4,19 +4,23 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h3>Friends List</h3>
         </div>
-        <div class="col w-lg">
-          <h3>Game Setup</h3>
-          <form v-if="!game" class="form-inline"
-            @submit.prevent="createGame">
+        <div class="col">
+        </div>
+        <div class="col">
+          <form class="form-inline" @submit.prevent="createGame">
             <button class="mx-auto btn btn-secondary" type="submit">
               Create a new Game
             </button>
           </form>
-          <template>
-            <Invite v-if="game" :game="game"></Invite>
-          </template>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>Friends List</h3>
+        </div>
+        <div class="col w-lg">
+          <Invite v-if="game" :game="game"></Invite>
         </div>
         <div class="col">
           <h3>Game History</h3>
