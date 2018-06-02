@@ -79,17 +79,22 @@ export default {
       this.error = false
       this.game = GameModel.from(data.game)
       this.games.unshift(this.game)
+      this.subscribeToGameChannel(this.game)
     },
     createGameFailed (e) {
       this.error = "We're sorry, something went wrong. Please try again later."
     },
     displayGamesSuccess (request) {
       request.data.games.forEach((game) => {
-        this.games.push(GameModel.from(game))
-        GameSubscription.from(this.cableConsumer, this.games[this.games.length - 1]).subscribe()
+        let gameFromModel = GameModel.from(game)
+        this.games.push(gameFromModel)
+        this.subscribeToGameChannel(gameFromModel)
       }, this)
     },
     displayGamesFailed (e) {
+    },
+    subscribeToGameChannel (game) {
+      GameSubscription.from(this.cableConsumer, game).subscribe()
     }
   }
 }
