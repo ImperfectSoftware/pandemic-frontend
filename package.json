@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "action-cable-react-jwt": "0.0.5",
-    "actioncable": "^5.2.0",
     "axios": "^0.18.0",
     "jwt-decode": "^2.2.0",
     "npm": "^6.1.0",
