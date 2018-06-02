@@ -24,4 +24,9 @@ export default class Game {
   get isReadyToStart () {
     return this.players.filter(player => player.isReady).length >= 2
   }
+
+  setStatusForUsername = (username, accepted) => {
+    let player = this.players.filter(player => player.username === username)[0]
+    player.setAccepted(accepted)
+  }
 }

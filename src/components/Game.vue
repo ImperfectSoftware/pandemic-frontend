@@ -35,17 +35,23 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import Invite from '@/components/Invite'
 import GameHistoryLineItem from '@/components/GameHistoryLineItem'
 import GameModel from '@/models/Game'
+import GameSubscription from '@/subscriptions/game-subscription'
 
 export default {
   name: 'Game',
+  computed: {
+    ...mapGetters({ cableConsumer: 'cableConsumer' })
+  },
   components: {
     Invite,
     GameHistoryLineItem
   },
   created: function () {
+    this.$store.dispatch('createConsumer') // <=
     this.$http.get('/games.json')
       .then(request => this.displayGamesSuccess(request))
       .catch(() => this.displayGamesFailed())
@@ -80,6 +86,7 @@ export default {
     displayGamesSuccess (request) {
       request.data.games.forEach((game) => {
         this.games.push(GameModel.from(game))
+        GameSubscription.from(this.cableConsumer, this.games[this.games.length - 1]).subscribe()
       }, this)
     },
     displayGamesFailed (e) {

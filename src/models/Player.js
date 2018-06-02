@@ -17,11 +17,19 @@ export default class Player {
     }
   }
 
+  setAccepted = (value) => {
+    this.status = value ? 'Ready' : 'Pending'
+  }
+
   get isPending () {
     return this.status === 'Pending'
   }
 
   get isReady () {
     return this.status === 'Ready'
+  }
+
+  get isBrown () {
+    return false
   }
 }

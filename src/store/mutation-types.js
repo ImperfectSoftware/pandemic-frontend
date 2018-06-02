@@ -1,2 +1,4 @@
 export const SIGNIN = 'SIGNIN'
 export const SIGNOUT = 'SIGNOUT'
+export const CREATE_CONSUMER = 'CREATE_CONSUMER'
+export const DELETE_CONSUMER = 'DELETE_CONSUMER'
