@@ -1,6 +1,6 @@
 <template>
   <li v-on:click="updateGameSelection" class="list-group-item mx-auto w-lg">
-    <span>#{{ game.id }} </span>-<span> {{ game.createdDate }}</span>
+    <span>{{ game.name }}</span>#<span>{{ game.id }}</span>
   </li>
 </template>
 

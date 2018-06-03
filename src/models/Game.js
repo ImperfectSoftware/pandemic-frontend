@@ -7,6 +7,7 @@ export default class Game {
 
   constructor (game) {
     this.id = game.id
+    this.name = game.name
     this.started = game.started
     this.ownerId = game.owner_id // eslint-disable-line camelcase
     this.createdDate = game.created_date // eslint-disable-line camelcase
