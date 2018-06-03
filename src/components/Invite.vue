@@ -11,7 +11,7 @@
     <ul class="invitees-list list-group">
       <InviteLineItem v-for="player in game.players" :key="player.invitationId"
         :username="player.username" :status="player.status"/>
-      <form id="start-game-id" :class="gameReadyToStart"
+      <form id="start-game-id" :class="isReadyToStart"
         @submit.prevent="startGame">
         <button class="mx-auto w-lg btn btn-secondary" type="submit">
           Start Game
@@ -30,7 +30,7 @@ export default {
   name: 'Invite',
   computed: {
     ...mapGetters({ currentUser: 'currentUser' }),
-    gameReadyToStart: function () {
+    isReadyToStart: function () {
       return { 'd-none': !this.game.isReadyToStart }
     }
   },

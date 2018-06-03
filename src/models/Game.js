@@ -30,4 +30,24 @@ export default class Game {
     let player = this.players.filter(player => player.username === username)[0]
     player.setAccepted(accepted)
   }
+
+  shoulHideMarks = (user) => {
+    if (user.id === this.ownerId) {
+      return true
+    }
+    let player = this.players
+      .filter(player => player.username === user.username)[0]
+    if (player.accepted) {
+      return true
+    }
+    return false
+  }
+
+  isOwner = (user) => {
+    return false
+  }
+
+  getUserPlayer = (user) => {
+    return this.players.filter(player => player.username === user.username)[0]
+  }
 }

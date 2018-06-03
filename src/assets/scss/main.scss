@@ -74,6 +74,26 @@ $width: (
   background: map-get($color, background);
 }
 
+.accept-mark {
+  background-color: $color-two;
+}
+
+.decline-mark {
+  background-color: $color-one;
+}
+
+.accept-mark, .decline-mark {
+  width: 49%;
+}
+
+.game-history-line-item {
+  margin-bottom: 1%;
+}
+
+.accept-mark:hover, .decline-mark:hover, .game-history-line-item:hover {
+  cursor: pointer;
+}
+
 .btn-signout {
   background-color: map-get($color, backgroundLight);
   border-color: map-get($color, backgroundLight);
