@@ -17,14 +17,17 @@
       </div>
       <div class="row">
         <div class="col">
-          <h3>Friends List</h3>
+          <ul class="list-group">
+            <InvitationLineItem v-for="invite in invitations"
+              :invitation="invite" :key="invite.id"/>
+          </ul>
         </div>
         <div class="col w-lg">
           <Invite v-if="game" :game="game"></Invite>
         </div>
         <div class="col">
           <h3>Game History</h3>
-          <ul class="invitees-list list-group">
+          <ul class="list-group">
             <GameHistoryLineItem v-for="game in games" :game="game"
               :key="game.id"/>
           </ul>
@@ -38,17 +41,23 @@
 import { mapGetters } from 'vuex'
 import Invite from '@/components/Invite'
 import GameHistoryLineItem from '@/components/GameHistoryLineItem'
+import InvitationLineItem from '@/components/InvitationLineItem'
 import GameModel from '@/models/Game'
 import GameSubscription from '@/subscriptions/game-subscription'
+import InvitationSubscription from '@/subscriptions/invitation-subscription'
 
 export default {
   name: 'Game',
   computed: {
-    ...mapGetters({ cableConsumer: 'cableConsumer' })
+    ...mapGetters({
+      cableConsumer: 'cableConsumer',
+      currentUser: 'currentUser'
+    })
   },
   components: {
     Invite,
-    GameHistoryLineItem
+    GameHistoryLineItem,
+    InvitationLineItem
   },
   created: function () {
     this.$store.dispatch('createConsumer') // <=
@@ -60,13 +69,17 @@ export default {
       this.alertClass = data.alertClass
     })
     this.$on('changeSelectedGame', (data) => { this.game = data.game })
+    InvitationSubscription
+      .from(this.cableConsumer, this.invitations, this.currentUser.id)
+      .subscribe()
   },
   data: function () {
     return {
       game: '',
       error: false,
       alertClass: 'alert-danger',
-      games: []
+      games: [],
+      invitations: []
     }
   },
   methods: {

@@ -9,7 +9,7 @@
     </form>
     <br/>
     <ul class="invitees-list list-group">
-      <InviteLineItem v-for="player in game.players" :key="player.invitationId"
+      <PlayerLineItem v-for="player in game.players" :key="player.invitationId"
         :username="player.username" :status="player.status"/>
       <form id="start-game-id" :class="isReadyToStart"
         @submit.prevent="startGame">
@@ -24,7 +24,7 @@
 <script>
 import { mapGetters } from 'vuex'
 import Player from '@/models/Player'
-import InviteLineItem from '@/components/InviteLineItem'
+import PlayerLineItem from '@/components/PlayerLineItem'
 
 export default {
   name: 'Invite',
@@ -35,7 +35,7 @@ export default {
     }
   },
   components: {
-    InviteLineItem
+    PlayerLineItem
   },
   props: [
     'game'

@@ -37,7 +37,7 @@ export default class Game {
     }
     let player = this.players
       .filter(player => player.username === user.username)[0]
-    if (player.accepted) {
+    if (player.isReady) {
       return true
     }
     return false

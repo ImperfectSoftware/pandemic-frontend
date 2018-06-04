@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'InviteLineItem',
+  name: 'PlayerLineItem',
   computed: {
     statusType: function () {
       return {

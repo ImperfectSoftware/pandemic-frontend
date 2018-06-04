@@ -51,8 +51,7 @@ $width: (
   width: 160px;
   text-align: center;
 }
-
-.ready {
+.ready, {
   background-color: $color-two;
 }
 
@@ -64,6 +63,10 @@ $width: (
   display: inline-block;
   width: 80px;
   text-align: center;
+}
+
+.accepted {
+  border: 0.5em solid $color-two;
 }
 
 .margin-bottom2 {
