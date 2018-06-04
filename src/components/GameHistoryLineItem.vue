@@ -3,17 +3,16 @@
     <div :class="isOwner">
       <!-- TODO place owner styles below -->
     </div>
-    <li v-on:click="updateGameSelection" class="list-group-item mx-auto w-lg">
+    <li @click="updateGameSelection" class="list-group-item mx-auto w-lg">
       <span>{{ game.name }}</span>
       #
       <span>{{ game.id }}</span>
     </li>
 
     <div :class="shoulHideMarks">
-      <span class="fa fa-check accept-mark float-left"
-        v-on:click="acceptInvite"/>
+      <span class="fa fa-check accept-mark float-left" @click="acceptInvite"/>
       <span class="fa fa-times decline-mark float-right"
-        v-on:click="declineInvite"/>
+        @click="declineInvite"/>
     </div>
   </div>
 </template>
