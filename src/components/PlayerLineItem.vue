@@ -1,7 +1,7 @@
 <template>
   <li class="list-group-item mx-auto w-lg "
     :class="statusType">
-    <span class='username'>{{ username }}</span>
+    <span class='username'>{{ player.username }}</span>
   </li>
 </template>
 
@@ -11,15 +11,14 @@ export default {
   computed: {
     statusType: function () {
       return {
-        ready: this.status === 'Ready',
-        pending: this.status === 'Pending'
+        ready: this.player.isReady,
+        pending: this.player.isPending
       }
     }
   },
-  props: {
-    username: { default: '' },
-    status: { default: 'Pending' }
-  },
+  props: [
+    'player'
+  ],
   data: function () {
     return {
     }

@@ -14,21 +14,22 @@ export default class Game {
     this.players = []
     game.participants.forEach((participant) => {
       this.players.push(Player.from({
-        accepted: participant.accepted,
+        acceptedStatus: participant.status,
         invitation_id: participant.invitation_id,
         user_id: participant.user_id,
         username: participant.username
       }))
     }, this)
+    console.log(this.players)
   }
 
   get isReadyToStart () {
     return this.players.filter(player => player.isReady).length >= 2
   }
 
-  setStatusForUsername = (username, accepted) => {
+  setStatusForUsername = (username, acceptedStatus) => {
     let player = this.players.filter(player => player.username === username)[0]
-    player.setAccepted(accepted)
+    player.setAcceptedStatus(acceptedStatus)
   }
 
   shoulHideMarks = (user) => {
@@ -44,7 +45,7 @@ export default class Game {
   }
 
   isOwner = (user) => {
-    return false
+    return this.ownerId === user.id
   }
 
   getUserPlayer = (user) => {

@@ -5,31 +5,31 @@ export default class Player {
     return new Player(data)
   }
 
-  constructor ({ user_id, username, invitation_id, accepted, id }) {
+  constructor ({ user_id, username, invitation_id, acceptedStatus, id }) {
     this.id = id || ''
     this.invitationId = invitation_id
     this.userId = user_id
     this.username = username
-    if (accepted) {
-      this.status = 'Ready'
+    if (acceptedStatus) {
+      this.acceptedStatus = acceptedStatus
     } else {
-      this.status = 'Pending'
+      this.acceptedStatus = 'inactive'
     }
   }
 
-  setAccepted = (value) => {
-    this.status = value ? 'Ready' : 'Pending'
+  setAcceptedStatus = (value) => {
+    this.acceptedStatus = value
+  }
+
+  get isDeclined () {
+    return this.acceptedStatus === 'declined'
   }
 
   get isPending () {
-    return this.status === 'Pending'
+    return this.acceptedStatus === 'inactive'
   }
 
   get isReady () {
-    return this.status === 'Ready'
-  }
-
-  get isBrown () {
-    return false
+    return this.acceptedStatus === 'accepted'
   }
 }

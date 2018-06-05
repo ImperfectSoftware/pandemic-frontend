@@ -4,16 +4,16 @@ export default class Invitation {
     return new Invitation(data)
   }
 
-  constructor ({ id, user_id, game_id, accepted, owner_username, game_name }) {
-    this.id = id
-    this.userId = user_id
-    this.gameId = game_id
-    this.accepted = accepted
-    this.ownerUsername = owner_username
-    this.gameName = game_name
+  constructor (data) {
+    this.id = data.id
+    this.userId = data.user_id
+    this.gameId = data.game_id
+    this.acceptedStatus = data.status
+    this.ownerUsername = data.owner_username
+    this.gameName = data.game_name
   }
 
-  setAccepted = (value) => {
-    this.accepted = value
+  setAcceptedStatus = (value) => {
+    this.acceptedStatus = value
   }
 }

@@ -23,7 +23,7 @@ export default class GameSubscription {
   }
 
   received = (data) => {
-    this.game.setStatusForUsername(data.username, data.accepted)
+    this.game.setStatusForUsername(data.username, data.status)
   }
 
   connected () {

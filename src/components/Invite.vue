@@ -10,7 +10,7 @@
     <br/>
     <ul class="invitees-list list-group">
       <PlayerLineItem v-for="player in game.players" :key="player.invitationId"
-        :username="player.username" :status="player.status"/>
+        :player="player"/>
       <form id="start-game-id" :class="isReadyToStart"
         @submit.prevent="startGame">
         <button class="mx-auto w-lg btn btn-secondary" type="submit">
@@ -69,7 +69,7 @@ export default {
       } else {
         this.$parent.$emit('alert', { message: false })
         this.game.players.push(Player.from({
-          accepted: data.accepted,
+          acceptedStatus: data.acceptedStatus,
           invitation_id: data.id,
           user_id: data.user.id,
           username: data.user.username

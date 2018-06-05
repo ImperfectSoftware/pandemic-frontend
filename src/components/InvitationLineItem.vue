@@ -38,21 +38,21 @@ export default {
   },
   methods: {
     acceptInvite () {
-      this.sendInviteRequest(true)
+      this.sendInviteRequest('accepted')
     },
     declineInvite () {
-      this.sendInviteRequest(false)
+      this.sendInviteRequest('declined')
     },
     sendInviteRequest (value) {
       this.$http.put(
         `/games/${this.invitation.gameId}/invitations.json`,
-        { accepted: value }
+        { status: value }
       )
         .then(request => this.updateInviteSuccess(request.data))
         .catch(() => this.updateInviteFailed())
     },
     updateInviteSuccess (data) {
-      this.invitation.setAccepted(data.accepted)
+      this.invitation.setAcceptedStatus(data.status)
       // create game here
     },
     updateInviteFailed () {
