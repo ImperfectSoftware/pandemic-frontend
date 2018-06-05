@@ -26,7 +26,6 @@
           <Invite v-if="game" :game="game"></Invite>
         </div>
         <div class="col">
-          <h3>Game History</h3>
           <ul class="list-group">
             <GameHistoryLineItem v-for="game in games" :game="game"
               :key="game.id"/>
@@ -42,7 +41,6 @@ import { mapGetters } from 'vuex'
 import Invite from '@/components/Invite'
 import GameHistoryLineItem from '@/components/GameHistoryLineItem'
 import InvitationLineItem from '@/components/InvitationLineItem'
-import GameModel from '@/models/Game'
 import InvitationModel from '@/models/Invitation'
 import GameSubscription from '@/subscriptions/game-subscription'
 import InvitationSubscription from '@/subscriptions/invitation-subscription'
@@ -52,7 +50,8 @@ export default {
   computed: {
     ...mapGetters({
       cableConsumer: 'cableConsumer',
-      currentUser: 'currentUser'
+      currentUser: 'currentUser',
+      games: 'games'
     })
   },
   components: {
@@ -67,7 +66,7 @@ export default {
       .catch(() => this.displayInvitationsFailed())
     this.$http.get('/games.json')
       .then(request => this.displayGamesSuccess(request))
-      .catch(() => this.displayGamesFailed())
+      .catch((e) => this.displayGamesFailed(e))
     this.$on('alert', function (data) {
       this.error = data.message
       this.alertClass = data.alertClass
@@ -82,7 +81,6 @@ export default {
       game: '',
       error: false,
       alertClass: 'alert-danger',
-      games: [],
       invitations: []
     }
   },
@@ -90,23 +88,22 @@ export default {
     createGame () {
       this.$http.post('/games')
         .then(request => this.createGameSuccess(request.data))
-        .catch(() => this.createGameFailed())
+        .catch((e) => this.createGameFailed(e))
     },
     createGameSuccess (data) {
       this.error = false
-      this.game = GameModel.from(data.game)
-      this.games.unshift(this.game)
-      this.subscribeToGameChannel(this.game)
+      this.$store.dispatch('unshiftGame', data.game)
+      this.subscribeToGameChannel(this.games[0])
     },
     createGameFailed (e) {
+      console.log(e)
       this.error = "We're sorry, something went wrong. Please try again later."
     },
     displayGamesSuccess (request) {
       request.data.games.forEach((game) => {
-        let gameFromModel = GameModel.from(game)
-        this.games.push(gameFromModel)
-        this.subscribeToGameChannel(gameFromModel)
+        this.$store.dispatch('pushGame', game)
       }, this)
+      this.game = this.games[0]
     },
     displayInvitationsSuccess (data) {
       data.invitations.forEach((attributes) => {
@@ -114,6 +111,7 @@ export default {
       }, this)
     },
     displayGamesFailed (e) {
+      console.log(e)
     },
     displayInvitationsFailed (e) {
     },
