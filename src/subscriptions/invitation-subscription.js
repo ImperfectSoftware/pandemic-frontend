@@ -25,7 +25,6 @@ export default class InvitationSubscription {
   }
 
   received = (data) => {
-    console.log(data)
     this.invitations.unshift(Invitation.from(data))
   }
 

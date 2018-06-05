@@ -43,6 +43,7 @@ import Invite from '@/components/Invite'
 import GameHistoryLineItem from '@/components/GameHistoryLineItem'
 import InvitationLineItem from '@/components/InvitationLineItem'
 import GameModel from '@/models/Game'
+import InvitationModel from '@/models/Invitation'
 import GameSubscription from '@/subscriptions/game-subscription'
 import InvitationSubscription from '@/subscriptions/invitation-subscription'
 
@@ -61,6 +62,9 @@ export default {
   },
   created: function () {
     this.$store.dispatch('createConsumer') // <=
+    this.$http.get('/invitations')
+      .then(request => this.displayInvitationsSuccess(request.data))
+      .catch(() => this.displayInvitationsFailed())
     this.$http.get('/games.json')
       .then(request => this.displayGamesSuccess(request))
       .catch(() => this.displayGamesFailed())
@@ -104,7 +108,14 @@ export default {
         this.subscribeToGameChannel(gameFromModel)
       }, this)
     },
+    displayInvitationsSuccess (data) {
+      data.invitations.forEach((attributes) => {
+        this.invitations.push(InvitationModel.from(attributes))
+      }, this)
+    },
     displayGamesFailed (e) {
+    },
+    displayInvitationsFailed (e) {
     },
     subscribeToGameChannel (game) {
       GameSubscription.from(this.cableConsumer, game).subscribe()

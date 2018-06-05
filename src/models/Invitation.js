@@ -6,14 +6,26 @@ export default class Invitation {
 
   constructor (data) {
     this.id = data.id
-    this.userId = data.user_id
-    this.gameId = data.game_id
+    this.userId = data.user.id
+    this.gameId = data.game.id
     this.acceptedStatus = data.status
-    this.ownerUsername = data.owner_username
-    this.gameName = data.game_name
+    this.ownerUsername = data.game.owner_username
+    this.gameName = data.game.name
   }
 
   setAcceptedStatus = (value) => {
     this.acceptedStatus = value
+  }
+
+  isAccepted = () => {
+    return this.acceptedStatus === 'accepted'
+  }
+
+  isDeclined = () => {
+    return this.acceptedStatus === 'declined'
+  }
+
+  isInactive = () => {
+    return this.acceptedStatus === 'inactive'
   }
 }

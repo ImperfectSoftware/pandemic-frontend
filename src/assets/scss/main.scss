@@ -69,6 +69,14 @@ $width: (
   border: 0.5em solid $color-two;
 }
 
+.declined {
+  border: 0.5em solid $color-one;
+}
+
+.inactive {
+  border: 0.5em solid black;
+}
+
 .margin-bottom2 {
   margin-bottom: 2em;
 }

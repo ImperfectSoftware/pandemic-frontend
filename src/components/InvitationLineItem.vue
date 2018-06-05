@@ -1,6 +1,8 @@
 <template>
-  <li class="list-group-item mx-auto w-lg" :class="{'accepted': accepted}">
+  <li class="list-group-item mx-auto w-lg"
+    :class="{'accepted': accepted, 'declined': declined, 'inactive': inactive}">
     <div :class="{'d-none': !accepted}">Accepted</div>
+    <div :class="{'d-none': !declined}">Declined</div>
     <div>Invitation from {{ invitation.ownerUsername }}:</div>
     <div>
       <span>{{ invitation.gameName }} </span>
@@ -23,10 +25,16 @@ export default {
   computed: {
     ...mapGetters({ currentUser: 'currentUser' }),
     shouldHideMarks: function () {
-      return { 'd-none': this.invitation && this.invitation.accepted }
+      return { 'd-none': this.invitation.isAccepted() || this.invitation.isDeclined() }
     },
     accepted: function () {
-      return this.invitation && this.invitation.accepted
+      return this.invitation.isAccepted()
+    },
+    declined: function () {
+      return this.invitation.isDeclined()
+    },
+    inactive: function () {
+      return this.invitation.isInactive()
     }
   },
   props: [

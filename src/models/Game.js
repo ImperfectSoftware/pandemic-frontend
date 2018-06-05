@@ -20,7 +20,6 @@ export default class Game {
         username: participant.username
       }))
     }, this)
-    console.log(this.players)
   }
 
   get isReadyToStart () {
