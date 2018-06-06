@@ -1,16 +1,16 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col-xl-3">
         <ul class="list-group">
           <InvitationLineItem v-for="invite in invitations"
             :invitation="invite" :key="invite.id"/>
         </ul>
       </div>
-      <div class="col w-lg">
+      <div class="col-xl-6">
         <Invite v-if="selectedGame" :game="selectedGame"></Invite>
       </div>
-      <div class="col">
+      <div class="col-xl-3">
         <ul class="list-group">
           <GameHistoryLineItem v-for="game in games" :game="game"
             :key="game.id"/>
