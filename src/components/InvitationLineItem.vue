@@ -46,12 +46,12 @@ export default {
   },
   methods: {
     acceptInvite () {
-      this.sendInviteRequest('accepted')
+      this.respondToInviteRequest('accepted')
     },
     declineInvite () {
-      this.sendInviteRequest('declined')
+      this.respondToInviteRequest('declined')
     },
-    sendInviteRequest (value) {
+    respondToInviteRequest (value) {
       this.$http.put(
         `/games/${this.invitation.gameId}/invitations.json`,
         { status: value }
@@ -61,7 +61,7 @@ export default {
     },
     updateInviteSuccess (data) {
       this.invitation.setAcceptedStatus(data.status)
-      // create game here
+      this.$store.dispatch('unshiftGame', data.game)
     },
     updateInviteFailed () {
       console.log('Failed to update invitation')
