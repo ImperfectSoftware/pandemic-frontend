@@ -16,10 +16,10 @@
           <span>{{ game.name }}</span>
         </div>
         <div class="col-xs-1">
-          <span :class="isOwner" class="fa fa-bookmark"
+          <span :class="isNotOwner" class="fa fa-bookmark"
             aria-hidden="true">
           </span>
-          <span :class="isNotOwner" class="fa fa-child"
+          <span :class="isOwner" class="fa fa-child"
             aria-hidden="true">
           </span>
         </div>
