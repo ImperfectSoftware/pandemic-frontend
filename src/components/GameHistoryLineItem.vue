@@ -8,12 +8,6 @@
       #
       <span>{{ game.id }}</span>
     </li>
-
-    <div :class="shoulHideMarks">
-      <span class="fa fa-check accept-mark float-left" @click="acceptInvite"/>
-      <span class="fa fa-times decline-mark float-right"
-        @click="declineInvite"/>
-    </div>
   </div>
 </template>
 
@@ -41,24 +35,6 @@ export default {
   methods: {
     updateGameSelection () {
       this.$store.dispatch('updateSelectedGame', this.game.id)
-    },
-    acceptInvite () {
-      this.sendInviteRequest(true)
-    },
-    declineInvite () {
-      this.sendInviteRequest(false)
-    },
-    sendInviteRequest (value) {
-      let player = this.game.getUserPlayer(this.currentUser)
-      this.$http.put(
-        `/games/${this.game.id}/invitations/${player.invitationId}.json`,
-        { accepted: value }
-      )
-        .then(request => player.setAccepted(request.data.accepted))
-        .catch(() => this.updateInviteFailed())
-    },
-    updateInviteFailed () {
-      console.log('Failed to update invitation')
     }
   }
 }
