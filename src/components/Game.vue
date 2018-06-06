@@ -38,7 +38,6 @@ import { mapGetters } from 'vuex'
 import Invite from '@/components/Invite'
 import GameHistoryLineItem from '@/components/GameHistoryLineItem'
 import InvitationLineItem from '@/components/InvitationLineItem'
-import GameSubscription from '@/subscriptions/game-subscription'
 import InvitationSubscription from '@/subscriptions/invitation-subscription'
 
 export default {
@@ -89,7 +88,6 @@ export default {
     createGameSuccess (data) {
       this.error = false
       this.$store.dispatch('unshiftGame', data.game)
-      this.subscribeToGameChannel(this.games[0])
     },
     createGameFailed (e) {
       console.log(e)
@@ -111,9 +109,6 @@ export default {
     },
     displayInvitationsFailed (e) {
       console.log(e)
-    },
-    subscribeToGameChannel (game) {
-      GameSubscription.from(this.cableConsumer, game).subscribe()
     }
   }
 }

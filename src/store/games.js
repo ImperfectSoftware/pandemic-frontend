@@ -1,3 +1,5 @@
+import store from '.././store'
+import GameSubscription from '@/subscriptions/game-subscription'
 import Game from '@/models/Game'
 import * as MutationTypes from './mutation-types'
 
@@ -7,11 +9,15 @@ const state = {
 
 const mutations = {
   [MutationTypes.PUSH_GAME] (state, payload) {
-    state.games.push(Game.from(payload))
+    let game = Game.from(payload)
+    GameSubscription.from(store.getters.cableConsumer, game).subscribe()
+    state.games.push(game)
   },
   [MutationTypes.UNSHIFT_GAME] (state, payload) {
-    state.games.unshift(Game.from(payload))
     let selectedGame = state.games.filter(game => game.isSelected)[0]
+    state.games.unshift(Game.from(payload))
+    GameSubscription.from(store.getters.cableConsumer, state.games[0])
+      .subscribe()
     state.games[0].selected = true
     if (selectedGame) {
       selectedGame.selected = false
