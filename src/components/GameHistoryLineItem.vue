@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     updateGameSelection () {
-      this.$store.dispatch('updateSelectedGame', this.game.id)
+      this.$store.dispatch('updateSelectedGame', this.game)
     }
   }
 }

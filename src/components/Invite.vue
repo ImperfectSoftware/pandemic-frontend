@@ -25,13 +25,16 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import Player from '@/models/Player'
 import PlayerLineItem from '@/components/PlayerLineItem'
 
 export default {
   name: 'Invite',
   computed: {
-    ...mapGetters({ currentUser: 'currentUser', selectedGame: 'selectedGame' }),
+    ...mapGetters({
+      currentUser: 'currentUser',
+      selectedGame: 'selectedGame',
+      games: 'games'
+    }),
     isReadyToStart: function () {
       return { 'd-none': !this.selectedGame.isReadyToStart }
     }
@@ -61,12 +64,7 @@ export default {
         )
       } else {
         this.$parent.$emit('alert', { message: false })
-        this.selectedGame.players.push(Player.from({
-          acceptedStatus: data.acceptedStatus,
-          invitation_id: data.id,
-          user_id: data.user.id,
-          username: data.user.username
-        }))
+        this.$store.dispatch('pushPlayer', data)
       }
     },
     createInviteFailed () {

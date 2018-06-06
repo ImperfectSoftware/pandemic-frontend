@@ -32,7 +32,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import { mapGetters } from 'vuex'
 import Invite from '@/components/Invite'
@@ -97,7 +96,7 @@ export default {
       request.data.games.forEach((game) => {
         this.$store.dispatch('pushGame', game)
       }, this)
-      this.$store.dispatch('updateSelectedGame', this.games[0].id)
+      this.$store.dispatch('updateSelectedGame', this.games[0])
     },
     displayInvitationsSuccess (data) {
       data.invitations.forEach((attributes) => {

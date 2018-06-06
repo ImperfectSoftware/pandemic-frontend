@@ -1,6 +1,7 @@
 import store from '.././store'
 import GameSubscription from '@/subscriptions/game-subscription'
 import Game from '@/models/Game'
+import Player from '@/models/Player'
 import * as MutationTypes from './mutation-types'
 
 const state = {
@@ -23,13 +24,23 @@ const mutations = {
       selectedGame.selected = false
     }
   },
-  [MutationTypes.UPDATE_SELECTED_GAME] (state, gameId) {
-    let game = state.games.filter(game => game.id === gameId)[0]
+  [MutationTypes.UPDATE_SELECTED_GAME] (state, game) {
     let selectedGame = state.games.filter(game => game.isSelected)[0]
-    if (selectedGame) {
+    if (selectedGame && game) {
       selectedGame.selected = false
     }
-    game.selected = true
+    if (game) {
+      game.selected = true
+    }
+  },
+  [MutationTypes.PUSH_PLAYER] (state, payload) {
+    let game = getters.selectedGame(state)
+    game.players.push(Player.from({
+      acceptedStatus: payload.acceptedStatus,
+      invitation_id: payload.id,
+      user_id: payload.user.id,
+      username: payload.user.username
+    }))
   }
 }
 
@@ -49,8 +60,11 @@ const actions = {
   unshiftGame ({ commit }, payload) {
     commit(MutationTypes.UNSHIFT_GAME, payload)
   },
-  updateSelectedGame ({ commit }, gameId) {
-    commit(MutationTypes.UPDATE_SELECTED_GAME, gameId)
+  updateSelectedGame ({ commit }, game) {
+    commit(MutationTypes.UPDATE_SELECTED_GAME, game)
+  },
+  pushPlayer ({ commit }, payload) {
+    commit(MutationTypes.PUSH_PLAYER, payload)
   }
 }
 
