@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     updateGameSelection () {
-      this.$parent.$emit('changeSelectedGame', { game: this.game })
+      this.$store.dispatch('updateSelectedGame', this.game.id)
     },
     acceptInvite () {
       this.sendInviteRequest(true)

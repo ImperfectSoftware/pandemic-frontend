@@ -20,10 +20,15 @@ export default class Game {
         username: participant.username
       }))
     }, this)
+    this.selected = false
   }
 
   get isReadyToStart () {
     return this.players.filter(player => player.isReady).length >= 2
+  }
+
+  get isSelected () {
+    return this.selected
   }
 
   setStatusForUsername = (username, acceptedStatus) => {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Game Setup - {{ game.id }}</h3>
+    <h3>Game Setup - {{ selectedGame.id }}</h3>
     <form id="invites" class="form-inline mx-auto w-lg"
       @submit.prevent="createInvite">
       <input v-model="username" type="text" id="inputUsername"
@@ -9,7 +9,7 @@
     </form>
     <br/>
     <ul class="invitees-list list-group">
-      <PlayerLineItem v-for="player in game.players" :key="player.invitationId"
+      <PlayerLineItem v-for="player in selectedGame.players" :key="player.invitationId"
         :player="player"/>
       <form id="start-game-id" :class="isReadyToStart"
         @submit.prevent="startGame">
@@ -29,32 +29,23 @@ import PlayerLineItem from '@/components/PlayerLineItem'
 export default {
   name: 'Invite',
   computed: {
-    ...mapGetters({ currentUser: 'currentUser' }),
+    ...mapGetters({ currentUser: 'currentUser', selectedGame: 'selectedGame' }),
     isReadyToStart: function () {
-      return { 'd-none': !this.game.isReadyToStart }
+      return { 'd-none': !this.selectedGame.isReadyToStart }
     }
   },
   components: {
     PlayerLineItem
   },
-  props: [
-    'game'
-  ],
-  watch: {
-    game: function (previousGame, currentGame) {
-      console.log(`Props changed from ${previousGame.id} to ${currentGame.id}`)
-    }
-  },
   data: function () {
     return {
-      username: '',
-      players: []
+      username: ''
     }
   },
   methods: {
     createInvite () {
       this.$http.post(
-        `/games/${this.game.id}/invitations.json`,
+        `/games/${this.selectedGame.id}/invitations.json`,
         { username: this.username }
       )
         .then(request => this.createInviteSuccess(request.data))
@@ -68,7 +59,7 @@ export default {
         )
       } else {
         this.$parent.$emit('alert', { message: false })
-        this.game.players.push(Player.from({
+        this.selectedGame.players.push(Player.from({
           acceptedStatus: data.acceptedStatus,
           invitation_id: data.id,
           user_id: data.user.id,
@@ -79,7 +70,7 @@ export default {
     createInviteFailed () {
     },
     startGame () {
-      this.$http.put(`/games/${this.game.id}`)
+      this.$http.put(`/games/${this.selectedGame.id}`)
         .then(request => this.startedGame(request.data))
         .catch((e) => this.startingGameFailed(e))
     },

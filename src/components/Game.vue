@@ -1,6 +1,4 @@
 <template>
-  <div>
-    <div class="alert w-lg" :class="alertClass" v-if="error">{{ error }}</div>
     <div class="container">
       <div class="row">
         <div class="col">
@@ -23,7 +21,7 @@
           </ul>
         </div>
         <div class="col w-lg">
-          <Invite v-if="game" :game="game"></Invite>
+          <Invite v-if="selectedGame" :game="selectedGame"></Invite>
         </div>
         <div class="col">
           <ul class="list-group">
@@ -51,7 +49,8 @@ export default {
     ...mapGetters({
       cableConsumer: 'cableConsumer',
       currentUser: 'currentUser',
-      games: 'games'
+      games: 'games',
+      selectedGame: 'selectedGame'
     })
   },
   components: {
@@ -71,7 +70,6 @@ export default {
       this.error = data.message
       this.alertClass = data.alertClass
     })
-    this.$on('changeSelectedGame', (data) => { this.game = data.game })
     InvitationSubscription
       .from(this.cableConsumer, this.invitations, this.currentUser.id)
       .subscribe()
@@ -103,7 +101,7 @@ export default {
       request.data.games.forEach((game) => {
         this.$store.dispatch('pushGame', game)
       }, this)
-      this.game = this.games[0]
+      this.$store.dispatch('updateSelectedGame', this.games[0].id)
     },
     displayInvitationsSuccess (data) {
       data.invitations.forEach((attributes) => {

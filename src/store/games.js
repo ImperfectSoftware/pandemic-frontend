@@ -10,14 +10,29 @@ const mutations = {
     state.games.push(Game.from(payload))
   },
   [MutationTypes.UNSHIFT_GAME] (state, payload) {
-    console.log(payload)
     state.games.unshift(Game.from(payload))
+    let selectedGame = state.games.filter(game => game.isSelected)[0]
+    state.games[0].selected = true
+    if (selectedGame) {
+      selectedGame.selected = false
+    }
+  },
+  [MutationTypes.UPDATE_SELECTED_GAME] (state, gameId) {
+    let game = state.games.filter(game => game.id === gameId)[0]
+    let selectedGame = state.games.filter(game => game.isSelected)[0]
+    if (selectedGame) {
+      selectedGame.selected = false
+    }
+    game.selected = true
   }
 }
 
 const getters = {
   games (state) {
     return state.games
+  },
+  selectedGame (state) {
+    return state.games.filter(game => game.isSelected)[0]
   }
 }
 
@@ -27,6 +42,9 @@ const actions = {
   },
   unshiftGame ({ commit }, payload) {
     commit(MutationTypes.UNSHIFT_GAME, payload)
+  },
+  updateSelectedGame ({ commit }, gameId) {
+    commit(MutationTypes.UPDATE_SELECTED_GAME, gameId)
   }
 }
 
