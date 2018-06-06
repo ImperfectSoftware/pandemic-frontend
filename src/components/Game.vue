@@ -38,7 +38,6 @@ import { mapGetters } from 'vuex'
 import Invite from '@/components/Invite'
 import GameHistoryLineItem from '@/components/GameHistoryLineItem'
 import InvitationLineItem from '@/components/InvitationLineItem'
-import InvitationModel from '@/models/Invitation'
 import GameSubscription from '@/subscriptions/game-subscription'
 import InvitationSubscription from '@/subscriptions/invitation-subscription'
 
@@ -49,7 +48,8 @@ export default {
       cableConsumer: 'cableConsumer',
       currentUser: 'currentUser',
       games: 'games',
-      selectedGame: 'selectedGame'
+      selectedGame: 'selectedGame',
+      invitations: 'invitations'
     })
   },
   components: {
@@ -61,7 +61,7 @@ export default {
     this.$store.dispatch('createConsumer') // <=
     this.$http.get('/invitations')
       .then(request => this.displayInvitationsSuccess(request.data))
-      .catch(() => this.displayInvitationsFailed())
+      .catch((e) => this.displayInvitationsFailed(e))
     this.$http.get('/games.json')
       .then(request => this.displayGamesSuccess(request))
       .catch((e) => this.displayGamesFailed(e))
@@ -77,8 +77,7 @@ export default {
     return {
       game: '',
       error: false,
-      alertClass: 'alert-danger',
-      invitations: []
+      alertClass: 'alert-danger'
     }
   },
   methods: {
@@ -104,13 +103,14 @@ export default {
     },
     displayInvitationsSuccess (data) {
       data.invitations.forEach((attributes) => {
-        this.invitations.push(InvitationModel.from(attributes))
+        this.$store.dispatch('pushInvitation', attributes)
       }, this)
     },
     displayGamesFailed (e) {
       console.log(e)
     },
     displayInvitationsFailed (e) {
+      console.log(e)
     },
     subscribeToGameChannel (game) {
       GameSubscription.from(this.cableConsumer, game).subscribe()
