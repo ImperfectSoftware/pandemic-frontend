@@ -2,19 +2,6 @@
   <div class="container">
     <div class="row">
       <div class="col">
-      </div>
-      <div class="col">
-      </div>
-      <div class="col">
-        <form class="form-inline" @submit.prevent="createGame">
-          <button class="mx-auto btn btn-secondary" type="submit">
-            Create a new Game
-          </button>
-        </form>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
         <ul class="list-group">
           <InvitationLineItem v-for="invite in invitations"
             :invitation="invite" :key="invite.id"/>
@@ -28,6 +15,19 @@
           <GameHistoryLineItem v-for="game in games" :game="game"
             :key="game.id"/>
         </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col">
+        <form class="form-inline" @submit.prevent="createGame">
+          <button class="mx-auto btn btn-secondary" type="submit">
+            Create a new Game
+          </button>
+        </form>
+      </div>
+      <div class="col">
       </div>
     </div>
   </div>

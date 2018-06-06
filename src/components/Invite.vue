@@ -1,11 +1,13 @@
 <template>
   <div>
-    <h3>Game Setup - {{ selectedGame.id }}</h3>
-    <form id="invites" class="form-inline mx-auto w-lg"
-      @submit.prevent="createInvite">
-      <input v-model="username" type="text" id="inputUsername"
-        class="form-control w-md" placeholder="Username" required autofocus>
-      <button class="btn btn-secondary w-sm" type="submit">Send Invite</button>
+    <form id="invites" @submit.prevent="createInvite">
+      <div class="input-group">
+        <input v-model="username" type="text" id="inputUsername"
+          class="form-control" placeholder="Username" required autofocus>
+        <button class="btn btn-secondary input-group-addon" type="submit">
+          <i class="fa fa-user-plus" aria-hidden="true"></i>
+        </button>
+      </div>
     </form>
     <br/>
     <ul class="invitees-list list-group">
