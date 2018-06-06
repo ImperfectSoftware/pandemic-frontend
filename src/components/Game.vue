@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <Error/>
     <div class="row">
       <div class="col-xl-3">
         <ul class="list-group">
@@ -35,6 +36,7 @@
 <script>
 import { mapGetters } from 'vuex'
 import Invite from '@/components/Invite'
+import Error from '@/components/Error'
 import GameHistoryLineItem from '@/components/GameHistoryLineItem'
 import InvitationLineItem from '@/components/InvitationLineItem'
 import InvitationSubscription from '@/subscriptions/invitation-subscription'
@@ -53,7 +55,8 @@ export default {
   components: {
     Invite,
     GameHistoryLineItem,
-    InvitationLineItem
+    InvitationLineItem,
+    Error
   },
   created: function () {
     this.$store.dispatch('createConsumer') // <=

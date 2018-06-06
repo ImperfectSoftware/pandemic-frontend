@@ -58,12 +58,13 @@ export default {
     },
     createInviteSuccess (data) {
       if (data.error) {
-        this.$parent.$emit(
-          'alert',
-          { message: data.error, alertClass: 'alert-warning' }
-        )
+        this.$store.dispatch('updateError', {
+          message: data.error,
+          css: 'alert-warning',
+          display: true
+        })
       } else {
-        this.$parent.$emit('alert', { message: false })
+        this.$store.dispatch('updateError', { error: { display: false } })
         this.$store.dispatch('pushPlayer', data)
       }
     },
