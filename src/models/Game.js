@@ -31,9 +31,14 @@ export default class Game {
     return this.selected
   }
 
-  setStatusForUsername = (username, acceptedStatus) => {
+  handleInvitationResponse = (username, acceptedStatus) => {
     let player = this.players.filter(player => player.username === username)[0]
-    player.setAcceptedStatus(acceptedStatus)
+    let index = this.players.indexOf(player)
+    if (acceptedStatus === 'accepted') {
+      player.setAcceptedStatus(acceptedStatus)
+    } else {
+      this.players.splice(index, 1)
+    }
   }
 
   shoulHideMarks = (user) => {

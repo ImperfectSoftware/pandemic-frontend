@@ -23,7 +23,7 @@ export default class GameSubscription {
   }
 
   received = (data) => {
-    this.game.setStatusForUsername(data.username, data.status)
+    this.game.handleInvitationResponse(data.username, data.status)
   }
 
   connected () {
