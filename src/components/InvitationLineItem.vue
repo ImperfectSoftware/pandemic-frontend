@@ -61,7 +61,9 @@ export default {
     },
     updateInviteSuccess (data) {
       this.invitation.setAcceptedStatus(data.status)
-      this.$store.dispatch('unshiftGame', data.game)
+      if (data.status === 'accepted') {
+        this.$store.dispatch('unshiftGame', data.game)
+      }
     },
     updateInviteFailed () {
       console.log('Failed to update invitation')
