@@ -1,7 +1,7 @@
 <template>
   <div class="game-history-line-item container">
     <li @click="updateGameSelection" class="list-group-item mx-auto w-lg"
-      :class="{'selected-game': selected}">
+      :class="{'selected-game': selected, 'not-selected-game': !selected}">
       <div class="row">
         <div class="col">
         </div>
