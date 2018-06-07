@@ -39,7 +39,7 @@ import Invite from '@/components/Invite'
 import Error from '@/components/Error'
 import GameHistoryLineItem from '@/components/GameHistoryLineItem'
 import InvitationLineItem from '@/components/InvitationLineItem'
-import InvitationSubscription from '@/subscriptions/invitation-subscription'
+import InvitationSubscription from '@/subscriptions/InvitationSubscription'
 
 export default {
   name: 'Game',

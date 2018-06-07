@@ -1,5 +1,5 @@
 import store from '.././store'
-import GameSubscription from '@/subscriptions/game-subscription'
+import GameSubscription from '@/subscriptions/GameSubscription'
 import Game from '@/models/Game'
 import Player from '@/models/Player'
 import * as MutationTypes from './mutation-types'
