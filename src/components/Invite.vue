@@ -1,6 +1,7 @@
 <template>
   <div>
-    <form id="invites" @submit.prevent="createInvite">
+    <form id="invites" v-if="selectedGame.isGameOwner(currentUser)"
+      @submit.prevent="createInvite">
       <div class="input-group">
         <input v-model="username" type="text" id="inputUsername"
           class="form-control" placeholder="Username" required autofocus>
@@ -9,11 +10,16 @@
         </button>
       </div>
     </form>
+    <div v-if="!selectedGame.isGameOwner(currentUser)">
+      This game is getting setup by {{ selectedGame.ownerUsername() }}. It will
+      start when other players have accepted the invitation and
+      {{ selectedGame.ownerUsername() }} starts the Game.
+    </div>
     <br/>
     <ul class="invitees-list list-group">
-      <PlayerLineItem v-for="player in selectedGame.players" :key="player.invitationId"
-        :player="player"/>
-      <form id="start-game-id" :class="isReadyToStart"
+      <PlayerLineItem v-for="player in selectedGame.players"
+        :key="player.invitationId" :player="player"/>
+      <form id="start-game-id" v-if="selectedGame.canStartGame(currentUser)"
         @submit.prevent="startGame">
         <button class="mx-auto w-lg btn btn-secondary" type="submit">
           Start Game
@@ -34,10 +40,7 @@ export default {
       currentUser: 'currentUser',
       selectedGame: 'selectedGame',
       games: 'games'
-    }),
-    isReadyToStart: function () {
-      return { 'd-none': !this.selectedGame.isReadyToStart }
-    }
+    })
   },
   components: {
     PlayerLineItem

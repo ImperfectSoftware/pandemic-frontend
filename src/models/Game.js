@@ -23,12 +23,17 @@ export default class Game {
     this.selected = false
   }
 
-  get isReadyToStart () {
-    return this.players.filter(player => player.isReady).length >= 2
-  }
-
   get isSelected () {
     return this.selected
+  }
+
+  canStartGame = (currentUser) => {
+    return this.players.filter(player => player.isReady).length >= 2 &&
+      currentUser.id === this.ownerId
+  }
+
+  isGameOwner = (currentUser) => {
+    return currentUser.id === this.ownerId
   }
 
   handleInvitationResponse = (username, acceptedStatus) => {
@@ -59,5 +64,9 @@ export default class Game {
 
   getUserPlayer = (user) => {
     return this.players.filter(player => player.username === user.username)[0]
+  }
+
+  ownerUsername = () => {
+    return this.players.filter(player => player.userId === this.ownerId)[0].username
   }
 }
