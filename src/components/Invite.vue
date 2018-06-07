@@ -10,7 +10,7 @@
         </button>
       </div>
     </form>
-    <div v-if="!selectedGame.isGameOwner(currentUser)">
+    <div v-else>
       This game is getting setup by {{ selectedGame.ownerUsername() }}. It will
       start when other players have accepted the invitation and
       {{ selectedGame.ownerUsername() }} starts the Game.
