@@ -93,6 +93,21 @@ const actions = {
       store.getters.invitations,
       store.getters.currentUser.id
     ).subscribe()
+  },
+  createGame ({ dispatch }) {
+    axios.post('/games')
+      .then(request => (function (data) {
+        dispatch('unshiftGame', data.game)
+        dispatch('updateError', { error: { display: false } })
+      }(request.data)))
+      .catch((e) => (function (e) {
+        console.log(e)
+        dispatch('updateError', {
+          message: "We're sorry, something went wrong. Please try again later.",
+          css: 'alert-danger',
+          display: true
+        })
+      }(e)))
   }
 }
 

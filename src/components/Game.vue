@@ -60,17 +60,7 @@ export default {
   },
   methods: {
     createGame () {
-      this.$http.post('/games')
-        .then(request => this.createGameSuccess(request.data))
-        .catch((e) => this.createGameFailed(e))
-    },
-    createGameSuccess (data) {
-      this.error = false
-      this.$store.dispatch('unshiftGame', data.game)
-    },
-    createGameFailed (e) {
-      console.log(e)
-      this.error = "We're sorry, something went wrong. Please try again later."
+      this.$store.dispatch('createGame')
     }
   }
 }
