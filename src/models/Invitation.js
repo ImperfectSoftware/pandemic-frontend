@@ -28,4 +28,8 @@ export default class Invitation {
   isInactive = () => {
     return this.acceptedStatus === 'inactive'
   }
+
+  shouldHideMarks = () => {
+    this.isAccepted() || this.isDeclined()
+  }
 }
