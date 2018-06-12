@@ -39,14 +39,11 @@ import Invite from '@/components/Invite'
 import Error from '@/components/Error'
 import GameHistoryLineItem from '@/components/GameHistoryLineItem'
 import InvitationLineItem from '@/components/InvitationLineItem'
-import InvitationSubscription from '@/subscriptions/InvitationSubscription'
 
 export default {
   name: 'Game',
   computed: {
     ...mapGetters({
-      cableConsumer: 'cableConsumer',
-      currentUser: 'currentUser',
       games: 'games',
       selectedGame: 'selectedGame',
       invitations: 'invitations'
@@ -59,27 +56,7 @@ export default {
     Error
   },
   created: function () {
-    this.$store.dispatch('createConsumer') // <=
-    this.$http.get('/invitations')
-      .then(request => this.displayInvitationsSuccess(request.data))
-      .catch((e) => this.displayInvitationsFailed(e))
-    this.$http.get('/games.json')
-      .then(request => this.displayGamesSuccess(request))
-      .catch((e) => this.displayGamesFailed(e))
-    this.$on('alert', function (data) {
-      this.error = data.message
-      this.alertClass = data.alertClass
-    })
-    InvitationSubscription
-      .from(this.cableConsumer, this.invitations, this.currentUser.id)
-      .subscribe()
-  },
-  data: function () {
-    return {
-      game: '',
-      error: false,
-      alertClass: 'alert-danger'
-    }
+    this.$store.dispatch('setupGamesDashboard')
   },
   methods: {
     createGame () {
@@ -94,23 +71,6 @@ export default {
     createGameFailed (e) {
       console.log(e)
       this.error = "We're sorry, something went wrong. Please try again later."
-    },
-    displayGamesSuccess (request) {
-      request.data.games.forEach((game) => {
-        this.$store.dispatch('pushGame', game)
-      }, this)
-      this.$store.dispatch('updateSelectedGame', this.games[0])
-    },
-    displayInvitationsSuccess (data) {
-      data.invitations.forEach((attributes) => {
-        this.$store.dispatch('pushInvitation', attributes)
-      }, this)
-    },
-    displayGamesFailed (e) {
-      console.log(e)
-    },
-    displayInvitationsFailed (e) {
-      console.log(e)
     }
   }
 }
