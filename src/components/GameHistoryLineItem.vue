@@ -16,10 +16,10 @@
           <span>{{ game.name }}</span>
         </div>
         <div class="col-xs-1">
-          <span :class="isNotOwner" class="fa fa-bookmark"
+          <span v-if="game.isOwner(currentUser)" class="fa fa-child"
             aria-hidden="true">
           </span>
-          <span :class="isOwner" class="fa fa-child"
+          <span v-else class="fa fa-bookmark"
             aria-hidden="true">
           </span>
         </div>
@@ -35,15 +35,6 @@ export default {
   name: 'Invite',
   computed: {
     ...mapGetters({ currentUser: 'currentUser', selectedGame: 'selectedGame' }),
-    isOwner: function () {
-      return { 'd-none': this.game.isOwner(this.currentUser) }
-    },
-    isNotOwner: function () {
-      return { 'd-none': !this.game.isOwner(this.currentUser) }
-    },
-    shoulHideMarks: function () {
-      return { 'd-none': this.game.shoulHideMarks(this.currentUser) }
-    },
     selected: function () {
       return this.selectedGame === this.game
     }
@@ -51,10 +42,6 @@ export default {
   props: [
     'game'
   ],
-  data: function () {
-    return {
-    }
-  },
   methods: {
     updateGameSelection () {
       this.$store.dispatch('updateSelectedGame', this.game)
