@@ -52,26 +52,10 @@ export default {
   },
   methods: {
     createInvite () {
-      this.$http.post(
-        `/games/${this.selectedGame.id}/invitations.json`,
-        { username: this.username }
+      this.$store.dispatch(
+        'createInvitation',
+        { gameId: this.selectedGame.id, username: this.username }
       )
-        .then(request => this.createInviteSuccess(request.data))
-        .catch(() => this.createInviteFailed())
-    },
-    createInviteSuccess (data) {
-      if (data.error) {
-        this.$store.dispatch('updateError', {
-          message: data.error,
-          css: 'alert-warning',
-          display: true
-        })
-      } else {
-        this.$store.dispatch('updateError', { error: { display: false } })
-        this.$store.dispatch('pushPlayer', data)
-      }
-    },
-    createInviteFailed () {
     },
     startGame () {
       this.$http.put(`/games/${this.selectedGame.id}`)
