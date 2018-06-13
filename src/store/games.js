@@ -5,6 +5,8 @@ import Game from '@/models/Game'
 import Player from '@/models/Player'
 import GameSubscription from '@/subscriptions/GameSubscription'
 import InvitationSubscription from '@/subscriptions/InvitationSubscription'
+import CreateGameService from '@/services/CreateGameService'
+import StartGameService from '@/services/StartGameService'
 
 const state = {
   games: []
@@ -95,19 +97,7 @@ const actions = {
     ).subscribe()
   },
   createGame ({ dispatch }) {
-    axios.post('/games')
-      .then(request => (function (data) {
-        dispatch('unshiftGame', data.game)
-        dispatch('updateError', { error: { display: false } })
-      }(request.data)))
-      .catch((e) => (function (e) {
-        console.log(e)
-        dispatch('updateError', {
-          message: "We're sorry, something went wrong. Please try again later.",
-          css: 'alert-danger',
-          display: true
-        })
-      }(e)))
+    CreateGameService.call()
   },
   startGame ({ commit }, game) {
     StartGameService.call(game)
