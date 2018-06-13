@@ -1,7 +1,7 @@
 import Invitation from '@/models/Invitation'
 import * as MutationTypes from './mutation-types'
-import axios from '@/backend/vue-axios'
 import RespondToInviteService from '@/services/RespondToInviteService'
+import CreateInvitationService from '@/services/CreateInvitationService'
 
 const state = {
   invitations: []
@@ -24,22 +24,7 @@ const actions = {
     commit(MutationTypes.PUSH_INVITATION, payload)
   },
   createInvitation ({ dispatch }, payload) {
-    axios.post(
-      `/games/${payload.gameId}/invitations.json`,
-      { username: payload.username }
-    )
-      .then(request => (function (data) {
-        if (data.error) {
-          dispatch('updateError', {
-            message: data.error,
-            css: 'alert-warning',
-            display: true
-          })
-        } else {
-          dispatch('updateError', { error: { display: false } })
-          dispatch('pushPlayer', data)
-        }
-      }(request.data)))
+    CreateInvitationService.call(payload)
   },
   respondToInvite ({ commit }, payload) {
     RespondToInviteService.call(payload)
