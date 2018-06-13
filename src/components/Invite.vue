@@ -58,14 +58,7 @@ export default {
       )
     },
     startGame () {
-      this.$http.put(`/games/${this.selectedGame.id}`)
-        .then(request => this.startedGame(request.data))
-        .catch((e) => this.startingGameFailed(e))
-    },
-    startedGame () {
-      // TODO: add logic to redirect and start game
-    },
-    startingGameFailed (e) {
+      this.$store.dispatch('startGame', this.selectedGame)
     }
   }
 }

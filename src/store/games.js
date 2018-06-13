@@ -108,6 +108,9 @@ const actions = {
           display: true
         })
       }(e)))
+  },
+  startGame ({ commit }, game) {
+    StartGameService.call(game)
   }
 }
 
