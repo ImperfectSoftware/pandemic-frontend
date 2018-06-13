@@ -1,6 +1,7 @@
 import Invitation from '@/models/Invitation'
 import * as MutationTypes from './mutation-types'
 import axios from '@/backend/vue-axios'
+import RespondToInviteService from '@/services/RespondToInviteService'
 
 const state = {
   invitations: []
@@ -39,6 +40,9 @@ const actions = {
           dispatch('pushPlayer', data)
         }
       }(request.data)))
+  },
+  respondToInvite ({ commit }, payload) {
+    RespondToInviteService.call(payload)
   }
 }
 
