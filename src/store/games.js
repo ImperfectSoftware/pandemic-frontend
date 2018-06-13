@@ -1,12 +1,11 @@
 import * as MutationTypes from './mutation-types'
 import store from '.././store'
-import axios from '@/backend/vue-axios'
 import Game from '@/models/Game'
 import Player from '@/models/Player'
 import GameSubscription from '@/subscriptions/GameSubscription'
-import InvitationSubscription from '@/subscriptions/InvitationSubscription'
 import CreateGameService from '@/services/CreateGameService'
 import StartGameService from '@/services/StartGameService'
+import SetupGameDashboardService from '@/services/SetupGameDashboardService'
 
 const state = {
   games: []
@@ -71,30 +70,7 @@ const actions = {
     commit(MutationTypes.PUSH_PLAYER, payload)
   },
   setupGamesDashboard ({ dispatch }) {
-    dispatch('createConsumer')
-    // display invitations
-    axios.get('/invitations')
-      .then(request => (function (data) {
-        data.invitations.forEach((attributes) => {
-          dispatch('pushInvitation', attributes)
-        })
-      }(request.data)))
-      .catch((e) => console.log(e))
-    // display games
-    axios.get('/games.json')
-      .then(request => (function (request) {
-        request.data.games.forEach((game) => {
-          dispatch('pushGame', game)
-        })
-        dispatch('updateSelectedGame', store.getters.games[0])
-      }(request)))
-      .catch((e) => console.log(e))
-    // subscribe to receive invitations
-    InvitationSubscription.from(
-      store.getters.cableConsumer,
-      store.getters.invitations,
-      store.getters.currentUser.id
-    ).subscribe()
+    SetupGameDashboardService.call()
   },
   createGame ({ dispatch }) {
     CreateGameService.call()
