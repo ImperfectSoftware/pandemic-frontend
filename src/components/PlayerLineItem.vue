@@ -1,6 +1,5 @@
 <template>
-  <li class="list-group-item mx-auto w-lg "
-    :class="statusType">
+  <li class="list-group-item mx-auto w-lg" :class="statusType">
     <span class='username'>{{ player.username }}</span>
   </li>
 </template>
@@ -18,10 +17,6 @@ export default {
   },
   props: [
     'player'
-  ],
-  data: function () {
-    return {
-    }
-  }
+  ]
 }
 </script>
