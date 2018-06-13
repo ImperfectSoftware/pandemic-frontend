@@ -3,19 +3,23 @@ import store from '.././store'
 
 export default class RespondToInviteService {
   static call (payload) {
-    new RespondToInviteService(payload).call(payload)
+    new RespondToInviteService(payload).call()
   }
 
-  call = (payload) => {
-    let invitation = payload.invitation
-    let gameId = invitation.gameId
-    axios.put(`/games/${gameId}/invitations.json`, { status: payload.value })
-      .then(request => this.updateInviteSuccess(request.data, invitation))
+  constructor (payload) {
+    this.invitation = payload.invitation
+    this.gameId = this.invitation.gameId
+    this.value = payload.value
+  }
+
+  call () {
+    axios.put(`/games/${this.gameId}/invitations.json`, { status: this.value })
+      .then(request => this.updateInviteSuccess(request.data))
       .catch(() => this.updateInviteFailed())
   }
 
   updateInviteSuccess = (data, invitation) => {
-    invitation.setAcceptedStatus(data.status)
+    this.invitation.setAcceptedStatus(data.status)
     if (data.status === 'accepted') {
       store.dispatch('unshiftGame', data.game)
     }
