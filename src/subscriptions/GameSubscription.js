@@ -23,7 +23,11 @@ export default class GameSubscription {
   }
 
   received = (data) => {
-    this.game.handleInvitationResponse(data.username, data.status)
+    if (data.player) {
+      this.game.addPlayer(data.player)
+    } else if (data.username) {
+      this.game.handleInvitationResponse(data.username, data.status)
+    }
   }
 
   connected () {

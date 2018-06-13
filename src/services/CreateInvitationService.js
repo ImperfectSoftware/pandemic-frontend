@@ -29,7 +29,6 @@ export default class CreateInvitationService {
       })
     } else {
       store.dispatch('updateError', { error: { display: false } })
-      store.dispatch('pushPlayer', data)
     }
   }
 

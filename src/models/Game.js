@@ -46,6 +46,15 @@ export default class Game {
     }
   }
 
+  addPlayer = (participant) => {
+    this.players.push(Player.from({
+      acceptedStatus: participant.status,
+      invitation_id: participant.invitation_id,
+      user_id: participant.user_id,
+      username: participant.username
+    }))
+  }
+
   shoulHideMarks = (user) => {
     if (user.id === this.ownerId) {
       return true
