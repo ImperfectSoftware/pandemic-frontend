@@ -57,6 +57,10 @@ $width: (
   width: 100%;
 }
 
+div#map {
+  height: 70vh;
+}
+
 .w-lg {
   width: map-get($width, lg);
 }
