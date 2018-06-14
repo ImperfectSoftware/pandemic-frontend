@@ -1,4 +1,5 @@
 import axios from '@/backend/vue-axios'
+import store from '.././store'
 
 export default class StartGameService {
   static call (game) {
@@ -16,7 +17,15 @@ export default class StartGameService {
   }
 
   startingGame = (data) => {
-    // TODO: add logic to redirect and start game
+    if (data.error) {
+      store.dispatch('updateError', {
+        message: data.error,
+        css: 'alert-danger',
+        display: true
+      })
+    }
+    // TODO: add logic to redirect and start game in the game subscriber if the
+    // game was started succesfully (3,2,1)
   }
 
   startingGameFailed = (e) => {
