@@ -9,6 +9,12 @@
           <i class="fa fa-user-plus" aria-hidden="true"></i>
         </button>
       </div>
+      <label>
+        Select the number of epidemic cards: <span>{{epidemicCards}}</span>
+      </label>
+      <div class="slidecontainer">
+        <input v-model="epidemicCards" type="range" min="4" max="6" value="5" class="slider" id="epidemic-cards-range">
+      </div>
     </form>
     <div v-else>
       This game is getting setup by {{ selectedGame.ownerUsername() }}. It will
@@ -47,7 +53,8 @@ export default {
   },
   data: function () {
     return {
-      username: ''
+      username: '',
+      epidemicCards: '5'
     }
   },
   methods: {
@@ -58,7 +65,13 @@ export default {
       )
     },
     startGame () {
-      this.$store.dispatch('startGame', this.selectedGame)
+      this.$store.dispatch(
+        'startGame',
+        {
+          game: this.selectedGame,
+          nrOfEpidemicCards: this.epidemicCards
+        }
+      )
     }
   }
 }

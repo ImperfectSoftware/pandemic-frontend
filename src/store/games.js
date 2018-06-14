@@ -75,8 +75,8 @@ const actions = {
   createGame ({ dispatch }) {
     CreateGameService.call()
   },
-  startGame ({ commit }, game) {
-    StartGameService.call(game)
+  startGame ({ commit }, payload) {
+    StartGameService.call(payload)
   }
 }
 

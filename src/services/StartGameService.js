@@ -6,12 +6,15 @@ export default class StartGameService {
     new StartGameService(game).call()
   }
 
-  constructor (game) {
-    this.game = game
+  constructor (payload) {
+    this.game = payload.game
+    this.nrOfEpidemicCards = payload.nrOfEpidemicCards
   }
 
   call () {
-    axios.put(`/games/${this.game.id}`)
+    axios.put(`/games/${this.game.id}`, {
+      'nr_of_epidemic_cards': this.nrOfEpidemicCards
+    })
       .then(request => this.startingGame(request.data))
       .catch((e) => this.startingGameFailed(e))
   }
