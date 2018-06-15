@@ -40,7 +40,7 @@ import { mapGetters } from 'vuex'
 import PlayerLineItem from '@/components/PlayerLineItem'
 
 export default {
-  name: 'Invite',
+  name: 'SelectedGame',
   computed: {
     ...mapGetters({
       currentUser: 'currentUser',

@@ -9,7 +9,7 @@
         </ul>
       </div>
       <div class="col-xl-6">
-        <Invite v-if="selectedGame" :game="selectedGame"></Invite>
+        <SelectedGame v-if="selectedGame" :game="selectedGame"></SelectedGame>
       </div>
       <div class="col-xl-3">
         <ul class="list-group">
@@ -35,7 +35,7 @@
 </template>
 <script>
 import { mapGetters } from 'vuex'
-import Invite from '@/components/Invite'
+import SelectedGame from '@/components/SelectedGame'
 import Error from '@/components/Error'
 import GameHistoryLineItem from '@/components/GameHistoryLineItem'
 import InvitationLineItem from '@/components/InvitationLineItem'
@@ -50,7 +50,7 @@ export default {
     })
   },
   components: {
-    Invite,
+    SelectedGame,
     GameHistoryLineItem,
     InvitationLineItem,
     Error
