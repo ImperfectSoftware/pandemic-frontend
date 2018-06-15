@@ -1,3 +1,5 @@
+import router from '.././router'
+
 export default class GameSubscription {
   static from (consumer, game) {
     return new GameSubscription(consumer, game)
@@ -27,6 +29,8 @@ export default class GameSubscription {
       this.game.addPlayer(data.player)
     } else if (data.username) {
       this.game.handleInvitationResponse(data.username, data.status)
+    } else if (data.game_started) {
+      router.replace(`/games/${this.game.id}`)
     }
   }
 

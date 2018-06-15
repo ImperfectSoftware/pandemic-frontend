@@ -81,6 +81,7 @@ export default {
           nrOfEpidemicCards: this.epidemicCards
         }
       )
+      this.$router.replace(`/games/${this.selectedGame.id}`)
     }
   }
 }
