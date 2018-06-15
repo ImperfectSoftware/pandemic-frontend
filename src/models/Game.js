@@ -63,10 +63,6 @@ export default class Game {
     return this.ownerId === user.id
   }
 
-  getUserPlayer = (user) => {
-    return this.players.filter(player => player.username === user.username)[0]
-  }
-
   ownerUsername = () => {
     return this.players.filter(player => player.userId === this.ownerId)[0].username
   }

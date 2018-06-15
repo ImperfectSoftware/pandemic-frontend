@@ -1,9 +1,24 @@
 import Game from '@/models/Game'
 
 describe('Game.js', () => {
-  let playerOne = { status: 'accepted', invitation_id: 1, user_id: 1 }
-  let playerTwo = { status: 'accepted', invitation_id: 2, user_id: 2 }
-  let playerThree = { status: 'inactive', invitation_id: 3, user_id: 3 }
+  let playerOne = {
+    status: 'accepted',
+    invitation_id: 1,
+    user_id: 1,
+    username: 'one'
+  }
+  let playerTwo = {
+    status: 'accepted',
+    invitation_id: 2,
+    user_id: 2,
+    username: 'two'
+  }
+  let playerThree = {
+    status: 'inactive',
+    invitation_id: 3,
+    user_id: 3,
+    username: 'three'
+  }
   let data = {
     owner_id: playerOne.user_id,
     participants: [ playerOne, playerTwo ],
@@ -33,19 +48,19 @@ describe('Game.js', () => {
     expect(game.canBeStartedBy(user)).to.eq(false)
   })
 
-  it ('should know if the user is a game owner', () => {
+  it('should know if the user is a game owner', () => {
     let user = { id: playerOne.user_id }
     let game = Game.from(data)
     expect(game.isGameOwner(user)).to.eq(true)
   })
 
-  it ('should know if the user is not a game owner', () => {
+  it('should know if the user is not a game owner', () => {
     let user = { id: playerTwo.user_id }
     let game = Game.from(data)
     expect(game.isGameOwner(user)).to.eq(false)
   })
 
-  it ('updates player status to accepted when player accepts invite', () => {
+  it('updates player status to accepted when player accepts invite', () => {
     let user = { id: playerOne.user_id }
     data.participants = [ playerOne, playerThree ]
     let game = Game.from(data)
@@ -54,18 +69,34 @@ describe('Game.js', () => {
     expect(game.canBeStartedBy(user)).to.eq(true)
   })
 
-  it ('removes player from games player list on invitation declined', () => {
-    let user = { id: playerOne.user_id }
+  it('removes player from games player list on invitation declined', () => {
     data.participants = [ playerOne, playerThree ]
     let game = Game.from(data)
     game.handleInvitationResponse(playerThree.user_id, 'declined')
     expect(game.players.length).to.eq(1)
   })
 
-  it ('should be able to add a player from payload', () => {
+  it('should be able to add a player from payload', () => {
     let game = Game.from(data)
     expect(game.players.length).to.eq(2)
     game.addPlayer(playerThree)
     expect(game.players.length).to.eq(3)
+  })
+
+  it('should know if the user passed in is the owner', () => {
+    let user = { id: playerOne.user_id }
+    let game = Game.from(data)
+    expect(game.isOwner(user)).to.eq(true)
+  })
+
+  it('should know if the user passed in is not the owner', () => {
+    let user = { id: playerTwo.user_id }
+    let game = Game.from(data)
+    expect(game.isOwner(user)).to.eq(false)
+  })
+
+  it("should return the owner's username", () => {
+    let game = Game.from(data)
+    expect(game.ownerUsername()).to.eq(playerOne.username)
   })
 })
