@@ -33,7 +33,7 @@
       <ul class="invitees-list list-group">
         <PlayerLineItem v-for="player in selectedGame.players"
           :key="player.invitationId" :player="player"/>
-        <form id="start-game-id" v-if="selectedGame.canStartGame(currentUser)"
+        <form id="start-game-id" v-if="selectedGame.canBeStartedBy(currentUser)"
           @submit.prevent="startGame">
           <button class="mx-auto w-lg btn btn-secondary" type="submit">
             Start Game

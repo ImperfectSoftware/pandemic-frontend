@@ -31,7 +31,7 @@ export default class Game {
     return this.started
   }
 
-  canStartGame = (currentUser) => {
+  canBeStartedBy = (currentUser) => {
     return this.players.filter(player => player.isReady).length >= 2 &&
       currentUser.id === this.ownerId
   }
