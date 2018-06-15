@@ -59,18 +59,6 @@ export default class Game {
     }))
   }
 
-  shoulHideMarks = (user) => {
-    if (user.id === this.ownerId) {
-      return true
-    }
-    let player = this.players
-      .filter(player => player.username === user.username)[0]
-    if (player.isReady) {
-      return true
-    }
-    return false
-  }
-
   isOwner = (user) => {
     return this.ownerId === user.id
   }

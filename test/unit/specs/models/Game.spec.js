@@ -58,9 +58,14 @@ describe('Game.js', () => {
     let user = { id: playerOne.user_id }
     data.participants = [ playerOne, playerThree ]
     let game = Game.from(data)
-    expect(game.canBeStartedBy(user)).to.eq(false)
     game.handleInvitationResponse(playerThree.user_id, 'declined')
-    expect(game.canBeStartedBy(user)).to.eq(false)
     expect(game.players.length).to.eq(1)
+  })
+
+  it ('should be able to add a player from payload', () => {
+    let game = Game.from(data)
+    expect(game.players.length).to.eq(2)
+    game.addPlayer(playerThree)
+    expect(game.players.length).to.eq(3)
   })
 })
