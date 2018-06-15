@@ -40,8 +40,8 @@ export default class Game {
     return currentUser.id === this.ownerId
   }
 
-  handleInvitationResponse = (username, acceptedStatus) => {
-    let player = this.players.filter(player => player.username === username)[0]
+  handleInvitationResponse = (userId, acceptedStatus) => {
+    let player = this.players.filter(player => player.userId === userId)[0]
     let index = this.players.indexOf(player)
     if (acceptedStatus === 'accepted') {
       player.setAcceptedStatus(acceptedStatus)

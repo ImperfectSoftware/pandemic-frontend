@@ -28,7 +28,7 @@ export default class GameSubscription {
     if (data.player) {
       this.game.addPlayer(data.player)
     } else if (data.username) {
-      this.game.handleInvitationResponse(data.username, data.status)
+      this.game.handleInvitationResponse(data.user_id, data.status)
     } else if (data.game_started) {
       router.replace(`/games/${this.game.id}`)
     }
