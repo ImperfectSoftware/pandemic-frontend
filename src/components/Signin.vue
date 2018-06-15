@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     checkAuthentication () {
-      if (this.currentUser) {
+      if (this.currentUser && this.currentUser.tokenActive()) {
         this.$router.replace(this.$route.query.redirect || '/games')
       }
     },

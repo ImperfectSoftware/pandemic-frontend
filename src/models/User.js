@@ -10,9 +10,15 @@ export default class User {
     }
   }
 
-  constructor ({ user_id, email, username }) { // eslint-disable-line camelcase
+  constructor ({ user_id, email, username, exp }) { // eslint-disable-line camelcase
     this.id = user_id // eslint-disable-line camelcase
     this.email = email
     this.username = username
+    this.exp = exp
+  }
+
+  tokenActive () {
+    let timeNow = (new Date()).getTime() / 1000
+    return this.exp > timeNow
   }
 }
