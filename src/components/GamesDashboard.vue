@@ -42,7 +42,7 @@ import GameHistoryLineItem from '@/components/GameHistoryLineItem'
 import InvitationLineItem from '@/components/InvitationLineItem'
 
 export default {
-  name: 'Game',
+  name: 'GamesDashboard',
   computed: {
     ...mapGetters({
       games: 'games',

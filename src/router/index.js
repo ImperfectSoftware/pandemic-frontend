@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Signin from '@/components/Signin'
-import Game from '@/components/Game'
+import GamesDashboard from '@/components/GamesDashboard'
 import GameInstance from '@/components/GameInstance'
 import Signout from '@/components/Signout'
 
@@ -17,8 +17,8 @@ export default new Router({
     },
     {
       path: '/games',
-      name: 'Game',
-      component: Game
+      name: 'GamesDashboard',
+      component: GamesDashboard
     },
     {
       path: '/games/:id',
