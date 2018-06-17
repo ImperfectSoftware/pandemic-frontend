@@ -13,15 +13,15 @@ export default class Invitation {
     this.gameName = data.game.name
   }
 
-  isAccepted = () => {
+  get isAccepted () {
     return this.acceptedStatus === 'accepted'
   }
 
-  isDeclined = () => {
+  get isDeclined () {
     return this.acceptedStatus === 'declined'
   }
 
-  isInactive = () => {
+  get isInactive () {
     return this.acceptedStatus === 'inactive'
   }
 }

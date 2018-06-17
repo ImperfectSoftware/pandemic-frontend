@@ -7,19 +7,19 @@ describe('Invitation.js', () => {
 
   it('knows if it is accepted', () => {
     let invitation = Invitation.from(data)
-    expect(invitation.isAccepted()).to.eq(true)
+    expect(invitation.isAccepted).to.eq(true)
   })
 
   it('knows if it is declined', () => {
     data.status = 'declined'
     let invitation = Invitation.from(data)
-    expect(invitation.isDeclined()).to.eq(true)
+    expect(invitation.isDeclined).to.eq(true)
   })
 
   it('knows if it is inactive', () => {
     data.status = 'inactive'
     let invitation = Invitation.from(data)
-    expect(invitation.isInactive()).to.eq(true)
+    expect(invitation.isInactive).to.eq(true)
   })
 
   it('knows the game name', () => {
