@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-dark bg-pandemic margin-bottom2">
+  <nav class="navbar navbar-dark bg-pandemic">
     <a class="navbar-brand" href="/">Pandemic</a>
     <span class="navbar-text">
       {{ currentUser.email }}

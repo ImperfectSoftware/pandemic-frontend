@@ -3,7 +3,7 @@
     <template v-if="currentUser">
       <Navbar></Navbar>
     </template>
-    <div class="container-fluid">
+    <div class="container-fluid no-gutters">
       <router-view/>
     </div>
     <template v-if="currentUser">

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container no-gutters">
     <Error/>
     <div class="row">
       <div class="col-xl-3">
