@@ -1,8 +1,8 @@
 /* eslint camelcase: 0 */
 
-export default class Player {
+export default class DashboardPlayer {
   static from (data) {
-    return new Player(data)
+    return new DashboardPlayer(data)
   }
 
   constructor ({ user_id, username, invitation_id, acceptedStatus, id }) {

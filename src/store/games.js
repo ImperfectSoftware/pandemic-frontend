@@ -1,7 +1,7 @@
 import * as MutationTypes from './mutation-types'
 import store from '.././store'
-import Game from '@/models/Game'
-import Player from '@/models/Player'
+import DashboardGame from '@/models/DashboardGame'
+import DashboardPlayer from '@/models/DashboardPlayer'
 import GameSubscription from '@/subscriptions/GameSubscription'
 import CreateGameService from '@/services/CreateGameService'
 import StartGameService from '@/services/StartGameService'
@@ -13,13 +13,13 @@ const state = {
 
 const mutations = {
   [MutationTypes.PUSH_GAME] (state, payload) {
-    let game = Game.from(payload)
+    let game = DashboardGame.from(payload)
     GameSubscription.from(store.getters.cableConsumer, game).subscribe()
     state.games.push(game)
   },
   [MutationTypes.UNSHIFT_GAME] (state, payload) {
     let selectedGame = state.games.filter(game => game.isSelected)[0]
-    state.games.unshift(Game.from(payload))
+    state.games.unshift(DashboardGame.from(payload))
     GameSubscription.from(store.getters.cableConsumer, state.games[0])
       .subscribe()
     state.games[0].selected = true
@@ -38,7 +38,7 @@ const mutations = {
   },
   [MutationTypes.PUSH_PLAYER] (state, payload) {
     let game = getters.selectedGame(state)
-    game.players.push(Player.from({
+    game.players.push(DashboardPlayer.from({
       acceptedStatus: payload.acceptedStatus,
       invitation_id: payload.id,
       user_id: payload.user.id,

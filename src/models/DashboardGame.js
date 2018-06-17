@@ -1,8 +1,8 @@
-import Player from '@/models/Player'
+import DashboardPlayer from '@/models/DashboardPlayer'
 
-export default class Game {
+export default class DashboardGame {
   static from (game) {
-    return new Game(game)
+    return new DashboardGame(game)
   }
 
   constructor (game) {
@@ -13,7 +13,7 @@ export default class Game {
     this.createdDate = game.created_date // eslint-disable-line camelcase
     this.players = []
     game.participants.forEach((participant) => {
-      this.players.push(Player.from({
+      this.players.push(DashboardPlayer.from({
         acceptedStatus: participant.status,
         invitation_id: participant.invitation_id,
         user_id: participant.user_id,
@@ -51,7 +51,7 @@ export default class Game {
   }
 
   addPlayer = (participant) => {
-    this.players.push(Player.from({
+    this.players.push(DashboardPlayer.from({
       acceptedStatus: participant.status,
       invitation_id: participant.invitation_id,
       user_id: participant.user_id,
