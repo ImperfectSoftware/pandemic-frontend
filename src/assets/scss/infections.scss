@@ -6,11 +6,26 @@
   stroke-opacity: 0;
 }
 
-.blue-infections {
+.blue-infections, .red-infections, .yellow-infections, .black-infections {
   opacity: 100;
-  fill: $blue;
   fill-opacity: 100;
-  stroke: $blue;
+  stroke: white;
   stroke-width: 8;
-  stroke-opacity: 50;
+  stroke-opacity: 100;
+}
+
+.blue-infections {
+  fill: $blue;
+}
+
+.red-infections {
+  fill: $red;
+}
+
+.yellow-infections {
+  fill: $yellow;
+}
+
+.black-infections {
+  fill: $black;
 }
