@@ -19,7 +19,7 @@ export default class RespondToInviteService {
   }
 
   updateInviteSuccess = (data, invitation) => {
-    this.invitation.setAcceptedStatus(data.status)
+    this.invitation.acceptedStatus = data.status
     if (data.status === 'accepted') {
       store.dispatch('unshiftGame', data.game)
     }

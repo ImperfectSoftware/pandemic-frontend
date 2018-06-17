@@ -13,10 +13,6 @@ export default class Invitation {
     this.gameName = data.game.name
   }
 
-  setAcceptedStatus = (value) => {
-    this.acceptedStatus = value
-  }
-
   isAccepted = () => {
     return this.acceptedStatus === 'accepted'
   }

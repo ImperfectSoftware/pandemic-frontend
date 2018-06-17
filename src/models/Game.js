@@ -44,7 +44,7 @@ export default class Game {
     let player = this.players.filter(player => player.userId === userId)[0]
     let index = this.players.indexOf(player)
     if (acceptedStatus === 'accepted') {
-      player.setAcceptedStatus(acceptedStatus)
+      player.acceptedStatus = acceptedStatus
     } else {
       this.players.splice(index, 1)
     }

@@ -17,10 +17,6 @@ export default class Player {
     }
   }
 
-  setAcceptedStatus = (value) => {
-    this.acceptedStatus = value
-  }
-
   get isDeclined () {
     return this.acceptedStatus === 'declined'
   }
