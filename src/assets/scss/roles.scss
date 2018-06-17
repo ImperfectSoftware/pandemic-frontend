@@ -1,5 +1,5 @@
-#contingency-planner, #dispatcher, #medic, #researcher, #quarantine-specialist,
-#scientist, #operations-expert {
+.contingency-planner, .dispatcher, .medic, .researcher, .quarantine-specialist,
+.scientist, .operations-expert {
   opacity: 100;
   fill-opacity: 100;
   stroke-width: 8;
@@ -7,30 +7,30 @@
   stroke: white;
 }
 
-#contingency-planner {
+.contingency-planner {
   fill: #84cabf;
 }
 
-#dispatcher {
+.dispatcher {
   fill: #e084a3;
 }
 
-#medic {
+.medic {
   fill: #adca38;
 }
 
-#researcher {
+.researcher {
   fill: #4e3d1f;
 }
 
-#quarantine-specialist {
+.quarantine-specialist {
   fill: #094c39;
 }
 
-#scientist {
+.scientist {
   fill: white;
 }
 
-#operations-expert {
+.operations-expert {
   fill: #adca4c;
 }
