@@ -1750,9 +1750,10 @@
         </g>
       </g>
       <g
+         v-on:click="handleCellClick('washington')"
          class="btn"
          inkscape:label="cell-area"
-         id="layer2-8">
+         id="washington-cell-area" >
         <circle
            style="fill:#30c5ff;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-5)"
            id="path101-8"
@@ -1983,9 +1984,10 @@
         </g>
       </g>
       <g
+         v-on:click="handleCellClick('new york')"
          class="btn"
          inkscape:label="cell-area"
-         id="layer2-6">
+         id="new-york-cell-area" >
         <circle
            style="fill:#30c5ff;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-7)"
            id="path101"
@@ -2216,9 +2218,10 @@
         </g>
       </g>
       <g
+         v-on:click="handleCellClick('montreal')"
          class="btn"
          inkscape:label="cell-area"
-         id="layer2-7">
+         id="montreal-cell-area" >
         <circle
            style="fill:#30c5ff;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-79)"
            id="path101-2"
@@ -2449,9 +2452,10 @@
         </g>
       </g>
       <g
+         v-on:click="handleCellClick('chicago')"
          class="btn"
          inkscape:label="cell-area"
-         id="layer2-1">
+         id="chicago-cell-area" >
         <circle
            style="fill:#30c5ff;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-81)"
            id="path101-5"
@@ -2684,9 +2688,10 @@
         </g>
       </g>
       <g
+         v-on:click="handleCellClick('atlanta')"
          class="btn"
          inkscape:label="cell-area"
-         id="layer2-5">
+         id="atlanta-cell-area" >
         <circle
            style="fill:#30c5ff;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-0)"
            id="path101-6"
@@ -2937,9 +2942,10 @@
         </g>
       </g>
       <g
+         v-on:click="handleCellClick('san francisco')"
          class="btn"
          inkscape:label="cell-area"
-         id="layer2-78">
+         id="san-francisco-cell-area" >
         <circle
            style="fill:#30c5ff;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-94)"
            id="path101-4"
@@ -3089,8 +3095,8 @@
 export default {
   name: 'WorldMap',
   methods: {
-    sayHello () {
-      alert('Hello')
+    handleCellClick (cityName) {
+      console.log(cityName)
     }
   }
 }
