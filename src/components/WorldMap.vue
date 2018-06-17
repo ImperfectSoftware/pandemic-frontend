@@ -1682,7 +1682,7 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               class="hide-svg-component" />
+               :class="infectionClasses('washington', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -3092,11 +3092,24 @@
 </svg>
 </template>
 <script>
+import InfectionClassesService from '@/services/InfectionClassesService'
+import PlayerClassesService from '@/services/PlayerClassesService'
+import ResearchCenterClassesService from '@/services/ResearchCenterClassesService'
+
 export default {
   name: 'WorldMap',
   methods: {
     handleCellClick (cityName) {
       console.log(cityName)
+    },
+    infectionClasses (cityName, position) {
+      return InfectionClassesService.for(cityName, position)
+    },
+    playerClasses (cityName, position) {
+      return PlayerClassesService.for(cityName, position)
+    },
+    researchCenterClasses (cityName) {
+      return ResearchCenterClassesService.for(cityName)
     }
   }
 }
