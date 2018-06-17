@@ -18,7 +18,8 @@ export default class User {
   }
 
   tokenActive () {
-    let timeNow = (new Date()).getTime() / 1000
+    let date = new Date()
+    let timeNow = date.getTime()
     return this.exp > timeNow
   }
 }

@@ -10,4 +10,11 @@ describe('User.js', () => {
       'DE3NzF9.TK-847noztAUelTSoeMSITnbOz5usv7-EJ-3rUmIERk'
     expect(User.from(token).id).to.eq(1)
   })
+
+  it('should know the user token is no longer active', () => {
+    let token = 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1Mjc2NDE3N' +
+      'DE3NzF9.TK-847noztAUelTSoeMSITnbOz5usv7-EJ-3rUmIERk'
+    let user = User.from(token)
+    expect(user.tokenActive()).to.eq(false)
+  })
 })

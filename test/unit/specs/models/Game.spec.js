@@ -36,6 +36,11 @@ describe('Game.js', () => {
     expect(game.isSelected).to.eq(true)
   })
 
+  it('should know if the game is started', () => {
+    let game = Game.from(data)
+    expect(game.hasStarted).to.eq(true)
+  })
+
   it('should know that game can be started by current user', () => {
     let user = { id: playerOne.user_id }
     let game = Game.from(data)
