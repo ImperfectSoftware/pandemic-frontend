@@ -15320,12 +15320,18 @@
 </svg>
 </template>
 <script>
+import { mapGetters } from 'vuex'
 import InfectionClassesService from '@/services/InfectionClassesService'
 import PlayerClassesService from '@/services/PlayerClassesService'
 import ResearchCenterClassesService from '@/services/ResearchCenterClassesService'
 
 export default {
   name: 'WorldMap',
+  computed: {
+    ...mapGetters({
+      game: 'activeGame'
+    })
+  },
   methods: {
     handleCellClick (cityName) {
       console.log(`handling cell for ${cityName}.`)
@@ -15337,13 +15343,13 @@ export default {
       console.log(`handling player for ${cityName} at position ${position}.`)
     },
     infectionClasses (cityName, position) {
-      return InfectionClassesService.for(cityName, position)
+      return InfectionClassesService.for(cityName, position, this.game)
     },
     playerClasses (cityName, position) {
-      return PlayerClassesService.for(cityName, position)
+      return PlayerClassesService.for(cityName, position, this.game)
     },
     researchCenterClasses (cityName) {
-      return ResearchCenterClassesService.for(cityName)
+      return ResearchCenterClassesService.for(cityName, this.game)
     }
   }
 }

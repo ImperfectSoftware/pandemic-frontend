@@ -1,14 +1,17 @@
 import * as MutationTypes from './mutation-types'
 import store from '.././store'
 import DashboardGame from '@/models/DashboardGame'
+import Game from '@/models/Game'
 import DashboardPlayer from '@/models/DashboardPlayer'
 import GameSubscription from '@/subscriptions/GameSubscription'
 import CreateGameService from '@/services/CreateGameService'
 import StartGameService from '@/services/StartGameService'
 import SetupGameDashboardService from '@/services/SetupGameDashboardService'
+import GetStartedGameService from '@/services/GetStartedGameService'
 
 const state = {
-  games: []
+  games: [],
+  activeGames: []
 }
 
 const mutations = {
@@ -44,6 +47,9 @@ const mutations = {
       user_id: payload.user.id,
       username: payload.user.username
     }))
+  },
+  [MutationTypes.PUSH_ACTIVE_GAME] (state, game) {
+    state.activeGames.push(Game.from(game))
   }
 }
 
@@ -53,6 +59,9 @@ const getters = {
   },
   selectedGame (state) {
     return state.games.filter(game => game.isSelected)[0]
+  },
+  activeGame (state) {
+    return state.activeGames[0]
   }
 }
 
@@ -77,6 +86,12 @@ const actions = {
   },
   startGame ({ commit }, payload) {
     StartGameService.call(payload)
+  },
+  initializeStartedGame ({ commit }, gameId) {
+    GetStartedGameService.call(gameId)
+  },
+  pushActiveGame ({ commit }, game) {
+    commit(MutationTypes.PUSH_ACTIVE_GAME, game)
   }
 }
 

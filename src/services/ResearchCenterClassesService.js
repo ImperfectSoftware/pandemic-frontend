@@ -1,13 +1,15 @@
 export default class ResearchCenterClassesService {
-  static for (cityName) {
-    return new ResearchCenterClassesService(cityName).call()
+  static for (cityName, game) {
+    return new ResearchCenterClassesService(cityName, game).call()
   }
 
-  constructor (cityName) {
+  constructor (cityName, game) {
     this.cityName = cityName
+    this.game = game
   }
 
   call () {
     return 'hide-svg-component'
+    // return 'btn scientist'
   }
 }

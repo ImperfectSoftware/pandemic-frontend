@@ -27,8 +27,6 @@ export default class StartGameService {
         display: true
       })
     }
-    // TODO: add logic to redirect and start game in the game subscriber if the
-    // game was started succesfully (3,2,1)
   }
 
   startingGameFailed = (e) => {
