@@ -6030,13 +6030,13 @@
      showgrid="false"
      inkscape:snap-nodes="true"
      inkscape:snap-bbox="true"
-     inkscape:zoom="3.4784409"
-     inkscape:cx="1260.2391"
-     inkscape:cy="443.60002"
+     inkscape:zoom="0.96370599"
+     inkscape:cx="739.33337"
+     inkscape:cy="270"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer3"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:measure-start="0,0"
@@ -6969,16 +6969,6 @@
        cx="1149.6299"
        cy="170.34108"
        r="0.76815093" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;"
-       x="1112.1121"
-       y="83.200958"
-       id="text3558"><tspan
-         sodipodi:role="line"
-         id="tspan3556"
-         x="1112.1121"
-         y="83.200958">Shanghai</tspan></text>
     <path
        style="fill:none;stroke:#004f2d;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter7334)"
        d="m 1122.2132,37.159062 10,79.999998 7.1251,91.15293"
@@ -6990,11 +6980,6 @@
        cx="1146.4264"
        cy="152.26755"
        r="0.70566142" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 1122.2132,37.159062 23.8049,113.725508"
-       id="path3396"
-       inkscape:connector-curvature="0" />
     <path
        style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
        d="M 1371.119,57.411845 1240.7586,171.19484"
@@ -7066,6 +7051,11 @@
        style="fill:none;stroke:#004f2d;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter3810)"
        d="M 1371.119,57.411845 1135.1383,120.14045"
        id="path3807"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 1122.2132,37.159062 23.8049,113.725508"
+       id="path3396"
        inkscape:connector-curvature="0" />
   </g>
   <g
@@ -8323,13 +8313,13 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:20px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="145.28476"
-       y="152.40189"
+       x="144.1521"
+       y="145.79466"
        id="atlanta-text"><tspan
          sodipodi:role="line"
          id="tspan1966"
-         x="145.28476"
-         y="152.40189">Atlanta</tspan></text>
+         x="144.1521"
+         y="145.79466">Atlanta</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:20px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -15316,6 +15306,16 @@
          x="1411.1106"
          y="204.47241"
          style="stroke-width:0.29898888">San Francisco</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="1112.1121"
+       y="83.200958"
+       id="text3558"><tspan
+         sodipodi:role="line"
+         id="tspan3556"
+         x="1112.1121"
+         y="83.200958">Shanghai</tspan></text>
   </g>
 </svg>
 </template>
