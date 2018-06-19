@@ -10,7 +10,7 @@ export default class PlayerClassesService {
   }
 
   call () {
-    if (this.game.players) {
+    if (this.game && this.game.players) {
       let player = this.game.players[this.position]
       if (player && player.location === this.cityName) {
         return player.cssClass()
