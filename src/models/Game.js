@@ -8,6 +8,7 @@ export default class Game {
   constructor (game) {
     this.active = game.active
     this.id = game.id
+    this.infections = game.infections
     this.players = {}
     game.players.forEach((player) => {
       this.players[player.position] = Player.from(player)
