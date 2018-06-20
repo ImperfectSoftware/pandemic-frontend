@@ -107,7 +107,6 @@ div#map {
   border: 0.5em solid $color-two;
 }
 
-
 .declined {
   border: 0.5em solid $color-one;
 }
@@ -150,4 +149,7 @@ div#map {
     border-color: darken(map-get($color, backgroundLight), 20%);
     color: map-get($color, knockout);
   }
+}
+
+div#city-control {
 }
