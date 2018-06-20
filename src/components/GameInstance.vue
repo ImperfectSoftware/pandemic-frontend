@@ -1,6 +1,18 @@
 <template>
   <div id="map">
     <WorldMap />
+    <div v-if="game" class="list">
+      <div class="card" v-for="(player, key) in game.players" :key="key">
+        <div class="card-body" :class="{active: player === game.activePlayer}">
+          <i :class="player.cssClass" class="fa fa-user"></i>
+            {{player.username}}: {{player.prettyRole}}.
+        </div>
+      </div>
+    </div>
+    <div v-if="game">
+      {{ game.activePlayer.username }} is taking their turn.
+      Remaining actions: {{ 4 - game.actionsTaken }}.
+    </div>
   </div>
 </template>
 <script>
@@ -11,7 +23,8 @@ export default {
   name: 'GameInstance',
   computed: {
     ...mapGetters({
-      activeGames: 'activeGames'
+      game: 'activeGame',
+      player: 'activeGame && activeGame.activePlayer'
     })
   },
   created: function () {

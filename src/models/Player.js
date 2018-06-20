@@ -4,11 +4,17 @@ export default class Player {
   }
 
   constructor (player) {
-    this.location = player.location
+    this.id = player.id
+    this.cityName = player.city_name
     this.role = player.role
+    this.username = player.username
   }
 
-  cssClass = () => {
+  get cssClass () {
     return this.role.split('_').join('-')
+  }
+
+  get prettyRole () {
+    return this.role.split('_').join(' ')
   }
 }

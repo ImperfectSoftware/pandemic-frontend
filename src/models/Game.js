@@ -6,10 +6,12 @@ export default class Game {
   }
 
   constructor (game) {
-    this.active = game.active
     this.id = game.id
+    this.actionsTaken = game.actions_taken
+    this.active = game.active
     this.infections = game.infections
     this.players = {}
+    this.activePlayerId = game.active_player_id
     game.players.forEach((player) => {
       this.players[player.position] = Player.from(player)
     }, this)
@@ -17,5 +19,11 @@ export default class Game {
 
   get isActive () {
     return this.active
+  }
+
+  get activePlayer () {
+    let key = Object.keys(this.players)
+      .filter(key => this.players[key].id === this.activePlayerId)[0]
+    return this.players[key]
   }
 }

@@ -19,6 +19,10 @@ $width: (
   text-align: center;
 }
 
+.list {
+  text-align: left;
+}
+
 .no-gutters {
   padding-right: 0;
   padding-left: 0;
@@ -87,9 +91,14 @@ div#map {
   text-align: center;
 }
 
+.active {
+  background-color: $yellow;
+}
+
 .accepted {
   border: 0.5em solid $color-two;
 }
+
 
 .declined {
   border: 0.5em solid $color-one;

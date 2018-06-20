@@ -7,7 +7,7 @@
       <router-view/>
     </div>
     <template v-if="currentUser">
-      <Foot></Foot>
+      <!-- <Foot></Foot> -->
     </template>
   </div>
 </template>
