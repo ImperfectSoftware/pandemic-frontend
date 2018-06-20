@@ -1,6 +1,7 @@
 @import 'invite';
 @import 'infections';
 @import 'roles';
+@import 'cities';
 
 $width: (
   md: 68.0%,
@@ -26,6 +27,13 @@ $width: (
 .no-gutters {
   padding-right: 0;
   padding-left: 0;
+}
+
+.shallow-gutters {
+  padding-right: 1em;
+  padding-left: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
 }
 
 .small-list-header {

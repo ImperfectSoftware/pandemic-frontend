@@ -26,4 +26,10 @@ export default class Game {
       .filter(key => this.players[key].id === this.activePlayerId)[0]
     return this.players[key]
   }
+
+  currentPlayer = (username) => {
+    let key = Object.keys(this.players)
+      .filter(key => this.players[key].username === username)[0]
+    return this.players[key]
+  }
 }
