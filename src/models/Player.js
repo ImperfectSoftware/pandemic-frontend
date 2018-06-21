@@ -1,4 +1,5 @@
-import City from '@/models/City'
+import CityPlayerCard from '@/models/CityPlayerCard'
+import EventPlayerCard from '@/models/EventPlayerCard'
 
 export default class Player {
   static from (player) {
@@ -10,11 +11,14 @@ export default class Player {
     this.cityName = player.city_name
     this.role = player.role
     this.username = player.username
-    this.cities = []
+    this.cityPlayerCards = []
+    this.eventPlayerCards = []
     player.cities.forEach((city) => {
-      this.cities.push(City.from(city))
+      this.cityPlayerCards.push(CityPlayerCard.from(city))
     }, this)
-    this.events = player.events
+    player.events.forEach((eventCard) => {
+      this.eventPlayerCards.push(EventPlayerCard.from(eventCard))
+    }, this)
   }
 
   get cssClass () {

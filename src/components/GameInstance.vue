@@ -27,8 +27,8 @@
             <div class="card-body">
               <h2>Player Cards</h2>
               <ul class="list-unstyled">
-                <li v-for="city in currentPlayer.cities" :key="city.name"
-                :class="city.cssClass">
+                <li v-for="city in currentPlayer.cityPlayerCards"
+                  :key="city.name" :class="city.cssClass">
                   <div>{{ city.name }}</div>
                   <div>Population: {{ city.population }}</div>
                 </li>
