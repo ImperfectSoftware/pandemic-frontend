@@ -151,5 +151,11 @@ div#map {
   }
 }
 
-div#city-control {
+div#action-menu {
+  // to avoid bugs dimension styles should be set inside models/ActionMenu.js
+  background-color: $blue;
+  position: absolute;
+  z-index: 100;
+  border-radius: .25rem;
+  padding: 1em;
 }

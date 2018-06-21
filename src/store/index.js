@@ -4,15 +4,17 @@ import auth from './auth'
 import cable from './cable'
 import games from './games'
 import error from './error'
+import actionsMenu from './actionsMenu'
 import invitations from './invitations'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   modules: {
+    actionsMenu,
     auth,
     cable,
+    error,
     games,
-    invitations,
-    error
+    invitations
   }
 })

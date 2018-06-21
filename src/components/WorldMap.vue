@@ -13050,7 +13050,7 @@
         </g>
       </g>
       <g
-         class="btn"
+         class="btn cell-area"
          inkscape:label="cell-area"
          id="layer2-15"
          v-on:click="handleCellClick('lagos')">
@@ -15334,7 +15334,13 @@ export default {
   },
   methods: {
     handleCellClick (cityName) {
-      console.log(`handling cell for ${cityName}.`)
+      this.$store.dispatch('showActionMenu', {
+        cityName: cityName,
+        pageX: event.pageX,
+        pageY: event.pageY,
+        windowHeight: window.innerHeight,
+        windowWidth: window.innerWidth
+      })
     },
     handleInfectionClick (cityName, position) {
       console.log(`handling infection for ${cityName} at position ${position}.`)

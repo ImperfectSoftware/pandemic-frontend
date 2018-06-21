@@ -1,5 +1,9 @@
 <template>
   <div id="map">
+    <div id="action-menu" v-on-clickaway="hideActionMenu"
+      :class="{ 'd-none': actionMenu.hide }" :style="actionMenu.style">
+      Actions for {{ actionMenu.cityName }} will be displayed below.
+    </div>
     <WorldMap />
     <div v-if="game" class="container-fluid no-gutters">
       <div class="row">
@@ -53,15 +57,18 @@
   </div>
 </template>
 <script>
+import { mixin as clickaway } from 'vue-clickaway'
 import { mapGetters } from 'vuex'
 import WorldMap from '@/components/WorldMap'
 
 export default {
   name: 'GameInstance',
+  mixins: [ clickaway ],
   computed: {
     ...mapGetters({
       game: 'activeGame',
-      currentUser: 'currentUser'
+      currentUser: 'currentUser',
+      actionMenu: 'actionMenu'
     }),
     currentPlayer: function () {
       if (this.game && this.currentUser) {
@@ -74,6 +81,11 @@ export default {
   },
   components: {
     WorldMap
+  },
+  methods: {
+    hideActionMenu: function () {
+      this.$store.dispatch('hideActionMenu', event.target)
+    }
   }
 }
 </script>
