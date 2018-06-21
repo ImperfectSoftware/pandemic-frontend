@@ -7439,7 +7439,7 @@
         </g>
       </g>
       <g
-         v-on:click="handleCellClick('new york')"
+         v-on:click="handleCellClick('new-york')"
          class="btn"
          inkscape:label="cell-area"
          id="new-york-cell-area">
@@ -13050,7 +13050,7 @@
         </g>
       </g>
       <g
-         class="btn cell-area"
+         class="btn"
          inkscape:label="cell-area"
          id="layer2-15"
          v-on:click="handleCellClick('lagos')">

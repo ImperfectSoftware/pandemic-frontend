@@ -2,7 +2,35 @@
   <div id="map">
     <div id="action-menu" v-on-clickaway="hideActionMenu"
       :class="{ 'd-none': actionMenu.hide }" :style="actionMenu.style">
-      Actions for {{ actionMenu.cityName }} will be displayed below.
+      <h2>{{ actionMenu.cityName }}</h2>
+      <div :class="actionMenu.noActionsClasses">
+        No actions can be taken for this city at this time.
+      </div>
+      <ul class="list-unstyled">
+        <li>
+          <button :class="actionMenu.driveCssClasses">
+            Drive/Ferry
+          </button>
+          <button :class="actionMenu.directFlightCssClasses">
+            Direct Flight
+          </button>
+          <button :class="actionMenu.charterFlightCssClasses">
+            Charter Flight
+          </button>
+          <button :class="actionMenu.shuttleFlightCssClasses">
+            Shuttle Flight
+          </button>
+          <button :class="actionMenu.placeResearchStationCssClasses">
+            Place Research Station
+          </button>
+          <button :class="actionMenu.removeResearchStationCssClasses">
+            Remove Research Station
+          </button>
+          <button :class="actionMenu.discoverCureCssClasses">
+            Discover Cure
+          </button>
+        </li>
+      </ul>
     </div>
     <WorldMap />
     <div v-if="game" class="container-fluid no-gutters">
