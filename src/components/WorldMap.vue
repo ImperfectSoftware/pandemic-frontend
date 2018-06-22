@@ -7118,46 +7118,46 @@
              inkscape:label="Layer 1"
              id="layer1-9-0">
             <rect
-               v-on:click="handleInfectionClick('washington', 'one')"
+               v-on:click="handleInfectionClick('9', 'one')"
                id="washington-infection-one"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('washington', 'one')" />
+               :class="infectionClasses('9', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
              inkscape:label="Layer 1"
              id="layer1-8-2">
             <rect
-               v-on:click="handleInfectionClick('washington', 'two')"
+               v-on:click="handleInfectionClick('9', 'two')"
                id="washington-infection-two"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('washington', 'two')" />
+               :class="infectionClasses('9', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
              inkscape:label="Layer 1"
              id="layer1-3-6">
             <rect
-               v-on:click="handleInfectionClick('washington', 'three')"
+               v-on:click="handleInfectionClick('9', 'three')"
                id="washington-infection-three"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('washington', 'three')" />
+               :class="infectionClasses('9', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-9">
             <path
-               v-on:click="handlePlayerClick('washington', 'one')"
-               :class="playerClasses('washington', 'one')"
+               v-on:click="handlePlayerClick('9', 'one')"
+               :class="playerClasses('9', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="washington-player-one" />
@@ -7166,8 +7166,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-4">
             <path
-               v-on:click="handlePlayerClick('washington', 'two')"
-               :class="playerClasses('washington', 'two')"
+               v-on:click="handlePlayerClick('9', 'two')"
+               :class="playerClasses('9', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="washington-player-two" />
@@ -7176,8 +7176,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-1">
             <path
-               v-on:click="handlePlayerClick('washington', 'three')"
-               :class="playerClasses('washington', 'three')"
+               v-on:click="handlePlayerClick('9', 'three')"
+               :class="playerClasses('9', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="washington-player-three" />
@@ -7186,8 +7186,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-3">
             <path
-               v-on:click="handlePlayerClick('washington', 'four')"
-               :class="playerClasses('washington', 'four')"
+               v-on:click="handlePlayerClick('9', 'four')"
+               :class="playerClasses('9', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="washington-player-four" />
@@ -7198,7 +7198,7 @@
         </g>
       </g>
       <g
-         v-on:click="handleCellClick('washington')"
+         v-on:click="handleCellClick('9')"
          class="btn"
          inkscape:label="cell-area"
          id="washington-cell-area">
@@ -7337,7 +7337,7 @@
           </g>
         </g>
         <path
-           :class="researchCenterClasses('washington')"
+           :class="researchCenterClasses('9')"
            d="M 1408,544 V 64 Q 1408,38 1389,19 1370,0 1344,0 H 960 V 384 H 704 V 0 H 320 q -26,0 -45,19 -19,19 -19,45 v 480 q 0,1 0.5,3 0.5,2 0.5,3 l 575,474 575,-474 q 1,-2 1,-6 z m 223,69 -62,-74 q -8,-9 -21,-11 h -3 q -13,0 -21,7 L 832,1112 140,535 q -12,-8 -24,-7 -13,2 -21,11 l -62,74 q -8,10 -7,23.5 1,13.5 11,21.5 l 719,599 q 32,26 76,26 44,0 76,-26 l 244,-204 v 195 q 0,14 9,23 9,9 23,9 h 192 q 14,0 23,-9 9,-9 9,-23 V 840 l 219,-182 q 10,-8 11,-21.5 1,-13.5 -7,-23.5 z"
            id="washington-research-station"
            inkscape:connector-curvature="0"
@@ -7359,46 +7359,46 @@
              inkscape:label="Layer 1"
              id="layer1-9">
             <rect
-               v-on:click="handleInfectionClick('new-york', 'one')"
+               v-on:click="handleInfectionClick('8', 'one')"
                id="new-york-infection-one"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('new-york', 'one')" />
+               :class="infectionClasses('8', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
              inkscape:label="Layer 1"
              id="layer1-8">
             <rect
-               v-on:click="handleInfectionClick('new-york', 'two')"
+               v-on:click="handleInfectionClick('8', 'two')"
                id="new-york-infection-two"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('new-york', 'two')" />
+               :class="infectionClasses('8', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
              inkscape:label="Layer 1"
              id="layer1-3">
             <rect
-               v-on:click="handleInfectionClick('new-york', 'three')"
+               v-on:click="handleInfectionClick('8', 'three')"
                id="new-york-infection-three"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('new-york', 'three')" />
+               :class="infectionClasses('8', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011">
             <path
-               v-on:click="handlePlayerClick('new-york', 'one')"
-               :class="playerClasses('new-york', 'one')"
+               v-on:click="handlePlayerClick('8', 'one')"
+               :class="playerClasses('8', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="new-york-player-one" />
@@ -7407,8 +7407,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075">
             <path
-               v-on:click="handlePlayerClick('new-york', 'two')"
-               :class="playerClasses('new-york', 'two')"
+               v-on:click="handlePlayerClick('8', 'two')"
+               :class="playerClasses('8', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="new-york-player-two" />
@@ -7417,8 +7417,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403">
             <path
-               v-on:click="handlePlayerClick('new-york', 'three')"
-               :class="playerClasses('new-york', 'three')"
+               v-on:click="handlePlayerClick('8', 'three')"
+               :class="playerClasses('8', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="new-york-player-three" />
@@ -7427,8 +7427,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531">
             <path
-               v-on:click="handlePlayerClick('new-york', 'four')"
-               :class="playerClasses('new-york', 'four')"
+               v-on:click="handlePlayerClick('8', 'four')"
+               :class="playerClasses('8', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="new-york-player-four" />
@@ -7439,7 +7439,7 @@
         </g>
       </g>
       <g
-         v-on:click="handleCellClick('new-york')"
+         v-on:click="handleCellClick('8')"
          class="btn"
          inkscape:label="cell-area"
          id="new-york-cell-area">
@@ -7580,7 +7580,7 @@
         <path
            d="M 1408,544 V 64 Q 1408,38 1389,19 1370,0 1344,0 H 960 V 384 H 704 V 0 H 320 q -26,0 -45,19 -19,19 -19,45 v 480 q 0,1 0.5,3 0.5,2 0.5,3 l 575,474 575,-474 q 1,-2 1,-6 z m 223,69 -62,-74 q -8,-9 -21,-11 h -3 q -13,0 -21,7 L 832,1112 140,535 q -12,-8 -24,-7 -13,2 -21,11 l -62,74 q -8,10 -7,23.5 1,13.5 11,21.5 l 719,599 q 32,26 76,26 44,0 76,-26 l 244,-204 v 195 q 0,14 9,23 9,9 23,9 h 192 q 14,0 23,-9 9,-9 9,-23 V 840 l 219,-182 q 10,-8 11,-21.5 1,-13.5 -7,-23.5 z"
            id="new-york-research-station"
-           :class="researchCenterClasses('new-york')"
+           :class="researchCenterClasses('8')"
            inkscape:connector-curvature="0"
            transform="matrix(0.07384993,0,0,-0.07384993,38.978075,192.85033)" />
       </g>
@@ -7600,46 +7600,46 @@
              inkscape:label="Layer 1"
              id="layer1-9-6">
             <rect
-               v-on:click="handleInfectionClick('montreal', 'one')"
+               v-on:click="handleInfectionClick('7', 'one')"
                id="montreal-infection-one"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('montreal', 'one')" />
+               :class="infectionClasses('7', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
              inkscape:label="Layer 1"
              id="layer1-8-27">
             <rect
-               v-on:click="handleInfectionClick('montreal', 'two')"
+               v-on:click="handleInfectionClick('7', 'two')"
                id="montreal-infection-two"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('montreal', 'two')" />
+               :class="infectionClasses('7', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
              inkscape:label="Layer 1"
              id="layer1-3-0">
             <rect
-               v-on:click="handleInfectionClick('montreal', 'three')"
+               v-on:click="handleInfectionClick('7', 'three')"
                id="montreal-infection-three"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('montreal', 'three')" />
+               :class="infectionClasses('7', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-3">
             <path
-               v-on:click="handlePlayerClick('montreal', 'one')"
-               :class="playerClasses('montreal', 'one')"
+               v-on:click="handlePlayerClick('7', 'one')"
+               :class="playerClasses('7', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="montreal-player-one" />
@@ -7648,8 +7648,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-9">
             <path
-               v-on:click="handlePlayerClick('montreal', 'two')"
-               :class="playerClasses('montreal', 'two')"
+               v-on:click="handlePlayerClick('7', 'two')"
+               :class="playerClasses('7', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="montreal-player-two" />
@@ -7658,8 +7658,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-9">
             <path
-               v-on:click="handlePlayerClick('montreal', 'three')"
-               :class="playerClasses('montreal', 'three')"
+               v-on:click="handlePlayerClick('7', 'three')"
+               :class="playerClasses('7', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="montreal-player-three" />
@@ -7668,8 +7668,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-9">
             <path
-               v-on:click="handlePlayerClick('montreal', 'four')"
-               :class="playerClasses('montreal', 'four')"
+               v-on:click="handlePlayerClick('7', 'four')"
+               :class="playerClasses('7', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="montreal-player-four" />
@@ -7680,7 +7680,7 @@
         </g>
       </g>
       <g
-         v-on:click="handleCellClick('montreal')"
+         v-on:click="handleCellClick('7')"
          class="btn"
          inkscape:label="cell-area"
          id="montreal-cell-area">
@@ -7821,7 +7821,7 @@
         <path
            d="M 1408,544 V 64 Q 1408,38 1389,19 1370,0 1344,0 H 960 V 384 H 704 V 0 H 320 q -26,0 -45,19 -19,19 -19,45 v 480 q 0,1 0.5,3 0.5,2 0.5,3 l 575,474 575,-474 q 1,-2 1,-6 z m 223,69 -62,-74 q -8,-9 -21,-11 h -3 q -13,0 -21,7 L 832,1112 140,535 q -12,-8 -24,-7 -13,2 -21,11 l -62,74 q -8,10 -7,23.5 1,13.5 11,21.5 l 719,599 q 32,26 76,26 44,0 76,-26 l 244,-204 v 195 q 0,14 9,23 9,9 23,9 h 192 q 14,0 23,-9 9,-9 9,-23 V 840 l 219,-182 q 10,-8 11,-21.5 1,-13.5 -7,-23.5 z"
            id="montreal-research-station"
-           :class="researchCenterClasses('montreal')"
+           :class="researchCenterClasses('7')"
            inkscape:connector-curvature="0"
            transform="matrix(0.07384993,0,0,-0.07384993,38.978075,192.85033)" />
       </g>
@@ -7841,46 +7841,46 @@
              inkscape:label="Layer 1"
              id="layer1-9-8">
             <rect
-               v-on:click="handleInfectionClick('chicago', 'one')"
+               v-on:click="handleInfectionClick('2', 'one')"
                id="chicago-infection-one"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('chicago', 'one')" />
+               :class="infectionClasses('2', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
              inkscape:label="Layer 1"
              id="layer1-8-7">
             <rect
-               v-on:click="handleInfectionClick('chicago', 'two')"
+               v-on:click="handleInfectionClick('2', 'two')"
                id="chicago-infection-two"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('chicago', 'two')" />
+               :class="infectionClasses('2', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
              inkscape:label="Layer 1"
              id="layer1-3-8">
             <rect
-               v-on:click="handleInfectionClick('chicago', 'three')"
+               v-on:click="handleInfectionClick('2', 'three')"
                id="chicago-infection-three"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('chicago', 'three')" />
+               :class="infectionClasses('2', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-7">
             <path
-               v-on:click="handlePlayerClick('chicago', 'one')"
-               :class="playerClasses('chicago', 'one')"
+               v-on:click="handlePlayerClick('2', 'one')"
+               :class="playerClasses('2', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="chicago-player-one" />
@@ -7889,8 +7889,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-7">
             <path
-               v-on:click="handlePlayerClick('chicago', 'two')"
-               :class="playerClasses('chicago', 'two')"
+               v-on:click="handlePlayerClick('2', 'two')"
+               :class="playerClasses('2', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="chicago-player-two" />
@@ -7899,8 +7899,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-4">
             <path
-               v-on:click="handlePlayerClick('chicago', 'three')"
-               :class="playerClasses('chicago', 'three')"
+               v-on:click="handlePlayerClick('2', 'three')"
+               :class="playerClasses('2', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="chicago-player-three" />
@@ -7909,8 +7909,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-4">
             <path
-               v-on:click="handlePlayerClick('chicago', 'four')"
-               :class="playerClasses('chicago', 'four')"
+               v-on:click="handlePlayerClick('2', 'four')"
+               :class="playerClasses('2', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="chicago-player-four" />
@@ -7921,7 +7921,7 @@
         </g>
       </g>
       <g
-         v-on:click="handleCellClick('chicago')"
+         v-on:click="handleCellClick('2')"
          class="btn"
          inkscape:label="cell-area"
          id="chicago-cell-area">
@@ -8062,7 +8062,7 @@
         <path
            d="M 1408,544 V 64 Q 1408,38 1389,19 1370,0 1344,0 H 960 V 384 H 704 V 0 H 320 q -26,0 -45,19 -19,19 -19,45 v 480 q 0,1 0.5,3 0.5,2 0.5,3 l 575,474 575,-474 q 1,-2 1,-6 z m 223,69 -62,-74 q -8,-9 -21,-11 h -3 q -13,0 -21,7 L 832,1112 140,535 q -12,-8 -24,-7 -13,2 -21,11 l -62,74 q -8,10 -7,23.5 1,13.5 11,21.5 l 719,599 q 32,26 76,26 44,0 76,-26 l 244,-204 v 195 q 0,14 9,23 9,9 23,9 h 192 q 14,0 23,-9 9,-9 9,-23 V 840 l 219,-182 q 10,-8 11,-21.5 1,-13.5 -7,-23.5 z"
            id="chicago-research-station"
-           :class="researchCenterClasses('chicago')"
+           :class="researchCenterClasses('2')"
            inkscape:connector-curvature="0"
            transform="matrix(0.07384993,0,0,-0.07384993,38.978075,192.85033)" />
       </g>
@@ -8084,46 +8084,46 @@
              inkscape:label="Layer 1"
              id="layer1-9-4">
             <rect
-               v-on:click="handleInfectionClick('atlanta', 'one')"
+               v-on:click="handleInfectionClick('6', 'one')"
                id="atlanta-infection-one"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('atlanta', 'one')" />
+               :class="infectionClasses('6', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
              inkscape:label="Layer 1"
              id="layer1-8-0">
             <rect
-               v-on:click="handleInfectionClick('atlanta', 'two')"
+               v-on:click="handleInfectionClick('6', 'two')"
                id="infection-two"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('atlanta', 'two')" />
+               :class="infectionClasses('6', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
              inkscape:label="Layer 1"
              id="layer1-3-09">
             <rect
-               v-on:click="handleInfectionClick('atlanta', 'three')"
+               v-on:click="handleInfectionClick('6', 'three')"
                id="atlanta-infection-three"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('atlanta', 'three')" />
+               :class="infectionClasses('6', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-37">
             <path
-               v-on:click="handlePlayerClick('atlanta', 'one')"
-               :class="playerClasses('atlanta', 'one')"
+               v-on:click="handlePlayerClick('6', 'one')"
+               :class="playerClasses('6', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="atlanta-player-one" />
@@ -8132,8 +8132,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-5">
             <path
-               v-on:click="handlePlayerClick('atlanta', 'two')"
-               :class="playerClasses('atlanta', 'two')"
+               v-on:click="handlePlayerClick('6', 'two')"
+               :class="playerClasses('6', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="atlanta-player-two" />
@@ -8142,8 +8142,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-7">
             <path
-               v-on:click="handlePlayerClick('atlanta', 'three')"
-               :class="playerClasses('atlanta', 'three')"
+               v-on:click="handlePlayerClick('6', 'three')"
+               :class="playerClasses('6', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="atlanta-player-three" />
@@ -8152,8 +8152,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-2">
             <path
-               v-on:click="handlePlayerClick('atlanta', 'four')"
-               :class="playerClasses('atlanta', 'four')"
+               v-on:click="handlePlayerClick('6', 'four')"
+               :class="playerClasses('6', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="atlanta-player-four" />
@@ -8164,7 +8164,7 @@
         </g>
       </g>
       <g
-         v-on:click="handleCellClick('atlanta')"
+         v-on:click="handleCellClick('6')"
          class="btn"
          inkscape:label="cell-area"
          id="atlanta-cell-area">
@@ -8305,7 +8305,7 @@
         <path
            d="M 1408,544 V 64 Q 1408,38 1389,19 1370,0 1344,0 H 960 V 384 H 704 V 0 H 320 q -26,0 -45,19 -19,19 -19,45 v 480 q 0,1 0.5,3 0.5,2 0.5,3 l 575,474 575,-474 q 1,-2 1,-6 z m 223,69 -62,-74 q -8,-9 -21,-11 h -3 q -13,0 -21,7 L 832,1112 140,535 q -12,-8 -24,-7 -13,2 -21,11 l -62,74 q -8,10 -7,23.5 1,13.5 11,21.5 l 719,599 q 32,26 76,26 44,0 76,-26 l 244,-204 v 195 q 0,14 9,23 9,9 23,9 h 192 q 14,0 23,-9 9,-9 9,-23 V 840 l 219,-182 q 10,-8 11,-21.5 1,-13.5 -7,-23.5 z"
            id="atlanta-research-station"
-           :class="researchCenterClasses('atlanta')"
+           :class="researchCenterClasses('6')"
            inkscape:connector-curvature="0"
            transform="matrix(0.07384993,0,0,-0.07384993,38.978075,192.85033)" />
       </g>
@@ -8345,46 +8345,46 @@
              inkscape:label="Layer 1"
              id="layer1-9-9">
             <rect
-               v-on:click="handleInfectionClick('san-francisco', 'one')"
+               v-on:click="handleInfectionClick('0', 'one')"
                id="san-francisco-infection-one"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('san-francisco', 'one')" />
+               :class="infectionClasses('0', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
              inkscape:label="Layer 1"
              id="layer1-8-3">
             <rect
-               v-on:click="handleInfectionClick('san-francisco', 'two')"
+               v-on:click="handleInfectionClick('0', 'two')"
                id="san-francisco-infection-two"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('san-francisco', 'two')" />
+               :class="infectionClasses('0', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
              inkscape:label="Layer 1"
              id="layer1-3-07">
             <rect
-               v-on:click="handleInfectionClick('san-francisco', 'three')"
+               v-on:click="handleInfectionClick('0', 'three')"
                id="san-francisco-infection-three"
                width="106.58929"
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('san-francisco', 'three')" />
+               :class="infectionClasses('0', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-5">
             <path
-               v-on:click="handlePlayerClick('san-francisco', 'one')"
-               :class="playerClasses('san-francisco', 'one')"
+               v-on:click="handlePlayerClick('0', 'one')"
+               :class="playerClasses('0', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="san-francisco-player-one" />
@@ -8393,8 +8393,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-75">
             <path
-               v-on:click="handlePlayerClick('san-francisco', 'two')"
-               :class="playerClasses('san-francisco', 'two')"
+               v-on:click="handlePlayerClick('0', 'two')"
+               :class="playerClasses('0', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="san-francisco-player-two" />
@@ -8403,8 +8403,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-0">
             <path
-               v-on:click="handlePlayerClick('san-francisco', 'three')"
-               :class="playerClasses('san-francisco', 'three')"
+               v-on:click="handlePlayerClick('0', 'three')"
+               :class="playerClasses('0', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="san-francisco-player-three" />
@@ -8413,8 +8413,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-6">
             <path
-               v-on:click="handlePlayerClick('san-francisco', 'four')"
-               :class="playerClasses('san-francisco', 'four')"
+               v-on:click="handlePlayerClick('0', 'four')"
+               :class="playerClasses('0', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="san-francisco-player-four" />
@@ -8425,7 +8425,7 @@
         </g>
       </g>
       <g
-         v-on:click="handleCellClick('san francisco')"
+         v-on:click="handleCellClick('0')"
          class="btn"
          inkscape:label="cell-area"
          id="san-francisco-cell-area">
@@ -8566,7 +8566,7 @@
         <path
            d="M 1408,544 V 64 Q 1408,38 1389,19 1370,0 1344,0 H 960 V 384 H 704 V 0 H 320 q -26,0 -45,19 -19,19 -19,45 v 480 q 0,1 0.5,3 0.5,2 0.5,3 l 575,474 575,-474 q 1,-2 1,-6 z m 223,69 -62,-74 q -8,-9 -21,-11 h -3 q -13,0 -21,7 L 832,1112 140,535 q -12,-8 -24,-7 -13,2 -21,11 l -62,74 q -8,10 -7,23.5 1,13.5 11,21.5 l 719,599 q 32,26 76,26 44,0 76,-26 l 244,-204 v 195 q 0,14 9,23 9,9 23,9 h 192 q 14,0 23,-9 9,-9 9,-23 V 840 l 219,-182 q 10,-8 11,-21.5 1,-13.5 -7,-23.5 z"
            id="san-francisco-research-station"
-           :class="researchCenterClasses('san-francisco')"
+           :class="researchCenterClasses('0')"
            inkscape:connector-curvature="0"
            transform="matrix(0.07384993,0,0,-0.07384993,38.978075,192.85033)" />
       </g>
@@ -8591,8 +8591,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('london', 'one')"
-               v-on:click="handleInfectionClick('london', 'one')" />
+               :class="infectionClasses('18', 'one')"
+               v-on:click="handleInfectionClick('18', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -8604,8 +8604,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('london', 'two')"
-               v-on:click="handleInfectionClick('london', 'two')" />
+               :class="infectionClasses('18', 'two')"
+               v-on:click="handleInfectionClick('18', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -8617,15 +8617,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('london', 'three')"
-               v-on:click="handleInfectionClick('london', 'three')" />
+               :class="infectionClasses('18', 'three')"
+               v-on:click="handleInfectionClick('18', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-2">
             <path
-               :class="playerClasses('london', 'one')"
-               v-on:click="handlePlayerClick('london', 'one')"
+               :class="playerClasses('18', 'one')"
+               v-on:click="handlePlayerClick('18', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one" />
@@ -8634,8 +8634,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-3">
             <path
-               :class="playerClasses('london', 'two')"
-               v-on:click="handlePlayerClick('london', 'two')"
+               :class="playerClasses('18', 'two')"
+               v-on:click="handlePlayerClick('18', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two" />
@@ -8644,8 +8644,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-6">
             <path
-               :class="playerClasses('london', 'three')"
-               v-on:click="handlePlayerClick('london', 'three')"
+               :class="playerClasses('18', 'three')"
+               v-on:click="handlePlayerClick('18', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three" />
@@ -8654,8 +8654,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-5">
             <path
-               :class="playerClasses('london', 'four')"
-               v-on:click="handlePlayerClick('london', 'four')"
+               :class="playerClasses('18', 'four')"
+               v-on:click="handlePlayerClick('18', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four" />
@@ -8669,7 +8669,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-8"
-         v-on:click="handleCellClick('london')">
+         v-on:click="handleCellClick('18')">
         <circle
            style="fill:#30c5ff;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-793)"
            id="path101-1"
@@ -8805,7 +8805,7 @@
           </g>
         </g>
         <path
-           :class="researchCenterClasses('london')"
+           :class="researchCenterClasses('18')"
            d="M 1408,544 V 64 Q 1408,38 1389,19 1370,0 1344,0 H 960 V 384 H 704 V 0 H 320 q -26,0 -45,19 -19,19 -19,45 v 480 q 0,1 0.5,3 0.5,2 0.5,3 l 575,474 575,-474 q 1,-2 1,-6 z m 223,69 -62,-74 q -8,-9 -21,-11 h -3 q -13,0 -21,7 L 832,1112 140,535 q -12,-8 -24,-7 -13,2 -21,11 l -62,74 q -8,10 -7,23.5 1,13.5 11,21.5 l 719,599 q 32,26 76,26 44,0 76,-26 l 244,-204 v 195 q 0,14 9,23 9,9 23,9 h 192 q 14,0 23,-9 9,-9 9,-23 V 840 l 219,-182 q 10,-8 11,-21.5 1,-13.5 -7,-23.5 z"
            id="research-station"
            inkscape:connector-curvature="0"
@@ -8842,8 +8842,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('madrid', 'one')"
-               v-on:click="handleInfectionClick('madrid', 'one')" />
+               :class="infectionClasses('19', 'one')"
+               v-on:click="handleInfectionClick('19', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -8855,8 +8855,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('madrid', 'two')"
-               v-on:click="handleInfectionClick('madrid', 'two')" />
+               :class="infectionClasses('19', 'two')"
+               v-on:click="handleInfectionClick('19', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -8868,15 +8868,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('madrid', 'three')"
-               v-on:click="handleInfectionClick('madrid', 'three')" />
+               :class="infectionClasses('19', 'three')"
+               v-on:click="handleInfectionClick('19', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-8">
             <path
-               :class="playerClasses('madrid', 'one')"
-               v-on:click="handlePlayerClick('madrid', 'one')"
+               :class="playerClasses('19', 'one')"
+               v-on:click="handlePlayerClick('19', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-1" />
@@ -8885,8 +8885,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-47">
             <path
-               :class="playerClasses('madrid', 'two')"
-               v-on:click="handlePlayerClick('madrid', 'two')"
+               :class="playerClasses('19', 'two')"
+               v-on:click="handlePlayerClick('19', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-1" />
@@ -8895,8 +8895,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-3">
             <path
-               :class="playerClasses('madrid', 'three')"
-               v-on:click="handlePlayerClick('madrid', 'three')"
+               :class="playerClasses('19', 'three')"
+               v-on:click="handlePlayerClick('19', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-8" />
@@ -8905,8 +8905,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-48">
             <path
-               :class="playerClasses('madrid', 'four')"
-               v-on:click="handlePlayerClick('madrid', 'four')"
+               :class="playerClasses('19', 'four')"
+               v-on:click="handlePlayerClick('19', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-0" />
@@ -8920,7 +8920,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-0"
-         v-on:click="handleCellClick('madrid')">
+         v-on:click="handleCellClick('19')">
         <circle
            style="fill:#30c5ff;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-7938)"
            id="path101-3"
@@ -9056,7 +9056,7 @@
           </g>
         </g>
         <path
-           :class="researchCenterClasses('madrid')"
+           :class="researchCenterClasses('19')"
            d="M 1408,544 V 64 Q 1408,38 1389,19 1370,0 1344,0 H 960 V 384 H 704 V 0 H 320 q -26,0 -45,19 -19,19 -19,45 v 480 q 0,1 0.5,3 0.5,2 0.5,3 l 575,474 575,-474 q 1,-2 1,-6 z m 223,69 -62,-74 q -8,-9 -21,-11 h -3 q -13,0 -21,7 L 832,1112 140,535 q -12,-8 -24,-7 -13,2 -21,11 l -62,74 q -8,10 -7,23.5 1,13.5 11,21.5 l 719,599 q 32,26 76,26 44,0 76,-26 l 244,-204 v 195 q 0,14 9,23 9,9 23,9 h 192 q 14,0 23,-9 9,-9 9,-23 V 840 l 219,-182 q 10,-8 11,-21.5 1,-13.5 -7,-23.5 z"
            id="research-station-4"
            inkscape:connector-curvature="0"
@@ -9093,8 +9093,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('paris', 'one')"
-               v-on:click="handleInfectionClick('paris', 'one')" />
+               :class="infectionClasses('20', 'one')"
+               v-on:click="handleInfectionClick('20', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -9106,8 +9106,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('paris', 'two')"
-               v-on:click="handleInfectionClick('paris', 'two')" />
+               :class="infectionClasses('20', 'two')"
+               v-on:click="handleInfectionClick('20', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -9119,15 +9119,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('paris', 'three')"
-               v-on:click="handleInfectionClick('paris', 'three')" />
+               :class="infectionClasses('20', 'three')"
+               v-on:click="handleInfectionClick('20', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-71">
             <path
-               :class="playerClasses('paris', 'one')"
-               v-on:click="handlePlayerClick('paris', 'one')"
+               :class="playerClasses('20', 'one')"
+               v-on:click="handlePlayerClick('20', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-3" />
@@ -9136,8 +9136,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-8">
             <path
-               :class="playerClasses('paris', 'two')"
-               v-on:click="handlePlayerClick('paris', 'two')"
+               :class="playerClasses('20', 'two')"
+               v-on:click="handlePlayerClick('20', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-4" />
@@ -9146,8 +9146,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-8">
             <path
-               :class="playerClasses('paris', 'three')"
-               v-on:click="handlePlayerClick('paris', 'three')"
+               :class="playerClasses('20', 'three')"
+               v-on:click="handlePlayerClick('20', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-0" />
@@ -9156,8 +9156,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-46">
             <path
-               :class="playerClasses('paris', 'four')"
-               v-on:click="handlePlayerClick('paris', 'four')"
+               :class="playerClasses('20', 'four')"
+               v-on:click="handlePlayerClick('20', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-03" />
@@ -9171,7 +9171,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-6"
-         v-on:click="handleCellClick('paris')">
+         v-on:click="handleCellClick('20')">
         <circle
            style="fill:#30c5ff;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-79380)"
            id="path101-9"
@@ -9307,7 +9307,7 @@
           </g>
         </g>
         <path
-           :class="researchCenterClasses('paris')"
+           :class="researchCenterClasses('20')"
            d="M 1408,544 V 64 Q 1408,38 1389,19 1370,0 1344,0 H 960 V 384 H 704 V 0 H 320 q -26,0 -45,19 -19,19 -19,45 v 480 q 0,1 0.5,3 0.5,2 0.5,3 l 575,474 575,-474 q 1,-2 1,-6 z m 223,69 -62,-74 q -8,-9 -21,-11 h -3 q -13,0 -21,7 L 832,1112 140,535 q -12,-8 -24,-7 -13,2 -21,11 l -62,74 q -8,10 -7,23.5 1,13.5 11,21.5 l 719,599 q 32,26 76,26 44,0 76,-26 l 244,-204 v 195 q 0,14 9,23 9,9 23,9 h 192 q 14,0 23,-9 9,-9 9,-23 V 840 l 219,-182 q 10,-8 11,-21.5 1,-13.5 -7,-23.5 z"
            id="research-station-49"
            inkscape:connector-curvature="0"
@@ -9344,8 +9344,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('essen', 'one')"
-               v-on:click="handleInfectionClick('essen', 'one')" />
+               :class="infectionClasses('21', 'one')"
+               v-on:click="handleInfectionClick('21', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -9357,8 +9357,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('essen', 'two')"
-               v-on:click="handleInfectionClick('essen', 'two')" />
+               :class="infectionClasses('21', 'two')"
+               v-on:click="handleInfectionClick('21', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -9370,15 +9370,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('essen', 'three')"
-               v-on:click="handleInfectionClick('essen', 'three')" />
+               :class="infectionClasses('21', 'three')"
+               v-on:click="handleInfectionClick('21', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-84">
             <path
-               :class="playerClasses('essen', 'one')"
-               v-on:click="handlePlayerClick('essen', 'one')"
+               :class="playerClasses('21', 'one')"
+               v-on:click="handlePlayerClick('21', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-8" />
@@ -9387,8 +9387,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-0">
             <path
-               :class="playerClasses('essen', 'two')"
-               v-on:click="handlePlayerClick('essen', 'two')"
+               :class="playerClasses('21', 'two')"
+               v-on:click="handlePlayerClick('21', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-46" />
@@ -9397,8 +9397,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-03">
             <path
-               :class="playerClasses('essen', 'three')"
-               v-on:click="handlePlayerClick('essen', 'three')"
+               :class="playerClasses('21', 'three')"
+               v-on:click="handlePlayerClick('21', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-2" />
@@ -9407,8 +9407,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-69">
             <path
-               :class="playerClasses('essen', 'four')"
-               v-on:click="handlePlayerClick('essen', 'four')"
+               :class="playerClasses('21', 'four')"
+               v-on:click="handlePlayerClick('21', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-4" />
@@ -9422,7 +9422,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-7"
-         v-on:click="handleCellClick('essen')">
+         v-on:click="handleCellClick('21')">
         <circle
            style="fill:#30c5ff;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-793802)"
            id="path101-88"
@@ -9558,7 +9558,7 @@
           </g>
         </g>
         <path
-           :class="researchCenterClasses('essen')"
+           :class="researchCenterClasses('21')"
            d="M 1408,544 V 64 Q 1408,38 1389,19 1370,0 1344,0 H 960 V 384 H 704 V 0 H 320 q -26,0 -45,19 -19,19 -19,45 v 480 q 0,1 0.5,3 0.5,2 0.5,3 l 575,474 575,-474 q 1,-2 1,-6 z m 223,69 -62,-74 q -8,-9 -21,-11 h -3 q -13,0 -21,7 L 832,1112 140,535 q -12,-8 -24,-7 -13,2 -21,11 l -62,74 q -8,10 -7,23.5 1,13.5 11,21.5 l 719,599 q 32,26 76,26 44,0 76,-26 l 244,-204 v 195 q 0,14 9,23 9,9 23,9 h 192 q 14,0 23,-9 9,-9 9,-23 V 840 l 219,-182 q 10,-8 11,-21.5 1,-13.5 -7,-23.5 z"
            id="research-station-1"
            inkscape:connector-curvature="0"
@@ -9595,8 +9595,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('st-petersburg', 'one')"
-               v-on:click="handleInfectionClick('st-petersburg', 'one')" />
+               :class="infectionClasses('23', 'one')"
+               v-on:click="handleInfectionClick('23', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -9608,8 +9608,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('st-petersburg', 'two')"
-               v-on:click="handleInfectionClick('st-petersburg', 'two')" />
+               :class="infectionClasses('23', 'two')"
+               v-on:click="handleInfectionClick('23', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -9621,15 +9621,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('st-petersburg', 'three')"
-               v-on:click="handleInfectionClick('st-petersburg', 'three')" />
+               :class="infectionClasses('23', 'three')"
+               v-on:click="handleInfectionClick('23', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-4">
             <path
-               :class="playerClasses('st-petersburg', 'one')"
-               v-on:click="handlePlayerClick('st-petersburg', 'one')"
+               :class="playerClasses('23', 'one')"
+               v-on:click="handlePlayerClick('23', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-80" />
@@ -9638,8 +9638,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-46">
             <path
-               :class="playerClasses('st-petersburg', 'two')"
-               v-on:click="handlePlayerClick('st-petersburg', 'two')"
+               :class="playerClasses('23', 'two')"
+               v-on:click="handlePlayerClick('23', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-0" />
@@ -9648,8 +9648,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-32">
             <path
-               :class="playerClasses('st-petersburg', 'three')"
-               v-on:click="handlePlayerClick('st-petersburg', 'three')"
+               :class="playerClasses('23', 'three')"
+               v-on:click="handlePlayerClick('23', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-6" />
@@ -9658,8 +9658,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-94">
             <path
-               :class="playerClasses('st-petersburg', 'four')"
-               v-on:click="handlePlayerClick('st-petersburg', 'four')"
+               :class="playerClasses('23', 'four')"
+               v-on:click="handlePlayerClick('23', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-1" />
@@ -9673,7 +9673,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-78"
-         v-on:click="handleCellClick('st-petersburg')">
+         v-on:click="handleCellClick('23')">
         <circle
            style="fill:#30c5ff;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-7938024)"
            id="path101-83"
@@ -9809,7 +9809,7 @@
           </g>
         </g>
         <path
-           :class="researchCenterClasses('st-petersburg')"
+           :class="researchCenterClasses('23')"
            d="M 1408,544 V 64 Q 1408,38 1389,19 1370,0 1344,0 H 960 V 384 H 704 V 0 H 320 q -26,0 -45,19 -19,19 -19,45 v 480 q 0,1 0.5,3 0.5,2 0.5,3 l 575,474 575,-474 q 1,-2 1,-6 z m 223,69 -62,-74 q -8,-9 -21,-11 h -3 q -13,0 -21,7 L 832,1112 140,535 q -12,-8 -24,-7 -13,2 -21,11 l -62,74 q -8,10 -7,23.5 1,13.5 11,21.5 l 719,599 q 32,26 76,26 44,0 76,-26 l 244,-204 v 195 q 0,14 9,23 9,9 23,9 h 192 q 14,0 23,-9 9,-9 9,-23 V 840 l 219,-182 q 10,-8 11,-21.5 1,-13.5 -7,-23.5 z"
            id="research-station-5"
            inkscape:connector-curvature="0"
@@ -9846,8 +9846,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('milan', 'one')"
-               v-on:click="handleInfectionClick('milan', 'one')" />
+               :class="infectionClasses('22', 'one')"
+               v-on:click="handleInfectionClick('22', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -9859,8 +9859,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('milan', 'two')"
-               v-on:click="handleInfectionClick('milan', 'two')" />
+               :class="infectionClasses('22', 'two')"
+               v-on:click="handleInfectionClick('22', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -9872,15 +9872,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('milan', 'three')"
-               v-on:click="handleInfectionClick('milan', 'three')" />
+               :class="infectionClasses('22', 'three')"
+               v-on:click="handleInfectionClick('22', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-0">
             <path
-               :class="playerClasses('milan', 'one')"
-               v-on:click="handlePlayerClick('milan', 'one')"
+               :class="playerClasses('22', 'one')"
+               v-on:click="handlePlayerClick('22', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-32" />
@@ -9889,8 +9889,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-6">
             <path
-               :class="playerClasses('milan', 'two')"
-               v-on:click="handlePlayerClick('milan', 'two')"
+               :class="playerClasses('22', 'two')"
+               v-on:click="handlePlayerClick('22', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-9" />
@@ -9899,8 +9899,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-41">
             <path
-               :class="playerClasses('milan', 'three')"
-               v-on:click="handlePlayerClick('milan', 'three')"
+               :class="playerClasses('22', 'three')"
+               v-on:click="handlePlayerClick('22', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-3" />
@@ -9909,8 +9909,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-7">
             <path
-               :class="playerClasses('milan', 'four')"
-               v-on:click="handlePlayerClick('milan', 'four')"
+               :class="playerClasses('22', 'four')"
+               v-on:click="handlePlayerClick('22', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-8" />
@@ -9924,7 +9924,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-3"
-         v-on:click="handleCellClick('milan')">
+         v-on:click="handleCellClick('22')">
         <circle
            style="fill:#30c5ff;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-79380248)"
            id="path101-81"
@@ -10060,7 +10060,7 @@
           </g>
         </g>
         <path
-           :class="researchCenterClasses('milan')"
+           :class="researchCenterClasses('22')"
            d="M 1408,544 V 64 Q 1408,38 1389,19 1370,0 1344,0 H 960 V 384 H 704 V 0 H 320 q -26,0 -45,19 -19,19 -19,45 v 480 q 0,1 0.5,3 0.5,2 0.5,3 l 575,474 575,-474 q 1,-2 1,-6 z m 223,69 -62,-74 q -8,-9 -21,-11 h -3 q -13,0 -21,7 L 832,1112 140,535 q -12,-8 -24,-7 -13,2 -21,11 l -62,74 q -8,10 -7,23.5 1,13.5 11,21.5 l 719,599 q 32,26 76,26 44,0 76,-26 l 244,-204 v 195 q 0,14 9,23 9,9 23,9 h 192 q 14,0 23,-9 9,-9 9,-23 V 840 l 219,-182 q 10,-8 11,-21.5 1,-13.5 -7,-23.5 z"
            id="research-station-9"
            inkscape:connector-curvature="0"
@@ -10117,8 +10117,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('algiers', 'one')"
-               v-on:click="handleInfectionClick('algiers', 'one')" />
+               :class="infectionClasses('24', 'one')"
+               v-on:click="handleInfectionClick('24', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -10130,8 +10130,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('algiers', 'two')"
-               v-on:click="handleInfectionClick('algiers', 'two')" />
+               :class="infectionClasses('24', 'two')"
+               v-on:click="handleInfectionClick('24', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -10143,15 +10143,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('algiers', 'three')"
-               v-on:click="handleInfectionClick('algiers', 'three')" />
+               :class="infectionClasses('24', 'three')"
+               v-on:click="handleInfectionClick('24', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-549">
             <path
-               :class="playerClasses('algiers', 'one')"
-               v-on:click="handlePlayerClick('algiers', 'one')"
+               :class="playerClasses('24', 'one')"
+               v-on:click="handlePlayerClick('24', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-17" />
@@ -10160,8 +10160,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-55">
             <path
-               :class="playerClasses('algiers', 'two')"
-               v-on:click="handlePlayerClick('algiers', 'two')"
+               :class="playerClasses('24', 'two')"
+               v-on:click="handlePlayerClick('24', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-418" />
@@ -10170,8 +10170,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-83">
             <path
-               :class="playerClasses('algiers', 'three')"
-               v-on:click="handlePlayerClick('algiers', 'three')"
+               :class="playerClasses('24', 'three')"
+               v-on:click="handlePlayerClick('24', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-52" />
@@ -10180,8 +10180,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-26">
             <path
-               :class="playerClasses('algiers', 'four')"
-               v-on:click="handlePlayerClick('algiers', 'four')"
+               :class="playerClasses('24', 'four')"
+               v-on:click="handlePlayerClick('24', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-67" />
@@ -10196,7 +10196,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-1"
-         v-on:click="handleCellClick('algiers')">
+         v-on:click="handleCellClick('24')">
         <circle
            style="fill:#000000;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-79380248390522737902)"
            id="path101-71"
@@ -10230,7 +10230,7 @@
         </g>
         <path
            style="display:inline;stroke-width:0.07384993"
-           :class="researchCenterClasses('algiers')"
+           :class="researchCenterClasses('24')"
            d="m 143.67242,150.5928 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32324,1.40315 H 110.58765 V 162.40879 H 91.682078 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40315,-1.40315 -1.40315,-3.32325 V 150.5928 q 0,-0.0738 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463702,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46854,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55085,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104142,42.61141 q -0.8862,0.5908 -1.7724,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.57869,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.0981,-44.236108 q 2.3632,-1.9201 5.612582,-1.9201 3.2494,0 5.6126,1.9201 l 18.01938,15.065378 V 98.602452 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66465 1.69855,-0.66465 h 14.17918 q 1.0339,0 1.69855,0.66465 0.66465,0.66465 0.66465,1.69855 v 30.130768 l 16.17314,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0738,0.99697 -0.51695,1.73547 z"
            id="research-station-55"
            inkscape:connector-curvature="0" />
@@ -10256,8 +10256,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('cairo', 'one')"
-               v-on:click="handleInfectionClick('cairo', 'one')" />
+               :class="infectionClasses('27', 'one')"
+               v-on:click="handleInfectionClick('27', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -10269,8 +10269,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('cairo', 'two')"
-               v-on:click="handleInfectionClick('cairo', 'two')" />
+               :class="infectionClasses('27', 'two')"
+               v-on:click="handleInfectionClick('27', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -10282,15 +10282,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('cairo', 'three')"
-               v-on:click="handleInfectionClick('cairo', 'three')" />
+               :class="infectionClasses('27', 'three')"
+               v-on:click="handleInfectionClick('27', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-54">
             <path
-               :class="playerClasses('cairo', 'one')"
-               v-on:click="handlePlayerClick('cairo', 'one')"
+               :class="playerClasses('27', 'one')"
+               v-on:click="handlePlayerClick('27', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-91" />
@@ -10299,8 +10299,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-755">
             <path
-               :class="playerClasses('cairo', 'two')"
-               v-on:click="handlePlayerClick('cairo', 'two')"
+               :class="playerClasses('27', 'two')"
+               v-on:click="handlePlayerClick('27', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-41" />
@@ -10309,8 +10309,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-88">
             <path
-               :class="playerClasses('cairo', 'three')"
-               v-on:click="handlePlayerClick('cairo', 'three')"
+               :class="playerClasses('27', 'three')"
+               v-on:click="handlePlayerClick('27', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-35" />
@@ -10319,8 +10319,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-22">
             <path
-               :class="playerClasses('cairo', 'four')"
-               v-on:click="handlePlayerClick('cairo', 'four')"
+               :class="playerClasses('27', 'four')"
+               v-on:click="handlePlayerClick('27', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-6" />
@@ -10335,7 +10335,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-7841"
-         v-on:click="handleCellClick('cairo')">
+         v-on:click="handleCellClick('27')">
         <circle
            style="fill:#000000;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-7938024839052273790)"
            id="path101-7"
@@ -10369,7 +10369,7 @@
         </g>
         <path
            style="display:inline;stroke-width:0.07384993"
-           :class="researchCenterClasses('cairo')"
+           :class="researchCenterClasses('27')"
            d="m 143.67242,150.5928 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32324,1.40315 H 110.58765 V 162.40879 H 91.682078 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40315,-1.40315 -1.40315,-3.32325 V 150.5928 q 0,-0.0738 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463702,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46854,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55085,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104142,42.61141 q -0.8862,0.5908 -1.7724,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.57869,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.0981,-44.236108 q 2.3632,-1.9201 5.612582,-1.9201 3.2494,0 5.6126,1.9201 l 18.01938,15.065378 V 98.602452 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66465 1.69855,-0.66465 h 14.17918 q 1.0339,0 1.69855,0.66465 0.66465,0.66465 0.66465,1.69855 v 30.130768 l 16.17314,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0738,0.99697 -0.51695,1.73547 z"
            id="research-station-91"
            inkscape:connector-curvature="0" />
@@ -10395,8 +10395,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('istanbul', 'one')"
-               v-on:click="handleInfectionClick('istanbul', 'one')" />
+               :class="infectionClasses('25', 'one')"
+               v-on:click="handleInfectionClick('25', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -10408,8 +10408,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('istanbul', 'two')"
-               v-on:click="handleInfectionClick('istanbul', 'two')" />
+               :class="infectionClasses('25', 'two')"
+               v-on:click="handleInfectionClick('25', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -10421,15 +10421,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('istanbul', 'three')"
-               v-on:click="handleInfectionClick('istanbul', 'three')" />
+               :class="infectionClasses('25', 'three')"
+               v-on:click="handleInfectionClick('25', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-378">
             <path
-               :class="playerClasses('istanbul', 'one')"
-               v-on:click="handlePlayerClick('istanbul', 'one')"
+               :class="playerClasses('25', 'one')"
+               v-on:click="handlePlayerClick('25', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-83" />
@@ -10438,8 +10438,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-81">
             <path
-               :class="playerClasses('istanbul', 'two')"
-               v-on:click="handlePlayerClick('istanbul', 'two')"
+               :class="playerClasses('25', 'two')"
+               v-on:click="handlePlayerClick('25', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-5" />
@@ -10448,8 +10448,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-35">
             <path
-               :class="playerClasses('istanbul', 'three')"
-               v-on:click="handlePlayerClick('istanbul', 'three')"
+               :class="playerClasses('25', 'three')"
+               v-on:click="handlePlayerClick('25', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-4" />
@@ -10458,8 +10458,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-36">
             <path
-               :class="playerClasses('istanbul', 'four')"
-               v-on:click="handlePlayerClick('istanbul', 'four')"
+               :class="playerClasses('25', 'four')"
+               v-on:click="handlePlayerClick('25', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-5" />
@@ -10474,7 +10474,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-49"
-         v-on:click="handleCellClick('istanbul')">
+         v-on:click="handleCellClick('25')">
         <circle
            style="fill:#000000;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-7938024839)"
            id="path101-17"
@@ -10508,7 +10508,7 @@
         </g>
         <path
            style="display:inline;stroke-width:0.07384993"
-           :class="researchCenterClasses('istanbul')"
+           :class="researchCenterClasses('25')"
            d="m 143.67242,150.5928 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32324,1.40315 H 110.58765 V 162.40879 H 91.682078 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40315,-1.40315 -1.40315,-3.32325 V 150.5928 q 0,-0.0738 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463702,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46854,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55085,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104142,42.61141 q -0.8862,0.5908 -1.7724,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.57869,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.0981,-44.236108 q 2.3632,-1.9201 5.612582,-1.9201 3.2494,0 5.6126,1.9201 l 18.01938,15.065378 V 98.602452 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66465 1.69855,-0.66465 h 14.17918 q 1.0339,0 1.69855,0.66465 0.66465,0.66465 0.66465,1.69855 v 30.130768 l 16.17314,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0738,0.99697 -0.51695,1.73547 z"
            id="research-station-8"
            inkscape:connector-curvature="0" />
@@ -10534,8 +10534,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('baghdad', 'one')"
-               v-on:click="handleInfectionClick('baghdad', 'one')" />
+               :class="infectionClasses('28', 'one')"
+               v-on:click="handleInfectionClick('28', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -10547,8 +10547,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('baghdad', 'two')"
-               v-on:click="handleInfectionClick('baghdad', 'two')" />
+               :class="infectionClasses('28', 'two')"
+               v-on:click="handleInfectionClick('28', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -10560,15 +10560,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('baghdad', 'three')"
-               v-on:click="handleInfectionClick('baghdad', 'three')" />
+               :class="infectionClasses('28', 'three')"
+               v-on:click="handleInfectionClick('28', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-95">
             <path
-               :class="playerClasses('baghdad', 'one')"
-               v-on:click="handlePlayerClick('baghdad', 'one')"
+               :class="playerClasses('28', 'one')"
+               v-on:click="handlePlayerClick('28', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-4" />
@@ -10577,8 +10577,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-91">
             <path
-               :class="playerClasses('baghdad', 'two')"
-               v-on:click="handlePlayerClick('baghdad', 'two')"
+               :class="playerClasses('28', 'two')"
+               v-on:click="handlePlayerClick('28', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-7" />
@@ -10587,8 +10587,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-554">
             <path
-               :class="playerClasses('baghdad', 'three')"
-               v-on:click="handlePlayerClick('baghdad', 'three')"
+               :class="playerClasses('28', 'three')"
+               v-on:click="handlePlayerClick('28', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-1" />
@@ -10597,8 +10597,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-8835">
             <path
-               :class="playerClasses('baghdad', 'four')"
-               v-on:click="handlePlayerClick('baghdad', 'four')"
+               :class="playerClasses('28', 'four')"
+               v-on:click="handlePlayerClick('28', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-2" />
@@ -10613,7 +10613,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-784"
-         v-on:click="handleCellClick('baghdad')">
+         v-on:click="handleCellClick('28')">
         <circle
            style="fill:#000000;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-793802483905227379)"
            id="path101-171"
@@ -10647,7 +10647,7 @@
         </g>
         <path
            style="display:inline;stroke-width:0.07384993"
-           :class="researchCenterClasses('baghdad')"
+           :class="researchCenterClasses('28')"
            d="m 143.67242,150.5928 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32324,1.40315 H 110.58765 V 162.40879 H 91.682078 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40315,-1.40315 -1.40315,-3.32325 V 150.5928 q 0,-0.0738 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463702,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46854,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55085,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104142,42.61141 q -0.8862,0.5908 -1.7724,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.57869,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.0981,-44.236108 q 2.3632,-1.9201 5.612582,-1.9201 3.2494,0 5.6126,1.9201 l 18.01938,15.065378 V 98.602452 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66465 1.69855,-0.66465 h 14.17918 q 1.0339,0 1.69855,0.66465 0.66465,0.66465 0.66465,1.69855 v 30.130768 l 16.17314,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0738,0.99697 -0.51695,1.73547 z"
            id="research-station-15"
            inkscape:connector-curvature="0" />
@@ -10673,8 +10673,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('riyadh', 'one')"
-               v-on:click="handleInfectionClick('riyadh', 'one')" />
+               :class="infectionClasses('30', 'one')"
+               v-on:click="handleInfectionClick('30', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -10686,8 +10686,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('riyadh', 'two')"
-               v-on:click="handleInfectionClick('riyadh', 'two')" />
+               :class="infectionClasses('30', 'two')"
+               v-on:click="handleInfectionClick('30', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -10699,15 +10699,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('riyadh', 'three')"
-               v-on:click="handleInfectionClick('riyadh', 'three')" />
+               :class="infectionClasses('30', 'three')"
+               v-on:click="handleInfectionClick('30', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-65">
             <path
-               :class="playerClasses('riyadh', 'one')"
-               v-on:click="handlePlayerClick('riyadh', 'one')"
+               :class="playerClasses('30', 'one')"
+               v-on:click="handlePlayerClick('30', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-95" />
@@ -10716,8 +10716,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-49">
             <path
-               :class="playerClasses('riyadh', 'two')"
-               v-on:click="handlePlayerClick('riyadh', 'two')"
+               :class="playerClasses('30', 'two')"
+               v-on:click="handlePlayerClick('30', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-17" />
@@ -10726,8 +10726,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-55">
             <path
-               :class="playerClasses('riyadh', 'three')"
-               v-on:click="handlePlayerClick('riyadh', 'three')"
+               :class="playerClasses('30', 'three')"
+               v-on:click="handlePlayerClick('30', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-41" />
@@ -10736,8 +10736,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-883">
             <path
-               :class="playerClasses('riyadh', 'four')"
-               v-on:click="handlePlayerClick('riyadh', 'four')"
+               :class="playerClasses('30', 'four')"
+               v-on:click="handlePlayerClick('30', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-52" />
@@ -10752,7 +10752,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-67"
-         v-on:click="handleCellClick('riyadh')">
+         v-on:click="handleCellClick('30')">
         <circle
            style="fill:#000000;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-79380248390522737)"
            id="path101-84"
@@ -10786,7 +10786,7 @@
         </g>
         <path
            style="display:inline;stroke-width:0.07384993"
-           :class="researchCenterClasses('riyadh')"
+           :class="researchCenterClasses('30')"
            d="m 143.67242,150.5928 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32324,1.40315 H 110.58765 V 162.40879 H 91.682078 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40315,-1.40315 -1.40315,-3.32325 V 150.5928 q 0,-0.0738 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463702,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46854,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55085,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104142,42.61141 q -0.8862,0.5908 -1.7724,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.57869,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.0981,-44.236108 q 2.3632,-1.9201 5.612582,-1.9201 3.2494,0 5.6126,1.9201 l 18.01938,15.065378 V 98.602452 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66465 1.69855,-0.66465 h 14.17918 q 1.0339,0 1.69855,0.66465 0.66465,0.66465 0.66465,1.69855 v 30.130768 l 16.17314,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0738,0.99697 -0.51695,1.73547 z"
            id="research-station-491"
            inkscape:connector-curvature="0" />
@@ -10812,8 +10812,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('mumbai', 'one')"
-               v-on:click="handleInfectionClick('mumbai', 'one')" />
+               :class="infectionClasses('33', 'one')"
+               v-on:click="handleInfectionClick('33', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -10825,8 +10825,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('mumbai', 'two')"
-               v-on:click="handleInfectionClick('mumbai', 'two')" />
+               :class="infectionClasses('33', 'two')"
+               v-on:click="handleInfectionClick('33', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -10838,15 +10838,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('mumbai', 'three')"
-               v-on:click="handleInfectionClick('mumbai', 'three')" />
+               :class="infectionClasses('33', 'three')"
+               v-on:click="handleInfectionClick('33', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-43">
             <path
-               :class="playerClasses('mumbai', 'one')"
-               v-on:click="handlePlayerClick('mumbai', 'one')"
+               :class="playerClasses('33', 'one')"
+               v-on:click="handlePlayerClick('33', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-6" />
@@ -10855,8 +10855,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-59">
             <path
-               :class="playerClasses('mumbai', 'two')"
-               v-on:click="handlePlayerClick('mumbai', 'two')"
+               :class="playerClasses('33', 'two')"
+               v-on:click="handlePlayerClick('33', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-549" />
@@ -10865,8 +10865,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-17">
             <path
-               :class="playerClasses('mumbai', 'three')"
-               v-on:click="handlePlayerClick('mumbai', 'three')"
+               :class="playerClasses('33', 'three')"
+               v-on:click="handlePlayerClick('33', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-55" />
@@ -10875,8 +10875,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-41">
             <path
-               :class="playerClasses('mumbai', 'four')"
-               v-on:click="handlePlayerClick('mumbai', 'four')"
+               :class="playerClasses('33', 'four')"
+               v-on:click="handlePlayerClick('33', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-88" />
@@ -10891,7 +10891,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-2"
-         v-on:click="handleCellClick('mumbai')">
+         v-on:click="handleCellClick('33')">
         <circle
            style="fill:#000000;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-793802483905227)"
            id="path101-66"
@@ -10925,7 +10925,7 @@
         </g>
         <path
            style="display:inline;stroke-width:0.07384993"
-           :class="researchCenterClasses('mumbai')"
+           :class="researchCenterClasses('33')"
            d="m 143.67242,150.5928 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32324,1.40315 H 110.58765 V 162.40879 H 91.682078 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40315,-1.40315 -1.40315,-3.32325 V 150.5928 q 0,-0.0738 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463702,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46854,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55085,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104142,42.61141 q -0.8862,0.5908 -1.7724,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.57869,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.0981,-44.236108 q 2.3632,-1.9201 5.612582,-1.9201 3.2494,0 5.6126,1.9201 l 18.01938,15.065378 V 98.602452 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66465 1.69855,-0.66465 h 14.17918 q 1.0339,0 1.69855,0.66465 0.66465,0.66465 0.66465,1.69855 v 30.130768 l 16.17314,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0738,0.99697 -0.51695,1.73547 z"
            id="research-station-87"
            inkscape:connector-curvature="0" />
@@ -10951,8 +10951,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('chennai', 'one')"
-               v-on:click="handleInfectionClick('chennai', 'one')" />
+               :class="infectionClasses('35', 'one')"
+               v-on:click="handleInfectionClick('35', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -10964,8 +10964,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('chennai', 'two')"
-               v-on:click="handleInfectionClick('chennai', 'two')" />
+               :class="infectionClasses('35', 'two')"
+               v-on:click="handleInfectionClick('35', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -10977,15 +10977,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('chennai', 'three')"
-               v-on:click="handleInfectionClick('chennai', 'three')" />
+               :class="infectionClasses('35', 'three')"
+               v-on:click="handleInfectionClick('35', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-53">
             <path
-               :class="playerClasses('chennai', 'one')"
-               v-on:click="handlePlayerClick('chennai', 'one')"
+               :class="playerClasses('35', 'one')"
+               v-on:click="handlePlayerClick('35', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-5" />
@@ -10994,8 +10994,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-43">
             <path
-               :class="playerClasses('chennai', 'two')"
-               v-on:click="handlePlayerClick('chennai', 'two')"
+               :class="playerClasses('35', 'two')"
+               v-on:click="handlePlayerClick('35', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-6" />
@@ -11004,8 +11004,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-59">
             <path
-               :class="playerClasses('chennai', 'three')"
-               v-on:click="handlePlayerClick('chennai', 'three')"
+               :class="playerClasses('35', 'three')"
+               v-on:click="handlePlayerClick('35', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-54" />
@@ -11014,8 +11014,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-91">
             <path
-               :class="playerClasses('chennai', 'four')"
-               v-on:click="handlePlayerClick('chennai', 'four')"
+               :class="playerClasses('35', 'four')"
+               v-on:click="handlePlayerClick('35', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-7" />
@@ -11030,7 +11030,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-41"
-         v-on:click="handleCellClick('chennai')">
+         v-on:click="handleCellClick('35')">
         <circle
            style="fill:#000000;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-79380248390522)"
            id="path101-883"
@@ -11064,7 +11064,7 @@
         </g>
         <path
            style="display:inline;stroke-width:0.07384993"
-           :class="researchCenterClasses('chennai')"
+           :class="researchCenterClasses('35')"
            d="m 143.67242,150.5928 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32324,1.40315 H 110.58765 V 162.40879 H 91.682078 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40315,-1.40315 -1.40315,-3.32325 V 150.5928 q 0,-0.0738 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463702,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46854,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55085,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104142,42.61141 q -0.8862,0.5908 -1.7724,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.57869,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.0981,-44.236108 q 2.3632,-1.9201 5.612582,-1.9201 3.2494,0 5.6126,1.9201 l 18.01938,15.065378 V 98.602452 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66465 1.69855,-0.66465 h 14.17918 q 1.0339,0 1.69855,0.66465 0.66465,0.66465 0.66465,1.69855 v 30.130768 l 16.17314,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0738,0.99697 -0.51695,1.73547 z"
            id="research-station-84"
            inkscape:connector-curvature="0" />
@@ -11090,8 +11090,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('karachi', 'one')"
-               v-on:click="handleInfectionClick('karachi', 'one')" />
+               :class="infectionClasses('31', 'one')"
+               v-on:click="handleInfectionClick('31', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -11103,8 +11103,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('karachi', 'two')"
-               v-on:click="handleInfectionClick('karachi', 'two')" />
+               :class="infectionClasses('31', 'two')"
+               v-on:click="handleInfectionClick('31', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -11116,15 +11116,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('karachi', 'three')"
-               v-on:click="handleInfectionClick('karachi', 'three')" />
+               :class="infectionClasses('31', 'three')"
+               v-on:click="handleInfectionClick('31', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-36">
             <path
-               :class="playerClasses('karachi', 'one')"
-               v-on:click="handlePlayerClick('karachi', 'one')"
+               :class="playerClasses('31', 'one')"
+               v-on:click="handlePlayerClick('31', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-59" />
@@ -11133,8 +11133,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-54">
             <path
-               :class="playerClasses('karachi', 'two')"
-               v-on:click="handlePlayerClick('karachi', 'two')"
+               :class="playerClasses('31', 'two')"
+               v-on:click="handlePlayerClick('31', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-91" />
@@ -11143,8 +11143,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-75">
             <path
-               :class="playerClasses('karachi', 'three')"
-               v-on:click="handlePlayerClick('karachi', 'three')"
+               :class="playerClasses('31', 'three')"
+               v-on:click="handlePlayerClick('31', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-541" />
@@ -11153,8 +11153,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-88">
             <path
-               :class="playerClasses('karachi', 'four')"
-               v-on:click="handlePlayerClick('karachi', 'four')"
+               :class="playerClasses('31', 'four')"
+               v-on:click="handlePlayerClick('31', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-3" />
@@ -11169,7 +11169,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-26"
-         v-on:click="handleCellClick('karachi')">
+         v-on:click="handleCellClick('31')">
         <circle
            style="fill:#000000;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-7938024839052273)"
            id="path101-67"
@@ -11203,7 +11203,7 @@
         </g>
         <path
            style="display:inline;stroke-width:0.07384993"
-           :class="researchCenterClasses('karachi')"
+           :class="researchCenterClasses('31')"
            d="m 143.67242,150.5928 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32324,1.40315 H 110.58765 V 162.40879 H 91.682078 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40315,-1.40315 -1.40315,-3.32325 V 150.5928 q 0,-0.0738 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463702,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46854,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55085,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104142,42.61141 q -0.8862,0.5908 -1.7724,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.57869,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.0981,-44.236108 q 2.3632,-1.9201 5.612582,-1.9201 3.2494,0 5.6126,1.9201 l 18.01938,15.065378 V 98.602452 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66465 1.69855,-0.66465 h 14.17918 q 1.0339,0 1.69855,0.66465 0.66465,0.66465 0.66465,1.69855 v 30.130768 l 16.17314,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0738,0.99697 -0.51695,1.73547 z"
            id="research-station-44"
            inkscape:connector-curvature="0" />
@@ -11229,8 +11229,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('delhi', 'one')"
-               v-on:click="handleInfectionClick('delhi', 'one')" />
+               :class="infectionClasses('32', 'one')"
+               v-on:click="handleInfectionClick('32', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -11242,8 +11242,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('delhi', 'two')"
-               v-on:click="handleInfectionClick('delhi', 'two')" />
+               :class="infectionClasses('32', 'two')"
+               v-on:click="handleInfectionClick('32', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -11255,15 +11255,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('delhi', 'three')"
-               v-on:click="handleInfectionClick('delhi', 'three')" />
+               :class="infectionClasses('32', 'three')"
+               v-on:click="handleInfectionClick('32', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-883">
             <path
-               :class="playerClasses('delhi', 'one')"
-               v-on:click="handlePlayerClick('delhi', 'one')"
+               :class="playerClasses('32', 'one')"
+               v-on:click="handlePlayerClick('32', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-81" />
@@ -11272,8 +11272,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-53">
             <path
-               :class="playerClasses('delhi', 'two')"
-               v-on:click="handlePlayerClick('delhi', 'two')"
+               :class="playerClasses('32', 'two')"
+               v-on:click="handlePlayerClick('32', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-54" />
@@ -11282,8 +11282,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-36">
             <path
-               :class="playerClasses('delhi', 'three')"
-               v-on:click="handlePlayerClick('delhi', 'three')"
+               :class="playerClasses('32', 'three')"
+               v-on:click="handlePlayerClick('32', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-5" />
@@ -11292,8 +11292,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-95">
             <path
-               :class="playerClasses('delhi', 'four')"
-               v-on:click="handlePlayerClick('delhi', 'four')"
+               :class="playerClasses('32', 'four')"
+               v-on:click="handlePlayerClick('32', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-49" />
@@ -11308,7 +11308,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-5"
-         v-on:click="handleCellClick('delhi')">
+         v-on:click="handleCellClick('32')">
         <circle
            style="fill:#000000;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-793802483905)"
            id="path101-54"
@@ -11342,7 +11342,7 @@
         </g>
         <path
            style="display:inline;stroke-width:0.07384993"
-           :class="researchCenterClasses('delhi')"
+           :class="researchCenterClasses('32')"
            d="m 143.67242,150.5928 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32324,1.40315 H 110.58765 V 162.40879 H 91.682078 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40315,-1.40315 -1.40315,-3.32325 V 150.5928 q 0,-0.0738 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463702,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46854,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55085,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104142,42.61141 q -0.8862,0.5908 -1.7724,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.57869,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.0981,-44.236108 q 2.3632,-1.9201 5.612582,-1.9201 3.2494,0 5.6126,1.9201 l 18.01938,15.065378 V 98.602452 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66465 1.69855,-0.66465 h 14.17918 q 1.0339,0 1.69855,0.66465 0.66465,0.66465 0.66465,1.69855 v 30.130768 l 16.17314,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0738,0.99697 -0.51695,1.73547 z"
            id="research-station-2"
            inkscape:connector-curvature="0" />
@@ -11368,8 +11368,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('kolkata', 'one')"
-               v-on:click="handleInfectionClick('kolkata', 'one')" />
+               :class="infectionClasses('34', 'one')"
+               v-on:click="handleInfectionClick('34', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -11381,8 +11381,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('kolkata', 'two')"
-               v-on:click="handleInfectionClick('kolkata', 'two')" />
+               :class="infectionClasses('34', 'two')"
+               v-on:click="handleInfectionClick('34', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -11394,15 +11394,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('kolkata', 'three')"
-               v-on:click="handleInfectionClick('kolkata', 'three')" />
+               :class="infectionClasses('34', 'three')"
+               v-on:click="handleInfectionClick('34', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-38">
             <path
-               :class="playerClasses('kolkata', 'one')"
-               v-on:click="handlePlayerClick('kolkata', 'one')"
+               :class="playerClasses('34', 'one')"
+               v-on:click="handlePlayerClick('34', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-15" />
@@ -11411,8 +11411,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-35">
             <path
-               :class="playerClasses('kolkata', 'two')"
-               v-on:click="handlePlayerClick('kolkata', 'two')"
+               :class="playerClasses('34', 'two')"
+               v-on:click="handlePlayerClick('34', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-43" />
@@ -11421,8 +11421,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-65">
             <path
-               :class="playerClasses('kolkata', 'three')"
-               v-on:click="handlePlayerClick('kolkata', 'three')"
+               :class="playerClasses('34', 'three')"
+               v-on:click="handlePlayerClick('34', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-9" />
@@ -11431,8 +11431,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-54">
             <path
-               :class="playerClasses('kolkata', 'four')"
-               v-on:click="handlePlayerClick('kolkata', 'four')"
+               :class="playerClasses('34', 'four')"
+               v-on:click="handlePlayerClick('34', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-91" />
@@ -11447,7 +11447,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-54"
-         v-on:click="handleCellClick('kolkata')">
+         v-on:click="handleCellClick('34')">
         <circle
            style="fill:#000000;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-7938024839052)"
            id="path101-18"
@@ -11481,7 +11481,7 @@
         </g>
         <path
            style="display:inline;stroke-width:0.07384993"
-           :class="researchCenterClasses('kolkata')"
+           :class="researchCenterClasses('34')"
            d="m 143.67242,150.5928 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32324,1.40315 H 110.58765 V 162.40879 H 91.682078 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40315,-1.40315 -1.40315,-3.32325 V 150.5928 q 0,-0.0738 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463702,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46854,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55085,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104142,42.61141 q -0.8862,0.5908 -1.7724,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.57869,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.0981,-44.236108 q 2.3632,-1.9201 5.612582,-1.9201 3.2494,0 5.6126,1.9201 l 18.01938,15.065378 V 98.602452 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66465 1.69855,-0.66465 h 14.17918 q 1.0339,0 1.69855,0.66465 0.66465,0.66465 0.66465,1.69855 v 30.130768 l 16.17314,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0738,0.99697 -0.51695,1.73547 z"
            id="research-station-6"
            inkscape:connector-curvature="0" />
@@ -11507,8 +11507,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('tehran', 'one')"
-               v-on:click="handleInfectionClick('tehran', 'one')" />
+               :class="infectionClasses('29', 'one')"
+               v-on:click="handleInfectionClick('29', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -11520,8 +11520,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('tehran', 'two')"
-               v-on:click="handleInfectionClick('tehran', 'two')" />
+               :class="infectionClasses('29', 'two')"
+               v-on:click="handleInfectionClick('29', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -11533,15 +11533,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('tehran', 'three')"
-               v-on:click="handleInfectionClick('tehran', 'three')" />
+               :class="infectionClasses('29', 'three')"
+               v-on:click="handleInfectionClick('29', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-88">
             <path
-               :class="playerClasses('tehran', 'one')"
-               v-on:click="handlePlayerClick('tehran', 'one')"
+               :class="playerClasses('29', 'one')"
+               v-on:click="handlePlayerClick('29', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-38" />
@@ -11550,8 +11550,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-1">
             <path
-               :class="playerClasses('tehran', 'two')"
-               v-on:click="handlePlayerClick('tehran', 'two')"
+               :class="playerClasses('29', 'two')"
+               v-on:click="handlePlayerClick('29', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-53" />
@@ -11560,8 +11560,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-5">
             <path
-               :class="playerClasses('tehran', 'three')"
-               v-on:click="handlePlayerClick('tehran', 'three')"
+               :class="playerClasses('29', 'three')"
+               v-on:click="handlePlayerClick('29', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-43" />
@@ -11570,8 +11570,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-65">
             <path
-               :class="playerClasses('tehran', 'four')"
-               v-on:click="handlePlayerClick('tehran', 'four')"
+               :class="playerClasses('29', 'four')"
+               v-on:click="handlePlayerClick('29', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-9" />
@@ -11586,7 +11586,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-9"
-         v-on:click="handleCellClick('tehran')">
+         v-on:click="handleCellClick('29')">
         <circle
            style="fill:#000000;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-79380248390)"
            id="path101-175"
@@ -11620,7 +11620,7 @@
         </g>
         <path
            style="display:inline;stroke-width:0.07384993"
-           :class="researchCenterClasses('tehran')"
+           :class="researchCenterClasses('29')"
            d="m 143.67242,150.5928 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32324,1.40315 H 110.58765 V 162.40879 H 91.682078 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40315,-1.40315 -1.40315,-3.32325 V 150.5928 q 0,-0.0738 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463702,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46854,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55085,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104142,42.61141 q -0.8862,0.5908 -1.7724,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.57869,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.0981,-44.236108 q 2.3632,-1.9201 5.612582,-1.9201 3.2494,0 5.6126,1.9201 l 18.01938,15.065378 V 98.602452 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66465 1.69855,-0.66465 h 14.17918 q 1.0339,0 1.69855,0.66465 0.66465,0.66465 0.66465,1.69855 v 30.130768 l 16.17314,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0738,0.99697 -0.51695,1.73547 z"
            id="research-station-52"
            inkscape:connector-curvature="0" />
@@ -11646,8 +11646,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('moscow', 'one')"
-               v-on:click="handleInfectionClick('moscow', 'one')" />
+               :class="infectionClasses('26', 'one')"
+               v-on:click="handleInfectionClick('26', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -11659,8 +11659,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('moscow', 'two')"
-               v-on:click="handleInfectionClick('moscow', 'two')" />
+               :class="infectionClasses('26', 'two')"
+               v-on:click="handleInfectionClick('26', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -11672,15 +11672,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('moscow', 'three')"
-               v-on:click="handleInfectionClick('moscow', 'three')" />
+               :class="infectionClasses('26', 'three')"
+               v-on:click="handleInfectionClick('26', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-6">
             <path
-               :class="playerClasses('moscow', 'one')"
-               v-on:click="handlePlayerClick('moscow', 'one')"
+               :class="playerClasses('26', 'one')"
+               v-on:click="handlePlayerClick('26', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-9" />
@@ -11689,8 +11689,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-41">
             <path
-               :class="playerClasses('moscow', 'two')"
-               v-on:click="handlePlayerClick('moscow', 'two')"
+               :class="playerClasses('26', 'two')"
+               v-on:click="handlePlayerClick('26', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-3" />
@@ -11699,8 +11699,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-78">
             <path
-               :class="playerClasses('moscow', 'three')"
-               v-on:click="handlePlayerClick('moscow', 'three')"
+               :class="playerClasses('26', 'three')"
+               v-on:click="handlePlayerClick('26', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-83" />
@@ -11709,8 +11709,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-8">
             <path
-               :class="playerClasses('moscow', 'four')"
-               v-on:click="handlePlayerClick('moscow', 'four')"
+               :class="playerClasses('26', 'four')"
+               v-on:click="handlePlayerClick('26', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-15" />
@@ -11725,7 +11725,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-4"
-         v-on:click="handleCellClick('moscow')">
+         v-on:click="handleCellClick('26')">
         <circle
            style="fill:#000000;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-793802483)"
            id="path101-36"
@@ -11759,7 +11759,7 @@
         </g>
         <path
            style="display:inline;stroke-width:0.07384993"
-           :class="researchCenterClasses('moscow')"
+           :class="researchCenterClasses('26')"
            d="m 143.67242,150.5928 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32324,1.40315 H 110.58765 V 162.40879 H 91.682078 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40315,-1.40315 -1.40315,-3.32325 V 150.5928 q 0,-0.0738 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463702,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46854,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55085,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104142,42.61141 q -0.8862,0.5908 -1.7724,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.57869,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.0981,-44.236108 q 2.3632,-1.9201 5.612582,-1.9201 3.2494,0 5.6126,1.9201 l 18.01938,15.065378 V 98.602452 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66465 1.69855,-0.66465 h 14.17918 q 1.0339,0 1.69855,0.66465 0.66465,0.66465 0.66465,1.69855 v 30.130768 l 16.17314,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0738,0.99697 -0.51695,1.73547 z"
            id="research-station-59"
            inkscape:connector-curvature="0" />
@@ -11791,8 +11791,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('los-angeles', 'one')"
-               v-on:click="handleInfectionClick('los-angeles', 'one')" />
+               :class="infectionClasses('1', 'one')"
+               v-on:click="handleInfectionClick('1', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -11804,8 +11804,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('los-angeles', 'two')"
-               v-on:click="handleInfectionClick('los-angeles', 'two')" />
+               :class="infectionClasses('1', 'two')"
+               v-on:click="handleInfectionClick('1', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -11817,15 +11817,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('los-angeles', 'three')"
-               v-on:click="handleInfectionClick('los-angeles', 'three')" />
+               :class="infectionClasses('1', 'three')"
+               v-on:click="handleInfectionClick('1', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-381">
             <path
-               :class="playerClasses('los-angeles', 'one')"
-               v-on:click="handlePlayerClick('los-angeles', 'one')"
+               :class="playerClasses('1', 'one')"
+               v-on:click="handlePlayerClick('1', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-53" />
@@ -11834,8 +11834,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-543">
             <path
-               :class="playerClasses('los-angeles', 'two')"
-               v-on:click="handlePlayerClick('los-angeles', 'two')"
+               :class="playerClasses('1', 'two')"
+               v-on:click="handlePlayerClick('1', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-65" />
@@ -11844,8 +11844,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-95">
             <path
-               :class="playerClasses('los-angeles', 'three')"
-               v-on:click="handlePlayerClick('los-angeles', 'three')"
+               :class="playerClasses('1', 'three')"
+               v-on:click="handlePlayerClick('1', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-49" />
@@ -11854,8 +11854,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-1">
             <path
-               :class="playerClasses('los-angeles', 'four')"
-               v-on:click="handlePlayerClick('los-angeles', 'four')"
+               :class="playerClasses('1', 'four')"
+               v-on:click="handlePlayerClick('1', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-75" />
@@ -11869,7 +11869,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-88"
-         v-on:click="handleCellClick('los-angeles')">
+         v-on:click="handleCellClick('1')">
         <circle
            style="fill:#ecf83c;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-80)"
            id="path101-35"
@@ -11906,7 +11906,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('los-angeles')"
+           :class="researchCenterClasses('1')"
            d="m 146.67609,153.87412 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 113.59132 V 165.69011 H 94.685731 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463709,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61142 -51.104161,42.61142 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.098102,-44.23612 q 2.363199,-1.920093 5.612599,-1.920093 3.24939,0 5.61259,1.920093 l 18.01938,15.06539 v -14.40074 q 0,-1.0339 0.66465,-1.69854 0.66465,-0.664653 1.69855,-0.664653 h 14.17919 q 1.0339,0 1.69855,0.664653 0.66465,0.66464 0.66465,1.69854 v 30.13078 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-22"
            inkscape:connector-curvature="0" />
@@ -11942,8 +11942,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('mexico-city', 'one')"
-               v-on:click="handleInfectionClick('mexico-city', 'one')" />
+               :class="infectionClasses('3', 'one')"
+               v-on:click="handleInfectionClick('3', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -11955,8 +11955,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('mexico-city', 'two')"
-               v-on:click="handleInfectionClick('mexico-city', 'two')" />
+               :class="infectionClasses('3', 'two')"
+               v-on:click="handleInfectionClick('3', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -11968,15 +11968,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('mexico-city', 'three')"
-               v-on:click="handleInfectionClick('mexico-city', 'three')" />
+               :class="infectionClasses('3', 'three')"
+               v-on:click="handleInfectionClick('3', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-1">
             <path
-               :class="playerClasses('mexico-city', 'one')"
-               v-on:click="handlePlayerClick('mexico-city', 'one')"
+               :class="playerClasses('3', 'one')"
+               v-on:click="handlePlayerClick('3', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-7" />
@@ -11985,8 +11985,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-554">
             <path
-               :class="playerClasses('mexico-city', 'two')"
-               v-on:click="handlePlayerClick('mexico-city', 'two')"
+               :class="playerClasses('3', 'two')"
+               v-on:click="handlePlayerClick('3', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-18" />
@@ -11995,8 +11995,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-835">
             <path
-               :class="playerClasses('mexico-city', 'three')"
-               v-on:click="handlePlayerClick('mexico-city', 'three')"
+               :class="playerClasses('3', 'three')"
+               v-on:click="handlePlayerClick('3', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-22" />
@@ -12005,8 +12005,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-66">
             <path
-               :class="playerClasses('mexico-city', 'four')"
-               v-on:click="handlePlayerClick('mexico-city', 'four')"
+               :class="playerClasses('3', 'four')"
+               v-on:click="handlePlayerClick('3', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-78" />
@@ -12020,7 +12020,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-71"
-         v-on:click="handleCellClick('mexico-city')">
+         v-on:click="handleCellClick('3')">
         <circle
            style="fill:#ecf83c;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-793802483905227379023)"
            id="path101-87"
@@ -12057,7 +12057,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('mexico-city')"
+           :class="researchCenterClasses('3')"
            d="m 146.67609,153.87412 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 113.59132 V 165.69011 H 94.685731 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463709,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61142 -51.104161,42.61142 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.098102,-44.23612 q 2.363199,-1.920093 5.612599,-1.920093 3.24939,0 5.61259,1.920093 l 18.01938,15.06539 v -14.40074 q 0,-1.0339 0.66465,-1.69854 0.66465,-0.664653 1.69855,-0.664653 h 14.17919 q 1.0339,0 1.69855,0.664653 0.66465,0.66464 0.66465,1.69854 v 30.13078 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-915"
            inkscape:connector-curvature="0" />
@@ -12093,8 +12093,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('miami', 'one')"
-               v-on:click="handleInfectionClick('miami', 'one')" />
+               :class="infectionClasses('10', 'one')"
+               v-on:click="handleInfectionClick('10', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -12106,8 +12106,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('miami', 'two')"
-               v-on:click="handleInfectionClick('miami', 'two')" />
+               :class="infectionClasses('10', 'two')"
+               v-on:click="handleInfectionClick('10', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -12119,15 +12119,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('miami', 'three')"
-               v-on:click="handleInfectionClick('miami', 'three')" />
+               :class="infectionClasses('10', 'three')"
+               v-on:click="handleInfectionClick('10', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-75">
             <path
-               :class="playerClasses('miami', 'one')"
-               v-on:click="handlePlayerClick('miami', 'one')"
+               :class="playerClasses('10', 'one')"
+               v-on:click="handlePlayerClick('10', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-54" />
@@ -12136,8 +12136,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-18">
             <path
-               :class="playerClasses('miami', 'two')"
-               v-on:click="handlePlayerClick('miami', 'two')"
+               :class="playerClasses('10', 'two')"
+               v-on:click="handlePlayerClick('10', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-8" />
@@ -12146,8 +12146,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-352">
             <path
-               :class="playerClasses('miami', 'three')"
-               v-on:click="handlePlayerClick('miami', 'three')"
+               :class="playerClasses('10', 'three')"
+               v-on:click="handlePlayerClick('10', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-26" />
@@ -12156,8 +12156,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-67">
             <path
-               :class="playerClasses('miami', 'four')"
-               v-on:click="handlePlayerClick('miami', 'four')"
+               :class="playerClasses('10', 'four')"
+               v-on:click="handlePlayerClick('10', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-84" />
@@ -12171,7 +12171,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-87"
-         v-on:click="handleCellClick('miami')">
+         v-on:click="handleCellClick('10')">
         <circle
            style="fill:#ecf83c;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-7938024839052273790239)"
            id="path101-877"
@@ -12208,7 +12208,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('miami')"
+           :class="researchCenterClasses('10')"
            d="m 146.67609,153.87412 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 113.59132 V 165.69011 H 94.685731 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463709,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61142 -51.104161,42.61142 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.098102,-44.23612 q 2.363199,-1.920093 5.612599,-1.920093 3.24939,0 5.61259,1.920093 l 18.01938,15.06539 v -14.40074 q 0,-1.0339 0.66465,-1.69854 0.66465,-0.664653 1.69855,-0.664653 h 14.17919 q 1.0339,0 1.69855,0.664653 0.66465,0.66464 0.66465,1.69854 v 30.13078 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-558"
            inkscape:connector-curvature="0" />
@@ -12234,8 +12234,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('bogota', 'one')"
-               v-on:click="handleInfectionClick('bogota', 'one')" />
+               :class="infectionClasses('11', 'one')"
+               v-on:click="handleInfectionClick('11', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -12247,8 +12247,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('bogota', 'two')"
-               v-on:click="handleInfectionClick('bogota', 'two')" />
+               :class="infectionClasses('11', 'two')"
+               v-on:click="handleInfectionClick('11', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -12260,15 +12260,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('bogota', 'three')"
-               v-on:click="handleInfectionClick('bogota', 'three')" />
+               :class="infectionClasses('11', 'three')"
+               v-on:click="handleInfectionClick('11', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-755">
             <path
-               :class="playerClasses('bogota', 'one')"
-               v-on:click="handlePlayerClick('bogota', 'one')"
+               :class="playerClasses('11', 'one')"
+               v-on:click="handlePlayerClick('11', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-41" />
@@ -12277,8 +12277,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-88">
             <path
-               :class="playerClasses('bogota', 'two')"
-               v-on:click="handlePlayerClick('bogota', 'two')"
+               :class="playerClasses('11', 'two')"
+               v-on:click="handlePlayerClick('11', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-35" />
@@ -12287,8 +12287,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-2">
             <path
-               :class="playerClasses('bogota', 'three')"
-               v-on:click="handlePlayerClick('bogota', 'three')"
+               :class="playerClasses('11', 'three')"
+               v-on:click="handlePlayerClick('11', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-266" />
@@ -12297,8 +12297,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-78">
             <path
-               :class="playerClasses('bogota', 'four')"
-               v-on:click="handlePlayerClick('bogota', 'four')"
+               :class="playerClasses('11', 'four')"
+               v-on:click="handlePlayerClick('11', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-41" />
@@ -12312,7 +12312,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-878"
-         v-on:click="handleCellClick('bogota')">
+         v-on:click="handleCellClick('11')">
         <circle
            style="fill:#ecf83c;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-79380248390522737902399)"
            id="path101-77"
@@ -12349,7 +12349,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('bogota')"
+           :class="researchCenterClasses('11')"
            d="m 146.67609,153.87412 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 113.59132 V 165.69011 H 94.685731 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463709,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61142 -51.104161,42.61142 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.098102,-44.23612 q 2.363199,-1.920093 5.612599,-1.920093 3.24939,0 5.61259,1.920093 l 18.01938,15.06539 v -14.40074 q 0,-1.0339 0.66465,-1.69854 0.66465,-0.664653 1.69855,-0.664653 h 14.17919 q 1.0339,0 1.69855,0.664653 0.66465,0.66464 0.66465,1.69854 v 30.13078 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-82"
            inkscape:connector-curvature="0" />
@@ -12391,8 +12391,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('lima', 'one')"
-               v-on:click="handleInfectionClick('lima', 'one')" />
+               :class="infectionClasses('4', 'one')"
+               v-on:click="handleInfectionClick('4', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -12404,8 +12404,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('lima', 'two')"
-               v-on:click="handleInfectionClick('lima', 'two')" />
+               :class="infectionClasses('4', 'two')"
+               v-on:click="handleInfectionClick('4', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -12417,15 +12417,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('lima', 'three')"
-               v-on:click="handleInfectionClick('lima', 'three')" />
+               :class="infectionClasses('4', 'three')"
+               v-on:click="handleInfectionClick('4', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-55">
             <path
-               :class="playerClasses('lima', 'one')"
-               v-on:click="handlePlayerClick('lima', 'one')"
+               :class="playerClasses('4', 'one')"
+               v-on:click="handlePlayerClick('4', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-418" />
@@ -12434,8 +12434,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-83">
             <path
-               :class="playerClasses('lima', 'two')"
-               v-on:click="handlePlayerClick('lima', 'two')"
+               :class="playerClasses('4', 'two')"
+               v-on:click="handlePlayerClick('4', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-52" />
@@ -12444,8 +12444,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-26">
             <path
-               :class="playerClasses('lima', 'three')"
-               v-on:click="handlePlayerClick('lima', 'three')"
+               :class="playerClasses('4', 'three')"
+               v-on:click="handlePlayerClick('4', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-67" />
@@ -12454,8 +12454,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-84">
             <path
-               :class="playerClasses('lima', 'four')"
-               v-on:click="handlePlayerClick('lima', 'four')"
+               :class="playerClasses('4', 'four')"
+               v-on:click="handlePlayerClick('4', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-17" />
@@ -12469,7 +12469,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-787"
-         v-on:click="handleCellClick('lima')">
+         v-on:click="handleCellClick('4')">
         <circle
            style="fill:#ecf83c;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-793802483905227379023997)"
            id="path101-74"
@@ -12506,7 +12506,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('lima')"
+           :class="researchCenterClasses('4')"
            d="m 146.67609,153.87412 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 113.59132 V 165.69011 H 94.685731 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463709,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61142 -51.104161,42.61142 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.098102,-44.23612 q 2.363199,-1.920093 5.612599,-1.920093 3.24939,0 5.61259,1.920093 l 18.01938,15.06539 v -14.40074 q 0,-1.0339 0.66465,-1.69854 0.66465,-0.664653 1.69855,-0.664653 h 14.17919 q 1.0339,0 1.69855,0.664653 0.66465,0.66464 0.66465,1.69854 v 30.13078 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-29"
            inkscape:connector-curvature="0" />
@@ -12532,8 +12532,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('santiago', 'one')"
-               v-on:click="handleInfectionClick('santiago', 'one')" />
+               :class="infectionClasses('5', 'one')"
+               v-on:click="handleInfectionClick('5', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -12545,8 +12545,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('santiago', 'two')"
-               v-on:click="handleInfectionClick('santiago', 'two')" />
+               :class="infectionClasses('5', 'two')"
+               v-on:click="handleInfectionClick('5', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -12558,15 +12558,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('santiago', 'three')"
-               v-on:click="handleInfectionClick('santiago', 'three')" />
+               :class="infectionClasses('5', 'three')"
+               v-on:click="handleInfectionClick('5', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-541">
             <path
-               :class="playerClasses('santiago', 'one')"
-               v-on:click="handlePlayerClick('santiago', 'one')"
+               :class="playerClasses('5', 'one')"
+               v-on:click="handlePlayerClick('5', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-88" />
@@ -12575,8 +12575,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-352">
             <path
-               :class="playerClasses('santiago', 'two')"
-               v-on:click="handlePlayerClick('santiago', 'two')"
+               :class="playerClasses('5', 'two')"
+               v-on:click="handlePlayerClick('5', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-2" />
@@ -12585,8 +12585,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-66">
             <path
-               :class="playerClasses('santiago', 'three')"
-               v-on:click="handlePlayerClick('santiago', 'three')"
+               :class="playerClasses('5', 'three')"
+               v-on:click="handlePlayerClick('5', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-7" />
@@ -12595,8 +12595,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-841">
             <path
-               :class="playerClasses('santiago', 'four')"
-               v-on:click="handlePlayerClick('santiago', 'four')"
+               :class="playerClasses('5', 'four')"
+               v-on:click="handlePlayerClick('5', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-71" />
@@ -12610,7 +12610,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-877"
-         v-on:click="handleCellClick('santiago')">
+         v-on:click="handleCellClick('5')">
         <circle
            style="fill:#ecf83c;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-7938024839052273790239970)"
            id="path101-44"
@@ -12647,7 +12647,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('santiago')"
+           :class="researchCenterClasses('5')"
            d="m 146.67609,153.87412 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 113.59132 V 165.69011 H 94.685731 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463709,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61142 -51.104161,42.61142 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.098102,-44.23612 q 2.363199,-1.920093 5.612599,-1.920093 3.24939,0 5.61259,1.920093 l 18.01938,15.06539 v -14.40074 q 0,-1.0339 0.66465,-1.69854 0.66465,-0.664653 1.69855,-0.664653 h 14.17919 q 1.0339,0 1.69855,0.664653 0.66465,0.66464 0.66465,1.69854 v 30.13078 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-98"
            inkscape:connector-curvature="0" />
@@ -12693,8 +12693,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('sao-paulo', 'one')"
-               v-on:click="handleInfectionClick('sao-paulo', 'one')" />
+               :class="infectionClasses('13', 'one')"
+               v-on:click="handleInfectionClick('13', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -12706,8 +12706,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('sao-paulo', 'two')"
-               v-on:click="handleInfectionClick('sao-paulo', 'two')" />
+               :class="infectionClasses('13', 'two')"
+               v-on:click="handleInfectionClick('13', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -12719,15 +12719,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('sao-paulo', 'three')"
-               v-on:click="handleInfectionClick('sao-paulo', 'three')" />
+               :class="infectionClasses('13', 'three')"
+               v-on:click="handleInfectionClick('13', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-41">
             <path
-               :class="playerClasses('sao-paulo', 'one')"
-               v-on:click="handlePlayerClick('sao-paulo', 'one')"
+               :class="playerClasses('13', 'one')"
+               v-on:click="handlePlayerClick('13', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-883" />
@@ -12736,8 +12736,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-52">
             <path
-               :class="playerClasses('sao-paulo', 'two')"
-               v-on:click="handlePlayerClick('sao-paulo', 'two')"
+               :class="playerClasses('13', 'two')"
+               v-on:click="handlePlayerClick('13', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-26" />
@@ -12746,8 +12746,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-67">
             <path
-               :class="playerClasses('sao-paulo', 'three')"
-               v-on:click="handlePlayerClick('sao-paulo', 'three')"
+               :class="playerClasses('13', 'three')"
+               v-on:click="handlePlayerClick('13', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-84" />
@@ -12756,8 +12756,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-17">
             <path
-               :class="playerClasses('sao-paulo', 'four')"
-               v-on:click="handlePlayerClick('sao-paulo', 'four')"
+               :class="playerClasses('13', 'four')"
+               v-on:click="handlePlayerClick('13', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-18" />
@@ -12771,7 +12771,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-77"
-         v-on:click="handleCellClick('sao-paulo')">
+         v-on:click="handleCellClick('13')">
         <circle
            style="fill:#ecf83c;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-79380248390522737902399703)"
            id="path101-449"
@@ -12808,7 +12808,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('sao-paulo')"
+           :class="researchCenterClasses('13')"
            d="m 146.67609,153.87412 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 113.59132 V 165.69011 H 94.685731 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463709,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61142 -51.104161,42.61142 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.098102,-44.23612 q 2.363199,-1.920093 5.612599,-1.920093 3.24939,0 5.61259,1.920093 l 18.01938,15.06539 v -14.40074 q 0,-1.0339 0.66465,-1.69854 0.66465,-0.664653 1.69855,-0.664653 h 14.17919 q 1.0339,0 1.69855,0.664653 0.66465,0.66464 0.66465,1.69854 v 30.13078 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-820"
            inkscape:connector-curvature="0" />
@@ -12834,8 +12834,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('buenos-aires', 'one')"
-               v-on:click="handleInfectionClick('buenos-aires', 'one')" />
+               :class="infectionClasses('12', 'one')"
+               v-on:click="handleInfectionClick('12', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -12847,8 +12847,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('buenos-aires', 'two')"
-               v-on:click="handleInfectionClick('buenos-aires', 'two')" />
+               :class="infectionClasses('12', 'two')"
+               v-on:click="handleInfectionClick('12', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -12860,15 +12860,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('buenos-aires', 'three')"
-               v-on:click="handleInfectionClick('buenos-aires', 'three')" />
+               :class="infectionClasses('12', 'three')"
+               v-on:click="handleInfectionClick('12', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-8835">
             <path
-               :class="playerClasses('buenos-aires', 'one')"
-               v-on:click="handlePlayerClick('buenos-aires', 'one')"
+               :class="playerClasses('12', 'one')"
+               v-on:click="handlePlayerClick('12', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-2" />
@@ -12877,8 +12877,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-2">
             <path
-               :class="playerClasses('buenos-aires', 'two')"
-               v-on:click="handlePlayerClick('buenos-aires', 'two')"
+               :class="playerClasses('12', 'two')"
+               v-on:click="handlePlayerClick('12', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-66" />
@@ -12887,8 +12887,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-784">
             <path
-               :class="playerClasses('buenos-aires', 'three')"
-               v-on:click="handlePlayerClick('buenos-aires', 'three')"
+               :class="playerClasses('12', 'three')"
+               v-on:click="handlePlayerClick('12', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-17" />
@@ -12897,8 +12897,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-18">
             <path
-               :class="playerClasses('buenos-aires', 'four')"
-               v-on:click="handlePlayerClick('buenos-aires', 'four')"
+               :class="playerClasses('12', 'four')"
+               v-on:click="handlePlayerClick('12', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-787" />
@@ -12912,7 +12912,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-491"
-         v-on:click="handleCellClick('buenos-aires')">
+         v-on:click="handleCellClick('12')">
         <circle
            style="fill:#ecf83c;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-793802483905227379023997039)"
            id="path101-55"
@@ -12949,7 +12949,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('buenos-aires')"
+           :class="researchCenterClasses('12')"
            d="m 146.67609,153.87412 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 113.59132 V 165.69011 H 94.685731 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463709,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61142 -51.104161,42.61142 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.098102,-44.23612 q 2.363199,-1.920093 5.612599,-1.920093 3.24939,0 5.61259,1.920093 l 18.01938,15.06539 v -14.40074 q 0,-1.0339 0.66465,-1.69854 0.66465,-0.664653 1.69855,-0.664653 h 14.17919 q 1.0339,0 1.69855,0.664653 0.66465,0.66464 0.66465,1.69854 v 30.13078 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-0"
            inkscape:connector-curvature="0" />
@@ -12975,8 +12975,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('lagos', 'one')"
-               v-on:click="handleInfectionClick('lagos', 'one')" />
+               :class="infectionClasses('14', 'one')"
+               v-on:click="handleInfectionClick('14', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -12988,8 +12988,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('lagos', 'two')"
-               v-on:click="handleInfectionClick('lagos', 'two')" />
+               :class="infectionClasses('14', 'two')"
+               v-on:click="handleInfectionClick('14', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -13001,15 +13001,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('lagos', 'three')"
-               v-on:click="handleInfectionClick('lagos', 'three')" />
+               :class="infectionClasses('14', 'three')"
+               v-on:click="handleInfectionClick('14', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-88352">
             <path
-               :class="playerClasses('lagos', 'one')"
-               v-on:click="handlePlayerClick('lagos', 'one')"
+               :class="playerClasses('14', 'one')"
+               v-on:click="handlePlayerClick('14', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-26" />
@@ -13018,8 +13018,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-67">
             <path
-               :class="playerClasses('lagos', 'two')"
-               v-on:click="handlePlayerClick('lagos', 'two')"
+               :class="playerClasses('14', 'two')"
+               v-on:click="handlePlayerClick('14', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-84" />
@@ -13028,8 +13028,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-171">
             <path
-               :class="playerClasses('lagos', 'three')"
-               v-on:click="handlePlayerClick('lagos', 'three')"
+               :class="playerClasses('14', 'three')"
+               v-on:click="handlePlayerClick('14', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-87" />
@@ -13038,8 +13038,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-87">
             <path
-               :class="playerClasses('lagos', 'four')"
-               v-on:click="handlePlayerClick('lagos', 'four')"
+               :class="playerClasses('14', 'four')"
+               v-on:click="handlePlayerClick('14', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-74" />
@@ -13053,7 +13053,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-15"
-         v-on:click="handleCellClick('lagos')">
+         v-on:click="handleCellClick('14')">
         <circle
            style="fill:#ecf83c;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-7938024839052273790239970398)"
            id="path101-558"
@@ -13090,7 +13090,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('lagos')"
+           :class="researchCenterClasses('14')"
            d="m 146.67609,153.87412 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 113.59132 V 165.69011 H 94.685731 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463709,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61142 -51.104161,42.61142 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.098102,-44.23612 q 2.363199,-1.920093 5.612599,-1.920093 3.24939,0 5.61259,1.920093 l 18.01938,15.06539 v -14.40074 q 0,-1.0339 0.66465,-1.69854 0.66465,-0.664653 1.69855,-0.664653 h 14.17919 q 1.0339,0 1.69855,0.664653 0.66465,0.66464 0.66465,1.69854 v 30.13078 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-58"
            inkscape:connector-curvature="0" />
@@ -13126,8 +13126,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('kinshasa', 'one')"
-               v-on:click="handleInfectionClick('kinshasa', 'one')" />
+               :class="infectionClasses('16', 'one')"
+               v-on:click="handleInfectionClick('16', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -13139,8 +13139,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('kinshasa', 'two')"
-               v-on:click="handleInfectionClick('kinshasa', 'two')" />
+               :class="infectionClasses('16', 'two')"
+               v-on:click="handleInfectionClick('16', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -13152,15 +13152,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('kinshasa', 'three')"
-               v-on:click="handleInfectionClick('kinshasa', 'three')" />
+               :class="infectionClasses('16', 'three')"
+               v-on:click="handleInfectionClick('16', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-52">
             <path
-               :class="playerClasses('kinshasa', 'one')"
-               v-on:click="handlePlayerClick('kinshasa', 'one')"
+               :class="playerClasses('16', 'one')"
+               v-on:click="handlePlayerClick('16', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-266" />
@@ -13169,8 +13169,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-78">
             <path
-               :class="playerClasses('kinshasa', 'two')"
-               v-on:click="handlePlayerClick('kinshasa', 'two')"
+               :class="playerClasses('16', 'two')"
+               v-on:click="handlePlayerClick('16', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-417" />
@@ -13179,8 +13179,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-18">
             <path
-               :class="playerClasses('kinshasa', 'three')"
-               v-on:click="handlePlayerClick('kinshasa', 'three')"
+               :class="playerClasses('16', 'three')"
+               v-on:click="handlePlayerClick('16', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-78" />
@@ -13189,8 +13189,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-77">
             <path
-               :class="playerClasses('kinshasa', 'four')"
-               v-on:click="handlePlayerClick('kinshasa', 'four')"
+               :class="playerClasses('16', 'four')"
+               v-on:click="handlePlayerClick('16', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-44" />
@@ -13204,7 +13204,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-55"
-         v-on:click="handleCellClick('kinshasa')">
+         v-on:click="handleCellClick('16')">
         <circle
            style="fill:#ecf83c;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-79380248390522737902399703986)"
            id="path101-58"
@@ -13241,7 +13241,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('kinshasa')"
+           :class="researchCenterClasses('16')"
            d="m 146.67609,153.87412 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 113.59132 V 165.69011 H 94.685731 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463709,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61142 -51.104161,42.61142 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.098102,-44.23612 q 2.363199,-1.920093 5.612599,-1.920093 3.24939,0 5.61259,1.920093 l 18.01938,15.06539 v -14.40074 q 0,-1.0339 0.66465,-1.69854 0.66465,-0.664653 1.69855,-0.664653 h 14.17919 q 1.0339,0 1.69855,0.664653 0.66465,0.66464 0.66465,1.69854 v 30.13078 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-83"
            inkscape:connector-curvature="0" />
@@ -13287,8 +13287,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('johannesburg', 'one')"
-               v-on:click="handleInfectionClick('johannesburg', 'one')" />
+               :class="infectionClasses('17', 'one')"
+               v-on:click="handleInfectionClick('17', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -13300,8 +13300,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('johannesburg', 'two')"
-               v-on:click="handleInfectionClick('johannesburg', 'two')" />
+               :class="infectionClasses('17', 'two')"
+               v-on:click="handleInfectionClick('17', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -13313,15 +13313,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('johannesburg', 'three')"
-               v-on:click="handleInfectionClick('johannesburg', 'three')" />
+               :class="infectionClasses('17', 'three')"
+               v-on:click="handleInfectionClick('17', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-522">
             <path
-               :class="playerClasses('johannesburg', 'one')"
-               v-on:click="handlePlayerClick('johannesburg', 'one')"
+               :class="playerClasses('17', 'one')"
+               v-on:click="handlePlayerClick('17', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-66" />
@@ -13330,8 +13330,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-784">
             <path
-               :class="playerClasses('johannesburg', 'two')"
-               v-on:click="handlePlayerClick('johannesburg', 'two')"
+               :class="playerClasses('17', 'two')"
+               v-on:click="handlePlayerClick('17', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-171" />
@@ -13340,8 +13340,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-87">
             <path
-               :class="playerClasses('johannesburg', 'three')"
-               v-on:click="handlePlayerClick('johannesburg', 'three')"
+               :class="playerClasses('17', 'three')"
+               v-on:click="handlePlayerClick('17', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-877" />
@@ -13350,8 +13350,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-44">
             <path
-               :class="playerClasses('johannesburg', 'four')"
-               v-on:click="handlePlayerClick('johannesburg', 'four')"
+               :class="playerClasses('17', 'four')"
+               v-on:click="handlePlayerClick('17', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-915" />
@@ -13365,7 +13365,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-29"
-         v-on:click="handleCellClick('johannesburg')">
+         v-on:click="handleCellClick('17')">
         <circle
            style="fill:#ecf83c;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-793802483905227379023997039865)"
            id="path101-82"
@@ -13402,7 +13402,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('johannesburg')"
+           :class="researchCenterClasses('17')"
            d="m 146.67609,153.87412 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 113.59132 V 165.69011 H 94.685731 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463709,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61142 -51.104161,42.61142 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.098102,-44.23612 q 2.363199,-1.920093 5.612599,-1.920093 3.24939,0 5.61259,1.920093 l 18.01938,15.06539 v -14.40074 q 0,-1.0339 0.66465,-1.69854 0.66465,-0.664653 1.69855,-0.664653 h 14.17919 q 1.0339,0 1.69855,0.664653 0.66465,0.66464 0.66465,1.69854 v 30.13078 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-06"
            inkscape:connector-curvature="0" />
@@ -13428,8 +13428,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('khartoum', 'one')"
-               v-on:click="handleInfectionClick('khartoum', 'one')" />
+               :class="infectionClasses('15', 'one')"
+               v-on:click="handleInfectionClick('15', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -13441,8 +13441,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('khartoum', 'two')"
-               v-on:click="handleInfectionClick('khartoum', 'two')" />
+               :class="infectionClasses('15', 'two')"
+               v-on:click="handleInfectionClick('15', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -13454,15 +13454,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('khartoum', 'three')"
-               v-on:click="handleInfectionClick('khartoum', 'three')" />
+               :class="infectionClasses('15', 'three')"
+               v-on:click="handleInfectionClick('15', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-26">
             <path
-               :class="playerClasses('khartoum', 'one')"
-               v-on:click="handlePlayerClick('khartoum', 'one')"
+               :class="playerClasses('15', 'one')"
+               v-on:click="handlePlayerClick('15', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-67" />
@@ -13471,8 +13471,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-84">
             <path
-               :class="playerClasses('khartoum', 'two')"
-               v-on:click="handlePlayerClick('khartoum', 'two')"
+               :class="playerClasses('15', 'two')"
+               v-on:click="handlePlayerClick('15', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-1718" />
@@ -13481,8 +13481,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-787">
             <path
-               :class="playerClasses('khartoum', 'three')"
-               v-on:click="handlePlayerClick('khartoum', 'three')"
+               :class="playerClasses('15', 'three')"
+               v-on:click="handlePlayerClick('15', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-74" />
@@ -13491,8 +13491,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-49">
             <path
-               :class="playerClasses('khartoum', 'four')"
-               v-on:click="handlePlayerClick('khartoum', 'four')"
+               :class="playerClasses('15', 'four')"
+               v-on:click="handlePlayerClick('15', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-155" />
@@ -13506,7 +13506,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-298"
-         v-on:click="handleCellClick('khartoum')">
+         v-on:click="handleCellClick('15')">
         <circle
            style="fill:#ecf83c;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-7938024839052273790239970398657)"
            id="path101-20"
@@ -13543,7 +13543,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('khartoum')"
+           :class="researchCenterClasses('15')"
            d="m 146.67609,153.87412 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 113.59132 V 165.69011 H 94.685731 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463709,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61142 -51.104161,42.61142 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 l 53.098102,-44.23612 q 2.363199,-1.920093 5.612599,-1.920093 3.24939,0 5.61259,1.920093 l 18.01938,15.06539 v -14.40074 q 0,-1.0339 0.66465,-1.69854 0.66465,-0.664653 1.69855,-0.664653 h 14.17919 q 1.0339,0 1.69855,0.664653 0.66465,0.66464 0.66465,1.69854 v 30.13078 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-62"
            inkscape:connector-curvature="0" />
@@ -13627,8 +13627,8 @@
        height="106.58929"
        x="51.404762"
        y="84.577377"
-       :class="infectionClasses('bangkok', 'one')"
-       v-on:click="handleInfectionClick('bangkok', 'one')" />
+       :class="infectionClasses('39', 'one')"
+       v-on:click="handleInfectionClick('39', 'one')" />
     <g
        style="display:inline"
        id="g2496"
@@ -13654,8 +13654,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('bangkok', 'two')"
-               v-on:click="handleInfectionClick('bangkok', 'two')" />
+               :class="infectionClasses('39', 'two')"
+               v-on:click="handleInfectionClick('39', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -13667,15 +13667,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('bangkok', 'three')"
-               v-on:click="handleInfectionClick('bangkok', 'three')" />
+               :class="infectionClasses('39', 'three')"
+               v-on:click="handleInfectionClick('39', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-66">
             <path
-               :class="playerClasses('bangkok', 'one')"
-               v-on:click="handlePlayerClick('bangkok', 'one')"
+               :class="playerClasses('39', 'one')"
+               v-on:click="handlePlayerClick('39', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-78" />
@@ -13684,8 +13684,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-417">
             <path
-               :class="playerClasses('bangkok', 'two')"
-               v-on:click="handlePlayerClick('bangkok', 'two')"
+               :class="playerClasses('39', 'two')"
+               v-on:click="handlePlayerClick('39', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-187" />
@@ -13694,8 +13694,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-877">
             <path
-               :class="playerClasses('bangkok', 'three')"
-               v-on:click="handlePlayerClick('bangkok', 'three')"
+               :class="playerClasses('39', 'three')"
+               v-on:click="handlePlayerClick('39', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-44" />
@@ -13704,8 +13704,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-915">
             <path
-               :class="playerClasses('bangkok', 'four')"
-               v-on:click="handlePlayerClick('bangkok', 'four')"
+               :class="playerClasses('39', 'four')"
+               v-on:click="handlePlayerClick('39', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-55" />
@@ -13719,7 +13719,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-98"
-         v-on:click="handleCellClick('bangkok')">
+         v-on:click="handleCellClick('39')">
         <circle
            style="fill:#fa4626;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-79380248390522737902399703986576)"
            id="path101-207"
@@ -13739,7 +13739,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('bangkok')"
+           :class="researchCenterClasses('39')"
            d="m 143.41204,151.87991 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 110.32727 V 163.6959 H 91.421689 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463701,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104151,42.61141 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 L 95.261893,99.224923 q 2.3632,-1.92009 5.612587,-1.92009 3.24939,0 5.61259,1.92009 l 18.01938,15.065367 V 99.889573 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66464 1.69855,-0.66464 h 14.17919 q 1.0339,0 1.69855,0.66464 0.66465,0.66465 0.66465,1.69855 v 30.130757 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-85"
            inkscape:connector-curvature="0" />
@@ -13785,8 +13785,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('jakarta', 'one')"
-               v-on:click="handleInfectionClick('jakarta', 'one')" />
+               :class="infectionClasses('40', 'one')"
+               v-on:click="handleInfectionClick('40', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -13798,8 +13798,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('jakarta', 'two')"
-               v-on:click="handleInfectionClick('jakarta', 'two')" />
+               :class="infectionClasses('40', 'two')"
+               v-on:click="handleInfectionClick('40', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -13811,15 +13811,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('jakarta', 'three')"
-               v-on:click="handleInfectionClick('jakarta', 'three')" />
+               :class="infectionClasses('40', 'three')"
+               v-on:click="handleInfectionClick('40', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-67">
             <path
-               :class="playerClasses('jakarta', 'one')"
-               v-on:click="handlePlayerClick('jakarta', 'one')"
+               :class="playerClasses('40', 'one')"
+               v-on:click="handlePlayerClick('40', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-84" />
@@ -13828,8 +13828,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-17">
             <path
-               :class="playerClasses('jakarta', 'two')"
-               v-on:click="handlePlayerClick('jakarta', 'two')"
+               :class="playerClasses('40', 'two')"
+               v-on:click="handlePlayerClick('40', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-1878" />
@@ -13838,8 +13838,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-77">
             <path
-               :class="playerClasses('jakarta', 'three')"
-               v-on:click="handlePlayerClick('jakarta', 'three')"
+               :class="playerClasses('40', 'three')"
+               v-on:click="handlePlayerClick('40', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-449" />
@@ -13848,8 +13848,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-15">
             <path
-               :class="playerClasses('jakarta', 'four')"
-               v-on:click="handlePlayerClick('jakarta', 'four')"
+               :class="playerClasses('40', 'four')"
+               v-on:click="handlePlayerClick('40', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-558" />
@@ -13863,7 +13863,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-82"
-         v-on:click="handleCellClick('jakarta')">
+         v-on:click="handleCellClick('40')">
         <circle
            style="fill:#fa4626;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-793802483905227379023997039865762)"
            id="path101-0"
@@ -13883,7 +13883,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('jakarta')"
+           :class="researchCenterClasses('40')"
            d="m 143.41204,151.87991 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 110.32727 V 163.6959 H 91.421689 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463701,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104151,42.61141 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 L 95.261893,99.224923 q 2.3632,-1.92009 5.612587,-1.92009 3.24939,0 5.61259,1.92009 l 18.01938,15.065367 V 99.889573 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66464 1.69855,-0.66464 h 14.17919 q 1.0339,0 1.69855,0.66464 0.66465,0.66465 0.66465,1.69855 v 30.130757 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-858"
            inkscape:connector-curvature="0" />
@@ -13909,8 +13909,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('ho-chi-minh-city', 'one')"
-               v-on:click="handleInfectionClick('ho-chi-minh-city', 'one')" />
+               :class="infectionClasses('41', 'one')"
+               v-on:click="handleInfectionClick('41', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -13922,8 +13922,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('ho-chi-minh-city', 'two')"
-               v-on:click="handleInfectionClick('ho-chi-minh-city', 'two')" />
+               :class="infectionClasses('41', 'two')"
+               v-on:click="handleInfectionClick('41', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -13935,15 +13935,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('ho-chi-minh-city', 'three')"
-               v-on:click="handleInfectionClick('ho-chi-minh-city', 'three')" />
+               :class="infectionClasses('41', 'three')"
+               v-on:click="handleInfectionClick('41', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-78">
             <path
-               :class="playerClasses('ho-chi-minh-city', 'one')"
-               v-on:click="handlePlayerClick('ho-chi-minh-city', 'one')"
+               :class="playerClasses('41', 'one')"
+               v-on:click="handlePlayerClick('41', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-417" />
@@ -13952,8 +13952,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-187">
             <path
-               :class="playerClasses('ho-chi-minh-city', 'two')"
-               v-on:click="handlePlayerClick('ho-chi-minh-city', 'two')"
+               :class="playerClasses('41', 'two')"
+               v-on:click="handlePlayerClick('41', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-87" />
@@ -13962,8 +13962,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-74">
             <path
-               :class="playerClasses('ho-chi-minh-city', 'three')"
-               v-on:click="handlePlayerClick('ho-chi-minh-city', 'three')"
+               :class="playerClasses('41', 'three')"
+               v-on:click="handlePlayerClick('41', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-491" />
@@ -13972,8 +13972,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-55">
             <path
-               :class="playerClasses('ho-chi-minh-city', 'four')"
-               v-on:click="handlePlayerClick('ho-chi-minh-city', 'four')"
+               :class="playerClasses('41', 'four')"
+               v-on:click="handlePlayerClick('41', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-58" />
@@ -13987,7 +13987,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-20"
-         v-on:click="handleCellClick('ho-chi-minh-city')">
+         v-on:click="handleCellClick('41')">
         <circle
            style="fill:#fa4626;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-7938024839052273790239970398657627)"
            id="path101-748"
@@ -14007,7 +14007,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('ho-chi-minh-city')"
+           :class="researchCenterClasses('41')"
            d="m 143.41204,151.87991 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 110.32727 V 163.6959 H 91.421689 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463701,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104151,42.61141 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 L 95.261893,99.224923 q 2.3632,-1.92009 5.612587,-1.92009 3.24939,0 5.61259,1.92009 l 18.01938,15.065367 V 99.889573 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66464 1.69855,-0.66464 h 14.17919 q 1.0339,0 1.69855,0.66464 0.66465,0.66465 0.66465,1.69855 v 30.130757 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-3"
            inkscape:connector-curvature="0" />
@@ -14081,8 +14081,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('hong-kong', 'one')"
-               v-on:click="handleInfectionClick('hong-kong', 'one')" />
+               :class="infectionClasses('38', 'one')"
+               v-on:click="handleInfectionClick('38', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -14094,8 +14094,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('hong-kong', 'two')"
-               v-on:click="handleInfectionClick('hong-kong', 'two')" />
+               :class="infectionClasses('38', 'two')"
+               v-on:click="handleInfectionClick('38', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -14107,15 +14107,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('hong-kong', 'three')"
-               v-on:click="handleInfectionClick('hong-kong', 'three')" />
+               :class="infectionClasses('38', 'three')"
+               v-on:click="handleInfectionClick('38', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-841">
             <path
-               :class="playerClasses('hong-kong', 'one')"
-               v-on:click="handlePlayerClick('hong-kong', 'one')"
+               :class="playerClasses('38', 'one')"
+               v-on:click="handlePlayerClick('38', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-71" />
@@ -14124,8 +14124,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-87">
             <path
-               :class="playerClasses('hong-kong', 'two')"
-               v-on:click="handlePlayerClick('hong-kong', 'two')"
+               :class="playerClasses('38', 'two')"
+               v-on:click="handlePlayerClick('38', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-877" />
@@ -14134,8 +14134,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-44">
             <path
-               :class="playerClasses('hong-kong', 'three')"
-               v-on:click="handlePlayerClick('hong-kong', 'three')"
+               :class="playerClasses('38', 'three')"
+               v-on:click="handlePlayerClick('38', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-91" />
@@ -14144,8 +14144,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-555">
             <path
-               :class="playerClasses('hong-kong', 'four')"
-               v-on:click="handlePlayerClick('hong-kong', 'four')"
+               :class="playerClasses('38', 'four')"
+               v-on:click="handlePlayerClick('38', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-82" />
@@ -14159,7 +14159,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-207"
-         v-on:click="handleCellClick('hong-kong')">
+         v-on:click="handleCellClick('38')">
         <circle
            style="fill:#fa4626;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-79380248390522737902399703986576270)"
            id="path101-48"
@@ -14179,7 +14179,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('hong-kong')"
+           :class="researchCenterClasses('38')"
            d="m 143.41204,151.87991 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 110.32727 V 163.6959 H 91.421689 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463701,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104151,42.61141 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 L 95.261893,99.224923 q 2.3632,-1.92009 5.612587,-1.92009 3.24939,0 5.61259,1.92009 l 18.01938,15.065367 V 99.889573 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66464 1.69855,-0.66464 h 14.17919 q 1.0339,0 1.69855,0.66464 0.66465,0.66465 0.66465,1.69855 v 30.130757 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-062"
            inkscape:connector-curvature="0" />
@@ -14206,8 +14206,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('shanghai', 'one')"
-               v-on:click="handleInfectionClick('shanghai', 'one')" />
+               :class="infectionClasses('37', 'one')"
+               v-on:click="handleInfectionClick('37', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -14219,8 +14219,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('shanghai', 'two')"
-               v-on:click="handleInfectionClick('shanghai', 'two')" />
+               :class="infectionClasses('37', 'two')"
+               v-on:click="handleInfectionClick('37', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -14232,15 +14232,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('shanghai', 'three')"
-               v-on:click="handleInfectionClick('shanghai', 'three')" />
+               :class="infectionClasses('37', 'three')"
+               v-on:click="handleInfectionClick('37', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-8417">
             <path
-               :class="playerClasses('shanghai', 'one')"
-               v-on:click="handlePlayerClick('shanghai', 'one')"
+               :class="playerClasses('37', 'one')"
+               v-on:click="handlePlayerClick('37', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-18" />
@@ -14249,8 +14249,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-787">
             <path
-               :class="playerClasses('shanghai', 'two')"
-               v-on:click="handlePlayerClick('shanghai', 'two')"
+               :class="playerClasses('37', 'two')"
+               v-on:click="handlePlayerClick('37', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-74" />
@@ -14259,8 +14259,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-49">
             <path
-               :class="playerClasses('shanghai', 'three')"
-               v-on:click="handlePlayerClick('shanghai', 'three')"
+               :class="playerClasses('37', 'three')"
+               v-on:click="handlePlayerClick('37', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-15" />
@@ -14269,8 +14269,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-558">
             <path
-               :class="playerClasses('shanghai', 'four')"
-               v-on:click="handlePlayerClick('shanghai', 'four')"
+               :class="playerClasses('37', 'four')"
+               v-on:click="handlePlayerClick('37', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-29" />
@@ -14284,7 +14284,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-74"
-         v-on:click="handleCellClick('shanghai')">
+         v-on:click="handleCellClick('37')">
         <circle
            style="fill:#fa4626;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-793802483905227379023997039865762703)"
            id="path101-85"
@@ -14304,7 +14304,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('shanghai')"
+           :class="researchCenterClasses('37')"
            d="m 143.41204,151.87991 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 110.32727 V 163.6959 H 91.421689 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463701,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104151,42.61141 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 L 95.261893,99.224923 q 2.3632,-1.92009 5.612587,-1.92009 3.24939,0 5.61259,1.92009 l 18.01938,15.065367 V 99.889573 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66464 1.69855,-0.66464 h 14.17919 q 1.0339,0 1.69855,0.66464 0.66465,0.66465 0.66465,1.69855 v 30.130757 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-622"
            inkscape:connector-curvature="0" />
@@ -14331,8 +14331,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('beijing', 'one')"
-               v-on:click="handleInfectionClick('beijing', 'one')" />
+               :class="infectionClasses('36', 'one')"
+               v-on:click="handleInfectionClick('36', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -14344,8 +14344,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('beijing', 'two')"
-               v-on:click="handleInfectionClick('beijing', 'two')" />
+               :class="infectionClasses('36', 'two')"
+               v-on:click="handleInfectionClick('36', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -14357,15 +14357,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('beijing', 'three')"
-               v-on:click="handleInfectionClick('beijing', 'three')" />
+               :class="infectionClasses('36', 'three')"
+               v-on:click="handleInfectionClick('36', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-417">
             <path
-               :class="playerClasses('beijing', 'one')"
-               v-on:click="handlePlayerClick('beijing', 'one')"
+               :class="playerClasses('36', 'one')"
+               v-on:click="handlePlayerClick('36', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-187" />
@@ -14374,8 +14374,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-877">
             <path
-               :class="playerClasses('beijing', 'two')"
-               v-on:click="handlePlayerClick('beijing', 'two')"
+               :class="playerClasses('36', 'two')"
+               v-on:click="handlePlayerClick('36', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-44" />
@@ -14384,8 +14384,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-91">
             <path
-               :class="playerClasses('beijing', 'three')"
-               v-on:click="handlePlayerClick('beijing', 'three')"
+               :class="playerClasses('36', 'three')"
+               v-on:click="handlePlayerClick('36', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-555" />
@@ -14394,8 +14394,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-82">
             <path
-               :class="playerClasses('beijing', 'four')"
-               v-on:click="handlePlayerClick('beijing', 'four')"
+               :class="playerClasses('36', 'four')"
+               v-on:click="handlePlayerClick('36', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-98" />
@@ -14409,7 +14409,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-748"
-         v-on:click="handleCellClick('beijing')">
+         v-on:click="handleCellClick('36')">
         <circle
            style="fill:#fa4626;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-7938024839052273790239970398657627039)"
            id="path101-583"
@@ -14429,7 +14429,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('beijing')"
+           :class="researchCenterClasses('36')"
            d="m 143.41204,151.87991 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 110.32727 V 163.6959 H 91.421689 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463701,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104151,42.61141 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 L 95.261893,99.224923 q 2.3632,-1.92009 5.612587,-1.92009 3.24939,0 5.61259,1.92009 l 18.01938,15.065367 V 99.889573 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66464 1.69855,-0.66464 h 14.17919 q 1.0339,0 1.69855,0.66464 0.66465,0.66465 0.66465,1.69855 v 30.130757 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-225"
            inkscape:connector-curvature="0" />
@@ -14466,8 +14466,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('seoul', 'one')"
-               v-on:click="handleInfectionClick('seoul', 'one')" />
+               :class="infectionClasses('44', 'one')"
+               v-on:click="handleInfectionClick('44', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -14479,8 +14479,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('seoul', 'two')"
-               v-on:click="handleInfectionClick('seoul', 'two')" />
+               :class="infectionClasses('44', 'two')"
+               v-on:click="handleInfectionClick('44', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -14492,15 +14492,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('seoul', 'three')"
-               v-on:click="handleInfectionClick('seoul', 'three')" />
+               :class="infectionClasses('44', 'three')"
+               v-on:click="handleInfectionClick('44', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-17">
             <path
-               :class="playerClasses('seoul', 'one')"
-               v-on:click="handlePlayerClick('seoul', 'one')"
+               :class="playerClasses('44', 'one')"
+               v-on:click="handlePlayerClick('44', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-1878" />
@@ -14509,8 +14509,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-77">
             <path
-               :class="playerClasses('seoul', 'two')"
-               v-on:click="handlePlayerClick('seoul', 'two')"
+               :class="playerClasses('44', 'two')"
+               v-on:click="handlePlayerClick('44', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-449" />
@@ -14519,8 +14519,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-15">
             <path
-               :class="playerClasses('seoul', 'three')"
-               v-on:click="handlePlayerClick('seoul', 'three')"
+               :class="playerClasses('44', 'three')"
+               v-on:click="handlePlayerClick('44', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-558" />
@@ -14529,8 +14529,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-29">
             <path
-               :class="playerClasses('seoul', 'four')"
-               v-on:click="handlePlayerClick('seoul', 'four')"
+               :class="playerClasses('44', 'four')"
+               v-on:click="handlePlayerClick('44', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-820" />
@@ -14544,7 +14544,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-58"
-         v-on:click="handleCellClick('seoul')">
+         v-on:click="handleCellClick('44')">
         <circle
            style="fill:#fa4626;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-79380248390522737902399703986576270399)"
            id="path101-30"
@@ -14564,7 +14564,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('seoul')"
+           :class="researchCenterClasses('44')"
            d="m 143.41204,151.87991 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 110.32727 V 163.6959 H 91.421689 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463701,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104151,42.61141 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 L 95.261893,99.224923 q 2.3632,-1.92009 5.612587,-1.92009 3.24939,0 5.61259,1.92009 l 18.01938,15.065367 V 99.889573 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66464 1.69855,-0.66464 h 14.17919 q 1.0339,0 1.69855,0.66464 0.66465,0.66465 0.66465,1.69855 v 30.130757 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-25"
            inkscape:connector-curvature="0" />
@@ -14612,8 +14612,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('tokyo', 'one')"
-               v-on:click="handleInfectionClick('tokyo', 'one')" />
+               :class="infectionClasses('45', 'one')"
+               v-on:click="handleInfectionClick('45', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -14625,8 +14625,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('tokyo', 'two')"
-               v-on:click="handleInfectionClick('tokyo', 'two')" />
+               :class="infectionClasses('45', 'two')"
+               v-on:click="handleInfectionClick('45', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -14638,15 +14638,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('tokyo', 'three')"
-               v-on:click="handleInfectionClick('tokyo', 'three')" />
+               :class="infectionClasses('45', 'three')"
+               v-on:click="handleInfectionClick('45', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-787">
             <path
-               :class="playerClasses('tokyo', 'one')"
-               v-on:click="handlePlayerClick('tokyo', 'one')"
+               :class="playerClasses('45', 'one')"
+               v-on:click="handlePlayerClick('45', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-74" />
@@ -14655,8 +14655,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-491">
             <path
-               :class="playerClasses('tokyo', 'two')"
-               v-on:click="handlePlayerClick('tokyo', 'two')"
+               :class="playerClasses('45', 'two')"
+               v-on:click="handlePlayerClick('45', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-55" />
@@ -14665,8 +14665,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-58">
             <path
-               :class="playerClasses('tokyo', 'three')"
-               v-on:click="handlePlayerClick('tokyo', 'three')"
+               :class="playerClasses('45', 'three')"
+               v-on:click="handlePlayerClick('45', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-29" />
@@ -14675,8 +14675,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-820">
             <path
-               :class="playerClasses('tokyo', 'four')"
-               v-on:click="handlePlayerClick('tokyo', 'four')"
+               :class="playerClasses('45', 'four')"
+               v-on:click="handlePlayerClick('45', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-748" />
@@ -14690,7 +14690,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-06"
-         v-on:click="handleCellClick('tokyo')">
+         v-on:click="handleCellClick('45')">
         <circle
            style="fill:#fa4626;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-793802483905227379023997039865762703999)"
            id="path101-22"
@@ -14710,7 +14710,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('tokyo')"
+           :class="researchCenterClasses('45')"
            d="m 143.41204,151.87991 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 110.32727 V 163.6959 H 91.421689 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463701,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104151,42.61141 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 L 95.261893,99.224923 q 2.3632,-1.92009 5.612587,-1.92009 3.24939,0 5.61259,1.92009 l 18.01938,15.065367 V 99.889573 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66464 1.69855,-0.66464 h 14.17919 q 1.0339,0 1.69855,0.66464 0.66465,0.66465 0.66465,1.69855 v 30.130757 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-152"
            inkscape:connector-curvature="0" />
@@ -14742,8 +14742,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('osaka', 'one')"
-               v-on:click="handleInfectionClick('osaka', 'one')" />
+               :class="infectionClasses('46', 'one')"
+               v-on:click="handleInfectionClick('46', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -14755,8 +14755,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('osaka', 'two')"
-               v-on:click="handleInfectionClick('osaka', 'two')" />
+               :class="infectionClasses('46', 'two')"
+               v-on:click="handleInfectionClick('46', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -14768,15 +14768,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('osaka', 'three')"
-               v-on:click="handleInfectionClick('osaka', 'three')" />
+               :class="infectionClasses('46', 'three')"
+               v-on:click="handleInfectionClick('46', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-87">
             <path
-               :class="playerClasses('osaka', 'one')"
-               v-on:click="handlePlayerClick('osaka', 'one')"
+               :class="playerClasses('46', 'one')"
+               v-on:click="handlePlayerClick('46', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-744" />
@@ -14785,8 +14785,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-915">
             <path
-               :class="playerClasses('osaka', 'two')"
-               v-on:click="handlePlayerClick('osaka', 'two')"
+               :class="playerClasses('46', 'two')"
+               v-on:click="handlePlayerClick('46', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-558" />
@@ -14795,8 +14795,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-29">
             <path
-               :class="playerClasses('osaka', 'three')"
-               v-on:click="handlePlayerClick('osaka', 'three')"
+               :class="playerClasses('46', 'three')"
+               v-on:click="handlePlayerClick('46', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-82" />
@@ -14805,8 +14805,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-0">
             <path
-               :class="playerClasses('osaka', 'four')"
-               v-on:click="handlePlayerClick('osaka', 'four')"
+               :class="playerClasses('46', 'four')"
+               v-on:click="handlePlayerClick('46', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-7485" />
@@ -14820,7 +14820,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-062"
-         v-on:click="handleCellClick('osaka')">
+         v-on:click="handleCellClick('46')">
         <circle
            style="fill:#fa4626;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-7938024839052273790239970398657627039991)"
            id="path101-25"
@@ -14840,7 +14840,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('osaka')"
+           :class="researchCenterClasses('46')"
            d="m 143.41204,151.87991 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 110.32727 V 163.6959 H 91.421689 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463701,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104151,42.61141 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 L 95.261893,99.224923 q 2.3632,-1.92009 5.612587,-1.92009 3.24939,0 5.61259,1.92009 l 18.01938,15.065367 V 99.889573 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66464 1.69855,-0.66464 h 14.17919 q 1.0339,0 1.69855,0.66464 0.66465,0.66465 0.66465,1.69855 v 30.130757 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-521"
            inkscape:connector-curvature="0" />
@@ -14888,8 +14888,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('taipei', 'one')"
-               v-on:click="handleInfectionClick('taipei', 'one')" />
+               :class="infectionClasses('47', 'one')"
+               v-on:click="handleInfectionClick('47', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -14901,8 +14901,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('taipei', 'two')"
-               v-on:click="handleInfectionClick('taipei', 'two')" />
+               :class="infectionClasses('47', 'two')"
+               v-on:click="handleInfectionClick('47', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -14914,15 +14914,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('taipei', 'three')"
-               v-on:click="handleInfectionClick('taipei', 'three')" />
+               :class="infectionClasses('47', 'three')"
+               v-on:click="handleInfectionClick('47', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-74">
             <path
-               :class="playerClasses('taipei', 'one')"
-               v-on:click="handlePlayerClick('taipei', 'one')"
+               :class="playerClasses('47', 'one')"
+               v-on:click="handlePlayerClick('47', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-49" />
@@ -14931,8 +14931,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-15">
             <path
-               :class="playerClasses('taipei', 'two')"
-               v-on:click="handlePlayerClick('taipei', 'two')"
+               :class="playerClasses('47', 'two')"
+               v-on:click="handlePlayerClick('47', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-5582" />
@@ -14941,8 +14941,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-98">
             <path
-               :class="playerClasses('taipei', 'three')"
-               v-on:click="handlePlayerClick('taipei', 'three')"
+               :class="playerClasses('47', 'three')"
+               v-on:click="handlePlayerClick('47', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-20" />
@@ -14951,8 +14951,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-74">
             <path
-               :class="playerClasses('taipei', 'four')"
-               v-on:click="handlePlayerClick('taipei', 'four')"
+               :class="playerClasses('47', 'four')"
+               v-on:click="handlePlayerClick('47', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-85" />
@@ -14966,7 +14966,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-62"
-         v-on:click="handleCellClick('taipei')">
+         v-on:click="handleCellClick('47')">
         <circle
            style="fill:#fa4626;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-79380248390522737902399703986576270399917)"
            id="path101-252"
@@ -14986,7 +14986,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('taipei')"
+           :class="researchCenterClasses('47')"
            d="m 143.41204,151.87991 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 110.32727 V 163.6959 H 91.421689 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463701,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104151,42.61141 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 L 95.261893,99.224923 q 2.3632,-1.92009 5.612587,-1.92009 3.24939,0 5.61259,1.92009 l 18.01938,15.065367 V 99.889573 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66464 1.69855,-0.66464 h 14.17919 q 1.0339,0 1.69855,0.66464 0.66465,0.66465 0.66465,1.69855 v 30.130757 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-5211"
            inkscape:connector-curvature="0" />
@@ -15023,8 +15023,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('manila', 'one')"
-               v-on:click="handleInfectionClick('manila', 'one')" />
+               :class="infectionClasses('42', 'one')"
+               v-on:click="handleInfectionClick('42', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -15036,8 +15036,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('manila', 'two')"
-               v-on:click="handleInfectionClick('manila', 'two')" />
+               :class="infectionClasses('42', 'two')"
+               v-on:click="handleInfectionClick('42', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -15049,15 +15049,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('manila', 'three')"
-               v-on:click="handleInfectionClick('manila', 'three')" />
+               :class="infectionClasses('42', 'three')"
+               v-on:click="handleInfectionClick('42', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-44">
             <path
-               :class="playerClasses('manila', 'one')"
-               v-on:click="handlePlayerClick('manila', 'one')"
+               :class="playerClasses('42', 'one')"
+               v-on:click="handlePlayerClick('42', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-915" />
@@ -15066,8 +15066,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-558">
             <path
-               :class="playerClasses('manila', 'two')"
-               v-on:click="handlePlayerClick('manila', 'two')"
+               :class="playerClasses('42', 'two')"
+               v-on:click="handlePlayerClick('42', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-29" />
@@ -15076,8 +15076,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-82">
             <path
-               :class="playerClasses('manila', 'three')"
-               v-on:click="handlePlayerClick('manila', 'three')"
+               :class="playerClasses('42', 'three')"
+               v-on:click="handlePlayerClick('42', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-07" />
@@ -15086,8 +15086,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-485">
             <path
-               :class="playerClasses('manila', 'four')"
-               v-on:click="handlePlayerClick('manila', 'four')"
+               :class="playerClasses('42', 'four')"
+               v-on:click="handlePlayerClick('42', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-83" />
@@ -15101,7 +15101,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-622"
-         v-on:click="handleCellClick('manila')">
+         v-on:click="handleCellClick('42')">
         <circle
            style="fill:#fa4626;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-793802483905227379023997039865762703999172)"
            id="path101-52"
@@ -15121,7 +15121,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('manila')"
+           :class="researchCenterClasses('42')"
            d="m 143.41204,151.87991 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 110.32727 V 163.6959 H 91.421689 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463701,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104151,42.61141 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 L 95.261893,99.224923 q 2.3632,-1.92009 5.612587,-1.92009 3.24939,0 5.61259,1.92009 l 18.01938,15.065367 V 99.889573 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66464 1.69855,-0.66464 h 14.17919 q 1.0339,0 1.69855,0.66464 0.66465,0.66465 0.66465,1.69855 v 30.130757 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-21"
            inkscape:connector-curvature="0" />
@@ -15148,8 +15148,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('sydney', 'one')"
-               v-on:click="handleInfectionClick('sydney', 'one')" />
+               :class="infectionClasses('43', 'one')"
+               v-on:click="handleInfectionClick('43', 'one')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,286.80439,-454.9367)"
@@ -15161,8 +15161,8 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('sydney', 'two')"
-               v-on:click="handleInfectionClick('sydney', 'two')" />
+               :class="infectionClasses('43', 'two')"
+               v-on:click="handleInfectionClick('43', 'two')" />
           </g>
           <g
              transform="matrix(3.2481204,0,0,3.2481204,-142.19561,234.06332)"
@@ -15174,15 +15174,15 @@
                height="106.58929"
                x="51.404762"
                y="84.577377"
-               :class="infectionClasses('sydney', 'three')"
-               v-on:click="handleInfectionClick('sydney', 'three')" />
+               :class="infectionClasses('43', 'three')"
+               v-on:click="handleInfectionClick('43', 'three')" />
           </g>
           <g
              transform="matrix(0.35511364,0,0,-0.35511364,186.08393,-282.2607)"
              id="g1011-49">
             <path
-               :class="playerClasses('sydney', 'one')"
-               v-on:click="handlePlayerClick('sydney', 'one')"
+               :class="playerClasses('43', 'one')"
+               v-on:click="handlePlayerClick('43', 'one')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-one-155" />
@@ -15191,8 +15191,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-320.91607,-281.2607)"
              id="g1075-58">
             <path
-               :class="playerClasses('sydney', 'two')"
-               v-on:click="handlePlayerClick('sydney', 'two')"
+               :class="playerClasses('43', 'two')"
+               v-on:click="handlePlayerClick('43', 'two')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-two-298" />
@@ -15201,8 +15201,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,-536.67552,711.37095)"
              id="g1403-20">
             <path
-               :class="playerClasses('sydney', 'three')"
-               v-on:click="handlePlayerClick('sydney', 'three')"
+               :class="playerClasses('43', 'three')"
+               v-on:click="handlePlayerClick('43', 'three')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-three-748" />
@@ -15211,8 +15211,8 @@
              transform="matrix(0.35511364,0,0,-0.35511364,451.08394,709.73931)"
              id="g1531-58">
             <path
-               :class="playerClasses('sydney', 'four')"
-               v-on:click="handlePlayerClick('sydney', 'four')"
+               :class="playerClasses('43', 'four')"
+               v-on:click="handlePlayerClick('43', 'four')"
                inkscape:connector-curvature="0"
                d="M 1408,131 Q 1408,11 1335,-58.5 1262,-128 1141,-128 H 267 Q 146,-128 73,-58.5 0,11 0,131 0,184 3.5,234.5 7,285 17.5,343.5 28,402 44,452 q 16,50 43,97.5 27,47.5 62,81 35,33.5 85.5,53.5 50.5,20 111.5,20 9,0 42,-21.5 33,-21.5 74.5,-48 41.5,-26.5 108,-48 Q 637,565 704,565 q 67,0 133.5,21.5 66.5,21.5 108,48 41.5,26.5 74.5,48 33,21.5 42,21.5 61,0 111.5,-20 50.5,-20 85.5,-53.5 35,-33.5 62,-81 27,-47.5 43,-97.5 16,-50 26.5,-108.5 10.5,-58.5 14,-109 Q 1408,184 1408,131 Z m -320,893 Q 1088,865 975.5,752.5 863,640 704,640 545,640 432.5,752.5 320,865 320,1024 320,1183 432.5,1295.5 545,1408 704,1408 863,1408 975.5,1295.5 1088,1183 1088,1024 Z"
                id="player-four-30" />
@@ -15226,7 +15226,7 @@
          class="btn"
          inkscape:label="cell-area"
          id="layer2-25"
-         v-on:click="handleCellClick('sydney')">
+         v-on:click="handleCellClick('43')">
         <circle
            style="fill:#fa4626;fill-opacity:1;stroke-width:0.26458332;filter:url(#filter1218-7938024839052273790239970398657627039991723)"
            id="path101-227"
@@ -15246,7 +15246,7 @@
         </g>
         <path
            style="stroke-width:0.07384993"
-           :class="researchCenterClasses('sydney')"
+           :class="researchCenterClasses('43')"
            d="m 143.41204,151.87991 v 35.44796 q 0,1.9201 -1.40315,3.32325 -1.40315,1.40315 -3.32325,1.40315 H 110.32727 V 163.6959 H 91.421689 v 28.35837 h -28.35837 q -1.9201,0 -3.32325,-1.40315 -1.40314,-1.40315 -1.40314,-3.32325 v -35.44796 q 0,-0.0739 0.0369,-0.22155 0.0369,-0.1477 0.0369,-0.22155 l 42.463701,-35.00487 42.46371,35.00487 q 0.0738,0.1477 0.0738,0.4431 z m 16.46853,-5.09565 -4.5787,5.4649 q -0.5908,0.66465 -1.55084,0.81235 h -0.22155 q -0.96005,0 -1.55085,-0.51695 l -51.10415,-42.61141 -51.104151,42.61141 q -0.88619,0.5908 -1.77239,0.51695 -0.96005,-0.1477 -1.55085,-0.81235 l -4.5787,-5.4649 q -0.5908,-0.7385 -0.51695,-1.73547 0.0738,-0.99697 0.81235,-1.58777 L 95.261893,99.224923 q 2.3632,-1.92009 5.612587,-1.92009 3.24939,0 5.61259,1.92009 l 18.01938,15.065367 V 99.889573 q 0,-1.0339 0.66465,-1.69855 0.66465,-0.66464 1.69855,-0.66464 h 14.17919 q 1.0339,0 1.69855,0.66464 0.66465,0.66465 0.66465,1.69855 v 30.130757 l 16.17313,13.44069 q 0.7385,0.5908 0.81235,1.58777 0.0739,0.99697 -0.51695,1.73547 z"
            id="research-station-11"
            inkscape:connector-curvature="0" />
