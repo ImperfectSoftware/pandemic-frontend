@@ -7,6 +7,7 @@ export default class ActionMenu {
     this.canPlaceResearchStation = false
     this.canRemoveResearchStation = false
     this.canDiscoverCure = false
+    this.cityStaticid = ''
     this.cityName = ''
     this.hide = true
     this.height = 310
@@ -17,7 +18,7 @@ export default class ActionMenu {
 
   showMenu = (payload) => {
     this.hide = false
-    this.cityName = payload.cityName
+    this.cityStaticid = payload.cityStaticid
     this.windowHeight = payload.windowHeight
     this.windowWidth = payload.windowWidth
     this.x = this.calculateX(payload.windowWidth, payload.pageX)
