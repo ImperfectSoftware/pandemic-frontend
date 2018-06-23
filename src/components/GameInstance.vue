@@ -11,7 +11,8 @@
           <button :class="actionMenu.driveCssClasses" @click="driveOrFerry">
             Drive/Ferry
           </button>
-          <button :class="actionMenu.directFlightCssClasses">
+          <button :class="actionMenu.directFlightCssClasses"
+            @click="directFlight">
             Direct Flight
           </button>
           <button :class="actionMenu.charterFlightCssClasses">
@@ -89,6 +90,7 @@ import { mixin as clickaway } from 'vue-clickaway'
 import { mapGetters } from 'vuex'
 import WorldMap from '@/components/WorldMap'
 import DriveOrFerryService from '@/services/DriveOrFerryService'
+import DirectFlightService from '@/services/DirectFlightService'
 
 export default {
   name: 'GameInstance',
@@ -117,6 +119,9 @@ export default {
     },
     driveOrFerry: function () {
       DriveOrFerryService.call({ actionMenu: this.actionMenu, game: this.game })
+    },
+    directFlight: function () {
+      DirectFlightService.call({ actionMenu: this.actionMenu, game: this.game })
     }
   }
 }
