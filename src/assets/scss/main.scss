@@ -2,6 +2,7 @@
 @import 'infections';
 @import 'roles';
 @import 'cities';
+@import 'colors';
 
 $width: (
   md: 68.0%,
@@ -159,4 +160,16 @@ div#action-menu {
   border: 2px solid #868e96;
   border-radius: .25rem;
   padding: 0.5em;
+}
+
+.hide-svg-component {
+  opacity: 0;
+  fill-opacity: 0;
+  stroke-opacity: 0;
+}
+
+.research-station-active {
+  opacity: 100;
+  fill-opacity: 100;
+  fill: $research-station;
 }

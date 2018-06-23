@@ -9,7 +9,11 @@ export default class ResearchCenterClassesService {
   }
 
   call () {
+    if (this.game && this.game.researchStations) {
+      if (this.game.researchStations.indexOf(this.cityStaticid) !== -1) {
+        return 'research-station-active'
+      }
+    }
     return 'hide-svg-component'
-    // return 'btn scientist'
   }
 }

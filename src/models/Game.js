@@ -10,6 +10,7 @@ export default class Game {
     this.actionsTaken = game.actions_taken
     this.active = game.active
     this.infections = game.infections
+    this.researchStations = game.research_stations
     this.players = {}
     this.activePlayerId = game.active_player_id
     game.players.forEach((player) => {
