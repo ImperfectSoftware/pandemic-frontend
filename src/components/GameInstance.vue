@@ -8,7 +8,7 @@
       </div>
       <ul class="list-unstyled">
         <li>
-          <button :class="actionMenu.driveCssClasses">
+          <button :class="actionMenu.driveCssClasses" @click="driveOrFerry">
             Drive/Ferry
           </button>
           <button :class="actionMenu.directFlightCssClasses">
@@ -88,6 +88,7 @@
 import { mixin as clickaway } from 'vue-clickaway'
 import { mapGetters } from 'vuex'
 import WorldMap from '@/components/WorldMap'
+import DriveOrFerryService from '@/services/DriveOrFerryService'
 
 export default {
   name: 'GameInstance',
@@ -113,6 +114,9 @@ export default {
   methods: {
     hideActionMenu: function () {
       this.$store.dispatch('hideActionMenu', event.target)
+    },
+    driveOrFerry: function () {
+      DriveOrFerryService.call({ actionMenu: this.actionMenu, game: this.game })
     }
   }
 }
