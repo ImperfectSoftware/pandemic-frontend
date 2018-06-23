@@ -8,7 +8,7 @@ export default class Player {
 
   constructor (player) {
     this.id = player.id
-    this.cityName = player.city_name
+    this.cityStaticid = player.location_staticid
     this.role = player.role
     this.username = player.username
     this.cityPlayerCards = []

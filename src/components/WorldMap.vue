@@ -15333,29 +15333,29 @@ export default {
     })
   },
   methods: {
-    handleCellClick (cityName) {
+    handleCellClick (cityStaticid) {
       this.$store.dispatch('showActionMenu', {
-        cityName: cityName,
+        cityStaticid: cityStaticid,
         pageX: event.pageX,
         pageY: event.pageY,
         windowHeight: window.innerHeight,
         windowWidth: window.innerWidth
       })
     },
-    handleInfectionClick (cityName, position) {
-      console.log(`handling infection for ${cityName} at position ${position}.`)
+    handleInfectionClick (cityStaticid, position) {
+      console.log(`handling infection for ${cityStaticid} at position ${position}.`)
     },
-    handlePlayerClick (cityName, position) {
-      console.log(`handling player for ${cityName} at position ${position}.`)
+    handlePlayerClick (cityStaticid, position) {
+      console.log(`handling player for ${cityStaticid} at position ${position}.`)
     },
-    infectionClasses (cityName, position) {
-      return InfectionClassesService.for(cityName, position, this.game)
+    infectionClasses (cityStaticid, position) {
+      return InfectionClassesService.for(cityStaticid, position, this.game)
     },
-    playerClasses (cityName, position) {
-      return PlayerClassesService.for(cityName, position, this.game)
+    playerClasses (cityStaticid, position) {
+      return PlayerClassesService.for(cityStaticid, position, this.game)
     },
-    researchCenterClasses (cityName) {
-      return ResearchCenterClassesService.for(cityName, this.game)
+    researchCenterClasses (cityStaticid) {
+      return ResearchCenterClassesService.for(cityStaticid, this.game)
     }
   }
 }

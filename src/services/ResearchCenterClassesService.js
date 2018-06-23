@@ -1,10 +1,10 @@
 export default class ResearchCenterClassesService {
-  static for (cityName, game) {
-    return new ResearchCenterClassesService(cityName, game).call()
+  static for (cityStaticid, game) {
+    return new ResearchCenterClassesService(cityStaticid, game).call()
   }
 
-  constructor (cityName, game) {
-    this.cityName = cityName
+  constructor (cityStaticid, game) {
+    this.cityStaticid = cityStaticid
     this.game = game
   }
 
