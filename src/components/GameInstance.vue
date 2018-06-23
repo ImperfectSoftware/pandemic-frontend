@@ -27,7 +27,8 @@
             @click="buildResearchStation">
             Add Research STA
           </button>
-          <button :class="actionMenu.removeResearchStationCssClasses">
+          <button :class="actionMenu.removeResearchStationCssClasses"
+            @click="removeResearchStation">
             Remove Research STA
           </button>
           <button :class="actionMenu.discoverCureCssClasses">
@@ -97,6 +98,7 @@ import DirectFlightService from '@/services/DirectFlightService'
 import CharterFlightService from '@/services/CharterFlightService'
 import BuildResearchStationService from '@/services/BuildResearchStationService'
 import ShuttleFlightService from '@/services/ShuttleFlightService'
+import RemoveResearchStationService from '@/services/RemoveResearchStationService'
 
 export default {
   name: 'GameInstance',
@@ -132,12 +134,16 @@ export default {
     charterFlight: function () {
       CharterFlightService.call({ actionMenu: this.actionMenu, game: this.game })
     },
+    shuttleFlight: function () {
+      ShuttleFlightService
+        .call({ actionMenu: this.actionMenu, game: this.game })
+    },
     buildResearchStation: function () {
       BuildResearchStationService
         .call({ actionMenu: this.actionMenu, game: this.game })
     },
-    shuttleFlight: function () {
-      ShuttleFlightService
+    removeResearchStation: function () {
+      RemoveResearchStationService
         .call({ actionMenu: this.actionMenu, game: this.game })
     }
   }
