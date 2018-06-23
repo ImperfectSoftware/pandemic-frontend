@@ -4,7 +4,7 @@ export default class ActionMenu {
     this.canDirectFlight = false
     this.canCharterFlight = false
     this.canShuttleFlight = false
-    this.canPlaceResearchStation = false
+    this.canBuildResearchStation = false
     this.canRemoveResearchStation = false
     this.canDiscoverCure = false
     this.cureColor = ''
@@ -31,7 +31,7 @@ export default class ActionMenu {
     this.canCharterFlight = payload.can_charter_flight
     this.canDirectFlight = payload.can_direct_flight
     this.canDiscoverCure = payload.can_discover_cure
-    this.canPlaceResearchStation = payload.can_place_research_station
+    this.canBuildResearchStation = payload.can_build_research_station
     this.canRemoveResearchStation = payload.can_remove_research_station
     this.canShuttleFlight = payload.can_shuttle_flight
     this.cureColor = payload.cure_color
@@ -70,9 +70,9 @@ export default class ActionMenu {
     return this.sharedClasses() + this.displayClass(this.canShuttleFlight)
   }
 
-  get placeResearchStationCssClasses () {
+  get buildResearchStationCssClasses () {
     return this.sharedClasses() +
-      this.displayClass(this.canPlaceResearchStation)
+      this.displayClass(this.canBuildResearchStation)
   }
 
   get removeResearchStationCssClasses () {
@@ -115,7 +115,7 @@ export default class ActionMenu {
     if (this.canDirectFlight) { return false }
     if (this.canCharterFlight) { return false }
     if (this.canShuttleFlight) { return false }
-    if (this.canPlaceResearchStation) { return false }
+    if (this.canBuildResearchStation) { return false }
     if (this.canRemoveResearchStation) { return false }
     if (this.canDiscoverCure) { return false }
     return true
