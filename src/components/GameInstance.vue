@@ -15,7 +15,8 @@
             @click="directFlight">
             Direct Flight
           </button>
-          <button :class="actionMenu.charterFlightCssClasses">
+          <button :class="actionMenu.charterFlightCssClasses"
+            @click="charterFlight">
             Charter Flight
           </button>
           <button :class="actionMenu.shuttleFlightCssClasses">
@@ -91,6 +92,7 @@ import { mapGetters } from 'vuex'
 import WorldMap from '@/components/WorldMap'
 import DriveOrFerryService from '@/services/DriveOrFerryService'
 import DirectFlightService from '@/services/DirectFlightService'
+import CharterFlightService from '@/services/CharterFlightService'
 
 export default {
   name: 'GameInstance',
@@ -122,6 +124,9 @@ export default {
     },
     directFlight: function () {
       DirectFlightService.call({ actionMenu: this.actionMenu, game: this.game })
+    },
+    charterFlight: function () {
+      CharterFlightService.call({ actionMenu: this.actionMenu, game: this.game })
     }
   }
 }
