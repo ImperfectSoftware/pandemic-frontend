@@ -1,4 +1,5 @@
 import router from '.././router'
+import store from '.././store'
 
 export default class GameSubscription {
   static from (consumer, game) {
@@ -31,6 +32,8 @@ export default class GameSubscription {
       this.game.handleInvitationResponse(data.user_id, data.status)
     } else if (data.game_started) {
       router.replace(`/games/${this.game.id}`)
+    } else if (data.game_update) {
+      store.dispatch('updateActiveGame', data.game)
     }
   }
 

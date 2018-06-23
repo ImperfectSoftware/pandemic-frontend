@@ -1,5 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '.././store'
+import GameSubscription from '@/subscriptions/GameSubscription'
 
 export default class GetStartedGameService {
   static call (gameId) {
@@ -21,6 +22,7 @@ export default class GetStartedGameService {
       // handle server error here
     } else {
       store.dispatch('pushActiveGame', game)
+      GameSubscription.from(store.getters.cableConsumer, game).subscribe()
     }
   }
 

@@ -50,6 +50,10 @@ const mutations = {
   },
   [MutationTypes.PUSH_ACTIVE_GAME] (state, game) {
     state.activeGames.push(Game.from(game))
+  },
+  [MutationTypes.UPDATE_ACTIVE_GAME] (state, game) {
+    state.activeGames = []
+    state.activeGames.push(Game.from(game))
   }
 }
 
@@ -92,6 +96,10 @@ const actions = {
   },
   pushActiveGame ({ commit }, game) {
     commit(MutationTypes.PUSH_ACTIVE_GAME, game)
+  },
+  updateActiveGame ({ commit }, game) {
+    commit(MutationTypes.UPDATE_ACTIVE_GAME, game)
+    store.dispatch('hideActionMenu', null)
   }
 }
 
