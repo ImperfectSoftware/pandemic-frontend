@@ -19,7 +19,8 @@
             @click="charterFlight">
             Charter Flight
           </button>
-          <button :class="actionMenu.shuttleFlightCssClasses">
+          <button :class="actionMenu.shuttleFlightCssClasses"
+            @click="shuttleFlight">
             Shuttle Flight
           </button>
           <button :class="actionMenu.placeResearchStationCssClasses"
@@ -95,6 +96,7 @@ import DriveOrFerryService from '@/services/DriveOrFerryService'
 import DirectFlightService from '@/services/DirectFlightService'
 import CharterFlightService from '@/services/CharterFlightService'
 import PlaceResearchStationService from '@/services/PlaceResearchStationService'
+import ShuttleFlightService from '@/services/ShuttleFlightService'
 
 export default {
   name: 'GameInstance',
@@ -132,6 +134,10 @@ export default {
     },
     placeResearchStation: function () {
       PlaceResearchStationService
+        .call({ actionMenu: this.actionMenu, game: this.game })
+    },
+    shuttleFlight: function () {
+      ShuttleFlightService
         .call({ actionMenu: this.actionMenu, game: this.game })
     }
   }
