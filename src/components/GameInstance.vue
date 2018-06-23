@@ -24,10 +24,10 @@
           </button>
           <button :class="actionMenu.placeResearchStationCssClasses"
             @click="placeResearchStation">
-            Place Research Station
+            Add Research STA
           </button>
           <button :class="actionMenu.removeResearchStationCssClasses">
-            Remove Research Station
+            Remove Research STA
           </button>
           <button :class="actionMenu.discoverCureCssClasses">
             Discover Cure
