@@ -15335,6 +15335,7 @@ export default {
   methods: {
     handleCellClick (cityStaticid) {
       this.$store.dispatch('showActionMenu', {
+        game: this.game,
         cityStaticid: cityStaticid,
         pageX: event.pageX,
         pageY: event.pageY,

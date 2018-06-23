@@ -1,5 +1,6 @@
 import * as MutationTypes from './mutation-types'
 import ActionMenu from '@/models/ActionMenu'
+import GetPossibleActionsService from '@/services/GetPossibleActionsService'
 
 const state = {
   menu: new ActionMenu()
@@ -13,6 +14,9 @@ const mutations = {
   },
   [MutationTypes.SHOW_ACTION_MENU] (state, payload) {
     state.menu.showMenu(payload)
+  },
+  [MutationTypes.UPDATE_ACTION_MENU] (state, payload) {
+    state.menu.updateMenu(payload)
   }
 }
 
@@ -34,6 +38,10 @@ const actions = {
   },
   showActionMenu ({ commit }, payload) {
     commit(MutationTypes.SHOW_ACTION_MENU, payload)
+    GetPossibleActionsService.call(payload)
+  },
+  updateActionMenu ({ commit }, payload) {
+    commit(MutationTypes.UPDATE_ACTION_MENU, payload)
   }
 }
 

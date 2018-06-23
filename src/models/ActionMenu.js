@@ -7,6 +7,7 @@ export default class ActionMenu {
     this.canPlaceResearchStation = false
     this.canRemoveResearchStation = false
     this.canDiscoverCure = false
+    this.cureColor = ''
     this.cityStaticid = ''
     this.cityName = ''
     this.hide = true
@@ -23,6 +24,17 @@ export default class ActionMenu {
     this.windowWidth = payload.windowWidth
     this.x = this.calculateX(payload.windowWidth, payload.pageX)
     this.y = this.calculateY(payload.windowHeight, payload.pageY)
+  }
+
+  updateMenu = (payload) => {
+    this.canDrive = payload.can_drive
+    this.canCharterFlight = payload.can_charter_flight
+    this.canDirectFlight = payload.can_direct_flight
+    this.canDiscoverCure = payload.can_discover_cure
+    this.canPlaceResearchStation = payload.can_place_research_station
+    this.canRemoveResearchStation = payload.can_remove_research_station
+    this.canShuttleFlight = payload.can_shuttle_flight
+    this.cureColor = payload.cure_color
   }
 
   get style () {
