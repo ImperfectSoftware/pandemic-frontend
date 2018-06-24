@@ -34,6 +34,9 @@
           <button :class="actionMenu.discoverCureCssClasses">
             Discover Cure
           </button>
+          <button :class="actionMenu.shareKnowledgeCssClasses">
+            Share Knowledge
+          </button>
           <button :class="actionMenu.treatBlueDiseaseCssClass"
             @click="treatDisease('blue')">
             Treat Blue<div class="disease-rectangle-blue"></div>
