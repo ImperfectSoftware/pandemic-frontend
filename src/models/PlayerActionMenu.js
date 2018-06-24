@@ -3,21 +3,32 @@ import menuMixin from '@/mixins/menuMixin'
 export default class PlayerActionMenu {
   constructor () {
     this.hide = true
-    this.noActionsClasses = true // should default to false
     this.receiveCities = []
     this.giveCities = []
-    this.playerName = 'John'
+    this.playerUsername = ''
     this.position = ''
     this.cityStaticid = ''
     this.height = 310
     this.width = 200
+    this.playerUsername = ''
+    this.playerId = ''
     this.x = 0
     this.y = 0
   }
 
+  get noActionsClasses () {
+    if (this.receiveCities.length === 0 && this.giveCities.length === 0) {
+      return ''
+    }
+    return 'd-none'
+  }
+
   showMenu = (payload) => {
+    let player = payload.game.players[payload.position]
     this.hide = false
     this.position = payload.position
+    this.playerUsername = player.username
+    this.playerId = player.id
     this.cityStaticid = payload.cityStaticid
     this.windowHeight = payload.windowHeight
     this.windowWidth = payload.windowWidth

@@ -28,7 +28,7 @@ const getters = {
 
 const actions = {
   hidePlayerActionMenu ({ commit }, targetElement) {
-    if (!targetElement.classList.contains('player')) {
+    if (targetElement === null || !targetElement.classList.contains('player')) {
       commit(MutationTypes.HIDE_PLAYER_ACTION_MENU)
     }
   },
