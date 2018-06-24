@@ -5,55 +5,51 @@
     <div :class="actionMenu.noActionsClasses">
       No actions can be taken for this city at this time.
     </div>
-    <ul class="list-unstyled">
-      <li>
-        <button :class="actionMenu.driveCssClasses" @click="driveOrFerry">
-          Drive/Ferry
-        </button>
-        <button :class="actionMenu.directFlightCssClasses"
-          @click="directFlight">
-          Direct Flight
-        </button>
-        <button :class="actionMenu.charterFlightCssClasses"
-          @click="charterFlight">
-          Charter Flight
-        </button>
-        <button :class="actionMenu.shuttleFlightCssClasses"
-          @click="shuttleFlight">
-          Shuttle Flight
-        </button>
-        <button :class="actionMenu.buildResearchStationCssClasses"
-          @click="buildResearchStation">
-          Add Research STA
-        </button>
-        <button :class="actionMenu.removeResearchStationCssClasses"
-          @click="removeResearchStation">
-          Remove Research STA
-        </button>
-        <button :class="actionMenu.discoverCureCssClasses">
-          Discover Cure
-        </button>
-        <button :class="actionMenu.shareKnowledgeCssClasses">
-          Share Knowledge
-        </button>
-        <button :class="actionMenu.treatBlueDiseaseCssClass"
-          @click="treatDisease('blue')">
-          Treat Blue<div class="disease-rectangle-blue"></div>
-        </button>
-        <button :class="actionMenu.treatYellowDiseaseCssClass"
-          @click="treatDisease('yellow')">
-          Treat Yellow<div class="disease-rectangle-yellow"></div>
-        </button>
-        <button :class="actionMenu.treatRedDiseaseCssClass"
-          @click="treatDisease('red')">
-          Treat Red<div class="disease-rectangle-red"></div>
-        </button>
-        <button :class="actionMenu.treatBlackDiseaseCssClass"
-          @click="treatDisease('black')">
-          Treat Black<div class="disease-rectangle-black"></div>
-        </button>
-      </li>
-    </ul>
+    <button :class="actionMenu.driveCssClasses" @click="driveOrFerry">
+      Drive/Ferry
+    </button>
+    <button :class="actionMenu.directFlightCssClasses"
+      @click="directFlight">
+      Direct Flight
+    </button>
+    <button :class="actionMenu.charterFlightCssClasses"
+      @click="charterFlight">
+      Charter Flight
+    </button>
+    <button :class="actionMenu.shuttleFlightCssClasses"
+      @click="shuttleFlight">
+      Shuttle Flight
+    </button>
+    <button :class="actionMenu.buildResearchStationCssClasses"
+      @click="buildResearchStation">
+      Add Research STA
+    </button>
+    <button :class="actionMenu.removeResearchStationCssClasses"
+      @click="removeResearchStation">
+      Remove Research STA
+    </button>
+    <button :class="actionMenu.discoverCureCssClasses">
+      Discover Cure
+    </button>
+    <button :class="actionMenu.shareKnowledgeCssClasses">
+      Share Knowledge
+    </button>
+    <button :class="actionMenu.treatBlueDiseaseCssClass"
+      @click="treatDisease('blue')">
+      Treat Blue<div class="disease-rectangle-blue"></div>
+    </button>
+    <button :class="actionMenu.treatYellowDiseaseCssClass"
+      @click="treatDisease('yellow')">
+      Treat Yellow<div class="disease-rectangle-yellow"></div>
+    </button>
+    <button :class="actionMenu.treatRedDiseaseCssClass"
+      @click="treatDisease('red')">
+      Treat Red<div class="disease-rectangle-red"></div>
+    </button>
+    <button :class="actionMenu.treatBlackDiseaseCssClass"
+      @click="treatDisease('black')">
+      Treat Black<div class="disease-rectangle-black"></div>
+    </button>
   </div>
 </template>
 <script>
