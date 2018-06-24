@@ -173,3 +173,33 @@ div#action-menu {
   fill-opacity: 100;
   fill: $research-station;
 }
+
+
+.disease-rectangle-black, .disease-rectangle-yellow, .disease-rectangle-red,
+.disease-rectangle-blue {
+  width: 20%;
+  height: 50%;
+  position: absolute;
+  top: 25%;
+  right: 10px;
+}
+
+.disease-rectangle-black {
+  background: $black;
+}
+
+.disease-rectangle-yellow {
+  background: $yellow;
+}
+
+.disease-rectangle-red {
+  background: $red;
+}
+
+.disease-rectangle-blue {
+  background: $blue;
+}
+
+.disease-button {
+  position: relative;
+}

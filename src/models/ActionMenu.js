@@ -10,6 +10,10 @@ export default class ActionMenu {
     this.cureColor = ''
     this.cityStaticid = ''
     this.cityName = ''
+    this.canTreatYellow = false
+    this.canTreatBlack = false
+    this.canTreatBlue = false
+    this.canTreatRed = false
     this.hide = true
     this.height = 310
     this.width = 200
@@ -35,6 +39,10 @@ export default class ActionMenu {
     this.canRemoveResearchStation = payload.can_remove_research_station
     this.canShuttleFlight = payload.can_shuttle_flight
     this.cureColor = payload.cure_color
+    this.canTreatYellow = payload.can_treat_yellow
+    this.canTreatBlack = payload.can_treat_black
+    this.canTreatBlue = payload.can_treat_blue
+    this.canTreatRed = payload.can_treat_red
   }
 
   get style () {
@@ -84,6 +92,30 @@ export default class ActionMenu {
     return this.sharedClasses() + this.displayClass(this.canDiscoverCure)
   }
 
+  get treatBlueDiseaseCssClass () {
+    return this.sharedClasses() +
+      this.sharedDiseaseCssClass() +
+      this.displayClass(this.canTreatBlue)
+  }
+
+  get treatRedDiseaseCssClass () {
+    return this.sharedClasses() +
+      this.sharedDiseaseCssClass() +
+      this.displayClass(this.canTreatRed)
+  }
+
+  get treatYellowDiseaseCssClass () {
+    return this.sharedClasses() +
+      this.sharedDiseaseCssClass() +
+      this.displayClass(this.canTreatYellow)
+  }
+
+  get treatBlackDiseaseCssClass () {
+    return this.sharedClasses() +
+      this.sharedDiseaseCssClass() +
+      this.displayClass(this.canTreatBlack)
+  }
+
   calculateX (windowWidth, pageX) {
     if (pageX + this.width > windowWidth) {
       return pageX - this.width
@@ -103,7 +135,11 @@ export default class ActionMenu {
   }
 
   sharedClasses = () => {
-    return 'btn btn-block btn-secondary'
+    return 'btn btn-block btn-secondary shared-btn'
+  }
+
+  sharedDiseaseCssClass = () => {
+    return ' disease-button'
   }
 
   displayClass = (value) => {
@@ -118,6 +154,10 @@ export default class ActionMenu {
     if (this.canBuildResearchStation) { return false }
     if (this.canRemoveResearchStation) { return false }
     if (this.canDiscoverCure) { return false }
+    if (this.canTreatBlue) { return false }
+    if (this.canTreatRed) { return false }
+    if (this.canTreatYellow) { return false }
+    if (this.canTreatBlack) { return false }
     return true
   }
 }

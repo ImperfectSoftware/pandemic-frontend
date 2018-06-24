@@ -34,6 +34,22 @@
           <button :class="actionMenu.discoverCureCssClasses">
             Discover Cure
           </button>
+          <button :class="actionMenu.treatBlueDiseaseCssClass"
+            @click="treatDisease('blue')">
+            Treat Blue<div class="disease-rectangle-blue"></div>
+          </button>
+          <button :class="actionMenu.treatYellowDiseaseCssClass"
+            @click="treatDisease('yellow')">
+            Treat Yellow<div class="disease-rectangle-yellow"></div>
+          </button>
+          <button :class="actionMenu.treatRedDiseaseCssClass"
+            @click="treatDisease('red')">
+            Treat Red<div class="disease-rectangle-red"></div>
+          </button>
+          <button :class="actionMenu.treatBlackDiseaseCssClass"
+            @click="treatDisease('black')">
+            Treat Black<div class="disease-rectangle-black"></div>
+          </button>
         </li>
       </ul>
     </div>
@@ -99,6 +115,7 @@ import CharterFlightService from '@/services/CharterFlightService'
 import BuildResearchStationService from '@/services/BuildResearchStationService'
 import ShuttleFlightService from '@/services/ShuttleFlightService'
 import RemoveResearchStationService from '@/services/RemoveResearchStationService'
+import TreatDiseaseService from '@/services/TreatDiseaseService'
 
 export default {
   name: 'GameInstance',
@@ -145,6 +162,13 @@ export default {
     removeResearchStation: function () {
       RemoveResearchStationService
         .call({ actionMenu: this.actionMenu, game: this.game })
+    },
+    treatDisease: function (color) {
+      TreatDiseaseService.call({
+        actionMenu: this.actionMenu,
+        game: this.game,
+        color: color
+      })
     }
   }
 }
