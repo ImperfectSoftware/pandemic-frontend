@@ -120,10 +120,6 @@ export default class ActionMenu {
       this.displayClass(this.canTreatBlack)
   }
 
-  sharedClasses = () => {
-    return 'btn btn-block btn-secondary shared-btn'
-  }
-
   sharedDiseaseCssClass = () => {
     return ' disease-button'
   }

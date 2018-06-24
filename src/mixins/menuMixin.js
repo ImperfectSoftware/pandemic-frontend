@@ -22,6 +22,9 @@ let menuMixin = {
     } else {
       return pageY
     }
+  },
+  sharedClasses () {
+    return 'btn btn-block btn-secondary shared-btn'
   }
 }
 

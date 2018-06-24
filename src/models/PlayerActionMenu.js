@@ -4,7 +4,7 @@ export default class PlayerActionMenu {
   constructor () {
     this.hide = true
     this.noActionsClasses = true // should default to false
-    this.getCities = []
+    this.receiveCities = []
     this.giveCities = []
     this.playerName = 'John'
     this.position = ''
@@ -25,8 +25,17 @@ export default class PlayerActionMenu {
     this.y = this.calculateY(payload.windowHeight, payload.pageY)
   }
 
+  updateMenu = (payload) => {
+    this.receiveCities = payload.receive_cities
+    this.giveCities = payload.give_cities
+  }
+
   get style () {
     return this.elementStyle()
+  }
+
+  get cssClasses () {
+    return this.sharedClasses()
   }
 }
 

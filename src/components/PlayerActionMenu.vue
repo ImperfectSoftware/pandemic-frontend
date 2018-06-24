@@ -5,11 +5,13 @@
     <div :class="playerActionMenu.noActionsClasses">
       You can't do anything with this player at this time.
     </div>
-    <button v-for="city in playerActionMenu.getCities" :key="city.staticid">
-      Get {{ city.name }} from {{ city.owner }}
+    <button v-for="city in playerActionMenu.receiveCities" :key="city.staticid"
+      :class="playerActionMenu.cssClasses">
+      Get {{ city.name }} from {{ city.ownerUsername }}
     </button>
-    <button v-for="city in playerActionMenu.giveCities" :key="city.staticid">
-      Give {{ city.name }} to {{ playerActionMenu.playerName }}
+    <button v-for="city in playerActionMenu.giveCities" :key="city.staticid"
+      :class="playerActionMenu.cssClasses">
+      Give {{ city.name }} to {{ currentUser.username }}
     </button>
   </div>
 </template>
@@ -23,7 +25,8 @@ export default {
   computed: {
     ...mapGetters({
       game: 'activeGame',
-      playerActionMenu: 'playerActionMenu'
+      playerActionMenu: 'playerActionMenu',
+      currentUser: 'currentUser'
     })
   },
   methods: {
