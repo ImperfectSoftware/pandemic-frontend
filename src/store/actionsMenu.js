@@ -1,6 +1,7 @@
 import * as MutationTypes from './mutation-types'
 import ActionMenu from '@/models/ActionMenu'
 import GetPossibleActionsService from '@/services/GetPossibleActionsService'
+import IsPartOfCellService from '@/services/IsPartOfCellService'
 
 const state = {
   menu: new ActionMenu()
@@ -28,13 +29,10 @@ const getters = {
 
 const actions = {
   hideActionMenu ({ commit }, targetElement) {
-    while (targetElement != null) {
-      if (targetElement.getAttribute('inkscape:label') === 'cell-area') {
-        return
-      }
-      targetElement = targetElement.parentElement
+    let service = new IsPartOfCellService()
+    if (!service.call(targetElement)) {
+      commit(MutationTypes.HIDE_ACTION_MENU)
     }
-    commit(MutationTypes.HIDE_ACTION_MENU)
   },
   showActionMenu ({ commit }, payload) {
     commit(MutationTypes.SHOW_ACTION_MENU, payload)
