@@ -1,7 +1,8 @@
 <template>
   <div id="map">
-    <WorldMap />
-    <ActionMenu />
+    <WorldMap/>
+    <ActionMenu/>
+    <PlayerActionMenu/>
     <div v-if="game" class="container-fluid no-gutters">
       <div class="row">
         <div class="col col-sm-3">
@@ -57,6 +58,7 @@
 import { mapGetters } from 'vuex'
 import WorldMap from '@/components/WorldMap'
 import ActionMenu from '@/components/ActionMenu'
+import PlayerActionMenu from '@/components/PlayerActionMenu'
 
 export default {
   name: 'GameInstance',
@@ -76,7 +78,8 @@ export default {
   },
   components: {
     WorldMap,
-    ActionMenu
+    ActionMenu,
+    PlayerActionMenu
   }
 }
 </script>

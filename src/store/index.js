@@ -6,6 +6,7 @@ import games from './games'
 import error from './error'
 import actionsMenu from './actionsMenu'
 import invitations from './invitations'
+import playerActionsMenu from './playerActionsMenu'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -15,6 +16,7 @@ export default new Vuex.Store({
     cable,
     error,
     games,
-    invitations
+    invitations,
+    playerActionsMenu
   }
 })

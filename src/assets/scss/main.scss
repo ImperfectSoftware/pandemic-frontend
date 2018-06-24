@@ -152,8 +152,9 @@ div#map {
   }
 }
 
-div#action-menu {
+div#action-menu, div#player-action-menu{
   // to avoid bugs dimension styles should be set inside models/ActionMenu.js
+  // or models/PlayerActionMenu.js
   background-color: $blue;
   position: absolute;
   z-index: 100;
@@ -173,7 +174,6 @@ div#action-menu {
   fill-opacity: 100;
   fill: $research-station;
 }
-
 
 .disease-rectangle-black, .disease-rectangle-yellow, .disease-rectangle-red,
 .disease-rectangle-blue {

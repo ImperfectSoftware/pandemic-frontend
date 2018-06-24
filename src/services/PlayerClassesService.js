@@ -13,7 +13,7 @@ export default class PlayerClassesService {
     if (this.game && this.game.players) {
       let player = this.game.players[this.position]
       if (player && player.cityStaticid === this.cityStaticid) {
-        return `${player.cssClass} btn`
+        return `${player.cssClass} btn player`
       }
     }
     return 'hide-svg-component'

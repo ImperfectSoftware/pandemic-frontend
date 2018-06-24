@@ -15328,7 +15328,15 @@ export default {
       console.log(`handling infection for ${cityStaticid} at position ${position}.`)
     },
     handlePlayerClick (cityStaticid, position) {
-      console.log(`handling player for ${cityStaticid} at position ${position}.`)
+      this.$store.dispatch('showPlayerActionMenu', {
+        game: this.game,
+        cityStaticid: cityStaticid,
+        position: position,
+        pageX: event.pageX,
+        pageY: event.pageY,
+        windowHeight: window.innerHeight,
+        windowWidth: window.innerWidth
+      })
     },
     infectionClasses (cityStaticid, position) {
       return InfectionClassesService.for(cityStaticid, position, this.game)
