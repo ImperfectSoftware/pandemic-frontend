@@ -1,5 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '.././store'
+import errorHandler from '@/mixins/errorHandler'
 
 export default class GetPossiblePlayerActionsService {
   static call (payload) {
@@ -22,14 +23,11 @@ export default class GetPossiblePlayerActionsService {
       }
     )
       .then(request => this.displayPlayerPossibleActionsSuccess(request.data))
-      .catch(e => this.displayPlayerPossibleActionsFailed(e))
+      .catch(e => this.handleError(e))
   }
 
   displayPlayerPossibleActionsSuccess = (data) => {
     store.dispatch('updatePlayerActionMenu', data)
   }
-
-  displayPlayerPossibleActionsFailed = (e) => {
-    console.log(e)
-  }
 }
+Object.assign(GetPossiblePlayerActionsService.prototype, errorHandler)

@@ -1,5 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '.././store'
+import errorHandler from '@/mixins/errorHandler'
 import GameSubscription from '@/subscriptions/GameSubscription'
 
 export default class GetStartedGameService {
@@ -14,7 +15,7 @@ export default class GetStartedGameService {
   call () {
     axios.get(`/games/${this.gameId}`)
       .then(request => this.updateActiveGamesSuccess(request.data))
-      .catch((e) => this.updateActiveGamesFailed(e))
+      .catch(e => this.handleError(e))
   }
 
   updateActiveGamesSuccess = (game) => {
@@ -30,3 +31,4 @@ export default class GetStartedGameService {
     console.log(e)
   }
 }
+Object.assign(GetStartedGameService.prototype, errorHandler)

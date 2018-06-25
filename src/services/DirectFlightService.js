@@ -1,4 +1,5 @@
 import axios from '@/backend/vue-axios'
+import errorHandler from '@/mixins/errorHandler'
 
 export default class DirectFlightService {
   static call (payload) {
@@ -17,13 +18,10 @@ export default class DirectFlightService {
       }
     )
       .then(request => this.directFlightSuccess(request.data))
-      .catch(e => this.directFlightFerryFailed(e))
+      .catch(e => this.handleError(e))
   }
 
   directFlightSuccess = (data) => {
   }
-
-  directFlightFerryFailed = (e) => {
-    console.log(e)
-  }
 }
+Object.assign(DirectFlightService.prototype, errorHandler)

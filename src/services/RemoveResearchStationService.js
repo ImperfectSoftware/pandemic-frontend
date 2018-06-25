@@ -1,4 +1,5 @@
 import axios from '@/backend/vue-axios'
+import errorHandler from '@/mixins/errorHandler'
 
 export default class RemoveResearchStationService {
   static call (payload) {
@@ -14,7 +15,7 @@ export default class RemoveResearchStationService {
   call () {
     axios.delete(`/games/${this.game.id}/research_stations/${this.cityId}`)
       .then(request => this.buildResearchStationSuccess(request.data))
-      .catch(e => this.buildResearchStationFailed(e))
+      .catch(e => this.handleError(e))
   }
 
   buildResearchStationSuccess = (data) => {
@@ -24,3 +25,4 @@ export default class RemoveResearchStationService {
     console.log(e)
   }
 }
+Object.assign(RemoveResearchStationService.prototype, errorHandler)

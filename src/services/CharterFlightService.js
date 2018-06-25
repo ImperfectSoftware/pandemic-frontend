@@ -1,4 +1,5 @@
 import axios from '@/backend/vue-axios'
+import errorHandler from '@/mixins/errorHandler'
 
 export default class CharterFlightService {
   static call (payload) {
@@ -17,13 +18,10 @@ export default class CharterFlightService {
       }
     )
       .then(request => this.charterFlightSuccess(request.data))
-      .catch(e => this.charterFlightFerryFailed(e))
+      .catch(e => this.handleError(e))
   }
 
   charterFlightSuccess = (data) => {
   }
-
-  charterFlightFerryFailed = (e) => {
-    console.log(e)
-  }
 }
+Object.assign(CharterFlightService.prototype, errorHandler)

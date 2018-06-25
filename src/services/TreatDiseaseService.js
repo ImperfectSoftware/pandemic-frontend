@@ -1,4 +1,5 @@
 import axios from '@/backend/vue-axios'
+import errorHandler from '@/mixins/errorHandler'
 
 export default class TreatDiseaseService {
   static call (payload) {
@@ -23,8 +24,5 @@ export default class TreatDiseaseService {
 
   treatDiseaseSuccess = (data) => {
   }
-
-  treatDiseaseFailed = (e) => {
-    console.log(e)
-  }
 }
+Object.assign(TreatDiseaseService.prototype, errorHandler)

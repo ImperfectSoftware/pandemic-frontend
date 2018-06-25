@@ -1,6 +1,7 @@
 import axios from '@/backend/vue-axios'
 import store from '.././store'
 import InvitationSubscription from '@/subscriptions/InvitationSubscription'
+import errorHandler from '@/mixins/errorHandler'
 
 export default class SetupGameDashboardService {
   static call () {
@@ -21,7 +22,13 @@ export default class SetupGameDashboardService {
   displayGames () {
     axios.get('/games.json')
       .then(request => this.displayGamesSuccess(request.data))
-      .catch((e) => this.displayGamesFailed(e))
+      .catch(e => this.handleError(e))
+  }
+
+  displayInvitations () {
+    axios.get('/invitations')
+      .then(request => this.displayInvitationsSuccess(request.data))
+      .catch(e => this.handleError(e))
   }
 
   displayGamesSuccess = (data) => {
@@ -31,23 +38,10 @@ export default class SetupGameDashboardService {
     store.dispatch('updateSelectedGame', store.getters.games[0])
   }
 
-  displayGamesFailed = (e) => {
-    console.log(e)
-  }
-
-  displayInvitations () {
-    axios.get('/invitations')
-      .then(request => this.displayInvitationsSuccess(request.data))
-      .catch((e) => this.displayInvitationsFailed(e))
-  }
-
   displayInvitationsSuccess = (data) => {
     data.invitations.forEach((attributes) => {
       store.dispatch('pushInvitation', attributes)
     })
   }
-
-  displayInvitationsFailed = (e) => {
-    console.log(e)
-  }
 }
+Object.assign(SetupGameDashboardService.prototype, errorHandler)

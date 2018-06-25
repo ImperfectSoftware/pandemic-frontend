@@ -1,4 +1,5 @@
 import axios from '@/backend/vue-axios'
+import errorHandler from '@/mixins/errorHandler'
 
 export default class DriveOrFerryService {
   static call (payload) {
@@ -17,13 +18,10 @@ export default class DriveOrFerryService {
       }
     )
       .then(request => this.driveOrFerrySuccess(request.data))
-      .catch(e => this.driveOrFerryFailed(e))
+      .catch(e => this.handleError(e))
   }
 
   driveOrFerrySuccess = (data) => {
   }
-
-  driveOrFerryFailed = (e) => {
-    console.log(e)
-  }
 }
+Object.assign(DriveOrFerryService.prototype, errorHandler)

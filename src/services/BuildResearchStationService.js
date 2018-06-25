@@ -1,4 +1,5 @@
 import axios from '@/backend/vue-axios'
+import errorHandler from '@/mixins/errorHandler'
 
 export default class BuildResearchStationService {
   static call (payload) {
@@ -13,13 +14,10 @@ export default class BuildResearchStationService {
   call () {
     axios.post(`/games/${this.game.id}/research_stations`)
       .then(request => this.buildResearchStationSuccess(request.data))
-      .catch(e => this.buildResearchStationFailed(e))
+      .catch(e => this.handleError(e))
   }
 
   buildResearchStationSuccess = (data) => {
   }
-
-  buildResearchStationFailed = (e) => {
-    console.log(e)
-  }
 }
+Object.assign(BuildResearchStationService.prototype, errorHandler)

@@ -1,5 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '.././store'
+import errorHandler from '@/mixins/errorHandler'
 
 export default class GetPossibleActionsService {
   static call (payload) {
@@ -17,7 +18,7 @@ export default class GetPossibleActionsService {
       { params: { city_staticid: this.cityStaticid } }
     )
       .then(request => this.displayPossibleActionsSuccess(request.data))
-      .catch(e => this.displayPossibleActionsFailed(e))
+      .catch(e => this.handleError(e))
   }
 
   displayPossibleActionsSuccess = (data) => {
@@ -28,3 +29,4 @@ export default class GetPossibleActionsService {
     console.log(e)
   }
 }
+Object.assign(GetPossibleActionsService.prototype, errorHandler)

@@ -1,4 +1,5 @@
 import axios from '@/backend/vue-axios'
+import errorHandler from '@/mixins/errorHandler'
 
 export default class RespondToGiveCardService {
   static call (payload) {
@@ -16,13 +17,10 @@ export default class RespondToGiveCardService {
       accepted: this.response
     })
       .then(request => this.respondToGiveCardsSuccess(request.data))
-      .catch(e => this.respondToGiveCardsFailed(e))
+      .catch(e => this.handleError(e))
   }
 
   respondToGiveCardsSuccess = (data) => {
   }
-
-  respondToGiveCardsFailed = (e) => {
-    console.log(e)
-  }
 }
+Object.assign(RespondToGiveCardService.prototype, errorHandler)

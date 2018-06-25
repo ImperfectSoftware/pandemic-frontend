@@ -1,4 +1,5 @@
 import axios from '@/backend/vue-axios'
+import errorHandler from '@/mixins/errorHandler'
 
 export default class ShuttleFlightService {
   static call (payload) {
@@ -17,7 +18,7 @@ export default class ShuttleFlightService {
       }
     )
       .then(request => this.shuttleFlightSuccess(request.data))
-      .catch(e => this.shuttleFlightFerryFailed(e))
+      .catch(e => this.handleError(e))
   }
 
   shuttleFlightSuccess = (data) => {
@@ -27,3 +28,4 @@ export default class ShuttleFlightService {
     console.log(e)
   }
 }
+Object.assign(ShuttleFlightService.prototype, errorHandler)

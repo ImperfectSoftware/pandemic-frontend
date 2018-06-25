@@ -1,5 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '.././store'
+import errorHandler from '@/mixins/errorHandler'
 
 export default class StartGameService {
   static call (game) {
@@ -16,7 +17,7 @@ export default class StartGameService {
       'nr_of_epidemic_cards': this.nrOfEpidemicCards
     })
       .then(request => this.startingGame(request.data))
-      .catch((e) => this.startingGameFailed(e))
+      .catch(e => this.handleError(e))
   }
 
   startingGame = (data) => {
@@ -28,8 +29,5 @@ export default class StartGameService {
       })
     }
   }
-
-  startingGameFailed = (e) => {
-    console.log(e)
-  }
 }
+Object.assign(StartGameService.prototype, errorHandler)

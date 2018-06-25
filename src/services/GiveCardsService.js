@@ -1,5 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '@/store'
+import errorHandler from '@/mixins/errorHandler'
 
 export default class GiveCardsService {
   static call (payload) {
@@ -20,14 +21,11 @@ export default class GiveCardsService {
       }
     )
       .then(request => this.giveCardsSuccess(request.data))
-      .catch(e => this.giveCardsFailed(e))
+      .catch(e => this.handleError(e))
   }
 
   giveCardsSuccess = (data) => {
     store.dispatch('hidePlayerActionMenu', null)
   }
-
-  giveCardsFailed = (e) => {
-    console.log(e)
-  }
 }
+Object.assign(GiveCardsService.prototype, errorHandler)

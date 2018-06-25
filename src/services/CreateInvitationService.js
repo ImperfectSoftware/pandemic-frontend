@@ -1,5 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '.././store'
+import errorHandler from '@/mixins/errorHandler'
 
 export default class CreateInvitationService {
   static call (payload) {
@@ -17,7 +18,7 @@ export default class CreateInvitationService {
       { username: this.username }
     )
       .then(request => this.createInvitationSuccess(request.data))
-      .catch(e => this.createInvitationFailed(e))
+      .catch(e => this.handleError(e))
   }
 
   createInvitationSuccess = (data) => {
@@ -31,8 +32,5 @@ export default class CreateInvitationService {
       store.dispatch('updateError', { error: { display: false } })
     }
   }
-
-  createInvitationFailed = (e) => {
-    console.log(e)
-  }
 }
+Object.assign(CreateInvitationService.prototype, errorHandler)

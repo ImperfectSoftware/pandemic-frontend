@@ -1,4 +1,5 @@
 import axios from '@/backend/vue-axios'
+import errorHandler from '@/mixins/errorHandler'
 import store from '.././store'
 
 export default class RespondToInviteService {
@@ -15,7 +16,7 @@ export default class RespondToInviteService {
   call () {
     axios.put(`/games/${this.gameId}/invitations.json`, { status: this.value })
       .then(request => this.updateInviteSuccess(request.data))
-      .catch(() => this.updateInviteFailed())
+      .catch(e => this.handleError(e))
   }
 
   updateInviteSuccess = (data, invitation) => {
@@ -24,8 +25,5 @@ export default class RespondToInviteService {
       store.dispatch('unshiftGame', data.game)
     }
   }
-
-  updateInviteFailed = (e) => {
-    console.log(e)
-  }
 }
+Object.assign(RespondToInviteService.prototype, errorHandler)
