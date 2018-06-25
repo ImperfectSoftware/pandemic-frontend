@@ -1,23 +1,27 @@
 import Player from '@/models/Player'
 
 describe('Player.js', () => {
-  let data = { actions_left: 2 , active: false, role: 'medic',
-    username: 'john' }
+  let event = { staticid: '1', name: 'Government Grant' }
+  let city = {
+    staticid: '1',
+    name: 'Miami',
+    color: 'yellow',
+    population: 20,
+    density: 2
+  }
+  let data = {
+    actions_left: 2,
+    location_staticid: '1',
+    active: false,
+    role: 'medic',
+    username: 'john',
+    cities: [city],
+    events: [event]
+  }
 
-  it("should know it's current location", () => {
+  it("should know it's location staticid", () => {
     let player = Player.from(data)
-    expect(player.location).to.eq('washington')
-  })
-
-  it("should know if the player is not active", () => {
-    let player = Player.from(data)
-    expect(player.isActive).to.eq(false)
-  })
-
-  it('should know if the player is active', () => {
-    data.active = true
-    let player = Player.from(data)
-    expect(player.isActive).to.eq(true)
+    expect(player.cityStaticid).to.eq('1')
   })
 
   it("should know the player's role name", () => {

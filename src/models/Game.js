@@ -18,6 +18,10 @@ export default class Game {
     }, this)
   }
 
+  get actionsLeft () {
+    return 4 - this.actionsTaken
+  }
+
   get isActive () {
     return this.active
   }

@@ -17,7 +17,7 @@
           </div>
           <div>
             {{ game.activePlayer.username }} is taking their turn.
-            Remaining actions: {{ 4 - game.actionsTaken }}.
+            Remaining actions: {{ game.actionsLeft }}.
           </div>
         </div>
         <div class="col col-sm-5">
