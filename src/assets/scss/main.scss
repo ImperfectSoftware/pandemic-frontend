@@ -158,9 +158,22 @@ div#action-menu, div#player-action-menu{
   background-color: $blue;
   position: absolute;
   z-index: 100;
-  border: 2px solid #868e96;
+  border: 2px solid $border;
   border-radius: .25rem;
   padding: 0.5em;
+}
+
+div#share-card-notification {
+  background-color: $blue;
+  position: absolute;
+  z-index: 100;
+  border: 2px solid $border;
+  border-radius: .25rem;
+  top: 15%;
+  padding: 0.5em;
+  width: 80%;
+  left: 10%;
+
 }
 
 .hide-svg-component {

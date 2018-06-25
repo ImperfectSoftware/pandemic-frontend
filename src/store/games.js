@@ -100,6 +100,7 @@ const actions = {
   updateActiveGame ({ commit }, game) {
     commit(MutationTypes.UPDATE_ACTIVE_GAME, game)
     store.dispatch('hideActionMenu', null)
+    store.dispatch('hideSharedCardNotification')
   }
 }
 

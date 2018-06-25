@@ -34,6 +34,8 @@ export default class GameSubscription {
       router.replace(`/games/${this.game.id}`)
     } else if (data.game_update) {
       store.dispatch('updateActiveGame', data.game)
+    } else if (data.share_card_notification) {
+      store.dispatch('updateSharedCardNotification', data.payload)
     }
   }
 

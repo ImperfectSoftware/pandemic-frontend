@@ -7,6 +7,7 @@ import error from './error'
 import actionsMenu from './actionsMenu'
 import invitations from './invitations'
 import playerActionsMenu from './playerActionsMenu'
+import sharedCardNotification from './sharedCardNotification'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -17,6 +18,7 @@ export default new Vuex.Store({
     error,
     games,
     invitations,
-    playerActionsMenu
+    playerActionsMenu,
+    sharedCardNotification
   }
 })

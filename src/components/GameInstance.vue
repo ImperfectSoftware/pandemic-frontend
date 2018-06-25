@@ -1,5 +1,6 @@
 <template>
   <div id="map">
+    <ShareCardNotification/>
     <WorldMap/>
     <ActionMenu/>
     <PlayerActionMenu/>
@@ -56,6 +57,7 @@
 </template>
 <script>
 import { mapGetters } from 'vuex'
+import ShareCardNotification from '@/components/ShareCardNotification'
 import WorldMap from '@/components/WorldMap'
 import ActionMenu from '@/components/ActionMenu'
 import PlayerActionMenu from '@/components/PlayerActionMenu'
@@ -79,7 +81,8 @@ export default {
   components: {
     WorldMap,
     ActionMenu,
-    PlayerActionMenu
+    PlayerActionMenu,
+    ShareCardNotification
   }
 }
 </script>
