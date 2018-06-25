@@ -49,5 +49,4 @@ export default class PlayerActionMenu {
     return this.sharedClasses()
   }
 }
-
 Object.assign(PlayerActionMenu.prototype, menuMixin)

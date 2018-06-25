@@ -13,7 +13,7 @@ describe('Player.js', () => {
     actions_left: 2,
     location_staticid: '1',
     active: false,
-    role: 'medic',
+    role: 'operations_expert',
     username: 'john',
     cities: [city],
     events: [event]
@@ -26,11 +26,21 @@ describe('Player.js', () => {
 
   it("should know the player's role name", () => {
     let player = Player.from(data)
-    expect(player.role).to.eq('medic')
+    expect(player.role).to.eq(data.role)
   })
 
   it("should know the player's username", () => {
     let player = Player.from(data)
     expect(player.username).to.eq('john')
+  })
+
+  it('knows the player cssClass', () => {
+    let player = Player.from(data)
+    expect(player.cssClass).to.eq('operations-expert')
+  })
+
+  it('displays role name without underscore', () => {
+    let player = Player.from(data)
+    expect(player.prettyRole).to.eq('operations expert')
   })
 })
