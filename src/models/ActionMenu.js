@@ -9,7 +9,6 @@ export default class ActionMenu {
     this.canBuildResearchStation = false
     this.canRemoveResearchStation = false
     this.canDiscoverCure = false
-    this.canShareKnowledge = false
     this.cureColor = ''
     this.cityStaticid = ''
     this.cityName = ''
@@ -46,7 +45,6 @@ export default class ActionMenu {
     this.canTreatBlack = payload.can_treat_black
     this.canTreatBlue = payload.can_treat_blue
     this.canTreatRed = payload.can_treat_red
-    this.canShareKnowledge = payload.can_share_knowledge
   }
 
   get style () {
@@ -85,11 +83,6 @@ export default class ActionMenu {
   get removeResearchStationCssClasses () {
     return this.sharedClasses() +
       this.displayClass(this.canRemoveResearchStation)
-  }
-
-  get shareKnowledgeCssClasses () {
-    return this.sharedClasses() +
-      this.displayClass(this.canShareKnowledge)
   }
 
   get discoverCureCssClasses () {
