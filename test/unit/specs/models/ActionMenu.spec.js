@@ -30,7 +30,7 @@ describe('ActionMenu.js', () => {
       windowHeight: 600,
       windowWidth: 800,
       pageX: 200,
-      pageY: 200,
+      pageY: 200
     }
     let menu = new ActionMenu()
     menu.showMenu(data)
@@ -46,7 +46,7 @@ describe('ActionMenu.js', () => {
       windowHeight: 600,
       windowWidth: 800,
       pageX: 700,
-      pageY: 200,
+      pageY: 200
     }
     let menu = new ActionMenu()
     menu.showMenu(data)
@@ -60,7 +60,7 @@ describe('ActionMenu.js', () => {
       windowHeight: 600,
       windowWidth: 800,
       pageX: 700,
-      pageY: 500,
+      pageY: 500
     }
     let menu = new ActionMenu()
     menu.showMenu(data)
@@ -89,7 +89,7 @@ describe('ActionMenu.js', () => {
       can_treat_yellow: true,
       can_treat_black: true,
       can_treat_blue: true,
-      can_treat_red: true,
+      can_treat_red: true
     }
     let menu = new ActionMenu()
     menu.updateMenu(data)

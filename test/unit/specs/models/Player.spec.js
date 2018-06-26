@@ -15,8 +15,12 @@ describe('Player.js', () => {
     active: false,
     role: 'operations_expert',
     username: 'john',
-    cities: [city],
-    events: [event]
+    cities: [
+      city
+    ],
+    events: [
+      event
+    ]
   }
 
   it("should know it's location staticid", () => {

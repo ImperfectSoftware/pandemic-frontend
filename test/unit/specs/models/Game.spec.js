@@ -14,8 +14,14 @@ describe('Game.js', () => {
     cities: [],
     events: []
   }
-  let data = { actions_taken: 2, active: true, active_player_id: 1,
-    players: [ activePlayer, player ]
+  let data = {
+    actions_taken: 2,
+    active: true,
+    active_player_id: 1,
+    players: [
+      activePlayer,
+      player
+    ]
   }
 
   it('should know how many actions are left', () => {

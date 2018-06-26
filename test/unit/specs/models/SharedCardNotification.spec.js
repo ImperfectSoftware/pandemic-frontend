@@ -1,11 +1,6 @@
 import SharedCardNotification from '@/models/SharedCardNotification'
 
 describe('SharedCardNotification.js', () => {
-  let payload = {
-    sender_username: 'John',
-    receiver_username: 'Frank',
-    city_name: 'Miami'
-  }
   let senderData = {
     payload: {
       id: 1,
