@@ -33,13 +33,12 @@ export default class SharedClassNotification {
     let receiverUsername = data.payload.receiver_username
     let username = data.currentPlayerUsername
     let cityName = data.payload.city_name
-    if (data.payload.receiver_username === username) {
+    if (receiverUsername === username) {
       this.message = `${senderUsername} would like to share ${cityName} player card` +
         ' with you'
       this.showActions = true
       this.sharedCardId = data.payload.id
-    } else if (data.payload.sender_username === username) {
-      console.log(this.showActions)
+    } else if (senderUsername === username) {
       this.message = "You've sent a city player card. Waiting for a response..."
       this.showCloseNotification = true
     } else {
