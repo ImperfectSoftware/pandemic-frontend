@@ -9,9 +9,7 @@ const state = {
 
 const mutations = {
   [MutationTypes.HIDE_ACTION_MENU] (state) {
-    if (!state.menu.hide) {
-      state.menu.hide = true
-    }
+    state.menu.hide = true
   },
   [MutationTypes.SHOW_ACTION_MENU] (state, payload) {
     state.menu.showMenu(payload)
