@@ -1,7 +1,6 @@
 import store from '@/store'
 import axios from '@/backend/vue-axios'
 import moxios from 'moxios'
-import sinon from 'sinon'
 
 describe('actionsMenu.js', () => {
   let baseUrl = 'http://localhost:3000/'
