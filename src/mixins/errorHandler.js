@@ -2,7 +2,6 @@ import store from '.././store'
 
 let errorHandler = {
   handleError (e) {
-    console.log(e)
     store.dispatch('updateError', {
       message: "We're sorry, something went wrong. Please try again later.",
       css: 'alert-danger',

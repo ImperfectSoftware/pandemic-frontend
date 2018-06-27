@@ -24,9 +24,5 @@ export default class GetPossibleActionsService {
   displayPossibleActionsSuccess = (data) => {
     store.dispatch('updateActionMenu', data)
   }
-
-  displayPossibleActionsFailed = (e) => {
-    console.log(e)
-  }
 }
 Object.assign(GetPossibleActionsService.prototype, errorHandler)
