@@ -1,5 +1,4 @@
 import * as MutationTypes from './mutation-types'
-import store from '@/store'
 import SharedCardNotification from '@/models/SharedCardNotification'
 
 const state = {
@@ -8,12 +7,9 @@ const state = {
 
 const mutations = {
   [MutationTypes.UPDATE_SHARED_CARD_NOTIFICATION] (state, payload) {
-    state.card.updateNotification({
-      payload: payload,
-      currentPlayerUsername: store.getters.currentUser.username
-    })
+    state.card.updateNotification(payload)
   },
-  [MutationTypes.HIDE_SHARED_CARD_NOTIFICATION] (state, payload) {
+  [MutationTypes.HIDE_SHARED_CARD_NOTIFICATION] (state) {
     state.card.hideNotification()
   }
 }
