@@ -39,15 +39,6 @@ const mutations = {
       game.selected = true
     }
   },
-  [MutationTypes.PUSH_PLAYER] (state, payload) {
-    let game = getters.selectedGame(state)
-    game.players.push(DashboardPlayer.from({
-      acceptedStatus: payload.acceptedStatus,
-      invitation_id: payload.id,
-      user_id: payload.user.id,
-      username: payload.user.username
-    }))
-  },
   [MutationTypes.PUSH_ACTIVE_GAME] (state, game) {
     state.activeGames.push(Game.from(game))
   },
@@ -78,9 +69,6 @@ const actions = {
   },
   updateSelectedGame ({ commit }, game) {
     commit(MutationTypes.UPDATE_SELECTED_GAME, game)
-  },
-  pushPlayer ({ commit }, payload) {
-    commit(MutationTypes.PUSH_PLAYER, payload)
   },
   setupGamesDashboard ({ dispatch }) {
     SetupGameDashboardService.call()
