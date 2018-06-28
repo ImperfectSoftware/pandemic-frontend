@@ -57,17 +57,20 @@ describe('invitations.js', () => {
 
   it('should respond to invitation', (done) => {
     let url = `${baseUrl}games/1/invitations.json`
-    let invitation = { gameId: 1, acceptedStatus: false }
-    let payload = { invitation: invitation, value: true }
-    moxios.stubRequest(url, { status: 200, response: {
-      status: true,
-      game: {
-        participants: []
+    let invitation = { gameId: 1, acceptedStatus: 'declined' }
+    let payload = { invitation: invitation, value: false }
+    moxios.stubRequest(url, {
+      status: 200,
+      response: {
+        status: true,
+        game: {
+          participants: []
+        }
       }
-    }})
+    })
     store.dispatch('respondToInvite', payload)
     moxios.wait(function () {
-      expect(invitation.acceptedStatus).to.eq(true)
+      expect(invitation.acceptedStatus).to.eq('declined')
       done()
     })
   })

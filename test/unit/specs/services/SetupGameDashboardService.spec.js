@@ -1,13 +1,13 @@
 /* global localStorage */
-let token = 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Impvc2lhaEBiYXJ' +
-  'yb3dzYmVja2VyLmlvIiwiZXhwIjoxNTI3NjQ0OTIyfQ.RLR155WB7W-24N6dmgcqp6DTIhAjul' +
-  'I1recxhpMpCUk'
-localStorage.token = token
-
 import store from '@/store'
 import axios from '@/backend/vue-axios'
 import moxios from 'moxios'
 import SetupGameDashboardService from '@/services/SetupGameDashboardService'
+
+let token = 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Impvc2lhaEBiYXJ' +
+  'yb3dzYmVja2VyLmlvIiwiZXhwIjoxNTI3NjQ0OTIyfQ.RLR155WB7W-24N6dmgcqp6DTIhAjul' +
+  'I1recxhpMpCUk'
+localStorage.token = token
 
 describe('SetupGameDashboardService.js', () => {
   let baseUrl = 'http://localhost:3000/'
@@ -57,20 +57,19 @@ describe('SetupGameDashboardService.js', () => {
       status: 200,
       response: invitationsData
     })
+    let length = store.getters.games.length
     SetupGameDashboardService.call()
     moxios.wait(function () {
-      expect(store.getters.games[1].id).to.eq(6)
-      expect(store.getters.selectedGame.id).to.eq(7)
+      expect(store.getters.games.length - length).to.eq(2)
       expect(store.getters.invitations[0].id).to.eq(1)
       done()
     })
   })
 
-
   it('handles bad server connection', (done) => {
     store.dispatch('signin')
     moxios.stubRequest(`${baseUrl}games`, { status: 500 })
-    moxios.stubRequest(`${baseUrl}invitations`, { status: 200 })
+    moxios.stubRequest(`${baseUrl}invitations`, { status: 500 })
     SetupGameDashboardService.call()
     moxios.wait(function () {
       expect(store.getters.error.display).to.eq(true)

@@ -14,7 +14,7 @@ export default class RespondToInviteService {
   }
 
   call () {
-    axios.put(`/games/${this.gameId}/invitations.json`, { status: this.value })
+    axios.put(`/games/${this.gameId}/invitations`, { status: this.value })
       .then(request => this.updateInviteSuccess(request.data))
       .catch(e => this.handleError(e))
   }

@@ -34,10 +34,13 @@ describe('actionsMenu.js', () => {
     let giveCities = [ 'Chicago' ]
     let params = 'city_staticid=2&player_id=3'
     let url = `${baseUrl}games/1/possible_player_actions.json?${params}`
-    moxios.stubRequest(url, { status: 200, response: {
-      receive_cities: receiveCities,
-      give_cities: giveCities
-    }})
+    moxios.stubRequest(url, {
+      status: 200,
+      response: {
+        receive_cities: receiveCities,
+        give_cities: giveCities
+      }
+    })
     store.dispatch('showPlayerActionMenu', {
       game: {
         id: 1,
