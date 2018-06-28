@@ -29,7 +29,7 @@ export default class CreateInvitationService {
         display: true
       })
     } else {
-      store.dispatch('updateError', { error: { display: false } })
+      store.dispatch('updateError', { display: false })
     }
   }
 }
