@@ -20,7 +20,7 @@ export default class SetupGameDashboardService {
   }
 
   displayGames () {
-    axios.get('/games.json')
+    axios.get('/games')
       .then(request => this.displayGamesSuccess(request.data))
       .catch(e => this.handleError(e))
   }
