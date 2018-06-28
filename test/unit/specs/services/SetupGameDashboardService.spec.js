@@ -58,7 +58,7 @@ describe('SetupGameDashboardService.js', () => {
       response: invitationsData
     })
     let length = store.getters.games.length
-    SetupGameDashboardService.call()
+    store.dispatch('setupGamesDashboard')
     moxios.wait(function () {
       expect(store.getters.games.length - length).to.eq(2)
       expect(store.getters.invitations[0].id).to.eq(1)
@@ -70,7 +70,7 @@ describe('SetupGameDashboardService.js', () => {
     store.dispatch('signin')
     moxios.stubRequest(`${baseUrl}games`, { status: 500 })
     moxios.stubRequest(`${baseUrl}invitations`, { status: 500 })
-    SetupGameDashboardService.call()
+    store.dispatch('setupGamesDashboard')
     moxios.wait(function () {
       expect(store.getters.error.display).to.eq(true)
       done()

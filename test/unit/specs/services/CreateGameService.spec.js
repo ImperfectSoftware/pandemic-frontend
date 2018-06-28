@@ -35,13 +35,12 @@ describe('CreateGameService.js', () => {
   })
 
   it('accepts a game invite', (done) => {
-    // store.dispatch('signin')
     moxios.stubRequest(`${baseUrl}games`, {
       status: 200,
       response: data
     })
     let gamesCount = store.getters.games.length
-    CreateGameService.call()
+    store.dispatch('createGame')
     moxios.wait(function () {
       expect(store.getters.games.length - gamesCount).to.eq(1)
       done()
@@ -51,7 +50,7 @@ describe('CreateGameService.js', () => {
   it('handles server error gracefully', (done) => {
     // store.dispatch('signin')
     moxios.stubRequest(`${baseUrl}games`, { status: 500 })
-    CreateGameService.call()
+    store.dispatch('createGame')
     moxios.wait(function () {
       expect(store.getters.error.display).to.eq(true)
       done()
