@@ -104,6 +104,10 @@ div#map {
   background-color: $yellow;
 }
 
+.not-active {
+  background-color: lighten($yellow, 30%);
+}
+
 .accepted {
   border: 0.5em solid $color-two;
 }
@@ -215,4 +219,8 @@ div#share-card-notification {
 
 .disease-button {
   position: relative;
+}
+
+.radius-small {
+  border-radius: .25rem;
 }

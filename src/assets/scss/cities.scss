@@ -1,21 +1,17 @@
 @import 'colors';
 
-li.blue-city, li.red-city, li.yellow-city, li.black-city {
-  padding: 5%;
-}
-
-li.blue-city {
+.blue-city {
   border: 0.5em solid $blue;
 }
 
-li.red-city {
+.red-city {
   border: 0.5em solid $red;
 }
 
-li.yellow-city {
+.yellow-city {
   border: 0.5em solid $yellow;
 }
 
-li.black-city {
+.black-city {
   border: 0.5em solid $black;
 }

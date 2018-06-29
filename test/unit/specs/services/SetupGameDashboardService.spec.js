@@ -2,7 +2,6 @@
 import store from '@/store'
 import axios from '@/backend/vue-axios'
 import moxios from 'moxios'
-import SetupGameDashboardService from '@/services/SetupGameDashboardService'
 
 let token = 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Impvc2lhaEBiYXJ' +
   'yb3dzYmVja2VyLmlvIiwiZXhwIjoxNTI3NjQ0OTIyfQ.RLR155WB7W-24N6dmgcqp6DTIhAjul' +

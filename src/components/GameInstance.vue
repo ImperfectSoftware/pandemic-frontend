@@ -6,51 +6,35 @@
     <PlayerActionMenu/>
     <div v-if="game" class="container-fluid no-gutters">
       <div class="row">
-        <div class="col col-sm-3">
-          <div class="card list" v-for="(player, key) in game.players"
-            :key="key">
-            <div class="card-body"
-              :class="{active: player === game.activePlayer}">
+        <div class="col col-sm-2">
+          <div class="d-flex align-items-center p-2 radius-small text-left"
+            v-for="(player, key) in game.players" :key="key"
+            :class="player.selectedCss">
+            <div class="d-inline p-2">
               <i :class="player.cssClass" class="fa fa-user"></i>
-                {{player.username}}: {{player.prettyRole}}.
             </div>
-          </div>
-          <div>
-            {{ game.activePlayer.username }} is taking their turn.
-            Remaining actions: {{ game.actionsLeft }}.
-          </div>
-        </div>
-        <div class="col col-sm-5">
-          <div id="city-control">
-            <h2>Control Center</h2>
-          </div>
-        </div>
-        <div class="col col-sm-2">
-          <div class="card">
-            <div class="card-body">
-              <h2>Player Cards</h2>
-              <ul class="list-unstyled">
-                <li v-for="city in currentPlayer.cityPlayerCards"
-                  :key="city.name" :class="city.cssClass">
-                  <div>{{ city.name }}</div>
-                  <div>Population: {{ city.population }}</div>
-                </li>
-              </ul>
+            <div class="d-inline p-2">
+              <div>{{player.username}}</div>
+              <div>{{player.prettyRole}}</div>
+              <div v-if="player.isActive">
+                Actions left: {{game.actionsLeft}}
+              </div>
             </div>
           </div>
         </div>
-        <div class="col col-sm-2">
-          <div class="card">
-            <div class="card-body">
-              <h2>Event Cards</h2>
-              <ul class="list-unstyled">
-                <li v-for="event in currentPlayer.events" :key="event.name">
-                  <div>event.name</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <ul class="col col-sm-8 list-unstyled">
+          <li v-for="city in currentPlayer.cityPlayerCards"
+          :key="city.name" :class="city.cssClass"
+          class="p-1 float-left">
+            <span>{{ city.name }}</span>
+            -
+            <span>{{ city.population }}</span>
+          </li>
+          <li v-for="event in currentPlayer.eventPlayerCards" :key="event.name"
+            class="p-1 float-left">
+            <div>{{event.name}}</div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

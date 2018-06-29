@@ -14,7 +14,7 @@ export default class Game {
     this.players = {}
     this.activePlayerId = game.active_player_id
     game.players.forEach((player) => {
-      this.players[player.position] = Player.from(player)
+      this.players[player.position] = Player.from(player, this)
     }, this)
   }
 

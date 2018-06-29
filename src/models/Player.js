@@ -2,11 +2,12 @@ import CityPlayerCard from '@/models/CityPlayerCard'
 import EventPlayerCard from '@/models/EventPlayerCard'
 
 export default class Player {
-  static from (player) {
-    return new Player(player)
+  static from (player, game) {
+    return new Player(player, game)
   }
 
-  constructor (player) {
+  constructor (player, game) {
+    this.game = game
     this.id = player.id
     this.cityStaticid = player.location_staticid
     this.role = player.role
@@ -27,5 +28,13 @@ export default class Player {
 
   get prettyRole () {
     return this.role.split('_').join(' ')
+  }
+
+  get selectedCss () {
+    return this === this.game.activePlayer ? 'active' : 'not-active'
+  }
+
+  get isActive () {
+    return this === this.game.activePlayer
   }
 }
