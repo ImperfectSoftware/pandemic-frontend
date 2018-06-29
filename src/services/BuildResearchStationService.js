@@ -9,10 +9,13 @@ export default class BuildResearchStationService {
   constructor (payload) {
     this.actionMenu = payload.actionMenu
     this.game = payload.game
+    this.cityStaticid = payload.cityStaticid
   }
 
   call () {
-    axios.post(`/games/${this.game.id}/research_stations`)
+    axios.post(`/games/${this.game.id}/research_stations`, {
+      city_staticid: this.cityStaticid
+    })
       .then(request => this.buildResearchStationSuccess(request.data))
       .catch(e => this.handleError(e))
   }

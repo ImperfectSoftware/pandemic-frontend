@@ -21,7 +21,7 @@
       Shuttle Flight
     </button>
     <button :class="actionMenu.buildResearchStationCssClasses"
-      @click="buildResearchStation">
+      @click="buildResearchStation(actionMenu.cityStaticid)">
       Add Research STA
     </button>
     <button :class="actionMenu.removeResearchStationCssClasses"
@@ -86,9 +86,12 @@ export default {
       ShuttleFlightService
         .call({ actionMenu: this.actionMenu, game: this.game })
     },
-    buildResearchStation: function () {
-      BuildResearchStationService
-        .call({ actionMenu: this.actionMenu, game: this.game })
+    buildResearchStation: function (cityStaticid) {
+      BuildResearchStationService.call({
+        actionMenu: this.actionMenu,
+        game: this.game,
+        cityStaticid: cityStaticid
+      })
     },
     removeResearchStation: function () {
       RemoveResearchStationService
