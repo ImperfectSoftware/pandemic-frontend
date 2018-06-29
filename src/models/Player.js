@@ -31,7 +31,7 @@ export default class Player {
   }
 
   get selectedCss () {
-    return this === this.game.activePlayer ? 'active' : 'not-active'
+    return this.isActive ? 'active' : 'not-active'
   }
 
   get isActive () {
