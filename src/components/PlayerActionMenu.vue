@@ -5,16 +5,22 @@
     <div :class="playerActionMenu.noActionsClasses">
       You can't do anything with this player at this time.
     </div>
-    <button v-for="city in playerActionMenu.receiveCities" :key="city.staticid"
-      :class="playerActionMenu.cssClasses"
-      @click="receiveCity(city.staticid, playerActionMenu.playerId)">
-      Get {{ city.name }} from {{ playerActionMenu.playerUsername }}
-    </button>
-    <button v-for="city in playerActionMenu.giveCities" :key="city.staticid"
-      :class="playerActionMenu.cssClasses"
-      @click="giveCity(city.staticid, playerActionMenu.playerId)">
-      Give {{ city.name }} to {{ playerActionMenu.playerUsername }}
-    </button>
+    <div v-if="playerActionMenu.receiveCities.length !== 0" class="share-card">
+      Get from {{ playerActionMenu.playerUsername }}
+      <button v-for="city in playerActionMenu.receiveCities" :key="city.staticid"
+        :class="playerActionMenu.cssClasses"
+        @click="receiveCity(city.staticid, playerActionMenu.playerId)">
+          {{ city.name }}
+      </button>
+    </div>
+    <div v-if="playerActionMenu.giveCities.length !== 0" class="share-card">
+      Give to {{ playerActionMenu.playerUsername }}
+      <button v-for="city in playerActionMenu.giveCities" :key="city.staticid"
+        :class="playerActionMenu.cssClasses"
+        @click="giveCity(city.staticid, playerActionMenu.playerId)">
+        {{ city.name }}
+      </button>
+    </div>
   </div>
 </template>
 <script>

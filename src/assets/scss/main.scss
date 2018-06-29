@@ -120,6 +120,11 @@ div#map {
   border: 0.5em solid black;
 }
 
+.share-card {
+  border: 1px solid $border;
+  border-radius: 0.25em;
+}
+
 .bg-pandemic {
   background: map-get($color, background);
 }
@@ -165,7 +170,12 @@ div#action-menu, div#player-action-menu{
   border: 2px solid $border;
   border-radius: .25rem;
   padding: 0.5em;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
 }
+
 
 div#share-card-notification {
   background-color: $blue;
