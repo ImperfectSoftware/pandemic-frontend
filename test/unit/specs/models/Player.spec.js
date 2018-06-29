@@ -47,4 +47,22 @@ describe('Player.js', () => {
     let player = Player.from(data)
     expect(player.prettyRole).to.eq('operations expert')
   })
+
+  it('knows if selectedCss should be active', () => {
+    let player = Player.from(data)
+    player.game = { activePlayer: player }
+    expect(player.selectedCss).to.eq('active')
+  })
+
+  it('knows if selectedCss should not be active', () => {
+    let player = Player.from(data)
+    player.game = {}
+    expect(player.selectedCss).to.eq('not-active')
+  })
+
+  it('knows if this player is active', () => {
+    let player = Player.from(data)
+    player.game = { activePlayer: player }
+    expect(player.isActive).to.eq(true)
+  })
 })
