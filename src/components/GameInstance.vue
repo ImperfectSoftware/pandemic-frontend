@@ -6,8 +6,8 @@
     <PlayerActionMenu/>
     <div v-if="game" class="container-fluid no-gutters">
       <div class="row">
-        <div>
-          <div class="d-flex align-items-center p-2 radius-small text-left"
+        <div class="row players-summary">
+          <div class="d-flex align-items-center p-2 radius-small text-left col-sm-6"
             v-for="(player, key) in game.players" :key="key"
             :class="player.selectedCss">
             <div class="d-inline p-2">
