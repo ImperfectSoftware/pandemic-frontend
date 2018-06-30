@@ -60,4 +60,12 @@ export default class Game {
   remainingInfectionsFor = (color) => {
     return 24 - this.usedInfectionsFor(color)
   }
+
+  showEradicatedClassFor = (color) => {
+    return 'd-none'
+  }
+
+  showBottleClassFor = (color) => {
+    return 'disease-not-cured'
+  }
 }

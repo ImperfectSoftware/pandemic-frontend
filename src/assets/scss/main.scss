@@ -261,3 +261,14 @@ div#share-card-notification {
   display: flex;
   flex-wrap: wrap;
 }
+
+.disease-not-cured {
+  display: inline;
+  fill: $border;
+  fill-opacity: 1;
+  stroke: $black;
+  stroke-width: 3px;
+  stroke-opacity: 1;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+}

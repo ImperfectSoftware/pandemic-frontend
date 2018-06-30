@@ -51,6 +51,13 @@
             </tbody>
           </table>
         </div>
+        <div class="flex-row pl-2 pt-2">
+          <div class="d-flex col-sm-12" v-for="color in game.diseaseColors"
+            :key="color">
+            <Cures :color="color"/>
+            <i class="btn pt-2 pl-3 fa fa-plus"></i>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -61,6 +68,7 @@ import ShareCardNotification from '@/components/ShareCardNotification'
 import WorldMap from '@/components/WorldMap'
 import ActionMenu from '@/components/ActionMenu'
 import PlayerActionMenu from '@/components/PlayerActionMenu'
+import Cures from '@/components/cures/Cures'
 
 export default {
   name: 'GameInstance',
@@ -82,7 +90,8 @@ export default {
     WorldMap,
     ActionMenu,
     PlayerActionMenu,
-    ShareCardNotification
+    ShareCardNotification,
+    Cures
   }
 }
 </script>
