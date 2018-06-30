@@ -15,15 +15,20 @@
           </div>
         </div>
       </div>
-      <button class="mt-2 btn btn-block btn-secondary" @click="cureDisease">
+      <button class="mt-2 btn btn-block btn-secondary" @click="cureDisease"
+        v-if="game.activePlayer.cityPlayerCards.length > 0">
         Cure
       </button>
+      <div v-else>
+        Looks like you have no cards, so you can't cure...
+      </div>
     </div>
   </div>
 </template>
 <script>
 import { mixin as clickaway } from 'vue-clickaway'
 import { mapGetters } from 'vuex'
+import CureService from '@/services/CureService'
 
 export default {
   name: 'CureMenu',
@@ -43,8 +48,11 @@ export default {
     hideCureMenu: function () {
       this.$store.dispatch('hideCureMenu', event.target)
     },
-    cureDisease: function (cityStaticid) {
-      console.log(`cured ${this.checkedCities}`)
+    cureDisease: function () {
+      CureService.call({
+        citiesStaticids: this.checkedCities,
+        game: this.game
+      })
     }
   }
 }

@@ -23,7 +23,7 @@ export default class CureMenu {
     this.windowWidth = payload.windowWidth
     this.x = this.calculateX(payload.windowWidth, payload.pageX)
     this.y = this.calculateY(payload.windowHeight, payload.pageY)
-    this.height = payload.citiesCount * 33 + 40
+    this.height = Math.max(payload.citiesCount * 33 + 40, 80)
   }
 }
 Object.assign(CureMenu.prototype, menuMixin)

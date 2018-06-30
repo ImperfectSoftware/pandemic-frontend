@@ -16,6 +16,10 @@ export default class Game {
     game.players.forEach((player) => {
       this.players[player.position] = Player.from(player, this)
     }, this)
+    this.redStatus = game.red_status
+    this.blackStatus = game.black_status
+    this.blueStatus = game.blue_status
+    this.yellowStatus = game.yellow_status
   }
 
   get diseaseColors () {
@@ -71,6 +75,10 @@ export default class Game {
   }
 
   showBottleClassFor = (color) => {
+    let colorStatus = this[`${color}Status`]
+    if (colorStatus === 'cured' || colorStatus === 'eradicated') {
+      return `cured-bottle-${color}`
+    }
     return 'disease-not-cured'
   }
 }

@@ -174,7 +174,7 @@ div#map {
 div#action-menu, div#player-action-menu, div#cure-menu {
   // to avoid bugs dimension styles should be set inside models/ActionMenu.js
   // or models/PlayerActionMenu.js
-  background-color: $blue;
+  background-color: $land;
   position: absolute;
   z-index: 100;
   border: 2px solid $border;
@@ -248,7 +248,6 @@ div#share-card-notification {
 .disease-button {
   position: relative;
 }
-
 .radius-small {
   border-radius: .25rem;
 }
@@ -262,13 +261,22 @@ div#share-card-notification {
   flex-wrap: wrap;
 }
 
-.disease-not-cured {
+@mixin cure {
   display: inline;
-  fill: $border;
   fill-opacity: 1;
   stroke: $black;
   stroke-width: 3px;
   stroke-opacity: 1;
   stroke-linecap: butt;
   stroke-linejoin: miter;
+}
+
+.disease-not-cured {
+  @include cure;
+  fill: $border;
+}
+
+.cured-bottle-yellow {
+  @include cure;
+  fill: $yellow;
 }
