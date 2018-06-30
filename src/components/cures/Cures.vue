@@ -480,10 +480,8 @@
       <g
          transform="translate(-55.532927,-102.19482)"
          style="display:inline"
-         class="btn"
          inkscape:label="cell-area"
-         id="layer2-9"
-         v-on:click="handleCellClick('city-name-goes-here')">
+         id="layer2-9">
         <g
            style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5.8969903;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="g1580"
