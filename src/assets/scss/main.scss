@@ -21,6 +21,11 @@ $width: (
   text-align: center;
 }
 
+body {
+  color: white;
+  background-color: $black;
+}
+
 .list {
   text-align: left;
 }
@@ -101,11 +106,11 @@ div#map {
 }
 
 .active {
-  background-color: $yellow;
+  background-color: lighten($land, 15%);
 }
 
 .not-active {
-  background-color: lighten($yellow, 30%);
+  background-color: lighten($land, 30%);
 }
 
 .accepted {

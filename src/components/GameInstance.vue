@@ -18,19 +18,22 @@
           </div>
         </div>
         <div class="flex-row players-summary">
-          <div class="d-flex align-items-center p-2 radius-small text-left col-sm-6"
+          <div class="d-flex align-items-center radius-small text-left col-sm-12"
             v-for="(player, key) in game.players" :key="key"
             :class="player.selectedCss">
-            <div class="d-inline p-2">
+            <div class="d-inline">
               <i :class="player.cssClass" class="fa fa-user"></i>
             </div>
-            <div class="d-inline p-2">
-              <div>{{player.username}}</div>
-              <div>{{player.prettyRole}}</div>
-              <div v-if="player.isActive">
-                Actions left: {{game.actionsLeft}}
-              </div>
+            <div class="d-inline">
+              <div>{{player.username}} | {{player.prettyRole}}</div>
+              <div></div>
             </div>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="col-sm-12 text-left">
+            {{game.activePlayer.username}} has {{game.actionsLeft}} actions
+            left.
           </div>
         </div>
       </div>
