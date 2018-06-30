@@ -18,6 +18,10 @@ export default class Game {
     }, this)
   }
 
+  get diseaseColors () {
+    return ['black', 'yellow', 'red', 'blue']
+  }
+
   get actionsLeft () {
     return 4 - this.actionsTaken
   }
@@ -36,5 +40,24 @@ export default class Game {
     let key = Object.keys(this.players)
       .filter(key => this.players[key].username === username)[0]
     return this.players[key]
+  }
+
+  diseaseCss = (color) => {
+    return `city-rectangle-${color}`
+  }
+
+  usedInfectionsFor = (color) => {
+    let counter = 0
+    Object.keys(this.infections).forEach((key) => {
+      let infection = this.infections[key]
+      let infections = [infection.one, infection.two, infection.three]
+      counter += infections
+        .filter(infectionColor => infectionColor === color).length
+    }, this)
+    return counter
+  }
+
+  remainingInfectionsFor = (color) => {
+    return 24 - this.usedInfectionsFor(color)
   }
 }
