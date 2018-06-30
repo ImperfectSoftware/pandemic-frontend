@@ -13,7 +13,7 @@ export default class InfectionClassesService {
     if (this.game && this.game.infections) {
       let infections = this.game.infections[this.cityStaticid]
       if (infections && infections[this.position]) {
-        return `${infections[this.position]}-infections btn`
+        return `${infections[this.position]}-infections`
       }
     }
     return 'hide-svg-component'
