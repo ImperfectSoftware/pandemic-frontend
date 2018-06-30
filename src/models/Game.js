@@ -42,6 +42,11 @@ export default class Game {
     return this.players[key]
   }
 
+  isCurrentPlayerActive = () => {
+    return this.activePlayer.id ===
+      this.currentPlayer(this.activePlayer.username)
+  }
+
   diseaseCss = (color) => {
     return `city-rectangle-${color}`
   }

@@ -4,6 +4,7 @@
     <WorldMap/>
     <ActionMenu/>
     <PlayerActionMenu/>
+    <CureMenu/>
     <div v-if="game" class="text-left pl-2">
       {{game.activePlayer.username}} has {{game.actionsLeft}} actions left.
     </div>
@@ -55,7 +56,7 @@
           <div class="d-flex col-sm-12" v-for="color in game.diseaseColors"
             :key="color">
             <Cures :color="color"/>
-            <i class="btn pt-2 pl-3 fa fa-plus"></i>
+            <i class="btn pt-2 pl-3 fa fa-plus" @click="showCureMenu"></i>
           </div>
         </div>
       </div>
@@ -68,6 +69,7 @@ import ShareCardNotification from '@/components/ShareCardNotification'
 import WorldMap from '@/components/WorldMap'
 import ActionMenu from '@/components/ActionMenu'
 import PlayerActionMenu from '@/components/PlayerActionMenu'
+import CureMenu from '@/components/CureMenu'
 import Cures from '@/components/cures/Cures'
 
 export default {
@@ -86,10 +88,22 @@ export default {
   created: function () {
     this.$store.dispatch('initializeStartedGame', this.$route.params.id)
   },
+  methods: {
+    showCureMenu: function () {
+      this.$store.dispatch('showCureMenu', {
+        pageX: event.pageX,
+        pageY: event.pageY,
+        windowHeight: window.innerHeight,
+        windowWidth: window.innerWidth,
+        citiesCount: this.game.activePlayer.cityPlayerCards.length
+      })
+    }
+  },
   components: {
     WorldMap,
     ActionMenu,
     PlayerActionMenu,
+    CureMenu,
     ShareCardNotification,
     Cures
   }

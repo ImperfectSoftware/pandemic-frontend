@@ -171,7 +171,7 @@ div#map {
   }
 }
 
-div#action-menu, div#player-action-menu{
+div#action-menu, div#player-action-menu, div#cure-menu {
   // to avoid bugs dimension styles should be set inside models/ActionMenu.js
   // or models/PlayerActionMenu.js
   background-color: $blue;

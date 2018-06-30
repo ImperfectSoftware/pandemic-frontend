@@ -8,6 +8,7 @@ import actionsMenu from './actionsMenu'
 import invitations from './invitations'
 import playerActionsMenu from './playerActionsMenu'
 import sharedCardNotification from './sharedCardNotification'
+import cureMenu from './cureMenu'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -15,6 +16,7 @@ export default new Vuex.Store({
     actionsMenu,
     auth,
     cable,
+    cureMenu,
     error,
     games,
     invitations,
