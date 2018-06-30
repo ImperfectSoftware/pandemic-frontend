@@ -4,7 +4,7 @@
     <WorldMap/>
     <ActionMenu/>
     <PlayerActionMenu/>
-    <div v-if="game" class="container-fluid no-gutters">
+    <div v-if="game" class="container-fluid no-gutters console">
       <div class="flex-row">
         <div class="cities-wrapper">
           <div v-for="city in currentPlayer.cityPlayerCards"
@@ -22,7 +22,7 @@
             v-for="(player, key) in game.players" :key="key"
             :class="player.selectedCss">
             <div class="d-inline">
-              <i :class="player.cssClass" class="fa fa-user"></i>
+              <i :class="player.cssClass" class="fa fa-user p-2"></i>
             </div>
             <div class="d-inline">
               <div>{{player.username}} | {{player.prettyRole}}</div>

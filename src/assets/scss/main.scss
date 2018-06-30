@@ -23,7 +23,12 @@ $width: (
 
 body {
   color: white;
-  background-color: $black;
+  background-color: $main-background;
+}
+
+.console {
+  border-top: 0.5em solid $color-two;
+  padding-top: 0.5em;
 }
 
 .list {
