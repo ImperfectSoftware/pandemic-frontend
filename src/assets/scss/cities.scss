@@ -1,5 +1,21 @@
 @import 'colors';
 
+.cities-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.city {
+  margin-left: 20px;
+}
+
+.city-name {
+  text-align: left;
+  display: inline-block;
+}
+
 .blue-city {
   border: 0.5em solid $blue;
 }

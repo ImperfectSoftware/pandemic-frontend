@@ -204,26 +204,34 @@ div#share-card-notification {
 
 .disease-rectangle-black, .disease-rectangle-yellow, .disease-rectangle-red,
 .disease-rectangle-blue {
-  width: 20%;
   height: 50%;
   position: absolute;
   top: 25%;
+  width: 20%;
   right: 10px;
 }
 
-.disease-rectangle-black {
+.city-rectangle-black, .city-rectangle-yellow, .city-rectangle-red,
+.city-rectangle-blue {
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: .3em;
+}
+
+.disease-rectangle-black, .city-rectangle-black {
   background: $black;
 }
 
-.disease-rectangle-yellow {
+.disease-rectangle-yellow, .city-rectangle-yellow {
   background: $yellow;
 }
 
-.disease-rectangle-red {
+.disease-rectangle-red, .city-rectangle-red {
   background: $red;
 }
 
-.disease-rectangle-blue {
+.disease-rectangle-blue, .city-rectangle-blue{
   background: $blue;
 }
 

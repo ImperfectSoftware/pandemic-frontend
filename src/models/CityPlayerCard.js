@@ -12,6 +12,10 @@ export default class CityPlayerCard {
   }
 
   get cssClass () {
-    return this.color + '-city'
+    return 'city-name'
+  }
+
+  get rectangleCssClass () {
+    return `city-rectangle-${this.color}`
   }
 }

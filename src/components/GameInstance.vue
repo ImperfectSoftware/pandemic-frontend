@@ -22,19 +22,17 @@
             </div>
           </div>
         </div>
-        <ul class="col col-sm-8 list-unstyled">
-          <li v-for="city in currentPlayer.cityPlayerCards"
-          :key="city.name" :class="city.cssClass"
-          class="p-1 float-left">
-            <span>{{ city.name }}</span>
-            -
-            <span>{{ city.population }}</span>
-          </li>
-          <li v-for="event in currentPlayer.eventPlayerCards" :key="event.name"
+        <div class="cities-wrapper">
+          <div v-for="city in currentPlayer.cityPlayerCards"
+            :key="city.name" class="city">
+            <div :class="city.rectangleCssClass"></div>
+            <div :class="city.cssClass">{{ city.name }}</div>
+          </div>
+          <div v-for="event in currentPlayer.eventPlayerCards" :key="event.name"
             class="p-1 float-left">
             <div>{{event.name}}</div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
