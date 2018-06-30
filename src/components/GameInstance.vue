@@ -5,8 +5,19 @@
     <ActionMenu/>
     <PlayerActionMenu/>
     <div v-if="game" class="container-fluid no-gutters">
-      <div class="row">
-        <div class="row players-summary">
+      <div class="flex-row">
+        <div class="cities-wrapper">
+          <div v-for="city in currentPlayer.cityPlayerCards"
+            :key="city.name" class="city">
+            <div :class="city.rectangleCssClass"></div>
+            <div :class="city.cssClass">{{ city.name }}</div>
+          </div>
+          <div v-for="event in currentPlayer.eventPlayerCards" :key="event.name"
+            class="p-1 float-left">
+            <div>{{event.name}}</div>
+          </div>
+        </div>
+        <div class="flex-row players-summary">
           <div class="d-flex align-items-center p-2 radius-small text-left col-sm-6"
             v-for="(player, key) in game.players" :key="key"
             :class="player.selectedCss">
@@ -20,17 +31,6 @@
                 Actions left: {{game.actionsLeft}}
               </div>
             </div>
-          </div>
-        </div>
-        <div class="cities-wrapper">
-          <div v-for="city in currentPlayer.cityPlayerCards"
-            :key="city.name" class="city">
-            <div :class="city.rectangleCssClass"></div>
-            <div :class="city.cssClass">{{ city.name }}</div>
-          </div>
-          <div v-for="event in currentPlayer.eventPlayerCards" :key="event.name"
-            class="p-1 float-left">
-            <div>{{event.name}}</div>
           </div>
         </div>
       </div>
