@@ -1,9 +1,9 @@
 import axios from '@/backend/vue-axios'
 import errorHandler from '@/mixins/errorHandler'
 
-export default class RespondToGiveCardService {
+export default class RespondToShareCardService {
   static call (payload) {
-    return new RespondToGiveCardService(payload).call()
+    return new RespondToShareCardService(payload).call()
   }
 
   constructor (payload) {
@@ -16,11 +16,11 @@ export default class RespondToGiveCardService {
     axios.put(`/games/${this.game.id}/share_cards/${this.id}`, {
       accepted: this.response
     })
-      .then(request => this.respondToGiveCardsSuccess(request.data))
+      .then(request => this.respondToShareCardsSuccess(request.data))
       .catch(e => this.handleError(e))
   }
 
-  respondToGiveCardsSuccess = (data) => {
+  respondToShareCardsSuccess = (data) => {
   }
 }
-Object.assign(RespondToGiveCardService.prototype, errorHandler)
+Object.assign(RespondToShareCardService.prototype, errorHandler)

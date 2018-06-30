@@ -14,7 +14,7 @@
 </template>
 <script>
 import { mapGetters } from 'vuex'
-import RespondToGiveCardService from '@/services/RespondToGiveCardService'
+import RespondToShareCardService from '@/services/RespondToShareCardService'
 
 export default {
   name: 'ShareCardNotification',
@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     respond: function (response) {
-      RespondToGiveCardService.call({
+      RespondToShareCardService.call({
         notification: this.notification,
         response: response,
         game: this.game

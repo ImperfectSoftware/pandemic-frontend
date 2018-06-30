@@ -28,7 +28,7 @@ export default class SharedClassNotification {
     return 'd-none'
   }
 
-  updateNotification = (data) => {
+  updateGiveNotification = (data) => {
     let senderUsername = data.payload.sender_username
     let receiverUsername = data.payload.receiver_username
     let username = data.currentPlayerUsername
@@ -44,6 +44,28 @@ export default class SharedClassNotification {
     } else {
       this.message = `${senderUsername} sent ${cityName} player card to ` +
         `${receiverUsername}.`
+      this.showCloseNotification = true
+    }
+    this.hide = false
+  }
+
+  updateReceiveNotification = (data) => {
+    let senderUsername = data.payload.sender_username
+    let receiverUsername = data.payload.receiver_username
+    let username = data.currentPlayerUsername
+    let cityName = data.payload.city_name
+    if (receiverUsername === username) {
+      this.message = "You've asked for a city player card. Waiting for a" +
+        'response...'
+      this.showCloseNotification = true
+    } else if (senderUsername === username) {
+      this.message = `${receiverUsername} is asking you to give them ` +
+        `${cityName}.`
+      this.showActions = true
+      this.sharedCardId = data.payload.id
+    } else {
+      this.message = `${receiverUsername} is asking ${senderUsername} to give` +
+        `them ${cityName}.`
       this.showCloseNotification = true
     }
     this.hide = false
