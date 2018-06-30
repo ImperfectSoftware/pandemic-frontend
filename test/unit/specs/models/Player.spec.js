@@ -14,6 +14,7 @@ describe('Player.js', () => {
     location_staticid: '1',
     active: false,
     role: 'operations_expert',
+    pretty_role: 'Operations Expert',
     username: 'john',
     cities: [
       city

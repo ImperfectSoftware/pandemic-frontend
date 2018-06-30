@@ -26,9 +26,5 @@ export default class GetStartedGameService {
       GameSubscription.from(store.getters.cableConsumer, game).subscribe()
     }
   }
-
-  updateActiveGamesFailed = (e) => {
-    console.log(e)
-  }
 }
 Object.assign(GetStartedGameService.prototype, errorHandler)

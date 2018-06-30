@@ -11,6 +11,7 @@ export default class Player {
     this.id = player.id
     this.cityStaticid = player.location_staticid
     this.role = player.role
+    this.prettyRole = player.pretty_role
     this.username = player.username
     this.cityPlayerCards = []
     this.eventPlayerCards = []
@@ -24,10 +25,6 @@ export default class Player {
 
   get cssClass () {
     return this.role.split('_').join('-')
-  }
-
-  get prettyRole () {
-    return this.role.split('_').join(' ')
   }
 
   get selectedCss () {
