@@ -22,7 +22,9 @@ const getters = {
 
 const actions = {
   showCureMenu ({ commit }, payload) {
-    commit(MutationTypes.SHOW_CURE_MENU, payload)
+    if (payload.currentPlayer.id === payload.activePlayer.id) {
+      commit(MutationTypes.SHOW_CURE_MENU, payload)
+    }
   },
   hideCureMenu ({ commit }, targetElement) {
     if (targetElement === null || !targetElement.classList.contains('fa')) {

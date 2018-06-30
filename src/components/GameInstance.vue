@@ -95,7 +95,9 @@ export default {
         pageY: event.pageY,
         windowHeight: window.innerHeight,
         windowWidth: window.innerWidth,
-        citiesCount: this.game.activePlayer.cityPlayerCards.length
+        citiesCount: this.game.activePlayer.cityPlayerCards.length,
+        currentPlayer: this.currentPlayer,
+        activePlayer: this.game.activePlayer
       })
     }
   },

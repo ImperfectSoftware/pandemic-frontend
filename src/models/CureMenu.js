@@ -3,7 +3,7 @@ import menuMixin from '@/mixins/menuMixin'
 export default class CureMenu {
   constructor () {
     this.hide = true
-    this.width = 200
+    this.width = 210
     this.height = 0
     this.x = 0
     this.y = 0
@@ -23,7 +23,7 @@ export default class CureMenu {
     this.windowWidth = payload.windowWidth
     this.x = this.calculateX(payload.windowWidth, payload.pageX)
     this.y = this.calculateY(payload.windowHeight, payload.pageY)
-    this.height = payload.citiesCount * 34 + 50
+    this.height = payload.citiesCount * 33 + 40
   }
 }
 Object.assign(CureMenu.prototype, menuMixin)
