@@ -26,19 +26,7 @@
             <div>{{event.name}}</div>
           </div>
         </div>
-        <div class="flex-row players-summary">
-          <div class="d-flex align-items-center radius-small text-left col-sm-12"
-            v-for="(player, key) in game.players" :key="key"
-            :class="player.selectedCss">
-            <div class="d-inline">
-              <i :class="player.cssClass" class="fa fa-user p-2"></i>
-            </div>
-            <div class="d-inline">
-              <div>{{player.username}} - {{player.prettyRole}}</div>
-              <div></div>
-            </div>
-          </div>
-        </div>
+        <PlayersInfo/>
         <InfectionsSummary/>
         <CureList :currentPlayer="currentPlayer"/>
         <div class="cities-wrapper">
@@ -74,6 +62,7 @@ import ShareCardNotification from '@/components/ShareCardNotification'
 import WorldMap from '@/components/WorldMap'
 import ActionMenu from '@/components/ActionMenu'
 import PlayerActionMenu from '@/components/PlayerActionMenu'
+import PlayersInfo from '@/components/PlayersInfo'
 import CureMenu from '@/components/CureMenu'
 import CureList from '@/components/CureList'
 import InfectionsSummary from '@/components/InfectionsSummary'
@@ -103,7 +92,8 @@ export default {
     ShareCardNotification,
     MovementProposalNotification,
     InfectionsSummary,
-    CureList
+    CureList,
+    PlayersInfo
   }
 }
 </script>

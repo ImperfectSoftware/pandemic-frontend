@@ -1,5 +1,6 @@
 <template>
-<div class="flex-row pl-2">
+<div class="pl-2">
+  <h2>Infections Summary</h2>
   <table class="table">
     <thead>
       <tr>
