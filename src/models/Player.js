@@ -23,6 +23,10 @@ export default class Player {
     }, this)
   }
 
+  get isContingencyPlaner () {
+    return this.prettyRole === 'Contingency Planer'
+  }
+
   get cssClass () {
     return this.role.split('_').join('-')
   }

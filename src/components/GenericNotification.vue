@@ -1,7 +1,7 @@
 <template>
   <div v-if="notification.show" id="generic-notification">
     {{ notification.message }}
-    <button class="btn btn-secondary" @click="close">
+    <button class="btn btn-secondary float-right" @click="close">
       <i class="fas fa-times"></i>
     </button>
   </div>

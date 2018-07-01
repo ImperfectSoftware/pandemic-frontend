@@ -49,7 +49,12 @@
           </div>
           <div v-for="event in game.eventDiscardPile" :key="event.name"
             class="p-1 float-left">
-            <div>{{event.name}}</div>
+            <div>
+              {{event.name}}
+              <i v-if="currentPlayer.isContingencyPlaner"
+                class="pl-2 btn fas fa-hand-rock"
+                @click="takeEventCard(event.staticid)"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -67,6 +72,7 @@ import CureMenu from '@/components/CureMenu'
 import CureList from '@/components/CureList'
 import InfectionsSummary from '@/components/InfectionsSummary'
 import MovementProposalNotification from '@/components/MovementProposalNotification'
+import TakeEventCardService from '@/services/TakeEventCardService'
 
 export default {
   name: 'GameInstance',
@@ -83,6 +89,11 @@ export default {
   },
   created: function () {
     this.$store.dispatch('initializeStartedGame', this.$route.params.id)
+  },
+  methods: {
+    takeEventCard: function (staticid) {
+      TakeEventCardService.call({ eventStaticid: staticid, game: this.game })
+    }
   },
   components: {
     WorldMap,
