@@ -1,4 +1,6 @@
 import Player from '@/models/Player'
+import City from '@/models/City'
+import EventPlayerCard from '@/models/EventPlayerCard'
 
 export default class Game {
   static from (game) {
@@ -20,6 +22,14 @@ export default class Game {
     this.blackStatus = game.black_status
     this.blueStatus = game.blue_status
     this.yellowStatus = game.yellow_status
+    this.infectionDiscardPile = []
+    game.infection_discard_pile.forEach((city) => {
+      this.infectionDiscardPile.push(City.from(city))
+    }, this)
+    this.eventDiscardPile = []
+    game.event_discard_pile.forEach((event) => {
+      this.eventDiscardPile.push(EventPlayerCard.from(event))
+    }, this)
   }
 
   get diseaseColors () {
@@ -38,6 +48,14 @@ export default class Game {
     let key = Object.keys(this.players)
       .filter(key => this.players[key].id === this.activePlayerId)[0]
     return this.players[key]
+  }
+
+  get isInfectionDiscardPileEmpty () {
+    return this.infectionDiscardPile.length === 0
+  }
+
+  get isEventDiscardPileEmpty () {
+    return this.eventDiscardPile.length === 0
   }
 
   currentPlayer = (username) => {

@@ -1,6 +1,6 @@
 <template>
-<div class="flex-row pl-2 pt-2">
-  <div class="d-flex col-sm-12" v-for="color in game.diseaseColors"
+<div class="pl-4 pt-2">
+  <div class="d-flex col-sm-12 pb-4" v-for="color in game.diseaseColors"
     :key="color">
     <Cures :color="color"/>
     <i class="btn pt-2 pl-3 fa fa-plus" @click="showCureMenu"></i>
