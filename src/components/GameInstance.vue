@@ -11,6 +11,9 @@
     <div v-if="game" class="container-fluid no-gutters console">
       <div class="flex-row">
         <div class="cities-wrapper">
+          <div v-if="currentPlayer.eventPlayerCards.length === 0">
+            You don't have any player cards.
+          </div>
           <div v-for="city in currentPlayer.cityPlayerCards"
             :key="city.name" class="city">
             <div :class="city.rectangleCssClass"></div>
