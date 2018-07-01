@@ -1,6 +1,6 @@
-export default class CityPlayerCard {
+export default class City {
   static from (city) {
-    return new CityPlayerCard(city)
+    return new City(city)
   }
 
   constructor (city) {

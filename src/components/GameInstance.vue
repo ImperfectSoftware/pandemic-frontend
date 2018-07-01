@@ -12,6 +12,7 @@
     <div v-if="game" class="container-fluid no-gutters console">
       <div class="flex-row">
         <div class="cities-wrapper">
+        <h2>Player Cards</h2>
           <div v-if="currentPlayer.hasNoPlayerCards">
             You don't have any player cards.
           </div>
