@@ -25,7 +25,15 @@
        Propose to move {{ playerActionMenu.playerUsername }}
       <button v-for="city in playerActionMenu.locations" :key="city.staticid"
         :class="playerActionMenu.cssClasses"
-        @click="proposeMove(city.staticid, playerActionMenu.playerId)">
+        @click="proposeMove(city.staticid, playerActionMenu.playerId, false)">
+        to {{ city.name }}
+      </button>
+    </div>
+    <div v-if="playerActionMenu.airliftLocations.length !== 0">
+       Propose to airlift {{ playerActionMenu.playerUsername }}
+      <button v-for="city in playerActionMenu.airliftLocations"
+        :key="city.staticid" :class="playerActionMenu.cssClasses"
+        @click="proposeMove(city.staticid, playerActionMenu.playerId, true)">
         to {{ city.name }}
       </button>
     </div>
@@ -65,11 +73,12 @@ export default {
         game: this.game
       })
     },
-    proposeMove: function (cityStaticid, playerId) {
+    proposeMove: function (cityStaticid, playerId, airlift) {
       ProposeMoveService.call({
         cityStaticid: cityStaticid,
         playerId: playerId,
-        game: this.game
+        game: this.game,
+        airlift: airlift
       })
     }
   }

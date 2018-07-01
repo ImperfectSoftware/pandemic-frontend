@@ -6,6 +6,7 @@ export default class PlayerActionMenu {
     this.receiveCities = []
     this.giveCities = []
     this.locations = []
+    this.airliftLocations = []
     this.playerUsername = ''
     this.position = ''
     this.cityStaticid = ''
@@ -23,6 +24,8 @@ export default class PlayerActionMenu {
     } else if (this.giveCities.length !== 0) {
       return 'd-none'
     } else if (this.locations.length !== 0) {
+      return 'd-none'
+    } else if (this.airliftLocations.length !== 0) {
       return 'd-none'
     }
     return ''
@@ -45,6 +48,7 @@ export default class PlayerActionMenu {
     this.receiveCities = payload.receive_cities
     this.giveCities = payload.give_cities
     this.locations = payload.locations
+    this.airliftLocations = payload.airlift_locations
   }
 
   get style () {

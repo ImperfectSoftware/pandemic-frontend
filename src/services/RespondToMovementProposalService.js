@@ -10,11 +10,13 @@ export default class RespondToMovementProposalService {
     this.response = payload.response
     this.game = payload.game
     this.id = payload.notification.movementProposalId
+    this.airlift = payload.airlift
   }
 
   call () {
     axios.put(`/games/${this.game.id}/movement_proposals/${this.id}`, {
-      accepted: this.response
+      accepted: this.response,
+      airlift: this.airlift
     })
       .then(request => this.respondToMovementProposalSuccess(request.data))
       .catch(e => this.handleError(e))

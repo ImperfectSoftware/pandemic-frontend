@@ -11,6 +11,7 @@ export default class ProposeMoveService {
     this.game = payload.game
     this.playerId = payload.playerId
     this.cityStaticid = payload.cityStaticid
+    this.airlift = payload.airlift
   }
 
   call () {
@@ -18,7 +19,7 @@ export default class ProposeMoveService {
       `/games/${this.game.id}/movement_proposals`, {
         city_staticid: this.cityStaticid,
         player_id: this.playerId,
-        airlift: false
+        airlift: this.airlift
       }
     )
       .then(request => this.proposeMoveSuccess(request.data))
@@ -26,6 +27,7 @@ export default class ProposeMoveService {
   }
 
   proposeMoveSuccess = (data) => {
+    console.log(data)
     store.dispatch('hidePlayerActionMenu', null)
   }
 }
