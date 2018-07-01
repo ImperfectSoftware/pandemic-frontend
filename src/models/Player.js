@@ -42,4 +42,8 @@ export default class Player {
   get hasNoPlayerCards () {
     return (this.eventPlayerCards.length + this.cityPlayerCards.length) === 0
   }
+
+  canTakeCard = (eventName) => {
+    return this.isContingencyPlaner && eventName !== 'Epidemic'
+  }
 }

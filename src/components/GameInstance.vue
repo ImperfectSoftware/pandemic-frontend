@@ -51,7 +51,7 @@
             class="p-1 float-left">
             <div>
               {{event.name}}
-              <i v-if="currentPlayer.isContingencyPlaner"
+              <i v-if="currentPlayer.canTakeCard(event.name)"
                 class="pl-2 btn fas fa-hand-rock"
                 @click="takeEventCard(event.staticid)"></i>
             </div>
