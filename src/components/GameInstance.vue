@@ -39,7 +39,7 @@
           </div>
         </div>
         <InfectionsSummary/>
-        <CureList/>
+        <CureList :currentPlayer="currentPlayer"/>
       </div>
     </div>
   </div>

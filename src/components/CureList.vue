@@ -18,6 +18,9 @@ export default {
       game: 'activeGame'
     })
   },
+  props: {
+    currentPlayer: {}
+  },
   methods: {
     showCureMenu: function () {
       this.$store.dispatch('showCureMenu', {
