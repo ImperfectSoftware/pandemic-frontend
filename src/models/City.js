@@ -18,4 +18,8 @@ export default class City {
   get rectangleCssClass () {
     return `city-rectangle-${this.color}`
   }
+
+  get radioKey () {
+    return `radio-${this.staticid}`
+  }
 }

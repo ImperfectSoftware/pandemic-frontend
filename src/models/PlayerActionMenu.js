@@ -7,6 +7,7 @@ export default class PlayerActionMenu {
     this.giveCities = []
     this.locations = []
     this.airliftLocations = []
+    this.operationsExpertLocations = []
     this.playerUsername = ''
     this.position = ''
     this.cityStaticid = ''
@@ -19,16 +20,21 @@ export default class PlayerActionMenu {
   }
 
   get noActionsClasses () {
-    if (this.receiveCities.length !== 0) {
-      return 'd-none'
-    } else if (this.giveCities.length !== 0) {
-      return 'd-none'
-    } else if (this.locations.length !== 0) {
-      return 'd-none'
-    } else if (this.airliftLocations.length !== 0) {
-      return 'd-none'
-    }
-    return ''
+    let buttonsCounter = this.receiveCities.length + this.giveCities.length +
+      this.airliftLocations.length + this.operationsExpertLocations.length
+    return buttonsCounter === 0 ? '' : 'd-none'
+  }
+
+  get hasDispatcherLocations () {
+    return this.locations.length !== 0
+  }
+
+  get hasAirliftLocations () {
+    return this.airliftLocations.length !== 0
+  }
+
+  get hasOperationsExpertLocations () {
+    return this.operationsExpertLocations.length !== 0
   }
 
   showMenu = (payload) => {
@@ -49,6 +55,7 @@ export default class PlayerActionMenu {
     this.giveCities = payload.give_cities
     this.locations = payload.locations
     this.airliftLocations = payload.airlift_locations
+    this.operationsExpertLocations = payload.operations_expert_locations
   }
 
   get style () {
