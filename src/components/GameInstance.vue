@@ -38,24 +38,7 @@
             </div>
           </div>
         </div>
-        <div class="flex-row pl-2">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Infections</th>
-                <th scope="col">Used</th>
-                <th scope="col">Remaining</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr scope="row" v-for="color in game.diseaseColors" :key="color">
-                <th scope="row"><div :class="game.diseaseCss(color)"></div></th>
-                <td>{{ game.usedInfectionsFor(color) }}</td>
-                <td>{{ game.remainingInfectionsFor(color) }}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <InfectionsSummary/>
         <div class="flex-row pl-2 pt-2">
           <div class="d-flex col-sm-12" v-for="color in game.diseaseColors"
             :key="color">
@@ -75,6 +58,7 @@ import ActionMenu from '@/components/ActionMenu'
 import PlayerActionMenu from '@/components/PlayerActionMenu'
 import CureMenu from '@/components/CureMenu'
 import Cures from '@/components/cures/Cures'
+import InfectionsSummary from '@/components/InfectionsSummary'
 import MovementProposalNotification from '@/components/MovementProposalNotification'
 
 export default {
@@ -113,7 +97,8 @@ export default {
     CureMenu,
     ShareCardNotification,
     Cures,
-    MovementProposalNotification
+    MovementProposalNotification,
+    InfectionsSummary
   }
 }
 </script>
