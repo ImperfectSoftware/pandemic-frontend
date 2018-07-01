@@ -289,3 +289,32 @@ div#share-card-notification, div#generic-notification,
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
+
+.end-turn-circle {
+  stroke: none;
+  opacity: 1;
+  fill-opacity: 1;
+  fill: $land;
+}
+
+.end-turn-circle:hover {
+  fill: $border;
+}
+
+.end-turn-arrow {
+  opacity: 1;
+  fill: #021e3c;
+  fill-opacity: 1;
+  fill-rule: nonzero;
+  stroke: none;
+  stroke-width: 0.04848505;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
+}
+
+.end-turn-arrow:hover {
+  fill: white;
+}

@@ -5279,13 +5279,13 @@
      showgrid="false"
      inkscape:snap-nodes="true"
      inkscape:snap-bbox="true"
-     inkscape:zoom="5.2155317"
-     inkscape:cx="1134.3618"
-     inkscape:cy="395.02843"
+     inkscape:zoom="20.617311"
+     inkscape:cx="1444.1472"
+     inkscape:cy="23.465035"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer6"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:measure-start="0,0"
@@ -14643,6 +14643,36 @@
          y="520.68402"
          style="stroke-width:0.44116384">Los Angeles</tspan></text>
   </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="other-buttons">
+    <g
+       id="g3592">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 1450,500 c 11.0484,0 20,8.95162 20,20 0,11.04838 -8.9516,20 -20,20 -11.0484,0 -20,-8.95162 -20,-20 0,-11.04838 8.9516,-20 20,-20 z m -9.3548,23.54838 H 1450 v 5.71774 c 0,0.86292 1.0484,1.2984 1.6532,0.6855 l 9.2178,-9.26614 c 0.379,-0.37902 0.379,-0.98386 0,-1.3629 l -9.2178,-9.2742 c -0.6128,-0.6129 -1.6532,-0.1774 -1.6532,0.6855 v 5.71774 h -9.3548 c -0.5322,0 -0.9678,0.43548 -0.9678,0.96774 v 5.16128 c 0,0.53226 0.4356,0.96774 0.9678,0.96774 z"
+         id="path3634"
+         v-on:click="endTurn"
+         class="btn end-turn-circle" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3645"
+         d="m 1450.329,530.00539 -0.272,-0.23391 -0.028,-3.11155 -0.029,-3.11155 h -4.8798 -4.8799 l -0.2557,-0.25565 -0.2558,-0.25564 v -2.97963 -2.97964 l 0.2558,-0.25564 0.2557,-0.25565 h 4.8799 4.8798 l 0.029,-3.11156 0.028,-3.11152 0.272,-0.23394 c 0.1919,-0.16494 0.392,-0.23482 0.6788,-0.23699 l 0.4066,-0.004 4.779,4.82731 c 2.6288,2.65504 4.8233,4.93312 4.8768,5.06238 0.053,0.12936 0.072,0.34761 0.042,0.48522 -0.036,0.16114 -1.7708,1.98565 -4.8766,5.12701 l -4.822,4.87682 -0.4065,-0.004 c -0.2856,-0.004 -0.4879,-0.0741 -0.6788,-0.23837 z"
+         v-on:click="endTurn"
+         class="btn end-turn-arrow" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="1425.0645"
+       y="498.96658"
+       id="text3649"><tspan
+         sodipodi:role="line"
+         id="tspan3647"
+         x="1425.0645"
+         y="498.96658">End Turn</tspan></text>
+  </g>
 </svg>
 </template>
 <script>
@@ -14691,6 +14721,9 @@ export default {
     },
     researchCenterClasses (cityStaticid) {
       return ResearchCenterClassesService.for(cityStaticid, this.game)
+    },
+    endTurn () {
+      console.log('ending')
     }
   }
 }
