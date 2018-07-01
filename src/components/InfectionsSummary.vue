@@ -25,7 +25,7 @@ export default {
   name: 'InfectionsSummary',
   computed: {
     ...mapGetters({
-      game: 'activeGame',
+      game: 'activeGame'
     })
   }
 }
