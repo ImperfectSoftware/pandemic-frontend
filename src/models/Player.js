@@ -34,4 +34,8 @@ export default class Player {
   get isActive () {
     return this === this.game.activePlayer
   }
+
+  get hasNoPlayerCards () {
+    return (this.eventPlayerCards.length + this.cityPlayerCards.length) === 0
+  }
 }
