@@ -1,5 +1,6 @@
 import axios from '@/backend/vue-axios'
 import errorHandler from '@/mixins/errorHandler'
+import store from '@/store'
 
 export default class CureService {
   static call (payload) {
@@ -20,7 +21,9 @@ export default class CureService {
   }
 
   cureSuccess = (data) => {
-    console.log(data)
+    if (data.error) {
+      store.dispatch('showGenericNotification', { message: data.error })
+    }
   }
 }
 Object.assign(CureService.prototype, errorHandler)

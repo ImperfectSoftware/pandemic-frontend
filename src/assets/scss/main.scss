@@ -187,7 +187,7 @@ div#action-menu, div#player-action-menu, div#cure-menu {
 }
 
 
-div#share-card-notification {
+div#share-card-notification, div#generic-notification{
   background-color: $blue;
   position: absolute;
   z-index: 100;

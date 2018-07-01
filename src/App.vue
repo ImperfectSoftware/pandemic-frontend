@@ -4,6 +4,7 @@
       <Navbar></Navbar>
     </template>
     <div class="container-fluid no-gutters">
+      <GenericNotification/>
       <router-view/>
     </div>
     <template v-if="currentUser">
@@ -16,12 +17,14 @@
 import { mapGetters } from 'vuex'
 import Navbar from '@/components/Navbar'
 import Foot from '@/components/Foot'
+import GenericNotification from '@/components/GenericNotification'
 
 export default {
   name: 'App',
   components: {
     Navbar,
-    Foot
+    Foot,
+    GenericNotification
   },
   computed: {
     ...mapGetters({ currentUser: 'currentUser' })
