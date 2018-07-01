@@ -21,6 +21,14 @@
         {{ city.name }}
       </button>
     </div>
+    <div v-if="playerActionMenu.locations.length !== 0">
+       Propose to move {{ playerActionMenu.playerUsername }}
+      <button v-for="city in playerActionMenu.locations" :key="city.staticid"
+        :class="playerActionMenu.cssClasses"
+        @click="proposeMove(city.staticid, playerActionMenu.playerId)">
+        to {{ city.name }}
+      </button>
+    </div>
   </div>
 </template>
 <script>
@@ -28,6 +36,7 @@ import { mixin as clickaway } from 'vue-clickaway'
 import { mapGetters } from 'vuex'
 import GiveCardsService from '@/services/GiveCardsService'
 import ReceiveCardsService from '@/services/ReceiveCardsService'
+import ProposeMoveService from '@/services/ProposeMoveService'
 
 export default {
   name: 'PlayerActionMenu',
@@ -51,6 +60,13 @@ export default {
     },
     receiveCity: function (cityStaticid, playerId) {
       ReceiveCardsService.call({
+        cityStaticid: cityStaticid,
+        playerId: playerId,
+        game: this.game
+      })
+    },
+    proposeMove: function (cityStaticid, playerId) {
+      ProposeMoveService.call({
         cityStaticid: cityStaticid,
         playerId: playerId,
         game: this.game

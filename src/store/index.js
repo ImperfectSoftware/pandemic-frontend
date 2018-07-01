@@ -10,6 +10,7 @@ import playerActionsMenu from './playerActionsMenu'
 import sharedCardNotification from './sharedCardNotification'
 import cureMenu from './cureMenu'
 import genericNotification from './genericNotification'
+import movementProposalNotification from './movementProposalNotification'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -22,6 +23,7 @@ export default new Vuex.Store({
     games,
     genericNotification,
     invitations,
+    movementProposalNotification,
     playerActionsMenu,
     sharedCardNotification
   }

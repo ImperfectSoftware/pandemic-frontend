@@ -187,17 +187,17 @@ div#action-menu, div#player-action-menu, div#cure-menu {
 }
 
 
-div#share-card-notification, div#generic-notification{
-  background-color: $blue;
-  position: absolute;
-  z-index: 100;
-  border: 2px solid $border;
-  border-radius: .25rem;
-  top: 15%;
-  padding: 0.5em;
-  width: 80%;
-  left: 10%;
-
+div#share-card-notification, div#generic-notification,
+  div#movement-proposal-notification {
+    background-color: $blue;
+    position: absolute;
+    z-index: 100;
+    border: 2px solid $border;
+    border-radius: .25rem;
+    top: 15%;
+    padding: 0.5em;
+    width: 80%;
+    left: 10%;
 }
 
 .hide-svg-component {

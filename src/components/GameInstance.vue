@@ -5,6 +5,7 @@
     <ActionMenu/>
     <PlayerActionMenu/>
     <CureMenu/>
+    <MovementProposalNotification/>
     <div v-if="game" class="text-left pl-2">
       {{game.activePlayer.username}} has {{game.actionsLeft}} actions left.
     </div>
@@ -74,6 +75,7 @@ import ActionMenu from '@/components/ActionMenu'
 import PlayerActionMenu from '@/components/PlayerActionMenu'
 import CureMenu from '@/components/CureMenu'
 import Cures from '@/components/cures/Cures'
+import MovementProposalNotification from '@/components/MovementProposalNotification'
 
 export default {
   name: 'GameInstance',
@@ -110,7 +112,8 @@ export default {
     PlayerActionMenu,
     CureMenu,
     ShareCardNotification,
-    Cures
+    Cures,
+    MovementProposalNotification
   }
 }
 </script>

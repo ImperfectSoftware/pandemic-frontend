@@ -39,6 +39,11 @@ export default class GameSubscription {
         payload: data.payload,
         currentPlayerUsername: store.getters.currentUser.username
       })
+    } else if (data.movement_proposal_notification) {
+      store.dispatch('showMovementProposalNotification', {
+        payload: data.payload,
+        currentPlayerUsername: store.getters.currentUser.username
+      })
     }
   }
 

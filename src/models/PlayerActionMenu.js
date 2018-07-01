@@ -5,6 +5,7 @@ export default class PlayerActionMenu {
     this.hide = true
     this.receiveCities = []
     this.giveCities = []
+    this.locations = []
     this.playerUsername = ''
     this.position = ''
     this.cityStaticid = ''
@@ -17,10 +18,14 @@ export default class PlayerActionMenu {
   }
 
   get noActionsClasses () {
-    if (this.receiveCities.length === 0 && this.giveCities.length === 0) {
-      return ''
+    if (this.receiveCities.length !== 0) {
+      return 'd-none'
+    } else if (this.giveCities.length !== 0) {
+      return 'd-none'
+    } else if (this.locations.length !== 0) {
+      return 'd-none'
     }
-    return 'd-none'
+    return ''
   }
 
   showMenu = (payload) => {
@@ -39,6 +44,7 @@ export default class PlayerActionMenu {
   updateMenu = (payload) => {
     this.receiveCities = payload.receive_cities
     this.giveCities = payload.give_cities
+    this.locations = payload.locations
   }
 
   get style () {
