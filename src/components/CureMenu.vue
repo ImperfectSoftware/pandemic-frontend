@@ -3,7 +3,7 @@
     :class="cureMenu.displayCssClass" :style="cureMenu.style">
     <div v-if="game && game.isCurrentPlayerActive">
       <div v-for="city in game.activePlayer.cityPlayerCards"
-        :key="city.staticid" class="cities-wrapper form-inline">
+        :key="city.staticid" class="wrapper form-inline">
         <div class="city form-check form-check-inline">
           <div :class="city.rectangleCssClass"></div>
           <div class="city-name">{{ city.name }}</div>

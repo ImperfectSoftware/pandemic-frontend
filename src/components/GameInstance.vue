@@ -11,7 +11,7 @@
     </div>
     <div v-if="game" class="container-fluid no-gutters console">
       <div class="flex-row">
-        <div class="cities-wrapper">
+        <div class="wrapper">
           <h2>Player Cards</h2>
           <div v-if="currentPlayer.hasNoPlayerCards">
             You don't have any player cards.
@@ -29,7 +29,7 @@
         <PlayersInfo/>
         <InfectionsSummary/>
         <CureList :currentPlayer="currentPlayer"/>
-        <div class="cities-wrapper">
+        <div class="wrapper">
           <h2>Infections</h2>
           <span>(Discard Pile)</span>
           <div v-if="game.isInfectionDiscardPileEmpty">
@@ -41,7 +41,7 @@
             <div :class="city.cssClass">{{ city.name }}</div>
           </div>
         </div>
-        <div class="cities-wrapper">
+        <div class="wrapper">
           <h2>Events</h2>
           <span>(Discard Pile)</span>
           <div v-if="game.isEventDiscardPileEmpty">
