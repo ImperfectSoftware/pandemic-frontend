@@ -1,5 +1,6 @@
 import axios from '@/backend/vue-axios'
 import errorHandler from '@/mixins/errorHandler'
+import store from '@/store'
 
 export default class DirectFlightService {
   static call (payload) {
@@ -22,6 +23,9 @@ export default class DirectFlightService {
   }
 
   directFlightSuccess = (data) => {
+    if (data.error) {
+      store.dispatch('showGenericNotification', { message: data.error })
+    }
   }
 }
 Object.assign(DirectFlightService.prototype, errorHandler)

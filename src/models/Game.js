@@ -9,6 +9,7 @@ export default class Game {
 
   constructor (game) {
     this.id = game.id
+    this.betweenEpidemicStages = game.between_epidemic_stages
     this.actionsTaken = game.actions_taken
     this.active = game.active
     this.infections = game.infections
@@ -56,6 +57,10 @@ export default class Game {
 
   get isEventDiscardPileEmpty () {
     return this.eventDiscardPile.length === 0
+  }
+
+  get epidemicButtonCssClasses () {
+    return this.betweenEpidemicStages ? '' : 'd-none'
   }
 
   currentPlayer = (username) => {

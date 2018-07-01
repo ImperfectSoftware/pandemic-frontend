@@ -5279,13 +5279,13 @@
      showgrid="false"
      inkscape:snap-nodes="true"
      inkscape:snap-bbox="true"
-     inkscape:zoom="20.617311"
-     inkscape:cx="1444.1472"
-     inkscape:cy="23.465035"
+     inkscape:zoom="5.6781999"
+     inkscape:cx="1192.3851"
+     inkscape:cy="492.3446"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="layer1"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:measure-start="0,0"
@@ -6316,6 +6316,11 @@
        id="path3585"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#00822d;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 1224.2596,45.678742 -97.6544,-2.134435"
+       id="path3596"
+       inkscape:connector-curvature="0" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -14648,30 +14653,50 @@
      id="layer6"
      inkscape:label="other-buttons">
     <g
-       id="g3592">
+       id="g3592"
+       transform="translate(-30)">
       <path
          inkscape:connector-curvature="0"
          d="m 1450,500 c 11.0484,0 20,8.95162 20,20 0,11.04838 -8.9516,20 -20,20 -11.0484,0 -20,-8.95162 -20,-20 0,-11.04838 8.9516,-20 20,-20 z m -9.3548,23.54838 H 1450 v 5.71774 c 0,0.86292 1.0484,1.2984 1.6532,0.6855 l 9.2178,-9.26614 c 0.379,-0.37902 0.379,-0.98386 0,-1.3629 l -9.2178,-9.2742 c -0.6128,-0.6129 -1.6532,-0.1774 -1.6532,0.6855 v 5.71774 h -9.3548 c -0.5322,0 -0.9678,0.43548 -0.9678,0.96774 v 5.16128 c 0,0.53226 0.4356,0.96774 0.9678,0.96774 z"
          id="path3634"
          v-on:click="endTurn"
-         class="btn end-turn-circle" />
+         class="btn end-turn-circle"
+         :class="shouldDisplayEndTurn()" />
       <path
          inkscape:connector-curvature="0"
          id="path3645"
          d="m 1450.329,530.00539 -0.272,-0.23391 -0.028,-3.11155 -0.029,-3.11155 h -4.8798 -4.8799 l -0.2557,-0.25565 -0.2558,-0.25564 v -2.97963 -2.97964 l 0.2558,-0.25564 0.2557,-0.25565 h 4.8799 4.8798 l 0.029,-3.11156 0.028,-3.11152 0.272,-0.23394 c 0.1919,-0.16494 0.392,-0.23482 0.6788,-0.23699 l 0.4066,-0.004 4.779,4.82731 c 2.6288,2.65504 4.8233,4.93312 4.8768,5.06238 0.053,0.12936 0.072,0.34761 0.042,0.48522 -0.036,0.16114 -1.7708,1.98565 -4.8766,5.12701 l -4.822,4.87682 -0.4065,-0.004 c -0.2856,-0.004 -0.4879,-0.0741 -0.6788,-0.23837 z"
          v-on:click="endTurn"
-         class="btn end-turn-arrow" />
+         class="btn end-turn-arrow"
+         :class="shouldDisplayEndTurn()" />
     </g>
+    <text
+       :class="shouldDisplayEndTurn()"
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="1394.455"
+       y="484.83008"
+       id="text3597"><tspan
+         sodipodi:role="line"
+         id="tspan3595"
+         x="1394.455"
+         y="484.83008">End Turn</tspan></text>
+    <path
+       id="flipCard"
+       v-on:click="flipCard"
+       class="btn"
+       d="m 1336.4983,505.71487 c -2.0022,-0.0383 -3.6411,1.63866 -3.6411,3.64134 v 7.78662 h -0.7144 v -15.73306 c 0,-2.00268 -1.6388,-3.67965 -3.6411,-3.64135 -1.9403,0.0371 -3.5017,1.62161 -3.5017,3.57081 v 15.8036 h -0.7143 v -19.21521 c 0,-2.00268 -1.6389,-3.67965 -3.6412,-3.64134 -1.9402,0.0371 -3.5016,1.6216 -3.5016,3.5708 v 19.28575 h -0.7144 v -15.64378 c 0,-2.00267 -1.6388,-3.67964 -3.6411,-3.64134 -1.9403,0.0371 -3.5017,1.62161 -3.5017,3.57081 v 21.07074 l -2.8257,-3.88563 c -1.1601,-1.59518 -3.3937,-1.94795 -4.989,-0.78776 -1.5952,1.16017 -1.9478,3.39374 -0.7877,4.98902 l 11.2144,15.42011 a 4.2857202,4.2857202 0 0 0 3.466,1.765 h 17.6419 c 1.9888,0 3.7163,-1.36821 4.1718,-3.30411 l 2.3668,-10.05894 A 17.143863,17.143863 0 0 0 1340,522.7106 v -13.42493 c 0,-1.9492 -1.5614,-3.53367 -3.5017,-3.5708 z"
+       inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
-       x="1425.0645"
-       y="498.96658"
-       id="text3649"><tspan
+       x="1295.5288"
+       y="482.50391"
+       id="text3662"><tspan
          sodipodi:role="line"
-         id="tspan3647"
-         x="1425.0645"
-         y="498.96658">End Turn</tspan></text>
+         id="tspan3660"
+         x="1295.5288"
+         y="482.50391">Flip Card</tspan></text>
   </g>
 </svg>
 </template>
@@ -14680,6 +14705,8 @@ import { mapGetters } from 'vuex'
 import InfectionClassesService from '@/services/InfectionClassesService'
 import PlayerClassesService from '@/services/PlayerClassesService'
 import ResearchCenterClassesService from '@/services/ResearchCenterClassesService'
+import EndTurnService from '@/services/EndTurnService'
+import FlipCardService from '@/services/FlipCardService'
 
 export default {
   name: 'WorldMap',
@@ -14722,8 +14749,18 @@ export default {
     researchCenterClasses (cityStaticid) {
       return ResearchCenterClassesService.for(cityStaticid, this.game)
     },
+    flipCard () {
+      FlipCardService.call({ game: this.game })
+    },
     endTurn () {
-      console.log('ending')
+      EndTurnService.call({ game: this.game })
+    },
+    shouldDisplayEndTurn () {
+      if (this.game) {
+        return this.game.epidemicButtonCssClasses
+      } else {
+        return 'd-none'
+      }
     }
   }
 }

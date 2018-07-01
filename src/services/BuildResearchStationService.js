@@ -21,6 +21,7 @@ export default class BuildResearchStationService {
   }
 
   buildResearchStationSuccess = (data) => {
+    console.log(data)
   }
 }
 Object.assign(BuildResearchStationService.prototype, errorHandler)

@@ -294,10 +294,6 @@ div#share-card-notification, div#generic-notification,
   stroke: none;
   opacity: 1;
   fill-opacity: 1;
-  fill: $land;
-}
-
-.end-turn-circle:hover {
   fill: $border;
 }
 
@@ -315,6 +311,10 @@ div#share-card-notification, div#generic-notification,
   stroke-opacity: 1;
 }
 
-.end-turn-arrow:hover {
-  fill: white;
+#flipCard {
+  stroke: none;
+  opacity: 1;
+  fill-opacity: 1;
+  stroke-width: 0.01;
+  fill: $border;
 }
