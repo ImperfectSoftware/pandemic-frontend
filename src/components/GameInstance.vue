@@ -20,6 +20,8 @@
             :key="city.name" class="city">
             <div :class="city.rectangleCssClass"></div>
             <div :class="city.cssClass">{{ city.name }}</div>
+            <i v-if="currentPlayer.hasTooManyCards" class="btn fas fa-trash-alt"
+              @click="discardCard(city.staticid)"></i>
           </div>
           <div v-for="event in currentPlayer.eventPlayerCards" :key="event.name"
             class="p-1 float-left">
@@ -73,6 +75,7 @@ import CureList from '@/components/CureList'
 import InfectionsSummary from '@/components/InfectionsSummary'
 import MovementProposalNotification from '@/components/MovementProposalNotification'
 import TakeEventCardService from '@/services/TakeEventCardService'
+import DiscardCardService from '@/services/DiscardCardService'
 
 export default {
   name: 'GameInstance',
@@ -93,6 +96,9 @@ export default {
   methods: {
     takeEventCard: function (staticid) {
       TakeEventCardService.call({ eventStaticid: staticid, game: this.game })
+    },
+    discardCard: function (staticid) {
+      DiscardCardService.call({ cityStaticid: staticid, game: this.game })
     }
   },
   components: {

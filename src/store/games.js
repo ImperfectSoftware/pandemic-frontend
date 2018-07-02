@@ -91,6 +91,7 @@ const actions = {
     store.dispatch('hideCureMenu', null)
     store.dispatch('hideMovementProposalNotification')
     store.dispatch('hideSharedCardNotification')
+    store.dispatch('hideGenericNotification')
   }
 }
 
