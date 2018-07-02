@@ -14,15 +14,8 @@ export default class RemoveResearchStationService {
 
   call () {
     axios.delete(`/games/${this.game.id}/research_stations/${this.cityId}`)
-      .then(request => this.buildResearchStationSuccess(request.data))
+      .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
-  }
-
-  buildResearchStationSuccess = (data) => {
-  }
-
-  buildResearchStationFailed = (e) => {
-    console.log(e)
   }
 }
 Object.assign(RemoveResearchStationService.prototype, serviceResponseHandler)

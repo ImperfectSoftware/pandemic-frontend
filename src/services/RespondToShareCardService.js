@@ -16,11 +16,8 @@ export default class RespondToShareCardService {
     axios.put(`/games/${this.game.id}/share_cards/${this.id}`, {
       accepted: this.response
     })
-      .then(request => this.respondToShareCardsSuccess(request.data))
+      .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
-  }
-
-  respondToShareCardsSuccess = (data) => {
   }
 }
 Object.assign(RespondToShareCardService.prototype, serviceResponseHandler)

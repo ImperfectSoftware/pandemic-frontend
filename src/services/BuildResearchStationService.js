@@ -16,12 +16,8 @@ export default class BuildResearchStationService {
     axios.post(`/games/${this.game.id}/research_stations`, {
       city_staticid: this.cityStaticid
     })
-      .then(request => this.buildResearchStationSuccess(request.data))
+      .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
-  }
-
-  buildResearchStationSuccess = (data) => {
-    console.log(data)
   }
 }
 Object.assign(BuildResearchStationService.prototype, serviceResponseHandler)

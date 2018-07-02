@@ -18,11 +18,8 @@ export default class RespondToMovementProposalService {
       accepted: this.response,
       airlift: this.airlift
     })
-      .then(request => this.respondToMovementProposalSuccess(request.data))
+      .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
-  }
-
-  respondToMovementProposalSuccess = (data) => {
   }
 }
 Object.assign(RespondToMovementProposalService.prototype, serviceResponseHandler)

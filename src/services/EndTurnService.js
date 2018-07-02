@@ -12,12 +12,8 @@ export default class EndTurnService {
 
   call () {
     axios.post(`/games/${this.game.id}/finish_turns`)
-      .then(request => this.endTurnSuccess(request.data))
+      .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
-  }
-
-  endTurnSuccess = (data) => {
-    console.log(data)
   }
 }
 Object.assign(EndTurnService.prototype, serviceResponseHandler)

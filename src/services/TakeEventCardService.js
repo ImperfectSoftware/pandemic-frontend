@@ -1,5 +1,4 @@
 import axios from '@/backend/vue-axios'
-import store from '@/store'
 import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class TakeEventCardService {
@@ -13,23 +12,11 @@ export default class TakeEventCardService {
   }
 
   call () {
-    axios.post(
-      `/games/${this.game.id}/special_cards`, {
-        event_card_staticid: this.eventStaticid
-      }
-    )
-      .then(request => this.takeEventCardSuccess(request.data))
+    axios.post(`/games/${this.game.id}/special_cards`, {
+      event_card_staticid: this.eventStaticid
+    })
+      .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
-  }
-
-  takeEventCardSuccess = (data) => {
-    if (data.error) {
-      store.dispatch('showGenericNotification', { message: data.error })
-    }
-  }
-
-  shuttleFlightFerryFailed = (e) => {
-    console.log(e)
   }
 }
 Object.assign(TakeEventCardService.prototype, serviceResponseHandler)

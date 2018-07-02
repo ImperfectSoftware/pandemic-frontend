@@ -17,11 +17,8 @@ export default class DriveOrFerryService {
         city_staticid: this.actionMenu.cityStaticid
       }
     )
-      .then(request => this.driveOrFerrySuccess(request.data))
+      .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
-  }
-
-  driveOrFerrySuccess = (data) => {
   }
 }
 Object.assign(DriveOrFerryService.prototype, serviceResponseHandler)

@@ -12,20 +12,11 @@ export default class ShuttleFlightService {
   }
 
   call () {
-    axios.post(
-      `/games/${this.game.id}/shuttle_flights`, {
-        city_staticid: this.actionMenu.cityStaticid
-      }
-    )
-      .then(request => this.shuttleFlightSuccess(request.data))
+    axios.post(`/games/${this.game.id}/shuttle_flights`, {
+      city_staticid: this.actionMenu.cityStaticid
+    })
+      .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
-  }
-
-  shuttleFlightSuccess = (data) => {
-  }
-
-  shuttleFlightFerryFailed = (e) => {
-    console.log(e)
   }
 }
 Object.assign(ShuttleFlightService.prototype, serviceResponseHandler)

@@ -12,16 +12,11 @@ export default class CharterFlightService {
   }
 
   call () {
-    axios.post(
-      `/games/${this.game.id}/charter_flights`, {
-        city_staticid: this.actionMenu.cityStaticid
-      }
-    )
-      .then(request => this.charterFlightSuccess(request.data))
+    axios.post(`/games/${this.game.id}/charter_flights`, {
+      city_staticid: this.actionMenu.cityStaticid
+    })
+      .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
-  }
-
-  charterFlightSuccess = (data) => {
   }
 }
 Object.assign(CharterFlightService.prototype, serviceResponseHandler)

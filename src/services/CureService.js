@@ -1,6 +1,5 @@
 import axios from '@/backend/vue-axios'
 import serviceResponseHandler from '@/mixins/serviceResponseHandler'
-import store from '@/store'
 
 export default class CureService {
   static call (payload) {
@@ -16,14 +15,8 @@ export default class CureService {
     axios.post(`/games/${this.game.id}/cure_diseases`, {
       city_staticids: this.citiesStaticids
     })
-      .then(request => this.cureSuccess(request.data))
+      .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
-  }
-
-  cureSuccess = (data) => {
-    if (data.error) {
-      store.dispatch('showGenericNotification', { message: data.error })
-    }
   }
 }
 Object.assign(CureService.prototype, serviceResponseHandler)

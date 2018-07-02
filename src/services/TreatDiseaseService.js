@@ -18,11 +18,8 @@ export default class TreatDiseaseService {
       quantity: 1,
       city_staticid: this.actionMenu.cityStaticid
     })
-      .then(request => this.treatDiseaseSuccess(request.data))
-      .catch(e => this.treatDiseaseFailed(e))
-  }
-
-  treatDiseaseSuccess = (data) => {
+      .then(request => this.handleSuccess(request.data))
+      .catch(e => this.handleError(e))
   }
 }
 Object.assign(TreatDiseaseService.prototype, serviceResponseHandler)

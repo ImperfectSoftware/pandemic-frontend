@@ -27,7 +27,6 @@ export default class ProposeMoveService {
   }
 
   proposeMoveSuccess = (data) => {
-    console.log(data)
     store.dispatch('hidePlayerActionMenu', null)
   }
 }

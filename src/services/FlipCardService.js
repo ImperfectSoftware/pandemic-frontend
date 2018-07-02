@@ -12,12 +12,8 @@ export default class FlipCardService {
 
   call () {
     axios.post(`/games/${this.game.id}/finish_turns`)
-      .then(request => this.flipCardSuccess(request.data))
+      .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
-  }
-
-  flipCardSuccess = (data) => {
-    console.log(data)
   }
 }
 Object.assign(FlipCardService.prototype, serviceResponseHandler)
