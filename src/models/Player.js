@@ -1,4 +1,5 @@
 import City from '@/models/City'
+import store from '@/store'
 import EventPlayerCard from '@/models/EventPlayerCard'
 
 export default class Player {
@@ -21,6 +22,11 @@ export default class Player {
     player.events.forEach((eventCard) => {
       this.eventPlayerCards.push(EventPlayerCard.from(eventCard))
     }, this)
+    if (this.cityPlayerCards.length + this.eventPlayerCards.length > 7) {
+      store.dispatch('showGenericNotification', {
+        message: 'You have more than 7 player cards. Please discard cards.'
+      })
+    }
   }
 
   get isContingencyPlaner () {
