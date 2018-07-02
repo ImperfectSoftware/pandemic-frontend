@@ -1,6 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '.././store'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class CreateGameService {
   static call () {
@@ -18,4 +18,4 @@ export default class CreateGameService {
     store.dispatch('updateError', { error: { display: false } })
   }
 }
-Object.assign(CreateGameService.prototype, errorHandler)
+Object.assign(CreateGameService.prototype, serviceResponseHandler)

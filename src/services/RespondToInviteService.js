@@ -1,5 +1,5 @@
 import axios from '@/backend/vue-axios'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 import store from '.././store'
 
 export default class RespondToInviteService {
@@ -26,4 +26,4 @@ export default class RespondToInviteService {
     }
   }
 }
-Object.assign(RespondToInviteService.prototype, errorHandler)
+Object.assign(RespondToInviteService.prototype, serviceResponseHandler)

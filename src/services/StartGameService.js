@@ -1,6 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '.././store'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class StartGameService {
   static call (game) {
@@ -30,4 +30,4 @@ export default class StartGameService {
     }
   }
 }
-Object.assign(StartGameService.prototype, errorHandler)
+Object.assign(StartGameService.prototype, serviceResponseHandler)

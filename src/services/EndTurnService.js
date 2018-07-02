@@ -1,5 +1,5 @@
 import axios from '@/backend/vue-axios'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class EndTurnService {
   static call (payload) {
@@ -20,4 +20,4 @@ export default class EndTurnService {
     console.log(data)
   }
 }
-Object.assign(EndTurnService.prototype, errorHandler)
+Object.assign(EndTurnService.prototype, serviceResponseHandler)

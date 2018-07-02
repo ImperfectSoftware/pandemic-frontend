@@ -1,5 +1,5 @@
 import axios from '@/backend/vue-axios'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 import store from '@/store'
 
 export default class DirectFlightService {
@@ -28,4 +28,4 @@ export default class DirectFlightService {
     }
   }
 }
-Object.assign(DirectFlightService.prototype, errorHandler)
+Object.assign(DirectFlightService.prototype, serviceResponseHandler)

@@ -1,5 +1,5 @@
 import axios from '@/backend/vue-axios'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class RespondToMovementProposalService {
   static call (payload) {
@@ -25,4 +25,4 @@ export default class RespondToMovementProposalService {
   respondToMovementProposalSuccess = (data) => {
   }
 }
-Object.assign(RespondToMovementProposalService.prototype, errorHandler)
+Object.assign(RespondToMovementProposalService.prototype, serviceResponseHandler)

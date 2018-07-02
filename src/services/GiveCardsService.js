@@ -1,6 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '@/store'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class GiveCardsService {
   static call (payload) {
@@ -28,4 +28,4 @@ export default class GiveCardsService {
     store.dispatch('hidePlayerActionMenu', null)
   }
 }
-Object.assign(GiveCardsService.prototype, errorHandler)
+Object.assign(GiveCardsService.prototype, serviceResponseHandler)

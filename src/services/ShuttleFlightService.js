@@ -1,5 +1,5 @@
 import axios from '@/backend/vue-axios'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class ShuttleFlightService {
   static call (payload) {
@@ -28,4 +28,4 @@ export default class ShuttleFlightService {
     console.log(e)
   }
 }
-Object.assign(ShuttleFlightService.prototype, errorHandler)
+Object.assign(ShuttleFlightService.prototype, serviceResponseHandler)

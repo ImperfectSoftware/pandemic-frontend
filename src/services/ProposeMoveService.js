@@ -1,6 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '@/store'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class ProposeMoveService {
   static call (payload) {
@@ -31,4 +31,4 @@ export default class ProposeMoveService {
     store.dispatch('hidePlayerActionMenu', null)
   }
 }
-Object.assign(ProposeMoveService.prototype, errorHandler)
+Object.assign(ProposeMoveService.prototype, serviceResponseHandler)

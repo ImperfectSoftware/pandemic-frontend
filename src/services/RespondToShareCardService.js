@@ -1,5 +1,5 @@
 import axios from '@/backend/vue-axios'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class RespondToShareCardService {
   static call (payload) {
@@ -23,4 +23,4 @@ export default class RespondToShareCardService {
   respondToShareCardsSuccess = (data) => {
   }
 }
-Object.assign(RespondToShareCardService.prototype, errorHandler)
+Object.assign(RespondToShareCardService.prototype, serviceResponseHandler)

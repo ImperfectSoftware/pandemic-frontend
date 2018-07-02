@@ -1,5 +1,5 @@
 import axios from '@/backend/vue-axios'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class FlipCardService {
   static call (payload) {
@@ -20,4 +20,4 @@ export default class FlipCardService {
     console.log(data)
   }
 }
-Object.assign(FlipCardService.prototype, errorHandler)
+Object.assign(FlipCardService.prototype, serviceResponseHandler)

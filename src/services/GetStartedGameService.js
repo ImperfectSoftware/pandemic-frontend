@@ -1,6 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '.././store'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 import GameSubscription from '@/subscriptions/GameSubscription'
 
 export default class GetStartedGameService {
@@ -27,4 +27,4 @@ export default class GetStartedGameService {
     }
   }
 }
-Object.assign(GetStartedGameService.prototype, errorHandler)
+Object.assign(GetStartedGameService.prototype, serviceResponseHandler)

@@ -1,6 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '.././store'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class GetPossibleActionsService {
   static call (payload) {
@@ -25,4 +25,4 @@ export default class GetPossibleActionsService {
     store.dispatch('updateActionMenu', data)
   }
 }
-Object.assign(GetPossibleActionsService.prototype, errorHandler)
+Object.assign(GetPossibleActionsService.prototype, serviceResponseHandler)

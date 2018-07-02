@@ -1,6 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '@/store'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class TakeEventCardService {
   static call (payload) {
@@ -32,4 +32,4 @@ export default class TakeEventCardService {
     console.log(e)
   }
 }
-Object.assign(TakeEventCardService.prototype, errorHandler)
+Object.assign(TakeEventCardService.prototype, serviceResponseHandler)

@@ -1,6 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '.././store'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class CreateInvitationService {
   static call (payload) {
@@ -33,4 +33,4 @@ export default class CreateInvitationService {
     }
   }
 }
-Object.assign(CreateInvitationService.prototype, errorHandler)
+Object.assign(CreateInvitationService.prototype, serviceResponseHandler)

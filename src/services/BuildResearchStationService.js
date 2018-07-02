@@ -1,5 +1,5 @@
 import axios from '@/backend/vue-axios'
-import errorHandler from '@/mixins/errorHandler'
+import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class BuildResearchStationService {
   static call (payload) {
@@ -24,4 +24,4 @@ export default class BuildResearchStationService {
     console.log(data)
   }
 }
-Object.assign(BuildResearchStationService.prototype, errorHandler)
+Object.assign(BuildResearchStationService.prototype, serviceResponseHandler)
