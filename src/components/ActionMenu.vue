@@ -24,6 +24,10 @@
       @click="buildResearchStation(actionMenu.cityStaticid)">
       Add Research STA
     </button>
+    <button :class="actionMenu.useGovernmentGrantCssClasses"
+      @click="useGovernmentGrant(actionMenu.cityStaticid)">
+      Add Research STA <i class="fas fa-university"></i>
+    </button>
     <button :class="actionMenu.removeResearchStationCssClasses"
       @click="removeResearchStation">
       Remove Research STA
@@ -56,6 +60,7 @@ import DriveOrFerryService from '@/services/DriveOrFerryService'
 import DirectFlightService from '@/services/DirectFlightService'
 import CharterFlightService from '@/services/CharterFlightService'
 import BuildResearchStationService from '@/services/BuildResearchStationService'
+import UseGovernmentGrantService from '@/services/UseGovernmentGrantService'
 import ShuttleFlightService from '@/services/ShuttleFlightService'
 import RemoveResearchStationService from '@/services/RemoveResearchStationService'
 import TreatDiseaseService from '@/services/TreatDiseaseService'
@@ -88,7 +93,12 @@ export default {
     },
     buildResearchStation: function (cityStaticid) {
       BuildResearchStationService.call({
-        actionMenu: this.actionMenu,
+        game: this.game,
+        cityStaticid: cityStaticid
+      })
+    },
+    useGovernmentGrant: function (cityStaticid) {
+      UseGovernmentGrantService.call({
         game: this.game,
         cityStaticid: cityStaticid
       })

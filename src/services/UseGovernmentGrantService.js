@@ -1,9 +1,9 @@
 import axios from '@/backend/vue-axios'
 import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
-export default class BuildResearchStationService {
+export default class UseGovernmentGrantService {
   static call (payload) {
-    new BuildResearchStationService(payload).call()
+    new UseGovernmentGrantService(payload).call()
   }
 
   constructor (payload) {
@@ -12,11 +12,11 @@ export default class BuildResearchStationService {
   }
 
   call () {
-    axios.post(`/games/${this.game.id}/research_stations`, {
+    axios.post(`/games/${this.game.id}/government_grant`, {
       city_staticid: this.cityStaticid
     })
       .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
   }
 }
-Object.assign(BuildResearchStationService.prototype, serviceResponseHandler)
+Object.assign(UseGovernmentGrantService.prototype, serviceResponseHandler)

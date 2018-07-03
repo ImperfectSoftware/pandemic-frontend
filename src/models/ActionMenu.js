@@ -9,13 +9,14 @@ export default class ActionMenu {
     this.canBuildResearchStation = false
     this.canRemoveResearchStation = false
     this.canDiscoverCure = false
-    this.cureColor = ''
-    this.cityStaticid = ''
-    this.cityName = ''
     this.canTreatYellow = false
     this.canTreatBlack = false
     this.canTreatBlue = false
     this.canTreatRed = false
+    this.displayGovernmentGrantOption = false
+    this.cureColor = ''
+    this.cityStaticid = ''
+    this.cityName = ''
     this.hide = true
     this.height = 310
     this.width = 200
@@ -45,6 +46,7 @@ export default class ActionMenu {
     this.canTreatBlack = payload.can_treat_black
     this.canTreatBlue = payload.can_treat_blue
     this.canTreatRed = payload.can_treat_red
+    this.displayGovernmentGrantOption = payload.display_government_grant_option
   }
 
   get style () {
@@ -78,6 +80,11 @@ export default class ActionMenu {
   get buildResearchStationCssClasses () {
     return this.sharedClasses() +
       this.displayClass(this.canBuildResearchStation)
+  }
+
+  get useGovernmentGrantCssClasses () {
+    return this.sharedClasses() +
+      this.displayClass(this.displayGovernmentGrantOption)
   }
 
   get removeResearchStationCssClasses () {
