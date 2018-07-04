@@ -22,4 +22,8 @@ export default class City {
   get radioKey () {
     return `radio-${this.staticid}`
   }
+
+  get compositeId () {
+    return `city-${this.staticid}`
+  }
 }

@@ -21,11 +21,13 @@
             <div :class="city.rectangleCssClass"></div>
             <div :class="city.cssClass">{{ city.name }}</div>
             <i v-if="currentPlayer.hasTooManyCards" class="btn fas fa-trash-alt"
-              @click="discardCard(city.staticid)"></i>
+              @click="discardCard(city.compositeId)"></i>
           </div>
           <div v-for="event in currentPlayer.eventPlayerCards" :key="event.name"
             class="p-1 float-left">
             <div>{{event.name}}</div>
+            <i v-if="currentPlayer.hasTooManyCards" class="btn fas fa-trash-alt"
+              @click="discardCard(event.compositeId)"></i>
           </div>
         </div>
         <PlayersInfo/>
@@ -105,8 +107,8 @@ export default {
     takeEventCard: function (staticid) {
       TakeEventCardService.call({ eventStaticid: staticid, game: this.game })
     },
-    discardCard: function (staticid) {
-      DiscardCardService.call({ cityStaticid: staticid, game: this.game })
+    discardCard: function (compositeId) {
+      DiscardCardService.call({ compositeId: compositeId, game: this.game })
     },
     flipCard: function () {
       FlipCardService.call({ game: this.game })

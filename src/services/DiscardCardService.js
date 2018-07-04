@@ -8,13 +8,13 @@ export default class DiscardCardService {
 
   constructor (payload) {
     this.game = payload.game
-    this.cityStaticid = payload.cityStaticid
+    this.compositeId = payload.compositeId
   }
 
   call () {
-    axios.delete(`/games/${this.game.id}/discard_city_cards`, {
+    axios.delete(`/games/${this.game.id}/discard_cards`, {
       data: {
-        city_staticid: this.cityStaticid
+        composite_id: this.compositeId
       }
     })
       .then(request => this.handleSuccess(request.data))
