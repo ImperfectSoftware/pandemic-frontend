@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <br>
-    <Error/>
     <div class="row">
       <div class="col-xl-3">
         <ul class="list-group">
@@ -37,7 +36,6 @@
 <script>
 import { mapGetters } from 'vuex'
 import SelectedGame from '@/components/SelectedGame'
-import Error from '@/components/Error'
 import GameHistoryLineItem from '@/components/GameHistoryLineItem'
 import InvitationLineItem from '@/components/InvitationLineItem'
 
@@ -53,8 +51,7 @@ export default {
   components: {
     SelectedGame,
     GameHistoryLineItem,
-    InvitationLineItem,
-    Error
+    InvitationLineItem
   },
   created: function () {
     this.$store.dispatch('setupGamesDashboard')

@@ -1,5 +1,4 @@
 import axios from '@/backend/vue-axios'
-import store from '.././store'
 import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class CreateInvitationService {
@@ -17,20 +16,8 @@ export default class CreateInvitationService {
       `/games/${this.gameId}/invitations.json`,
       { username: this.username }
     )
-      .then(request => this.createInvitationSuccess(request.data))
+      .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
-  }
-
-  createInvitationSuccess = (data) => {
-    if (data.error) {
-      store.dispatch('updateError', {
-        message: data.error,
-        css: 'alert-warning',
-        display: true
-      })
-    } else {
-      store.dispatch('updateError', { display: false })
-    }
   }
 }
 Object.assign(CreateInvitationService.prototype, serviceResponseHandler)

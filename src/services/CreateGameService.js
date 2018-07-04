@@ -15,7 +15,7 @@ export default class CreateGameService {
 
   createGameSuccess = (data) => {
     store.dispatch('unshiftGame', data.game)
-    store.dispatch('updateError', { error: { display: false } })
+    store.dispatch('hideGenericNotification')
   }
 }
 Object.assign(CreateGameService.prototype, serviceResponseHandler)

@@ -1,5 +1,4 @@
 import axios from '@/backend/vue-axios'
-import store from '.././store'
 import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
 export default class StartGameService {
@@ -16,18 +15,8 @@ export default class StartGameService {
     axios.put(`/games/${this.game.id}`, {
       'nr_of_epidemic_cards': this.nrOfEpidemicCards
     })
-      .then(request => this.startingGame(request.data))
+      .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
-  }
-
-  startingGame = (data) => {
-    if (data.error) {
-      store.dispatch('updateError', {
-        message: data.error,
-        css: 'alert-danger',
-        display: true
-      })
-    }
   }
 }
 Object.assign(StartGameService.prototype, serviceResponseHandler)
