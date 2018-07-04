@@ -31,6 +31,8 @@ export default class Game {
     game.event_discard_pile.forEach((event) => {
       this.eventDiscardPile.push(EventPlayerCard.from(event))
     }, this)
+    this.epidemicCardsCount = game.epidemic_cards_count
+    this.outbreaksNr = game.outbreaks_nr
   }
 
   get diseaseColors () {
