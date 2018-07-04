@@ -5,14 +5,14 @@ $color-four: #C4DFE6;
 $color-five: #41B3A3;
 $color-six: #E6D72A;
 $stroke-color: white;
-$blue: #30c5ff;
-$black: black;
-$yellow: #ecf83c;
-$red: #fa4626;
 $research-station: white;
 $border: #868e96;
 $land: #094673;
 $main-background: #021e3c;
+$blue: #30c5ff;
+$black: darken($border, 10%);
+$yellow: #ecf83c;
+$red: #fa4626;
 
 $color: (
   body: #302e21,
