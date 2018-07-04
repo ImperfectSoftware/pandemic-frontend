@@ -4,6 +4,21 @@
 @import 'cities';
 @import 'colors';
 
+@mixin cure {
+  display: inline;
+  fill-opacity: 1;
+  stroke: $black;
+  stroke-width: 3px;
+  stroke-opacity: 1;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+}
+
+@mixin invitation-status {
+  background-color: $land;
+}
+
+
 $width: (
   md: 68.0%,
   sm: 32.0%,
@@ -119,14 +134,17 @@ div#map {
 }
 
 .accepted {
+  @include invitation-status;
   border: 0.5em solid $color-two;
 }
 
 .declined {
+  @include invitation-status;
   border: 0.5em solid $color-one;
 }
 
 .inactive {
+  @include invitation-status;
   border: 0.5em solid black;
 }
 
@@ -260,16 +278,6 @@ div#share-card-notification, div#generic-notification,
 .flex-row {
   display: flex;
   flex-wrap: wrap;
-}
-
-@mixin cure {
-  display: inline;
-  fill-opacity: 1;
-  stroke: $black;
-  stroke-width: 3px;
-  stroke-opacity: 1;
-  stroke-linecap: butt;
-  stroke-linejoin: miter;
 }
 
 .disease-not-cured {
