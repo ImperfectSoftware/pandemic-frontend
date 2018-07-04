@@ -5285,7 +5285,7 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer7"
+     inkscape:current-layer="layer3"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:measure-start="0,0"
@@ -14647,6 +14647,207 @@
          x="1340.0803"
          y="520.68402"
          style="stroke-width:0.44116384">Los Angeles</tspan></text>
+    <g
+       transform="matrix(0.65553802,0,0,0.65553802,1049.4566,406.30746)"
+       id="layer1-52"
+       inkscape:label="Layer 1">
+      <g
+         transform="translate(-18.142864,5.2916745)"
+         inkscape:label="Layer 1"
+         id="layer1-9-27">
+        <circle
+           id="path815"
+           cx="70.303574"
+           cy="145.80952"
+           r="34.017857"
+           :class="outerInfectionRateCircleCssClasses(0)" />
+        <circle
+           r="29.94178"
+           cy="145.62213"
+           cx="70.312996"
+           id="circle817"
+           :class="innerInfectionRateCircleCssClasses(0)" />
+      </g>
+      <g
+         transform="translate(72.642333,5.2916745)"
+         inkscape:label="Layer 1"
+         id="layer1-8-37">
+        <circle
+           id="path815-0"
+           cx="70.303574"
+           cy="145.80952"
+           r="34.017857"
+           :class="outerInfectionRateCircleCssClasses(1)" />
+        <circle
+           r="29.94178"
+           cy="145.62213"
+           cx="70.312996"
+           id="circle817-2"
+           :class="innerInfectionRateCircleCssClasses(1)" />
+      </g>
+      <g
+         transform="translate(162.52975,5.2916745)"
+         inkscape:label="Layer 1"
+         id="layer1-83-9">
+        <circle
+           id="path815-9"
+           cx="70.303574"
+           cy="145.80952"
+           r="34.017857"
+           :class="outerInfectionRateCircleCssClasses(2)" />
+        <circle
+           r="29.94178"
+           cy="145.62213"
+           cx="70.312996"
+           id="circle817-0"
+           :class="innerInfectionRateCircleCssClasses(2)" />
+      </g>
+      <g
+         transform="translate(252.86606,5.2916745)"
+         inkscape:label="Layer 1"
+         id="layer1-2-0">
+        <circle
+           id="path815-2"
+           cx="70.303574"
+           cy="145.80952"
+           r="34.017857"
+           :class="outerInfectionRateCircleCssClasses(3)" />
+        <circle
+           r="29.94178"
+           cy="145.62213"
+           cx="70.312996"
+           id="circle817-7"
+           :class="innerInfectionRateCircleCssClasses(3)" />
+      </g>
+      <g
+         transform="translate(343.20235,5.2916745)"
+         inkscape:label="Layer 1"
+         id="layer1-7-23">
+        <circle
+           id="path815-90"
+           cx="70.303574"
+           cy="145.80952"
+           r="34.017857"
+           :class="outerInfectionRateCircleCssClasses(4)" />
+        <circle
+           r="29.94178"
+           cy="145.62213"
+           cx="70.312996"
+           id="circle817-23"
+           :class="innerInfectionRateCircleCssClasses(4)" />
+      </g>
+      <g
+         transform="translate(433.53868,5.2916745)"
+         inkscape:label="Layer 1"
+         id="layer1-97">
+        <circle
+           id="path815-03"
+           cx="70.303574"
+           cy="145.80952"
+           r="34.017857"
+           :class="outerInfectionRateCircleCssClasses(5)" />
+        <circle
+           r="29.94178"
+           cy="145.62213"
+           cx="70.312996"
+           id="circle817-9"
+           :class="innerInfectionRateCircleCssClasses(5)" />
+      </g>
+      <g
+         transform="translate(523.87494,5.2916667)"
+         inkscape:label="Layer 1"
+         id="layer1-6-9">
+        <circle
+           id="path815-5"
+           cx="70.303574"
+           cy="145.80952"
+           r="34.017857"
+           :class="outerInfectionRateCircleCssClasses(6)" />
+        <circle
+           r="29.94178"
+           cy="145.62213"
+           cx="70.312996"
+           id="circle817-76"
+           :class="innerInfectionRateCircleCssClasses(6)" />
+      </g>
+      <text
+         id="text5370"
+         y="160.04709"
+         x="42.317039"
+         style="font-style:normal;font-weight:normal;font-size:31.75px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:0.97999998;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:31.75px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
+           y="160.04709"
+           x="42.317039"
+           id="tspan5368"
+           sodipodi:role="line">2</tspan></text>
+      <text
+         id="text5374"
+         y="160.49597"
+         x="133.89163"
+         style="font-style:normal;font-weight:normal;font-size:31.75px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:0.97999998;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:31.75px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
+           y="160.49597"
+           x="133.89163"
+           id="tspan5372"
+           sodipodi:role="line">2</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:31.75px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:0.97999998;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="224.11952"
+         y="160.49597"
+         id="text5378"><tspan
+           sodipodi:role="line"
+           id="tspan5376"
+           x="224.11952"
+           y="160.49597"
+           style="font-size:31.75px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332">2</tspan></text>
+      <text
+         id="text5382"
+         y="159.59818"
+         x="313.44965"
+         style="font-style:normal;font-weight:normal;font-size:31.75px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:0.97999998;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:31.75px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
+           y="159.59818"
+           x="313.44965"
+           id="tspan5380"
+           sodipodi:role="line">3</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:31.75px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:0.97999998;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="404.12643"
+         y="160.94485"
+         id="text5386"><tspan
+           sodipodi:role="line"
+           id="tspan5384"
+           x="404.12643"
+           y="160.94485"
+           style="font-size:31.75px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332">3</tspan></text>
+      <text
+         id="text5390"
+         y="161.84265"
+         x="493.90543"
+         style="font-style:normal;font-weight:normal;font-size:31.75px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:0.97999998;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:31.75px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
+           y="161.84265"
+           x="493.90543"
+           id="tspan5388"
+           sodipodi:role="line">4</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:31.75px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:0.97999998;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="583.68439"
+         y="160.94487"
+         id="text5394"><tspan
+           sodipodi:role="line"
+           id="tspan5392"
+           x="583.68439"
+           y="160.94487"
+           style="font-size:31.75px;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332">4</tspan></text>
+    </g>
   </g>
 </svg>
 </template>
@@ -14696,6 +14897,12 @@ export default {
     },
     researchCenterClasses (cityStaticid) {
       return ResearchCenterClassesService.for(cityStaticid, this.game)
+    },
+    innerInfectionRateCircleCssClasses (position) {
+      return this.game.innerInfectionRateCircleCssClasses(position)
+    },
+    outerInfectionRateCircleCssClasses (position) {
+      return 'outer-circle-infection-marker'
     }
   }
 }

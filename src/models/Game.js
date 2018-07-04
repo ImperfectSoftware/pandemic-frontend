@@ -102,4 +102,12 @@ export default class Game {
     }
     return 'disease-not-cured'
   }
+
+  innerInfectionRateCircleCssClasses = (position) => {
+    if (position === this.epidemicCardsCount) {
+      return 'active-inner-circle-infection-marker'
+    } else {
+      return 'inner-circle-infection-marker'
+    }
+  }
 }
