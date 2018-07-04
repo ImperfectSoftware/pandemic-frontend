@@ -59,6 +59,12 @@
             </div>
           </div>
         </div>
+        <div class="wrapper end-turn-buttons">
+          <i class="fas fa-plus pr-4 btn-pointer"
+            @click="flipCard"></i>
+          <i class="fab fa-galactic-republic m-6 btn-pointer"
+            @click="infect"></i>
+        </div>
       </div>
     </div>
   </div>
@@ -76,6 +82,8 @@ import InfectionsSummary from '@/components/InfectionsSummary'
 import MovementProposalNotification from '@/components/MovementProposalNotification'
 import TakeEventCardService from '@/services/TakeEventCardService'
 import DiscardCardService from '@/services/DiscardCardService'
+import InfectionsService from '@/services/InfectionsService'
+import FlipCardService from '@/services/FlipCardService'
 
 export default {
   name: 'GameInstance',
@@ -99,6 +107,12 @@ export default {
     },
     discardCard: function (staticid) {
       DiscardCardService.call({ cityStaticid: staticid, game: this.game })
+    },
+    flipCard: function () {
+      FlipCardService.call({ game: this.game })
+    },
+    infect: function () {
+      InfectionsService.call({ game: this.game })
     }
   },
   components: {

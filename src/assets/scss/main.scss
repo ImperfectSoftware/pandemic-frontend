@@ -155,7 +155,8 @@ div#map {
   margin-bottom: 1%;
 }
 
-.btn, .accept-mark:hover, .decline-mark:hover, .game-history-line-item:hover {
+.btn, .accept-mark:hover, .decline-mark:hover, .game-history-line-item:hover,
+.btn-pointer {
   cursor: pointer;
 }
 
@@ -281,6 +282,21 @@ div#share-card-notification, div#generic-notification,
   fill: $yellow;
 }
 
+.cured-bottle-blue {
+  @include cure;
+  fill: $blue;
+}
+
+.cured-bottle-black {
+  @include cure;
+  fill: $black;
+}
+
+.cured-bottle-red {
+  @include cure;
+  fill: $red;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -317,4 +333,9 @@ div#share-card-notification, div#generic-notification,
   fill-opacity: 1;
   stroke-width: 0.01;
   fill: $border;
+}
+
+.end-turn-buttons {
+  font-size: 3em;
+  display: inline-block;
 }

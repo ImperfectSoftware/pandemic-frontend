@@ -11,7 +11,7 @@ export default class FlipCardService {
   }
 
   call () {
-    axios.post(`/games/${this.game.id}/finish_turns`)
+    axios.post(`/games/${this.game.id}/flip_cards`)
       .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
   }

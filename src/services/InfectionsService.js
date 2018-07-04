@@ -1,9 +1,9 @@
 import axios from '@/backend/vue-axios'
 import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
-export default class EndTurnService {
+export default class InfectionsService {
   static call (payload) {
-    new EndTurnService(payload).call()
+    new InfectionsService(payload).call()
   }
 
   constructor (payload) {
@@ -11,9 +11,9 @@ export default class EndTurnService {
   }
 
   call () {
-    axios.post(`/games/${this.game.id}/finish_turns`)
+    axios.post(`/games/${this.game.id}/infections`)
       .then(request => this.handleSuccess(request.data))
       .catch(e => this.handleError(e))
   }
 }
-Object.assign(EndTurnService.prototype, serviceResponseHandler)
+Object.assign(InfectionsService.prototype, serviceResponseHandler)
