@@ -37,29 +37,6 @@
         to {{ city.name }}
       </button>
     </div>
-    <div v-if="playerActionMenu.hasOperationsExpertLocations">
-      <div class="float-left">Select card to discard:</div>
-      <br/>
-      <div v-for="city in game.activePlayer.cityPlayerCards"
-        :key="city.radioKey" class="form-inline">
-        <div class="city form-check form-check-inline">
-          <div :class="city.rectangleCssClass"></div>
-          <div class="city-name">{{ city.name }}</div>
-          <div class="input-group">
-            <div class="input-group-prepend ml-2">
-              <input type="radio" class="form-check-input"
-                :value="city.staticid" v-model="discarded">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="float-left">To move to:</div>
-      <button v-for="city in playerActionMenu.operationsExpertLocations"
-        :key="city.staticid" :class="playerActionMenu.cssClasses"
-        @click="moveOperationsExpert(city.staticid)">
-        to {{ city.name }}
-      </button>
-    </div>
   </div>
 </template>
 <script>
@@ -68,7 +45,6 @@ import { mapGetters } from 'vuex'
 import GiveCardsService from '@/services/GiveCardsService'
 import ReceiveCardsService from '@/services/ReceiveCardsService'
 import ProposeMoveService from '@/services/ProposeMoveService'
-import MoveOperationsExpertService from '@/services/MoveOperationsExpertService'
 
 export default {
   name: 'PlayerActionMenu',
@@ -108,13 +84,6 @@ export default {
         playerId: playerId,
         game: this.game,
         airlift: airlift
-      })
-    },
-    moveOperationsExpert: function (to) {
-      MoveOperationsExpertService.call({
-        to: to,
-        discarded: this.discarded,
-        game: this.game
       })
     }
   }

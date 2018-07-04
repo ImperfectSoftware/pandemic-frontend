@@ -13,7 +13,7 @@ export default class ActionMenu {
     this.canTreatBlue = false
     this.canTreatRed = false
     this.displayGovernmentGrantOption = false
-    this.cityStaticid = ''
+    this.operationsExpertFlight = false
     this.cityName = ''
     this.hide = true
     this.height = 310
@@ -42,6 +42,7 @@ export default class ActionMenu {
     this.canTreatBlack = payload.can_treat_black
     this.canTreatBlue = payload.can_treat_blue
     this.canTreatRed = payload.can_treat_red
+    this.operationsExpertFlight = payload.operations_expert_flight
     this.displayGovernmentGrantOption = payload.display_government_grant_option
   }
 
@@ -131,6 +132,7 @@ export default class ActionMenu {
     if (this.canTreatRed) { return false }
     if (this.canTreatYellow) { return false }
     if (this.canTreatBlack) { return false }
+    if (this.operationsExpertFlight) { return false }
     return true
   }
 }

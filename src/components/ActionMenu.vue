@@ -48,6 +48,31 @@
       @click="treatDisease('black')">
       Treat Black<div class="disease-rectangle-black"></div>
     </button>
+    <div v-if="actionMenu.operationsExpertFlight">
+      <div class="text-left mt-4">Operations Expert
+        <i class="fas fa-toolbox"></i>
+      </div>
+      <div class="text-left">
+        Select card to discard to move to this location:
+      </div>
+      <div v-for="city in game.activePlayer.cityPlayerCards"
+        :key="city.radioKey" class="form-inline">
+        <div class="city form-check form-check-inline">
+          <div :class="city.rectangleCssClass"></div>
+          <div class="city-name">{{ city.name }}</div>
+          <div class="input-group">
+            <div class="input-group-prepend ml-2">
+              <input type="radio" class="form-check-input"
+                :value="city.staticid" v-model="discarded">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-block btn-secondary mt-3"
+        @click="moveOperationsExpert(actionMenu.cityStaticid)">
+        Discard
+      </button>
+    </div>
   </div>
 </template>
 <script>
@@ -61,6 +86,7 @@ import UseGovernmentGrantService from '@/services/UseGovernmentGrantService'
 import ShuttleFlightService from '@/services/ShuttleFlightService'
 import RemoveResearchStationService from '@/services/RemoveResearchStationService'
 import TreatDiseaseService from '@/services/TreatDiseaseService'
+import MoveOperationsExpertService from '@/services/MoveOperationsExpertService'
 
 export default {
   name: 'ActionMenu',
@@ -70,6 +96,11 @@ export default {
       game: 'activeGame',
       actionMenu: 'actionMenu'
     })
+  },
+  data: function () {
+    return {
+      discarded: ''
+    }
   },
   methods: {
     hideActionMenu: function () {
@@ -109,6 +140,13 @@ export default {
         actionMenu: this.actionMenu,
         game: this.game,
         color: color
+      })
+    },
+    moveOperationsExpert: function (cityStaticid) {
+      MoveOperationsExpertService.call({
+        to: cityStaticid,
+        discarded: this.discarded,
+        game: this.game
       })
     }
   }
