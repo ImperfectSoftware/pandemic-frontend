@@ -8,13 +8,11 @@ export default class ActionMenu {
     this.canShuttleFlight = false
     this.canBuildResearchStation = false
     this.canRemoveResearchStation = false
-    this.canDiscoverCure = false
     this.canTreatYellow = false
     this.canTreatBlack = false
     this.canTreatBlue = false
     this.canTreatRed = false
     this.displayGovernmentGrantOption = false
-    this.cureColor = ''
     this.cityStaticid = ''
     this.cityName = ''
     this.hide = true
@@ -37,11 +35,9 @@ export default class ActionMenu {
     this.canDrive = payload.can_drive
     this.canCharterFlight = payload.can_charter_flight
     this.canDirectFlight = payload.can_direct_flight
-    this.canDiscoverCure = payload.can_discover_cure
     this.canBuildResearchStation = payload.can_build_research_station
     this.canRemoveResearchStation = payload.can_remove_research_station
     this.canShuttleFlight = payload.can_shuttle_flight
-    this.cureColor = payload.cure_color
     this.canTreatYellow = payload.can_treat_yellow
     this.canTreatBlack = payload.can_treat_black
     this.canTreatBlue = payload.can_treat_blue
@@ -92,10 +88,6 @@ export default class ActionMenu {
       this.displayClass(this.canRemoveResearchStation)
   }
 
-  get discoverCureCssClasses () {
-    return this.sharedClasses() + this.displayClass(this.canDiscoverCure)
-  }
-
   get treatBlueDiseaseCssClass () {
     return this.sharedClasses() +
       this.sharedDiseaseCssClass() +
@@ -135,7 +127,6 @@ export default class ActionMenu {
     if (this.canShuttleFlight) { return false }
     if (this.canBuildResearchStation) { return false }
     if (this.canRemoveResearchStation) { return false }
-    if (this.canDiscoverCure) { return false }
     if (this.canTreatBlue) { return false }
     if (this.canTreatRed) { return false }
     if (this.canTreatYellow) { return false }
