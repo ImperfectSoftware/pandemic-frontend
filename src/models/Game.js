@@ -9,6 +9,7 @@ export default class Game {
 
   constructor (game) {
     this.id = game.id
+    this.skipInfections = game.skip_infections
     this.betweenEpidemicStages = game.between_epidemic_stages
     this.actionsTaken = game.actions_taken
     this.active = game.active

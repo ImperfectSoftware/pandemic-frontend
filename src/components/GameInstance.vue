@@ -25,9 +25,13 @@
           </div>
           <div v-for="event in currentPlayer.eventPlayerCards" :key="event.name"
             class="p-1 float-left">
-            <div>{{event.name}}</div>
-            <i v-if="currentPlayer.hasTooManyCards" class="btn fas fa-trash-alt"
-              @click="discardCard(event.compositeId)"></i>
+            <div>
+              {{event.name}}
+              <i v-if="currentPlayer.hasTooManyCards" class="btn fas fa-trash-alt"
+                @click="discardCard(event.compositeId)"></i>
+              <i v-if="event.isUsable" class="btn fas fa-play"
+               @click="useEvent(event)"></i>
+            </div>
           </div>
         </div>
         <PlayersInfo/>
@@ -64,8 +68,10 @@
         <div class="wrapper end-turn-buttons">
           <i class="fas fa-plus pr-4 btn-pointer"
             @click="flipCard"></i>
-          <i class="fab fa-galactic-republic m-6 btn-pointer"
-            @click="infect"></i>
+          <span class="fab fa-galactic-republic m-6 btn-pointer"
+            @click="infect">
+            <span v-if="game.skipInfections" class="quiet-night fas fa-moon"></span>
+          </span>
         </div>
       </div>
     </div>
@@ -86,6 +92,7 @@ import TakeEventCardService from '@/services/TakeEventCardService'
 import DiscardCardService from '@/services/DiscardCardService'
 import InfectionsService from '@/services/InfectionsService'
 import FlipCardService from '@/services/FlipCardService'
+import UseEventService from '@/services/UseEventService'
 
 export default {
   name: 'GameInstance',
@@ -115,6 +122,9 @@ export default {
     },
     infect: function () {
       InfectionsService.call({ game: this.game })
+    },
+    useEvent: function (event) {
+      UseEventService.call({ game: this.game, event: event })
     }
   },
   components: {
