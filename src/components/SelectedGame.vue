@@ -16,9 +16,14 @@
             <i class="fa fa-user-plus" aria-hidden="true"></i>
           </button>
         </div>
-        <label>
+        <label class="pt-5">
           Select the number of epidemic cards: <span>{{epidemicCards}}</span>
         </label>
+        <div>
+          <span class="float-left">Easy</span>
+          <span>Medium</span>
+          <span class="float-right">Hard</span>
+        </div>
         <div class="slidecontainer">
           <input v-model="epidemicCards" type="range" min="4" max="6" value="5"
             class="slider" id="epidemic-cards-range">

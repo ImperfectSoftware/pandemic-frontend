@@ -12,23 +12,17 @@
         <SelectedGame v-if="selectedGame" :game="selectedGame"></SelectedGame>
       </div>
       <div class="col-xl-3">
-        <ul class="list-group">
+        <ul class="list-group list-unstyled">
+          <li class="pb-5">
+            <form class="form-inline" @submit.prevent="createGame">
+              <button class="mx-auto btn btn-block btn-secondary" type="submit">
+                Create a new Game
+              </button>
+            </form>
+          </li>
           <GameHistoryLineItem v-for="game in games" :game="game"
             :key="game.id"/>
         </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-      </div>
-      <div class="col">
-        <form class="form-inline" @submit.prevent="createGame">
-          <button class="mx-auto btn btn-secondary" type="submit">
-            Create a new Game
-          </button>
-        </form>
-      </div>
-      <div class="col">
       </div>
     </div>
   </div>
