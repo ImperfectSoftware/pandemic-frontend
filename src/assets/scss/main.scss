@@ -382,3 +382,72 @@ div#share-card-notification, div#generic-notification,
   @include inner-circle-infection-marker-mixin;
   fill: $blue;
 }
+
+@mixin outbreak-mixin {
+  opacity: 1;
+  fill-opacity: 1;
+  fill-rule: nonzero;
+  stroke: $main-background;
+  stroke-width: 1;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
+}
+
+.outbreaks-color-0 {
+  @include outbreak-mixin;
+  fill: lighten($red, 20%);
+}
+
+.outbreaks-color-1 {
+  @include outbreak-mixin;
+  fill: lighten($red, 18%);
+
+}
+
+.outbreaks-color-2 {
+  @include outbreak-mixin;
+  fill: lighten($red, 16%);
+}
+
+.outbreaks-color-3 {
+  @include outbreak-mixin;
+  fill: lighten($red, 14%);
+}
+
+.outbreaks-color-4 {
+  @include outbreak-mixin;
+  fill: lighten($red, 12%);
+}
+
+.outbreaks-color-5 {
+  @include outbreak-mixin;
+  fill: lighten($red, 10%);
+}
+
+.outbreaks-color-6 {
+  @include outbreak-mixin;
+  fill: lighten($red, 8%);
+}
+
+.outbreaks-color-7 {
+  @include outbreak-mixin;
+  fill: lighten($red, 6%);
+}
+
+.outbreaks-color-7 {
+  @include outbreak-mixin;
+  fill: lighten($red, 4%);
+}
+
+.outbreaks-color-8 {
+  @include outbreak-mixin;
+  fill: $red;
+}
+
+.outbreaks-color-active {
+  @include outbreak-mixin;
+  fill: $land;
+}
