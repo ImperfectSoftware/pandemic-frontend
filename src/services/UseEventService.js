@@ -21,6 +21,10 @@ export default class UseEventService {
       axios.post(`/games/${this.game.id}/forecasts`)
         .then(request => this.handleForecastSuccess(request.data))
         .catch(e => this.handleError(e))
+    } else if (this.event.isResilientPopulation) {
+      axios.get(`/games/${this.game.id}/resilient_populations`)
+        .then(request => this.getCitiesSuccess(request.data))
+        .catch(e => this.handleError(e))
     }
   }
 
@@ -29,6 +33,14 @@ export default class UseEventService {
       this.handleSuccess(data)
     } else {
       store.dispatch('updateForecast', data.cities)
+    }
+  }
+
+  getCitiesSuccess = (data) => {
+    if (data.error) {
+      this.handleSuccess(data)
+    } else {
+      store.dispatch('updateResilientPopulationCities', data.cities)
     }
   }
 }

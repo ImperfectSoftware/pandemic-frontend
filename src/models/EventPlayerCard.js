@@ -26,4 +26,8 @@ export default class EventPlayerCard {
   get isForecast () {
     return this.staticid === '5'
   }
+
+  get isResilientPopulation () {
+    return this.staticid === '1'
+  }
 }

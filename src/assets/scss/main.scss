@@ -469,3 +469,20 @@ div#share-card-notification, div#generic-notification,
   border-radius: 0.25em;
   background-color: $land;
 }
+
+#resilient-population-cities {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  margin-top: -100px;
+  z-index: 100;
+}
+
+.resilient-population-cities-inner {
+  position: relative;
+  left: -50%;
+  background-color: $land;
+  border: 0.125em solid $border;
+  border-radius: 0.25em;
+  z-index: 100;
+}

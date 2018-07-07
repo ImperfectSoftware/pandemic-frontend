@@ -11,6 +11,7 @@ import cureMenu from './cureMenu'
 import genericNotification from './genericNotification'
 import movementProposalNotification from './movementProposalNotification'
 import forecast from './forecast'
+import resilientPopulationCards from './resilientPopulationCards'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -25,6 +26,7 @@ export default new Vuex.Store({
     movementProposalNotification,
     playerActionsMenu,
     sharedCardNotification,
-    forecast
+    forecast,
+    resilientPopulationCards
   }
 })

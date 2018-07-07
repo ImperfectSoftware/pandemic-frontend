@@ -1,5 +1,27 @@
 <template>
   <div id="map">
+    <div id="resilient-population-cities" v-if="showDiscardedInfectionCities"
+      class="p-4">
+      <div class="resilient-population-cities-inner m-4 p-4">
+        <div v-for="(city, index) in resilientPopulationCities" :key="index"
+          class="form-inline">
+            <div class="city form-check form-check-inline">
+              <div :class="city.rectangleCssClass"></div>
+              <div class="city-name">{{ city.name }}</div>
+              <div class="input-group">
+                <div class="input-group-prepend ml-2">
+                  <input type="radio" class="form-check-input"
+                    :value="city.staticid" v-model="discarded">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-secondary btn-block mt-4"
+            @click="discardInfectionCard">
+            Discard Card
+          </button>
+      </div>
+    </div>
     <div id="forecast" v-if="showForecast" class="p-4">
       <div class="p-2">Forecast: Cards will be flipped first to last.</div>
       <draggable v-model="forecast">
@@ -60,7 +82,7 @@
           <div v-if="game.isInfectionDiscardPileEmpty">
             No infection cards flipped yet...
           </div>
-          <div v-for="city in game.infectionDiscardPile" :key="city.name"
+          <div v-for="(city, index) in game.infectionDiscardPile" :key="index"
             class="city">
             <div :class="city.rectangleCssClass"></div>
             <div :class="city.cssClass">{{ city.name }}</div>
@@ -72,7 +94,7 @@
           <div v-if="game.isEventDiscardPileEmpty">
             No event cards discarded yet...
           </div>
-          <div v-for="event in game.eventDiscardPile" :key="event.name"
+          <div v-for="(event, index) in game.eventDiscardPile" :key="index"
             class="p-1 float-left">
             <div>
               {{event.name}}
@@ -112,6 +134,7 @@ import FlipCardService from '@/services/FlipCardService'
 import UseEventService from '@/services/UseEventService'
 import draggable from 'vuedraggable'
 import ForecastUpdateService from '@/services/ForecastUpdateService'
+import DiscardInfectionService from '@/services/DiscardInfectionService'
 
 export default {
   name: 'GameInstance',
@@ -119,7 +142,9 @@ export default {
     ...mapGetters({
       game: 'activeGame',
       currentUser: 'currentUser',
-      showForecast: 'showForecast'
+      showForecast: 'showForecast',
+      showDiscardedInfectionCities: 'showDiscardedInfectionCities',
+      resilientPopulationCities: 'resilientPopulationCities'
     }),
     forecast: {
       get () {
@@ -137,6 +162,11 @@ export default {
   },
   created: function () {
     this.$store.dispatch('initializeStartedGame', this.$route.params.id)
+  },
+  data: function () {
+    return {
+      discarded: ''
+    }
   },
   methods: {
     takeEventCard: function (staticid) {
@@ -156,6 +186,12 @@ export default {
     },
     arrangeCards: function () {
       ForecastUpdateService.call({ forecast: this.forecast, game: this.game })
+    },
+    discardInfectionCard: function () {
+      DiscardInfectionService.call({
+        game: this.game,
+        cityStaticid: this.discarded
+      })
     }
   },
   components: {
