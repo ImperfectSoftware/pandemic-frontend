@@ -2,9 +2,9 @@ import axios from '@/backend/vue-axios'
 import store from '@/store'
 import serviceResponseHandler from '@/mixins/serviceResponseHandler'
 
-export default class ProposeMoveService {
+export default class AirliftMoveService {
   static call (payload) {
-    new ProposeMoveService(payload).call()
+    new AirliftMoveService(payload).call()
   }
 
   constructor (payload) {
@@ -15,17 +15,17 @@ export default class ProposeMoveService {
 
   call () {
     axios.post(
-      `/games/${this.game.id}/movement_proposals`, {
+      `/games/${this.game.id}/airlifts`, {
         city_staticid: this.cityStaticid,
         player_id: this.playerId
       }
     )
-      .then(request => this.proposeMoveSuccess(request.data))
+      .then(request => this.airliftMoveSuccess(request.data))
       .catch(e => this.handleError(e))
   }
 
-  proposeMoveSuccess = (data) => {
+  airliftMoveSuccess = (data) => {
     store.dispatch('hidePlayerActionMenu', null)
   }
 }
-Object.assign(ProposeMoveService.prototype, serviceResponseHandler)
+Object.assign(AirliftMoveService.prototype, serviceResponseHandler)

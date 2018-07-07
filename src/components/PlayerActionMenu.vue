@@ -25,7 +25,7 @@
        Propose to move {{ playerActionMenu.playerUsername }}
       <button v-for="city in playerActionMenu.locations" :key="city.staticid"
         :class="playerActionMenu.cssClasses"
-        @click="proposeMove(city.staticid, playerActionMenu.playerId, false)">
+        @click="proposeMove(city.staticid, playerActionMenu.playerId)">
         to {{ city.name }}
       </button>
     </div>
@@ -33,7 +33,7 @@
        Propose to airlift {{ playerActionMenu.playerUsername }}
       <button v-for="city in playerActionMenu.airliftLocations"
         :key="city.staticid" :class="playerActionMenu.cssClasses"
-        @click="proposeMove(city.staticid, playerActionMenu.playerId, true)">
+        @click="airliftMove(city.staticid, playerActionMenu.playerId)">
         to {{ city.name }}
       </button>
     </div>
@@ -45,6 +45,7 @@ import { mapGetters } from 'vuex'
 import GiveCardsService from '@/services/GiveCardsService'
 import ReceiveCardsService from '@/services/ReceiveCardsService'
 import ProposeMoveService from '@/services/ProposeMoveService'
+import AirliftMoveService from '@/services/AirliftMoveService'
 
 export default {
   name: 'PlayerActionMenu',
@@ -78,12 +79,18 @@ export default {
         game: this.game
       })
     },
-    proposeMove: function (cityStaticid, playerId, airlift) {
+    proposeMove: function (cityStaticid, playerId) {
       ProposeMoveService.call({
         cityStaticid: cityStaticid,
         playerId: playerId,
-        game: this.game,
-        airlift: airlift
+        game: this.game
+      })
+    },
+    airliftMove: function (cityStaticid, playerId) {
+      AirliftMoveService.call({
+        cityStaticid: cityStaticid,
+        playerId: playerId,
+        game: this.game
       })
     }
   }
