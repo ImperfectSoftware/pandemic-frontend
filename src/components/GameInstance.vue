@@ -7,6 +7,7 @@
           class="btn-pointer">
           <div class="forecast">
             <div class="float-left pl-2">{{index + 1}}</div>
+            <div :class="`city-rectangle-${city.color} float-left ml-2 mt-2`"></div>
             {{city.name}}
             <i class="float-right pr-2 pt-1 fas fa-bars"></i>
           </div>

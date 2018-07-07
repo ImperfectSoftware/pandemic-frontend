@@ -458,13 +458,14 @@ div#share-card-notification, div#generic-notification,
   top: 40%;
   left: 30%;
   margin-top: -100px;
-  background-color: $blue;
+  background-color: $land;
   border: 0.125em solid $border;
   border-radius: 0.25em;
+  z-index: 100;
 }
 
 .forecast {
   border: 0.125em solid $border;
   border-radius: 0.25em;
-  background-color: $blue;
+  background-color: $land;
 }
