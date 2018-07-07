@@ -1,5 +1,21 @@
 <template>
   <div id="map">
+    <div id="forecast" v-if="showForecast" class="p-4">
+      <div class="p-2">Forecast: Cards will be flipped first to last.</div>
+      <draggable v-model="forecast">
+        <div v-for="(city, index) in forecast" :key="city.staticid"
+          class="btn-pointer">
+          <div class="forecast">
+            <div class="float-left pl-2">{{index + 1}}</div>
+            {{city.name}}
+            <i class="float-right pr-2 pt-1 fas fa-bars"></i>
+          </div>
+        </div>
+      </draggable>
+      <button class="mt-4 btn btn-secondary btn-block" @click="arrangeCards">
+        Arrange
+      </button>
+    </div>
     <ShareCardNotification/>
     <WorldMap/>
     <ActionMenu/>
@@ -93,14 +109,25 @@ import DiscardCardService from '@/services/DiscardCardService'
 import InfectionsService from '@/services/InfectionsService'
 import FlipCardService from '@/services/FlipCardService'
 import UseEventService from '@/services/UseEventService'
+import draggable from 'vuedraggable'
+import ForecastUpdateService from '@/services/ForecastUpdateService'
 
 export default {
   name: 'GameInstance',
   computed: {
     ...mapGetters({
       game: 'activeGame',
-      currentUser: 'currentUser'
+      currentUser: 'currentUser',
+      showForecast: 'showForecast'
     }),
+    forecast: {
+      get () {
+        return this.$store.getters.forecast
+      },
+      set (value) {
+        this.$store.dispatch('updateForecast', value)
+      }
+    },
     currentPlayer: function () {
       if (this.game && this.currentUser) {
         return this.game.currentPlayer(this.currentUser.username)
@@ -125,6 +152,9 @@ export default {
     },
     useEvent: function (event) {
       UseEventService.call({ game: this.game, event: event })
+    },
+    arrangeCards: function () {
+      ForecastUpdateService.call({ forecast: this.forecast, game: this.game })
     }
   },
   components: {
@@ -136,7 +166,8 @@ export default {
     MovementProposalNotification,
     InfectionsSummary,
     CureList,
-    PlayersInfo
+    PlayersInfo,
+    draggable
   }
 }
 </script>

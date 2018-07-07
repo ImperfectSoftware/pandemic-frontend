@@ -15386,7 +15386,7 @@ export default {
       return 'outer-circle-infection-marker'
     },
     outbreakCssClass (position) {
-      if (this.game.outbreaksNr === position) {
+      if (this.game && this.game.outbreaksNr === position) {
         return 'outbreaks-color-active'
       } else {
         return `outbreaks-color-${position}`

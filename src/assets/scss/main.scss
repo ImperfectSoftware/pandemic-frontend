@@ -449,5 +449,22 @@ div#share-card-notification, div#generic-notification,
 
 .outbreaks-color-active {
   @include outbreak-mixin;
-  fill: $land;
+  fill: $blue;
+}
+
+#forecast {
+  position: fixed;
+  width: 40%;
+  top: 40%;
+  left: 30%;
+  margin-top: -100px;
+  background-color: $blue;
+  border: 0.125em solid $border;
+  border-radius: 0.25em;
+}
+
+.forecast {
+  border: 0.125em solid $border;
+  border-radius: 0.25em;
+  background-color: $blue;
 }

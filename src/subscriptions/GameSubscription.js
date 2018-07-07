@@ -44,6 +44,8 @@ export default class GameSubscription {
         payload: data.payload,
         currentPlayerUsername: store.getters.currentUser.username
       })
+    } else if (data.generic_notification) {
+      store.dispatch('showGenericNotification', data.generic_notification)
     }
   }
 

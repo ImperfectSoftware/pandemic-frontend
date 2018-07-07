@@ -22,4 +22,8 @@ export default class EventPlayerCard {
   get isQuietNight () {
     return this.staticid === '4'
   }
+
+  get isForecast () {
+    return this.staticid === '5'
+  }
 }
