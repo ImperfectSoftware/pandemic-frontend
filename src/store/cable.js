@@ -3,7 +3,7 @@
 import ActionCable from 'action-cable-react-jwt'
 import * as MutationTypes from './mutation-types'
 
-const WEBSOCKET_HOST = 'ws://localhost:3000/cable'
+const WEBSOCKET_HOST = process.env.WEBSOCKET_URL
 
 const state = {
   consumer: ActionCable.createConsumer(WEBSOCKET_HOST, localStorage.token)
