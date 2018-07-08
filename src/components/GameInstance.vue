@@ -1,5 +1,17 @@
 <template>
   <div id="map">
+    <div class="game-won" v-if="game && game.won">
+      <h2 class="game-won">
+        Congratulations! You won the game!!!
+        <i class="fas fa-trophy"></i>
+      </h2>
+    </div>
+    <div class="game-lost" v-if="game && game.lost">
+      <h2 class="game-lost">
+        Womp womp womp... The game was lost.
+        <i class="fas fa-bomb"></i>
+      </h2>
+    </div>
     <div id="resilient-population-cities" v-if="showDiscardedInfectionCities"
       class="p-4">
       <div class="resilient-population-cities-inner m-4 p-4">

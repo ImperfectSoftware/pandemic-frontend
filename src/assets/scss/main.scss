@@ -486,3 +486,35 @@ div#share-card-notification, div#generic-notification,
   border-radius: 0.25em;
   z-index: 100;
 }
+
+@mixin game-finale {
+  position: absolute;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+}
+
+div.game-won {
+  @include game-finale;
+  background-color: green;
+}
+
+h2.game-won {
+  @include game-finale;
+  opacity: 1;
+  top: 30%;
+  z-index: 201;
+}
+
+div.game-lost {
+  @include game-finale;
+  background-color: $red;
+}
+
+h2.game-lost {
+  @include game-finale;
+  opacity: 1;
+  top: 30%;
+  z-index: 201;
+}
