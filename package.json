@@ -15,6 +15,8 @@
   "dependencies": {
     "action-cable-react-jwt": "0.0.5",
     "axios": "^0.18.0",
+    "connect-history-api-fallback": "^1.5.0",
+    "express": "^4.16.3",
     "jwt-decode": "^2.2.0",
     "npm": "^6.1.0",
     "vue": "^2.5.2",
