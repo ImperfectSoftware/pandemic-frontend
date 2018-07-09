@@ -1,6 +1,6 @@
 <template>
-  <div id="action-menu" v-on-clickaway="hideActionMenu"
-    :class="{ 'd-none': actionMenu.hide }" :style="actionMenu.style">
+  <div id="action-menu" v-on-clickaway="hideActionMenu" v-if="actionMenu.show"
+    :style="actionMenu.style">
     <h2>{{ actionMenu.cityName }}</h2>
     <div :class="actionMenu.noActionsClasses">
       No actions can be taken for this city at this time.

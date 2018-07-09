@@ -46,6 +46,10 @@ export default class ActionMenu {
     this.displayGovernmentGrantOption = payload.display_government_grant_option
   }
 
+  get show () {
+    return !this.hide
+  }
+
   get style () {
     return this.elementStyle()
   }
