@@ -5,7 +5,7 @@
     <div :class="playerActionMenu.noActionsClasses">
       You can't do anything with this player at this time.
     </div>
-    <div v-if="playerActionMenu.receiveCities.length !== 0" class="share-card">
+    <div v-if="playerActionMenu.hasReceiveCities" class="share-card">
       Get from {{ playerActionMenu.playerUsername }}
       <button v-for="city in playerActionMenu.receiveCities" :key="city.staticid"
         :class="playerActionMenu.cssClasses"
@@ -13,7 +13,7 @@
           {{ city.name }}
       </button>
     </div>
-    <div v-if="playerActionMenu.giveCities.length !== 0" class="share-card">
+    <div v-if="playerActionMenu.hasGiveCities" class="share-card">
       Give to {{ playerActionMenu.playerUsername }}
       <button v-for="city in playerActionMenu.giveCities" :key="city.staticid"
         :class="playerActionMenu.cssClasses"
@@ -42,56 +42,35 @@
 <script>
 import { mixin as clickaway } from 'vue-clickaway'
 import { mapGetters } from 'vuex'
-import GiveCardsService from '@/services/GiveCardsService'
-import ReceiveCardsService from '@/services/ReceiveCardsService'
-import ProposeMoveService from '@/services/ProposeMoveService'
-import AirliftMoveService from '@/services/AirliftMoveService'
+import Facade from '@/Facade'
 
 export default {
   name: 'PlayerActionMenu',
   mixins: [ clickaway ],
-  data: function () {
-    return {
-      discarded: ''
-    }
-  },
   computed: {
     ...mapGetters({
       game: 'activeGame',
       playerActionMenu: 'playerActionMenu'
-    })
+    }),
+    facade: function () {
+      return new Facade()
+    }
   },
   methods: {
     hidePlayerActionMenu: function () {
       this.$store.dispatch('hidePlayerActionMenu', event.target)
     },
     giveCity: function (cityStaticid, playerId) {
-      GiveCardsService.call({
-        cityStaticid: cityStaticid,
-        playerId: playerId,
-        game: this.game
-      })
+      this.facade.giveCity(cityStaticid, playerId)
     },
     receiveCity: function (cityStaticid, playerId) {
-      ReceiveCardsService.call({
-        cityStaticid: cityStaticid,
-        playerId: playerId,
-        game: this.game
-      })
+      this.facade.receiveCards(cityStaticid, playerId)
     },
     proposeMove: function (cityStaticid, playerId) {
-      ProposeMoveService.call({
-        cityStaticid: cityStaticid,
-        playerId: playerId,
-        game: this.game
-      })
+      this.facade.proposeMove(cityStaticid, playerId)
     },
     airliftMove: function (cityStaticid, playerId) {
-      AirliftMoveService.call({
-        cityStaticid: cityStaticid,
-        playerId: playerId,
-        game: this.game
-      })
+      this.facade.airlift(cityStaticid, playerId)
     }
   }
 }

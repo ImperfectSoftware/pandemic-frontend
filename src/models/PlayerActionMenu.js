@@ -32,6 +32,14 @@ export default class PlayerActionMenu {
     return this.airliftLocations.length !== 0
   }
 
+  get hasGiveCities () {
+    return this.giveCities.length !== 0
+  }
+
+  get hasReceiveCities () {
+    return this.receiveCities.length !== 0
+  }
+
   showMenu = (payload) => {
     let player = payload.game.players[payload.position]
     this.hide = false
