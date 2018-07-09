@@ -20,7 +20,7 @@ export default class PlayerActionMenu {
 
   get noActionsClasses () {
     let buttonsCounter = this.receiveCities.length + this.giveCities.length +
-      this.airliftLocations.length
+      this.airliftLocations.length + this.locations.length
     return buttonsCounter === 0 ? '' : 'd-none'
   }
 
