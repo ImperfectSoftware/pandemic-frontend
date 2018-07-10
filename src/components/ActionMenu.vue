@@ -5,31 +5,31 @@
     <div :class="actionMenu.noActionsClasses">
       No actions can be taken for this city at this time.
     </div>
-    <button :class="actionMenu.driveCssClasses" @click="driveOrFerry">
+    <button :class="actionMenu.driveCssClasses" @click="facade.driveOrFerry()">
       Drive/Ferry
     </button>
     <button :class="actionMenu.directFlightCssClasses"
-      @click="directFlight">
+      @click="facade.directFlight()">
       Direct Flight
     </button>
     <button :class="actionMenu.charterFlightCssClasses"
-      @click="charterFlight">
+      @click="facade.charterFlight()">
       Charter Flight
     </button>
     <button :class="actionMenu.shuttleFlightCssClasses"
-      @click="shuttleFlight">
+      @click="facade.shuttleFlight()">
       Shuttle Flight
     </button>
     <button :class="actionMenu.buildResearchStationCssClasses"
-      @click="buildResearchStation(actionMenu.cityStaticid)">
+      @click="facade.buildResearchStation()">
       Add Research STA
     </button>
     <button :class="actionMenu.useGovernmentGrantCssClasses"
-      @click="useGovernmentGrant(actionMenu.cityStaticid)">
+      @click="facade.governmentGrant()">
       Add Research STA <i class="fas fa-university"></i>
     </button>
     <button :class="actionMenu.removeResearchStationCssClasses"
-      @click="removeResearchStation">
+      @click="facade.removeResearchStation()">
       Remove Research STA
     </button>
     <button :class="actionMenu.treatBlueDiseaseCssClass"
@@ -69,7 +69,7 @@
         </div>
       </div>
       <button class="btn btn-block btn-secondary mt-3"
-        @click="moveOperationsExpert(actionMenu.cityStaticid)">
+        @click="facade.moveOperationsExpert(discarded)">
         Discard
       </button>
     </div>
@@ -78,15 +78,7 @@
 <script>
 import { mixin as clickaway } from 'vue-clickaway'
 import { mapGetters } from 'vuex'
-import DriveOrFerryService from '@/services/DriveOrFerryService'
-import DirectFlightService from '@/services/DirectFlightService'
-import CharterFlightService from '@/services/CharterFlightService'
-import BuildResearchStationService from '@/services/BuildResearchStationService'
-import UseGovernmentGrantService from '@/services/UseGovernmentGrantService'
-import ShuttleFlightService from '@/services/ShuttleFlightService'
-import RemoveResearchStationService from '@/services/RemoveResearchStationService'
-import TreatDiseaseService from '@/services/TreatDiseaseService'
-import MoveOperationsExpertService from '@/services/MoveOperationsExpertService'
+import Facade from '@/Facade'
 
 export default {
   name: 'ActionMenu',
@@ -95,7 +87,10 @@ export default {
     ...mapGetters({
       game: 'activeGame',
       actionMenu: 'actionMenu'
-    })
+    }),
+    facade: function () {
+      return new Facade()
+    }
   },
   data: function () {
     return {
@@ -106,48 +101,8 @@ export default {
     hideActionMenu: function () {
       this.$store.dispatch('hideActionMenu', event.target)
     },
-    driveOrFerry: function () {
-      DriveOrFerryService.call({ actionMenu: this.actionMenu, game: this.game })
-    },
-    directFlight: function () {
-      DirectFlightService.call({ actionMenu: this.actionMenu, game: this.game })
-    },
-    charterFlight: function () {
-      CharterFlightService.call({ actionMenu: this.actionMenu, game: this.game })
-    },
-    shuttleFlight: function () {
-      ShuttleFlightService
-        .call({ actionMenu: this.actionMenu, game: this.game })
-    },
-    buildResearchStation: function (cityStaticid) {
-      BuildResearchStationService.call({
-        game: this.game,
-        cityStaticid: cityStaticid
-      })
-    },
-    useGovernmentGrant: function (cityStaticid) {
-      UseGovernmentGrantService.call({
-        game: this.game,
-        cityStaticid: cityStaticid
-      })
-    },
-    removeResearchStation: function () {
-      RemoveResearchStationService
-        .call({ actionMenu: this.actionMenu, game: this.game })
-    },
     treatDisease: function (color) {
-      TreatDiseaseService.call({
-        actionMenu: this.actionMenu,
-        game: this.game,
-        color: color
-      })
-    },
-    moveOperationsExpert: function (cityStaticid) {
-      MoveOperationsExpertService.call({
-        to: cityStaticid,
-        discarded: this.discarded,
-        game: this.game
-      })
+      this.facade.treatDisease(color)
     }
   }
 }
