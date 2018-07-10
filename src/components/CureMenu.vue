@@ -28,7 +28,7 @@
 <script>
 import { mixin as clickaway } from 'vue-clickaway'
 import { mapGetters } from 'vuex'
-import CureService from '@/services/CureService'
+import Facade from '@/Facade'
 
 export default {
   name: 'CureMenu',
@@ -37,7 +37,10 @@ export default {
     ...mapGetters({
       game: 'activeGame',
       cureMenu: 'cureMenu'
-    })
+    }),
+    facade: function () {
+      return new Facade()
+    }
   },
   data: function () {
     return {
@@ -49,10 +52,7 @@ export default {
       this.$store.dispatch('hideCureMenu', event.target)
     },
     cureDisease: function () {
-      CureService.call({
-        citiesStaticids: this.checkedCities,
-        game: this.game
-      })
+      this.facade.cureDisease(this.checkedCities)
     }
   }
 }

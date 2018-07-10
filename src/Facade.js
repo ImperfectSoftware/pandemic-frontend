@@ -10,6 +10,13 @@ export default class Facade {
     return store.getters.actionMenu
   }
 
+  cureDisease = (citiesStaticids) => {
+    let params = { city_staticids: citiesStaticids }
+    axios.post(`/games/${this.game.id}/cure_diseases`, params)
+      .then(request => this.handleSuccess(request.data))
+      .catch(e => this.handleError(e))
+  }
+
   driveOrFerry = () => {
     let params = { city_staticid: this.actionMenu.cityStaticid }
     axios.post(`/games/${this.game.id}/line_movements`, params)
