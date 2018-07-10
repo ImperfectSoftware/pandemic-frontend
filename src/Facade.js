@@ -14,6 +14,12 @@ export default class Facade {
     return store.getters.forecast
   }
 
+  createGame = () => {
+    axios.post('/games')
+      .then(request => this.createGameSuccess(request.data))
+      .catch((e) => this.handleError(e))
+  }
+
   discardInfectionCard = (cityStaticid) => {
     let params = { data: { city_staticid: cityStaticid } }
     axios.delete(`/games/${this.game.id}/resilient_populations`, params)
@@ -217,5 +223,10 @@ export default class Facade {
     } else {
       store.dispatch('hideForecast')
     }
+  }
+
+  createGameSuccess = (data) => {
+    store.dispatch('unshiftGame', data.game)
+    store.dispatch('hideGenericNotification')
   }
 }

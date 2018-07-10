@@ -14,7 +14,7 @@
       <div class="col-xl-3">
         <ul class="list-group list-unstyled">
           <li class="pb-5">
-            <form class="form-inline" @submit.prevent="createGame">
+            <form class="form-inline" @submit.prevent="facade.createGame()">
               <button class="mx-auto btn btn-block btn-secondary" type="submit">
                 Create a new Game
               </button>
@@ -32,6 +32,7 @@ import { mapGetters } from 'vuex'
 import SelectedGame from '@/components/SelectedGame'
 import GameHistoryLineItem from '@/components/GameHistoryLineItem'
 import InvitationLineItem from '@/components/InvitationLineItem'
+import Facade from '@/Facade'
 
 export default {
   name: 'GamesDashboard',
@@ -40,7 +41,10 @@ export default {
       games: 'games',
       selectedGame: 'selectedGame',
       invitations: 'invitations'
-    })
+    }),
+    facade: function () {
+      return new Facade()
+    }
   },
   components: {
     SelectedGame,
@@ -49,11 +53,6 @@ export default {
   },
   created: function () {
     this.$store.dispatch('setupGamesDashboard')
-  },
-  methods: {
-    createGame () {
-      this.$store.dispatch('createGame')
-    }
   }
 }
 </script>

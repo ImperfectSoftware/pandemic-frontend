@@ -3,7 +3,6 @@ import store from '.././store'
 import DashboardGame from '@/models/DashboardGame'
 import Game from '@/models/Game'
 import GameSubscription from '@/subscriptions/GameSubscription'
-import CreateGameService from '@/services/CreateGameService'
 import StartGameService from '@/services/StartGameService'
 import SetupGameDashboardService from '@/services/SetupGameDashboardService'
 import GetStartedGameService from '@/services/GetStartedGameService'
@@ -71,9 +70,6 @@ const actions = {
   },
   setupGamesDashboard ({ dispatch }) {
     SetupGameDashboardService.call()
-  },
-  createGame ({ dispatch }) {
-    CreateGameService.call()
   },
   startGame ({ commit }, payload) {
     StartGameService.call(payload)
