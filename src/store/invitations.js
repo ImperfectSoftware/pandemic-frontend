@@ -1,7 +1,5 @@
 import Invitation from '@/models/Invitation'
 import * as MutationTypes from './mutation-types'
-import RespondToInviteService from '@/services/RespondToInviteService'
-import CreateInvitationService from '@/services/CreateInvitationService'
 
 const state = {
   invitations: []
@@ -22,12 +20,6 @@ const getters = {
 const actions = {
   pushInvitation ({ commit }, payload) {
     commit(MutationTypes.PUSH_INVITATION, payload)
-  },
-  createInvitation ({ dispatch }, payload) {
-    CreateInvitationService.call(payload)
-  },
-  respondToInvite ({ commit }, payload) {
-    RespondToInviteService.call(payload)
   }
 }
 

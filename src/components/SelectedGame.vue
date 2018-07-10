@@ -8,7 +8,7 @@
     </div>
     <div v-else>
       <form id="invites" v-if="selectedGame.isGameOwner(currentUser)"
-        @submit.prevent="createInvite">
+        @submit.prevent="facade.createInvitation(selectedGame.id, username)">
         <div class="input-group">
           <input v-model="username" type="text" id="inputUsername"
             class="form-control" placeholder="Username" required autofocus>
@@ -52,6 +52,7 @@
 <script>
 import { mapGetters } from 'vuex'
 import PlayerLineItem from '@/components/PlayerLineItem'
+import Facade from '@/Facade'
 
 export default {
   name: 'SelectedGame',
@@ -60,7 +61,10 @@ export default {
       currentUser: 'currentUser',
       selectedGame: 'selectedGame',
       games: 'games'
-    })
+    }),
+    facade: function () {
+      return new Facade()
+    }
   },
   components: {
     PlayerLineItem
@@ -72,12 +76,6 @@ export default {
     }
   },
   methods: {
-    createInvite () {
-      this.$store.dispatch(
-        'createInvitation',
-        { gameId: this.selectedGame.id, username: this.username }
-      )
-    },
     startGame () {
       this.$store.dispatch(
         'startGame',

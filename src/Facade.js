@@ -14,10 +14,22 @@ export default class Facade {
     return store.getters.forecast
   }
 
+  respondToInvite = (response, invitation) => {
+    axios.put(`/games/${invitation.gameId}/invitations`, { status: response })
+      .then(request => this.updateInviteSuccess(request.data, invitation))
+      .catch(e => this.handleError(e))
+  }
+
   createGame = () => {
     axios.post('/games')
       .then(request => this.createGameSuccess(request.data))
       .catch((e) => this.handleError(e))
+  }
+
+  createInvitation = (gameId, username) => {
+    axios.post(`/games/${gameId}/invitations.json`, { username: username })
+      .then(request => this.handleSuccess(request.data))
+      .catch(e => this.handleError(e))
   }
 
   discardInfectionCard = (cityStaticid) => {
@@ -228,5 +240,12 @@ export default class Facade {
   createGameSuccess = (data) => {
     store.dispatch('unshiftGame', data.game)
     store.dispatch('hideGenericNotification')
+  }
+
+  updateInviteSuccess = (data, invitation) => {
+    invitation.acceptedStatus = data.status
+    if (data.status === 'accepted') {
+      store.dispatch('unshiftGame', data.game)
+    }
   }
 }
