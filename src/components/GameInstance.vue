@@ -29,7 +29,7 @@
             </div>
           </div>
           <button class="btn btn-secondary btn-block mt-4"
-            @click="discardInfectionCard">
+            @click="facade.discardInfectionCard(discarded)">
             Discard Card
           </button>
       </div>
@@ -47,7 +47,8 @@
           </div>
         </div>
       </draggable>
-      <button class="mt-4 btn btn-secondary btn-block" @click="arrangeCards">
+      <button class="mt-4 btn btn-secondary btn-block"
+        @click="facade.arrangeCards()">
         Arrange
       </button>
     </div>
@@ -79,9 +80,9 @@
             <div>
               {{event.name}}
               <i v-if="currentPlayer.hasTooManyCards" class="btn fas fa-trash-alt"
-                @click="discardCard(event.compositeId)"></i>
+                @click="facade.discardCard(event.compositeId)"></i>
               <i v-if="event.isUsable" class="btn fas fa-play"
-               @click="useEvent(event)"></i>
+               @click="facade.useEvent(event)"></i>
             </div>
           </div>
         </div>
@@ -112,15 +113,15 @@
               {{event.name}}
               <i v-if="currentPlayer.canTakeCard(event.name)"
                 class="pl-2 btn fas fa-hand-rock"
-                @click="takeEventCard(event.staticid)"></i>
+                @click="facade.takeEventCard(event.staticid)"></i>
             </div>
           </div>
         </div>
         <div class="wrapper end-turn-buttons">
           <i class="fas fa-plus pr-4 btn-pointer"
-            @click="flipCard"></i>
+            @click="facade.flipCard()"></i>
           <span class="fab fa-galactic-republic m-6 btn-pointer"
-            @click="infect">
+            @click="facade.infect()">
             <span v-if="game.skipInfections" class="quiet-night fas fa-moon"></span>
           </span>
         </div>
@@ -139,14 +140,8 @@ import CureMenu from '@/components/CureMenu'
 import CureList from '@/components/CureList'
 import InfectionsSummary from '@/components/InfectionsSummary'
 import MovementProposalNotification from '@/components/MovementProposalNotification'
-import TakeEventCardService from '@/services/TakeEventCardService'
-import DiscardCardService from '@/services/DiscardCardService'
-import InfectionsService from '@/services/InfectionsService'
-import FlipCardService from '@/services/FlipCardService'
-import UseEventService from '@/services/UseEventService'
 import draggable from 'vuedraggable'
-import ForecastUpdateService from '@/services/ForecastUpdateService'
-import DiscardInfectionService from '@/services/DiscardInfectionService'
+import Facade from '@/Facade'
 
 export default {
   name: 'GameInstance',
@@ -158,6 +153,9 @@ export default {
       showDiscardedInfectionCities: 'showDiscardedInfectionCities',
       resilientPopulationCities: 'resilientPopulationCities'
     }),
+    facade: function () {
+      return new Facade()
+    },
     forecast: {
       get () {
         return this.$store.getters.forecast
@@ -178,32 +176,6 @@ export default {
   data: function () {
     return {
       discarded: ''
-    }
-  },
-  methods: {
-    takeEventCard: function (staticid) {
-      TakeEventCardService.call({ eventStaticid: staticid, game: this.game })
-    },
-    discardCard: function (compositeId) {
-      DiscardCardService.call({ compositeId: compositeId, game: this.game })
-    },
-    flipCard: function () {
-      FlipCardService.call({ game: this.game })
-    },
-    infect: function () {
-      InfectionsService.call({ game: this.game })
-    },
-    useEvent: function (event) {
-      UseEventService.call({ game: this.game, event: event })
-    },
-    arrangeCards: function () {
-      ForecastUpdateService.call({ forecast: this.forecast, game: this.game })
-    },
-    discardInfectionCard: function () {
-      DiscardInfectionService.call({
-        game: this.game,
-        cityStaticid: this.discarded
-      })
     }
   },
   components: {

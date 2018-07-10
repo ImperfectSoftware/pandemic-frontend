@@ -10,6 +10,67 @@ export default class Facade {
     return store.getters.actionMenu
   }
 
+  get forecast () {
+    return store.getters.forecast
+  }
+
+  discardInfectionCard = (cityStaticid) => {
+    let params = { data: { city_staticid: cityStaticid } }
+    axios.delete(`/games/${this.game.id}/resilient_populations`, params)
+      .then(request => this.discardSuccess(request.data))
+      .catch(e => this.handleError(e))
+  }
+
+  arrangeCards = () => {
+    let cityStaticids = this.forecast.map(city => city.staticid).reverse()
+    let params = { city_staticids: cityStaticids }
+    axios.patch(`/games/${this.game.id}/forecasts`, params)
+      .then(request => this.forecastUpdateSuccess(request.data))
+      .catch(e => this.handleError(e))
+  }
+
+  useEvent = (event) => {
+    if (event.isQuietNight) {
+      axios.post(`/games/${this.game.id}/skip_infections`)
+        .then(request => this.handleSuccess(request.data))
+        .catch(e => this.handleError(e))
+    } else if (event.isForecast) {
+      axios.post(`/games/${this.game.id}/forecasts`)
+        .then(request => this.handleForecastSuccess(request.data))
+        .catch(e => this.handleError(e))
+    } else if (event.isResilientPopulation) {
+      axios.get(`/games/${this.game.id}/resilient_populations`)
+        .then(request => this.getCitiesSuccess(request.data))
+        .catch(e => this.handleError(e))
+    }
+  }
+
+  infect = () => {
+    axios.post(`/games/${this.game.id}/infections`)
+      .then(request => this.handleSuccess(request.data))
+      .catch(e => this.handleError(e))
+  }
+
+  flipCard = () => {
+    axios.post(`/games/${this.game.id}/flip_cards`)
+      .then(request => this.handleSuccess(request.data))
+      .catch(e => this.handleError(e))
+  }
+
+  takeEventCard = (staticid) => {
+    let params = { event_card_staticid: staticid }
+    axios.post(`/games/${this.game.id}/special_cards`, params)
+      .then(request => this.handleSuccess(request.data))
+      .catch(e => this.handleError(e))
+  }
+
+  discardCard = (compositeId) => {
+    let params = { data: { composite_id: compositeId } }
+    axios.delete(`/games/${this.game.id}/discard_cards`, params)
+      .then(request => this.handleSuccess(request.data))
+      .catch(e => this.handleError(e))
+  }
+
   cureDisease = (citiesStaticids) => {
     let params = { city_staticids: citiesStaticids }
     axios.post(`/games/${this.game.id}/cure_diseases`, params)
@@ -131,6 +192,30 @@ export default class Facade {
       store.dispatch('showGenericNotification', { message: data.error })
     } else {
       store.dispatch('hideGenericNotification')
+    }
+  }
+
+  handleForecastSuccess = (data) => {
+    if (data.error) {
+      this.handleSuccess(data)
+    } else {
+      store.dispatch('updateForecast', data.cities)
+    }
+  }
+
+  getCitiesSuccess = (data) => {
+    if (data.error) {
+      this.handleSuccess(data)
+    } else {
+      store.dispatch('updateResilientPopulationCities', data.cities)
+    }
+  }
+
+  forecastUpdateSuccess = (data) => {
+    if (data.error) {
+      this.handleSuccess(data)
+    } else {
+      store.dispatch('hideForecast')
     }
   }
 }
