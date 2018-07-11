@@ -1,6 +1,6 @@
 import * as MutationTypes from './mutation-types'
 import ActionMenu from '@/models/ActionMenu'
-import GetPossibleActionsService from '@/services/GetPossibleActionsService'
+import Facade from '@/Facade'
 import IsPartOfCellService from '@/services/IsPartOfCellService'
 
 const state = {
@@ -34,7 +34,8 @@ const actions = {
   },
   showActionMenu ({ commit }, payload) {
     commit(MutationTypes.SHOW_ACTION_MENU, payload)
-    GetPossibleActionsService.call(payload)
+    let facade = new Facade()
+    facade.getPossibleActions()
   },
   updateActionMenu ({ commit }, payload) {
     commit(MutationTypes.UPDATE_ACTION_MENU, payload)

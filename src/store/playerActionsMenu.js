@@ -1,6 +1,6 @@
 import * as MutationTypes from './mutation-types'
 import PlayerActionMenu from '@/models/PlayerActionMenu'
-import GetPossiblePlayerActionsService from '@/services/GetPossiblePlayerActionsService'
+import Facade from '@/Facade'
 
 const state = {
   menu: new PlayerActionMenu()
@@ -32,7 +32,8 @@ const actions = {
   },
   showPlayerActionMenu ({ commit }, payload) {
     commit(MutationTypes.SHOW_PLAYER_ACTION_MENU, payload)
-    GetPossiblePlayerActionsService.call(payload)
+    let facade = new Facade()
+    facade.getPossiblePlayerActions()
   },
   updatePlayerActionMenu ({ commit }, payload) {
     commit(MutationTypes.UPDATE_PLAYER_ACTION_MENU, payload)

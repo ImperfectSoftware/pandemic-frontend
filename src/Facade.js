@@ -10,8 +10,29 @@ export default class Facade {
     return store.getters.actionMenu
   }
 
+  get playerActionMenu () {
+    return store.getters.playerActionMenu
+  }
+
   get forecast () {
     return store.getters.forecast
+  }
+
+  getPossiblePlayerActions = () => {
+    let params = { params: {
+      city_staticid: this.playerActionMenu.cityStaticid,
+      player_id: this.playerActionMenu.playerId
+    }}
+    axios.get(`/games/${this.game.id}/possible_player_actions.json`, params)
+      .then(request => this.displayPlayerPossibleActionsSuccess(request.data))
+      .catch(e => this.handleError(e))
+  }
+
+  getPossibleActions = () => {
+    let params = { params: { city_staticid: this.actionMenu.cityStaticid } }
+    axios.get(`/games/${this.game.id}/possible_actions.json`, params)
+      .then(request => this.displayPossibleActionsSuccess(request.data))
+      .catch(e => this.handleError(e))
   }
 
   respondToInvite = (response, invitation) => {
@@ -247,5 +268,13 @@ export default class Facade {
     if (data.status === 'accepted') {
       store.dispatch('unshiftGame', data.game)
     }
+  }
+
+  displayPossibleActionsSuccess = (data) => {
+    store.dispatch('updateActionMenu', data)
+  }
+
+  displayPlayerPossibleActionsSuccess = (data) => {
+    store.dispatch('updatePlayerActionMenu', data)
   }
 }
