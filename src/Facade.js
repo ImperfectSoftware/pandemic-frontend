@@ -23,6 +23,12 @@ export default class Facade {
     return store.getters.movementProposalNotification
   }
 
+  startGame = (gameId, nrOfEpidemicCards) => {
+    axios.put(`/games/${gameId}`, { 'nr_of_epidemic_cards': nrOfEpidemicCards })
+      .then(request => this.handleSuccess(request.data))
+      .catch(e => this.handleError(e))
+  }
+
   respondToMovementProposal = (response) => {
     let id = this.movementProposalNotification.movementProposalId
     let params = { accepted: response }

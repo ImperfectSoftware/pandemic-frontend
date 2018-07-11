@@ -3,7 +3,6 @@ import store from '.././store'
 import DashboardGame from '@/models/DashboardGame'
 import Game from '@/models/Game'
 import GameSubscription from '@/subscriptions/GameSubscription'
-import StartGameService from '@/services/StartGameService'
 import SetupGameDashboardService from '@/services/SetupGameDashboardService'
 
 const state = {
@@ -69,9 +68,6 @@ const actions = {
   },
   setupGamesDashboard ({ dispatch }) {
     SetupGameDashboardService.call()
-  },
-  startGame ({ commit }, payload) {
-    StartGameService.call(payload)
   },
   pushActiveGame ({ commit }, game) {
     commit(MutationTypes.PUSH_ACTIVE_GAME, game)

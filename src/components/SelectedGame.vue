@@ -39,7 +39,7 @@
         <PlayerLineItem v-for="player in selectedGame.players"
           :key="player.invitationId" :player="player"/>
         <form id="start-game-id" v-if="selectedGame.canBeStartedBy(currentUser)"
-          @submit.prevent="startGame">
+          @submit.prevent="facade.startGame(selectedGame.id, epidemicCards)">
           <button class="mx-auto w-lg btn btn-secondary" type="submit">
             Start Game
           </button>
@@ -73,17 +73,6 @@ export default {
     return {
       username: '',
       epidemicCards: '5'
-    }
-  },
-  methods: {
-    startGame () {
-      this.$store.dispatch(
-        'startGame',
-        {
-          game: this.selectedGame,
-          nrOfEpidemicCards: this.epidemicCards
-        }
-      )
     }
   }
 }
