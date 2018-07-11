@@ -19,6 +19,18 @@ export default class Facade {
     return store.getters.forecast
   }
 
+  get movementProposalNotification () {
+    return store.getters.movementProposalNotification
+  }
+
+  respondToMovementProposal = (response) => {
+    let id = this.movementProposalNotification.movementProposalId
+    let params = { accepted: response }
+    axios.put(`/games/${this.game.id}/movement_proposals/${id}`, params)
+      .then(request => this.respondToMovementProposalSuccess(request.data))
+      .catch(e => this.handleError(e))
+  }
+
   getStartedGame = (gameId) => {
     axios.get(`/games/${gameId}`)
       .then(request => this.updateActiveGamesSuccess(request.data))
@@ -291,6 +303,14 @@ export default class Facade {
     } else {
       store.dispatch('pushActiveGame', game)
       GameSubscription.from(store.getters.cableConsumer, game).subscribe()
+    }
+  }
+
+  respondToMovementProposalSuccess = (data) => {
+    if (data.error) {
+      this.handleSuccess(data)
+    } else {
+      store.dispatch('hideMovementProposalNotification')
     }
   }
 }

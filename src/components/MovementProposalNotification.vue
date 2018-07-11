@@ -1,10 +1,12 @@
 <template>
   <div id="movement-proposal-notification" :class="notification.cssClasses">
     {{ notification.message }}
-    <button :class="notification.actionsCssClasses" @click="respond(true)">
+    <button :class="notification.actionsCssClasses"
+      @click="facade.respondToMovementProposal(true)">
       <i class="fas fa-check"></i>
     </button>
-    <button :class="notification.actionsCssClasses" @click="respond(false)">
+    <button :class="notification.actionsCssClasses"
+      @click="facade.respondToMovementProposal(false)">
       <i class="fas fa-times"></i>
     </button>
     <button :class="notification.closeNotificationCssClasses" @click="close">
@@ -14,7 +16,7 @@
 </template>
 <script>
 import { mapGetters } from 'vuex'
-import RespondToMovementProposalService from '@/services/RespondToMovementProposalService'
+import Facade from '@/Facade'
 
 export default {
   name: 'MovementProposalNotification',
@@ -22,17 +24,12 @@ export default {
     ...mapGetters({
       notification: 'movementProposalNotification',
       game: 'activeGame'
-    })
+    }),
+    facade: function () {
+      return new Facade()
+    }
   },
   methods: {
-    respond: function (response) {
-      RespondToMovementProposalService.call({
-        notification: this.notification,
-        response: response,
-        game: this.game
-      })
-      this.$store.dispatch('hideMovementProposalNotification')
-    },
     close: function () {
       this.$store.dispatch('hideMovementProposalNotification')
     }
