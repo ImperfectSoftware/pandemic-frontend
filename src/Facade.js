@@ -27,6 +27,18 @@ export default class Facade {
     return store.getters.sharedCardNotification
   }
 
+  displayGames = () => {
+    axios.get('/games')
+      .then(request => this.displayGamesSuccess(request.data))
+      .catch(e => this.handleError(e))
+  }
+
+  displayInvitations = () => {
+    axios.get('/invitations')
+      .then(request => this.displayInvitationsSuccess(request.data))
+      .catch(e => this.handleError(e))
+  }
+
   respondToSharedCard = (response) => {
     let id = this.sharedCardNotification.sharedCardId
     let params = { accepted: response }
@@ -338,5 +350,18 @@ export default class Facade {
     } else {
       store.dispatch('hideSharedCardNotification')
     }
+  }
+
+  displayGamesSuccess = (data) => {
+    data.games.forEach((game) => {
+      store.dispatch('pushGame', game)
+    })
+    store.dispatch('updateSelectedGame', store.getters.games[0])
+  }
+
+  displayInvitationsSuccess = (data) => {
+    data.invitations.forEach((attributes) => {
+      store.dispatch('pushInvitation', attributes)
+    })
   }
 }
