@@ -171,7 +171,7 @@ export default {
     }
   },
   created: function () {
-    this.$store.dispatch('initializeStartedGame', this.$route.params.id)
+    this.facade.getStartedGame(this.$route.params.id)
   },
   data: function () {
     return {

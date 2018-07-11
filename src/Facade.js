@@ -1,5 +1,6 @@
 import axios from '@/backend/vue-axios'
 import store from '@/store'
+import GameSubscription from '@/subscriptions/GameSubscription'
 
 export default class Facade {
   get game () {
@@ -16,6 +17,12 @@ export default class Facade {
 
   get forecast () {
     return store.getters.forecast
+  }
+
+  getStartedGame = (gameId) => {
+    axios.get(`/games/${gameId}`)
+      .then(request => this.updateActiveGamesSuccess(request.data))
+      .catch(e => this.handleError(e))
   }
 
   getPossiblePlayerActions = () => {
@@ -276,5 +283,14 @@ export default class Facade {
 
   displayPlayerPossibleActionsSuccess = (data) => {
     store.dispatch('updatePlayerActionMenu', data)
+  }
+
+  updateActiveGamesSuccess = (game) => {
+    if (game.error) {
+      this.handleSuccess(game)
+    } else {
+      store.dispatch('pushActiveGame', game)
+      GameSubscription.from(store.getters.cableConsumer, game).subscribe()
+    }
   }
 }

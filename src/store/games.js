@@ -5,7 +5,6 @@ import Game from '@/models/Game'
 import GameSubscription from '@/subscriptions/GameSubscription'
 import StartGameService from '@/services/StartGameService'
 import SetupGameDashboardService from '@/services/SetupGameDashboardService'
-import GetStartedGameService from '@/services/GetStartedGameService'
 
 const state = {
   games: [],
@@ -73,9 +72,6 @@ const actions = {
   },
   startGame ({ commit }, payload) {
     StartGameService.call(payload)
-  },
-  initializeStartedGame ({ commit }, gameId) {
-    GetStartedGameService.call(gameId)
   },
   pushActiveGame ({ commit }, game) {
     commit(MutationTypes.PUSH_ACTIVE_GAME, game)
