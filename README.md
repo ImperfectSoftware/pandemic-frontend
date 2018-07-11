@@ -2,6 +2,10 @@
 
 > Frontend for the game of Pandemic.
 
+This is how it currently looks. It's a work in progress... Hopefully some documentation coming soon. 😀
+![Game Screenshot](/src/assets/images/game_screenshot.png)
+
+
 ## Build Setup
 
 ``` bash
