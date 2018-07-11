@@ -23,6 +23,18 @@ export default class Facade {
     return store.getters.movementProposalNotification
   }
 
+  get sharedCardNotification () {
+    return store.getters.sharedCardNotification
+  }
+
+  respondToSharedCard = (response) => {
+    let id = this.sharedCardNotification.sharedCardId
+    let params = { accepted: response }
+    axios.put(`/games/${this.game.id}/share_cards/${id}`, params)
+      .then(request => this.handleSuccess(request.data))
+      .catch(e => this.handleError(e))
+  }
+
   startGame = (gameId, nrOfEpidemicCards) => {
     axios.put(`/games/${gameId}`, { 'nr_of_epidemic_cards': nrOfEpidemicCards })
       .then(request => this.handleSuccess(request.data))
@@ -317,6 +329,14 @@ export default class Facade {
       this.handleSuccess(data)
     } else {
       store.dispatch('hideMovementProposalNotification')
+    }
+  }
+
+  sharedCardNotificationSuccess = (data) => {
+    if (data.error) {
+      this.handleSuccess(data)
+    } else {
+      store.dispatch('hideSharedCardNotification')
     }
   }
 }

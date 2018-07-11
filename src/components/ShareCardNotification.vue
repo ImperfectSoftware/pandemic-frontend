@@ -1,10 +1,12 @@
 <template>
   <div id="share-card-notification" :class="notification.cssClasses">
     {{ notification.message }}
-    <button :class="notification.actionsCssClasses" @click="respond(true)">
+    <button :class="notification.actionsCssClasses"
+      @click="facade.respondToSharedCard(true)">
       <i class="fas fa-check"></i>
     </button>
-    <button :class="notification.actionsCssClasses" @click="respond(false)">
+    <button :class="notification.actionsCssClasses"
+      @click="facade.respondToSharedCard(false)">
       <i class="fas fa-times"></i>
     </button>
     <button :class="notification.closeNotificationCssClasses" @click="close">
@@ -14,7 +16,7 @@
 </template>
 <script>
 import { mapGetters } from 'vuex'
-import RespondToShareCardService from '@/services/RespondToShareCardService'
+import Facade from '@/Facade'
 
 export default {
   name: 'ShareCardNotification',
@@ -22,17 +24,12 @@ export default {
     ...mapGetters({
       notification: 'sharedCardNotification',
       game: 'activeGame'
-    })
+    }),
+    facade: function () {
+      return new Facade()
+    }
   },
   methods: {
-    respond: function (response) {
-      RespondToShareCardService.call({
-        notification: this.notification,
-        response: response,
-        game: this.game
-      })
-      this.$store.dispatch('hideSharedCardNotification')
-    },
     close: function () {
       this.$store.dispatch('hideSharedCardNotification')
     }
