@@ -73,7 +73,7 @@
             <div :class="city.rectangleCssClass"></div>
             <div :class="city.cssClass">{{ city.name }}</div>
             <i v-if="currentPlayer.hasTooManyCards" class="btn fas fa-trash-alt"
-              @click="discardCard(city.compositeId)"></i>
+              @click="facade.discardCard(city.compositeId)"></i>
           </div>
           <div v-for="event in currentPlayer.eventPlayerCards" :key="event.name"
             class="p-1 float-left">
