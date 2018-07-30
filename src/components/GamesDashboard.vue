@@ -52,7 +52,7 @@ export default {
     GameHistoryLineItem,
     InvitationLineItem
   },
-  created: function () {
+  mounted: function () {
     this.$store.dispatch('createConsumer')
     this.facade.displayInvitations()
     this.facade.displayGames()

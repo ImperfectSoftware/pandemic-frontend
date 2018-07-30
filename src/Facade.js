@@ -35,7 +35,7 @@ export default class Facade {
 
   displayInvitations = () => {
     axios.get('/invitations')
-      .then(request => this.displayInvitationsSuccess(request.data))
+      .then(request => this.displayInvitationsSuccess(request.data.invitations))
       .catch(e => this.handleError(e))
   }
 
@@ -43,7 +43,7 @@ export default class Facade {
     let id = this.sharedCardNotification.sharedCardId
     let params = { accepted: response }
     axios.put(`/games/${this.game.id}/share_cards/${id}`, params)
-      .then(request => this.handleSuccess(request.data))
+      .then(request => this.sharedCardNotificationSuccess(request.data))
       .catch(e => this.handleError(e))
   }
 
@@ -353,15 +353,11 @@ export default class Facade {
   }
 
   displayGamesSuccess = (data) => {
-    data.games.forEach((game) => {
-      store.dispatch('pushGame', game)
-    })
+    data.games.forEach(game => store.dispatch('pushGame', game))
     store.dispatch('updateSelectedGame', store.getters.games[0])
   }
 
-  displayInvitationsSuccess = (data) => {
-    data.invitations.forEach((attributes) => {
-      store.dispatch('pushInvitation', attributes)
-    })
+  displayInvitationsSuccess = (invites) => {
+    invites.forEach(attributes => store.dispatch('pushInvitation', attributes))
   }
 }
